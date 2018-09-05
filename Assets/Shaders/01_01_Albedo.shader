@@ -1,4 +1,4 @@
-﻿Shader "Custom/01_Albedo"
+﻿Shader "Custom/01_01_Albedo"
 {
     Properties
     {
@@ -19,7 +19,7 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = _Color;        
+            o.Albedo = _Color.rgb;        
         }
         ENDCG
     }

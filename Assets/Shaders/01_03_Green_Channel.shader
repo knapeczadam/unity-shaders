@@ -1,8 +1,8 @@
-﻿Shader "Custom/07_WorldRefl"
+﻿Shader "Custom/01_03_Green_Channel"
 {
     Properties
     {
-        _Cube ("Cube map", CUBE) = "black" {}
+        _Color ("Albedo Color", Color) = (1, 1, 1, 1)
     }
     
     SubShader
@@ -10,16 +10,16 @@
         CGPROGRAM
         #pragma surface surf Lambert
         
-        samplerCUBE _Cube;
+        fixed4 _Color;
         
         struct Input
         {
-            float3 worldRefl;
+            float2 uv_MainTex;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Emission= texCUBE(_Cube, IN.worldRefl);
+            o.Albedo.g = _Color.g;        
         }
         ENDCG
     }
