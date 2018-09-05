@@ -15,6 +15,7 @@ namespace UnityStandardAssets.SceneUtils
 
         public DemoModelSystemList demoModels;
         public bool clearOnChange = false;
+        public bool mouseWheelZoom = false;
         public Text titleText;
         public Transform sceneCamera;
         public Text instructionText;
@@ -73,7 +74,7 @@ namespace UnityStandardAssets.SceneUtils
         private void Update()
         {
             KeyboardInput();
-
+            MouseInput();
             sceneCamera.localPosition = Vector3.SmoothDamp(sceneCamera.localPosition,
                 Vector3.forward * -s_Selected.camOffset,
                 ref m_CamOffsetVelocity, 1);
@@ -91,6 +92,22 @@ namespace UnityStandardAssets.SceneUtils
 
             if (Input.GetKeyDown(KeyCode.RightArrow))
                 Next();
+        }
+
+        void MouseInput()
+        {
+            if (mouseWheelZoom)
+            {
+                float scroll = Input.GetAxis("Mouse ScrollWheel");
+                if (scroll > 0)
+                {
+                    s_Selected.camOffset -= 1;
+                }
+                else if (scroll < 0)
+                {
+                    s_Selected.camOffset += 1;
+                }
+            }
         }
 
         private void Select(int i)
