@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 01_Albedo
-  m_Shader: {fileID: 4800000, guid: 005c2892473ff9349b891902a067bddb, type: 3}
+  m_Shader: {fileID: 4800000, guid: 890eb8cef98f7ef4cbecc34a2aa6fd2b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Texture ("Texture", 2D) = "black" {}
+        _MainTex ("Texture", 2D) = "white" {}
     }
     
     SubShader
@@ -10,7 +10,7 @@
         CGPROGRAM
         #pragma surface surf Lambert
         
-        sampler2D _Texture;
+        sampler2D _MainTex;
         
         struct Input
         {
@@ -19,7 +19,7 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = tex2D(_Texture, IN.uv_MainTex);
+            o.Albedo = tex2D(_MainTex, IN.uv_MainTex);
         }
         ENDCG
     }
