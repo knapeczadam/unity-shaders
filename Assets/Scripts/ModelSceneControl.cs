@@ -27,7 +27,7 @@ namespace UnityStandardAssets.SceneUtils
         private static int s_SelectedIndex = 0;
         private Vector3 m_CamOffsetVelocity = Vector3.zero;
         private Vector3 m_LastPos;
-        private static DemoModelSystem s_Selected;
+        public static DemoModelSystem s_Selected;
 
 
         private void Awake()
