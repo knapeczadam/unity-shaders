@@ -1,4 +1,6 @@
-﻿Shader "Custom/00_02_Properties"
+﻿// Upgrade NOTE: replaced 'samplerRECT' with 'sampler2D'
+
+Shader "Custom/00_02_Properties"
 {   
     Properties
     {
@@ -21,6 +23,7 @@
         float4 _Vector4;
         fixed4 _Color;
         float _Range;
+        sampler1D _1DTex;
         sampler2D _2DTex;
         sampler2D_float _2DTex_float;
         sampler2D_half _2DTex_half;
@@ -30,6 +33,7 @@
         samplerCUBE _CubeTex;
         samplerCUBE_float _CubeTex_float;
         samplerCUBE_half _CubeTex_half;
+        // samplerRECT -> sampler2D
         
         struct Input
         {
