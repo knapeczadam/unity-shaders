@@ -24,7 +24,6 @@ namespace UnityStandardAssets.SceneUtils
 
 
         private List<Transform> m_CurrentModelList = new List<Transform>();
-        private Transform m_Instance;
         private static int s_SelectedIndex = 0;
         private Vector3 m_CamOffsetVelocity = Vector3.zero;
         private Vector3 m_LastPos;
@@ -113,7 +112,6 @@ namespace UnityStandardAssets.SceneUtils
         private void Select(int i)
         {
             s_Selected = demoModels.items[i];
-            m_Instance = null;
             foreach (var otherEffect in demoModels.items)
             {
                 if ((otherEffect != s_Selected) && (otherEffect.mode == Mode.Activate))

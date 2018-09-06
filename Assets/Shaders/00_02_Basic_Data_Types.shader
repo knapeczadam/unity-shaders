@@ -1,4 +1,4 @@
-﻿Shader "Custom/00_01_Basic_Data_Types"
+﻿Shader "Custom/00_02_Basic_Data_Types"
 {   
     SubShader
     {

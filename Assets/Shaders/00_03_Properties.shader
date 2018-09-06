@@ -1,6 +1,6 @@
 ﻿// Upgrade NOTE: replaced 'samplerRECT' with 'sampler2D'
 
-Shader "Custom/00_02_Properties"
+Shader "Custom/00_03_Properties"
 {   
     Properties
     {

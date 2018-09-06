@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 00_02_Properties
-  m_Shader: {fileID: 4800000, guid: f6e6486d69b16fd48a6cdf288dc22dd3, type: 3}
+  m_Name: 00_06_Input_Sctructure
+  m_Shader: {fileID: 4800000, guid: ad95c2a2aeffa6746adc1d1dbecb2a55, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 00_04_Matrices
-  m_Shader: {fileID: 4800000, guid: 70bf80e33bdcb0b41a873e7337df7973, type: 3}
+  m_Name: 00_04_Packed_Arrays
+  m_Shader: {fileID: 4800000, guid: ed4a9efb8e54b4b4ca7e999d195008ef, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

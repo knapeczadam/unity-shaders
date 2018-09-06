@@ -1,4 +1,4 @@
-﻿Shader "Custom/00_00_Barebone"
+﻿Shader "Custom/00_01_Barebone"
 {   
     SubShader
     {
