@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class ShowNormals : MonoBehaviour
 {
@@ -39,7 +37,8 @@ public class ShowNormals : MonoBehaviour
             normals[i].y *= ny;
             normals[i].z *= nz;
 
-            DrawLine(pos, posRot + transform.rotation * normals[i], Color.red);
+            GameObject line = DrawingHelper.DrawLine(pos, posRot + transform.rotation * normals[i], Color.red);
+            lines.Add(line);
         }
     }
 
@@ -47,23 +46,5 @@ public class ShowNormals : MonoBehaviour
     {
         lines.ForEach(Destroy);
         lines.Clear();
-    }
-
-    void DrawLine(Vector3 start, Vector3 end, Color color)
-    {
-        GameObject line = new GameObject();
-        lines.Add(line);
-        line.transform.position = start;
-        line.AddComponent<LineRenderer>();
-        LineRenderer lr = line.GetComponent<LineRenderer>();
-        lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
-        lr.startColor = color;
-        lr.endColor = color;
-        lr.startWidth = 0.01f;
-        lr.endWidth = 0.01f;
-        lr.SetPosition(0, start);
-        lr.SetPosition(1, end);
-        lr.shadowCastingMode = ShadowCastingMode.Off;
-        lr.receiveShadows = false;
     }
 }

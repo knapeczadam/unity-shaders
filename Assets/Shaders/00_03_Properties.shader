@@ -13,6 +13,7 @@ Shader "Custom/00_03_Properties"
         _3DTex ("3D texture", 3D) = "black" {}
         _CubeTex ("Cube texture", CUBE) = "gray" {}
     }
+    
     SubShader
     {
         CGPROGRAM
