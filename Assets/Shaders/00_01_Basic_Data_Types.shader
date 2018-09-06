@@ -3,19 +3,19 @@
     SubShader
     {
         CGPROGRAM
-        #pragma surface pickAName Lambert
+        #pragma surface surf Lambert
         
         float _32Bits;
         half _16Bits;
         fixed _11Bits;
-        int integer;
+        int _integer;
         
         struct Input
         {
-            int structInputHasNoMembers;
+            float2 uv_MainTex;
         };
         
-        void pickAName(Input IN, inout SurfaceOutput o)
+        void surf(Input IN, inout SurfaceOutput o)
         {
             
         }
