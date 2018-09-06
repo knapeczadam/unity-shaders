@@ -31,9 +31,22 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
+            fixed4 color1 = _fi4.rgba;
+            fixed4 color2 = _fi4.xyzw;
             
+            fixed4 color3;
+            color3.r = 1;
+            color3.y = 0.5;
+            color3.b = 0.5;
+            color3.w = 1;
+            
+            fixed4 copy;
+            copy.r = color3.x;
+            copy.g = color3.y;
+            copy.b = color3.z;
+            copy.a = color3.w;
         }
         ENDCG
     }
-    Fallback "Diffuse"
+    Fallback Off
 }

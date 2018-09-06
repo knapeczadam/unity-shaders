@@ -64,9 +64,8 @@
             // chaining
             float4 numbers1 = _m_fl4x4._m00_m11_m22_m33;
             float3 pi = _m_fi3x3[1];
-            
         }
         ENDCG
     }
-    Fallback "Diffuse"
+    Fallback Off
 }
