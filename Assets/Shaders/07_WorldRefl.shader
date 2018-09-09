@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Cube ("Cube map", CUBE) = "black" {}
+        _Environment ("Cube map", CUBE) = "black" {}
         [Toggle(ENABLE_EMISSION)] _isEmissive("Is emissive", Float) = 0
     }
     
@@ -12,7 +12,7 @@
         #pragma surface surf Lambert
         #pragma shader_feature ENABLE_EMISSION
         
-        samplerCUBE _Cube;
+        samplerCUBE _Environment;
         
         struct Input
         {
@@ -22,7 +22,9 @@
         void surf(Input IN, inout SurfaceOutput o)
         {   
             #ifdef ENABLE_EMISSION
-                o.Emission= texCUBE(_Cube, IN.worldRefl);
+                o.Emission = texCUBE(_Environment, IN.worldRefl);
+            #else
+                o.Albedo = texCUBE(_Environment, IN.worldRefl);
             #endif
         }
         ENDCG
