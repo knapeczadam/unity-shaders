@@ -1,4 +1,4 @@
-﻿Shader "Custom/20_Rim_Lighting"
+﻿Shader "Custom/21_Rim_Cutoff"
 {
     Properties
     {
@@ -21,7 +21,7 @@
         {
             half dotp = dot(normalize(IN.viewDir), o.Normal);
             half rim = 1 - saturate(dotp);
-            o.Emission = _Color  * pow(rim, (1 + (abs(_SinTime.x) * 9)));   
+            o.Emission = _Color * rim > abs(_SinTime.x) ? rim : 0;   
         }
         ENDCG
     }

@@ -1,16 +1,9 @@
-﻿Shader "Custom/20_Rim_Lighting"
+﻿Shader "Custom/22_Double_Rim_Cutoff"
 {
-    Properties
-    {
-        _Color ("Color", Color) = (1, 1, 1, 1)
-    }
-    
     SubShader 
     {
         CGPROGRAM
         #pragma surface surf Lambert
-        
-        fixed4 _Color;
         
         struct Input
         {
@@ -21,7 +14,7 @@
         {
             half dotp = dot(normalize(IN.viewDir), o.Normal);
             half rim = 1 - saturate(dotp);
-            o.Emission = _Color  * pow(rim, (1 + (abs(_SinTime.x) * 9)));   
+            o.Emission = rim > 0.5 ? _SinTime : rim > 0.3 ? _CosTime : 0;   
         }
         ENDCG
     }
