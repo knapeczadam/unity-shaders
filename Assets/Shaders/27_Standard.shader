@@ -24,6 +24,7 @@
         void surf (Input IN, inout SurfaceOutputStandard o) 
         {
             o.Albedo = _Color;
+            o.Emission = tex2D (_MetallicTex, IN.uv_MetallicTex) * abs(_SinTime.x);
             o.Smoothness = tex2D(_MetallicTex, IN.uv_MetallicTex);
             o.Metallic = _Metallic;
         }

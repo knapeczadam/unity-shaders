@@ -23,7 +23,9 @@
         void surf (Input IN, inout SurfaceOutputStandardSpecular o) 
         {
             o.Albedo = _Color;
-            o.Smoothness = tex2D(_MetallicTex, IN.uv_MetallicTex);
+            half smoothness = tex2D(_MetallicTex, IN.uv_MetallicTex);
+            smoothness += (saturate(abs(_SinTime.w)) * (0.9 - smoothness - smoothness));
+            o.Smoothness = smoothness;
             o.Specular = _SpecColor;
         }
         ENDCG

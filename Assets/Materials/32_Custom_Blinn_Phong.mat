@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 29_Standard
-  m_Shader: {fileID: 4800000, guid: 6cfc5de00239a1448baef6e3ac8d619c, type: 3}
+  m_Name: 32_Custom_Blinn_Phong
+  m_Shader: {fileID: 4800000, guid: 922aeb033d53d25439b35eb32b8872f6, type: 3}
   m_ShaderKeywords: SWITCH_ORDER _NORMALMAP _SPECGLOSSMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -95,7 +95,6 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Emiss: 1.22
     - _Gloss: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -118,9 +117,9 @@ Material:
     - _switchOrder: 1
     m_Colors:
     - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0, g: 0.20977783, b: 1, a: 1}
+    - _Color: {r: 0.44705883, g: 0.32941177, b: 0.6039216, a: 1}
     - _EmissionColor: {r: 0, g: 0.14015675, b: 1, a: 1}
     - _NormalColor: {r: 0.7176471, g: 0.03137254, b: 0.485672, a: 1}
-    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.2554849, g: 0.6603774, b: 0.19001423, a: 1}
     - _myColor: {r: 1, g: 1, b: 1, a: 1}
     - _myVector: {r: 0.5, g: 1, b: 1, a: 1}
