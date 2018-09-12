@@ -7,7 +7,7 @@
     
     SubShader
     {
-        Tags { "Queue" = "Gemotery" }
+        Tags { "Queue" = "Geometry" }
         
         CGPROGRAM
         #pragma surface surf Lambert alpha:fade
