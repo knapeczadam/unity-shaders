@@ -75,4 +75,4 @@ Material:
     - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0, g: 0.8679245, b: 0.11130025, a: 1}
     - _EmissionColor: {r: 0, g: 0.14015675, b: 1, a: 1}
-    - _NormalColor: {r: 0.7176471, g: 0.03137254, b: 0.485672, a: 1}
+    - _NormalColor: {r: 0.4245283, g: 0.38648096, b: 0.38648096, a: 1}
