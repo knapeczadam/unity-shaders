@@ -1,4 +1,4 @@
-﻿Shader "Custom/25_Lambert"
+﻿Shader "Custom/20-29/25_Lambert"
 {
     Properties
     {

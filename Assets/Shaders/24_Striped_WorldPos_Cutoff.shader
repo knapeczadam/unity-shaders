@@ -1,4 +1,4 @@
-﻿Shader "Custom/24_Striped_WorldPos_Cutoff"
+﻿Shader "Custom/20-29/24_Striped_WorldPos_Cutoff"
 {
     SubShader 
     {

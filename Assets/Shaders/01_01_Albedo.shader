@@ -1,4 +1,4 @@
-﻿Shader "Custom/01_01_Albedo"
+﻿Shader "Custom/00-09/01_01_Albedo"
 {
     Properties
     {

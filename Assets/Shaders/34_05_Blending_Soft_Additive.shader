@@ -1,4 +1,4 @@
-﻿Shader "Custom/34_05_Blending_Soft_Additive"
+﻿Shader "Custom/30-39/34_05_Blending_Soft_Additive"
 {
     Properties
     {

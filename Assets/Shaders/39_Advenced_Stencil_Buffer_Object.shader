@@ -1,4 +1,4 @@
-﻿Shader "Custom/39_Advenced_Stencil_Buffer_Object"
+﻿Shader "Custom/30-39/39_Advenced_Stencil_Buffer_Object"
 {
     Properties
     {

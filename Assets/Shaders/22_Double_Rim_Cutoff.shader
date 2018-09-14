@@ -1,4 +1,4 @@
-﻿Shader "Custom/22_Double_Rim_Cutoff"
+﻿Shader "Custom/20-29/22_Double_Rim_Cutoff"
 {
     SubShader 
     {

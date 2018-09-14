@@ -1,4 +1,4 @@
-﻿Shader "Custom/06_Color_Texture"
+﻿Shader "Custom/00-09/06_Color_Texture"
 {
     Properties
     {

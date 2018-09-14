@@ -1,4 +1,4 @@
-﻿Shader "Custom/20_Rim_Lighting"
+﻿Shader "Custom/20-29/20_Rim_Lighting"
 {
     Properties
     {

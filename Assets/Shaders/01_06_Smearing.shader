@@ -1,4 +1,4 @@
-﻿Shader "Custom/01_06_Smearing"
+﻿Shader "Custom/00-09/01_06_Smearing"
 {
     Properties
     {

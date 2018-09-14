@@ -1,4 +1,4 @@
-﻿Shader "Custom/34_02_Blending_Traditional_Transparency"
+﻿Shader "Custom/30-39/34_02_Blending_Traditional_Transparency"
 {
     Properties
     {

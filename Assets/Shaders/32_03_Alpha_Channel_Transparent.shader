@@ -1,4 +1,4 @@
-﻿Shader "Custom/32_03_Alpha_Channel_Transparent"
+﻿Shader "Custom/30-39/32_03_Alpha_Channel_Transparent"
 {
     Properties
     {

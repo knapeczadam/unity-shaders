@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using UnityEngine;
 using UnityStandardAssets.SceneUtils;
 
@@ -12,11 +13,15 @@ public class ShaderManager : MonoBehaviour
             return;
         }
 
-        string path = Path.Combine(Application.dataPath, "Shaders", (renderer.material.shader.name.Substring(7) + ".shader"));
-        
-        if (File.Exists(path))
+        foreach (Material material in renderer.materials)
         {
-            System.Diagnostics.Process.Start(path);
+            string[] shaderName = material.shader.name.Split(Char.Parse("/"));
+            string path = Path.Combine(Application.dataPath, "Shaders", (shaderName[shaderName.Length - 1] + ".shader"));
+            
+            if (File.Exists(path))
+            {
+                System.Diagnostics.Process.Start(path);
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿Shader "Custom/32_01_Alpha_Channel_Geometry"
+﻿Shader "Custom/30-39/32_01_Alpha_Channel_Geometry"
 {
     Properties
     {

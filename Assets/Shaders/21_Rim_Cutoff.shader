@@ -1,4 +1,4 @@
-﻿Shader "Custom/21_Rim_Cutoff"
+﻿Shader "Custom/20-29/21_Rim_Cutoff"
 {
     Properties
     {

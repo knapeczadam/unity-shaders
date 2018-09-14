@@ -1,4 +1,4 @@
-﻿Shader "Custom/31_02_Lambert_Toon_Ramp"
+﻿Shader "Custom/30-39/31_02_Lambert_Toon_Ramp"
 {
     Properties
     {

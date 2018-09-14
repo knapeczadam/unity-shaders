@@ -1,4 +1,4 @@
-﻿Shader "Custom/32_02_Alpha_Channel_AlphaTest"
+﻿Shader "Custom/30-39/32_02_Alpha_Channel_AlphaTest"
 {
     Properties
     {

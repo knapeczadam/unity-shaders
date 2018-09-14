@@ -1,4 +1,4 @@
-﻿Shader "Custom/00_06_Input_Structure"
+﻿Shader "Custom/00-09/00_06_Input_Structure"
 {
     SubShader
     {

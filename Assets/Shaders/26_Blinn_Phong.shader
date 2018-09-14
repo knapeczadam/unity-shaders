@@ -1,4 +1,4 @@
-﻿Shader "Custom/26_Blinn_Phong"
+﻿Shader "Custom/20-29/26_Blinn_Phong"
 {
     Properties
     {
