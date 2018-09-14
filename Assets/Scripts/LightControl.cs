@@ -2,7 +2,7 @@
 
 public class LightControl : MonoBehaviour
 {
-    public float amplitude = 0.5f;
+    public float amplitude = 1f;
     public float frequency = 1f;
     
     Color colorOffset;

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33130581003679028}
   - component: {fileID: 23115032440016192}
   m_Layer: 0
-  m_Name: Dollhouse
+  m_Name: Dollhouse_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
