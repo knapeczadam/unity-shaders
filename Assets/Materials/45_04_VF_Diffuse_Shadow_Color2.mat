@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 43_02_VF_GrabPass
-  m_Shader: {fileID: 4800000, guid: 128c1413dad84a54a949b257dcfbc852, type: 3}
+  m_Name: 45_04_VF_Diffuse_Shadow_Color2
+  m_Shader: {fileID: 4800000, guid: debbf4aeb37bb1a4a9f18a840f192967, type: 3}
   m_ShaderKeywords: SWITCH_ORDER _NORMALMAP _SPECGLOSSMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
