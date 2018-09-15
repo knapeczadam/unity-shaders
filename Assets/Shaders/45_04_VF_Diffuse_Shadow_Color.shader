@@ -16,7 +16,6 @@
             #pragma fragment frag
             #pragma multi_compile_fwdbase nolightmap nodirlightmap nodynlightmap novertexlight
             
-            #include "UnityCG.cginc" 
             #include "UnityLightingCommon.cginc"
             #include "Lighting.cginc" 
             #include "AutoLight.cginc"
