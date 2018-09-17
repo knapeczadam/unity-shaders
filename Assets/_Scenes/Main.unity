@@ -3179,409 +3179,207 @@ MonoBehaviour:
   demoModels:
     items:
     - transform: {fileID: 1457437560}
-      mode: 0
       camOffset: 5
-      instructionText: Genesis (Not supported)
     - transform: {fileID: 1656015960}
-      mode: 0
       camOffset: 5
-      instructionText: Barebone
     - transform: {fileID: 488092378}
-      mode: 0
       camOffset: 5
-      instructionText: Basic data types
     - transform: {fileID: 164168290}
-      mode: 0
       camOffset: 5
-      instructionText: Properties
     - transform: {fileID: 297057620}
-      mode: 0
       camOffset: 5
-      instructionText: Packed arrays
     - transform: {fileID: 1502927134}
-      mode: 0
       camOffset: 5
-      instructionText: Matrices
     - transform: {fileID: 1024801771}
-      mode: 0
       camOffset: 5
-      instructionText: Input structure
     - transform: {fileID: 86223053}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo - diffuse color
     - transform: {fileID: 1914134524}
-      mode: 0
       camOffset: 5
-      instructionText: Red channel
     - transform: {fileID: 2040772806}
-      mode: 0
       camOffset: 5
-      instructionText: Green channel
     - transform: {fileID: 799204768}
-      mode: 0
       camOffset: 5
-      instructionText: Blue channel
     - transform: {fileID: 1498792656}
-      mode: 0
       camOffset: 5
-      instructionText: Swizzling
     - transform: {fileID: 104968142}
-      mode: 0
       camOffset: 5
-      instructionText: Smearing
     - transform: {fileID: 48928690}
-      mode: 0
       camOffset: 5
-      instructionText: Masking
     - transform: {fileID: 179275208}
-      mode: 0
       camOffset: 5
-      instructionText: Emission
     - transform: {fileID: 972871421}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo + Emission
     - transform: {fileID: 823568183}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo + Normal
     - transform: {fileID: 2113844862}
-      mode: 0
       camOffset: 5
-      instructionText: Texture
     - transform: {fileID: 516269217}
-      mode: 0
       camOffset: 5
-      instructionText: Color + Texture
     - transform: {fileID: 1737358846}
-      mode: 0
       camOffset: 18
-      instructionText: WorldRefl
     - transform: {fileID: 1525865183}
-      mode: 0
       camOffset: 5
-      instructionText: Texture + WorldRefl
     - transform: {fileID: 1989327197}
-      mode: 0
       camOffset: 5
-      instructionText: Texture + pulsating Emission
     - transform: {fileID: 1150792921}
-      mode: 0
       camOffset: 5
-      instructionText: Show Normals
     - transform: {fileID: 242644628}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo = Normal
     - transform: {fileID: 822327778}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo = Normal (0 angle weighted)
     - transform: {fileID: 103186997}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo = WorldRefl
     - transform: {fileID: 237535342}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo = WorldRefl (0 angle weighted)
     - transform: {fileID: 1058020162}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo = calculated WorldRefl
     - transform: {fileID: 1289710009}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo = calculated WorldRefl (0 angle weighted)
     - transform: {fileID: 2059158187}
-      mode: 0
       camOffset: 5
-      instructionText: Incident ray (red), surface normal (blue), reflected ray (green)
     - transform: {fileID: 2121194762}
-      mode: 0
       camOffset: 20
-      instructionText: Normal
     - transform: {fileID: 266849756}
-      mode: 0
       camOffset: 5
-      instructionText: Albedo + Normal + WorldRefl
     - transform: {fileID: 444670228}
-      mode: 0
       camOffset: 6
-      instructionText: Z-Buffer on
     - transform: {fileID: 781049661}
-      mode: 0
       camOffset: 6
-      instructionText: Z-Buffer off
     - transform: {fileID: 1564713413}
-      mode: 0
       camOffset: 6
-      instructionText: Geometry queue
     - transform: {fileID: 2130302381}
-      mode: 0
       camOffset: 6
-      instructionText: Dot product
     - transform: {fileID: 591389410}
-      mode: 0
       camOffset: 6
-      instructionText: Rim lighting
     - transform: {fileID: 604821631}
-      mode: 0
       camOffset: 6
-      instructionText: Rim cutoff
     - transform: {fileID: 802034467}
-      mode: 0
       camOffset: 6
-      instructionText: Double rim cutoff
     - transform: {fileID: 683210801}
-      mode: 0
       camOffset: 6
-      instructionText: WorldPos cutoff
     - transform: {fileID: 2121293550}
-      mode: 0
       camOffset: 18
-      instructionText: WorldPos cutoff
     - transform: {fileID: 1455439635}
-      mode: 0
       camOffset: 5
-      instructionText: Lambert (Albedo, Specular, Glossiness)
     - transform: {fileID: 271419503}
-      mode: 0
       camOffset: 5
-      instructionText: Blinn-Phong (Albedo, Specular, Glossiness)
     - transform: {fileID: 986172742}
-      mode: 0
       camOffset: 6
-      instructionText: Built-in Standard
     - transform: {fileID: 2142284845}
-      mode: 0
       camOffset: 6
-      instructionText: Built-in Specular
     - transform: {fileID: 943101866}
-      mode: 0
       camOffset: 5
-      instructionText: Standard PBR
     - transform: {fileID: 193823538}
-      mode: 0
       camOffset: 5
-      instructionText: Standard Specular PBR
     - transform: {fileID: 862148665}
-      mode: 0
       camOffset: 5
-      instructionText: Custom Lambert
     - transform: {fileID: 616543730}
-      mode: 0
       camOffset: 5
-      instructionText: Custom Blinn-Phong
     - transform: {fileID: 860761884}
-      mode: 0
       camOffset: 5
-      instructionText: Toon Ramp with custom light
     - transform: {fileID: 1715062944}
-      mode: 0
       camOffset: 5
-      instructionText: Toon Ramp with Lambert
     - transform: {fileID: 1223880402}
-      mode: 0
       camOffset: 5
-      instructionText: Alpha channel - Geometry queue
     - transform: {fileID: 1843672279}
-      mode: 0
       camOffset: 5
-      instructionText: Alpha channel - AlphaTest queue
     - transform: {fileID: 2016680150}
-      mode: 0
       camOffset: 5
-      instructionText: Alpha channel - Transparent queue
     - transform: {fileID: 879751176}
-      mode: 0
       camOffset: 5
-      instructionText: Alpha channel - Transparent queue with proper shadow
     - transform: {fileID: 1417540704}
-      mode: 0
       camOffset: 5
-      instructionText: Hologram - without ColorMask
     - transform: {fileID: 275582479}
-      mode: 0
       camOffset: 5
-      instructionText: Hologram - with ColorMask A
     - transform: {fileID: 1181341998}
-      mode: 0
       camOffset: 5
-      instructionText: Hologram - with ColorMask RGB
     - transform: {fileID: 57035234}
-      mode: 0
       camOffset: 8
-      instructionText: Blending - default
     - transform: {fileID: 1321235237}
-      mode: 0
       camOffset: 8
-      instructionText: Blending - Traditional transparency
     - transform: {fileID: 2052942103}
-      mode: 0
       camOffset: 8
-      instructionText: Blending - Traditional transparency - Cull off
     - transform: {fileID: 2052027609}
-      mode: 0
       camOffset: 8
-      instructionText: Blending - Premultiplied transparency
     - transform: {fileID: 341150820}
-      mode: 0
       camOffset: 8
-      instructionText: Blending - Additive
     - transform: {fileID: 51377103}
-      mode: 0
       camOffset: 8
-      instructionText: Blending - Soft additive
     - transform: {fileID: 405197328}
-      mode: 0
       camOffset: 8
-      instructionText: Blending - Multiplicative
     - transform: {fileID: 522174419}
-      mode: 0
       camOffset: 8
-      instructionText: Blending - 2x Multiplicative
     - transform: {fileID: 1134617505}
-      mode: 0
       camOffset: 5
-      instructionText: Texture blending
     - transform: {fileID: 319193366}
-      mode: 0
       camOffset: 5
-      instructionText: Stencil buffer - (Uncomment fallbacks)
     - transform: {fileID: 130624874}
-      mode: 0
       camOffset: 7
-      instructionText: Advanced stencil buffer - (Uncomment fallbacks)
     - transform: {fileID: 53705796}
-      mode: 0
       camOffset: 5
-      instructionText: Generated Unlit shader
     - transform: {fileID: 552034975}
-      mode: 0
       camOffset: 5
-      instructionText: Barebone Fragment shader
     - transform: {fileID: 322163006}
-      mode: 0
       camOffset: 5
-      instructionText: VF shader - color by world position
     - transform: {fileID: 1243532273}
-      mode: 0
       camOffset: 5
-      instructionText: VF shader - color by screen position
     - transform: {fileID: 2087001519}
-      mode: 0
       camOffset: 15
-      instructionText: VF material
     - transform: {fileID: 2044110532}
-      mode: 0
       camOffset: 5
-      instructionText: VF material + world position
     - transform: {fileID: 1199424550}
-      mode: 0
       camOffset: 10
-      instructionText: VF GrabPass
     - transform: {fileID: 739713048}
-      mode: 0
       camOffset: 5
-      instructionText: VF diffuse
     - transform: {fileID: 255379736}
-      mode: 0
       camOffset: 5
-      instructionText: VF shadow casting
     - transform: {fileID: 273000913}
-      mode: 0
       camOffset: 5
-      instructionText: VF shadow receiving
     - transform: {fileID: 2034668464}
-      mode: 0
       camOffset: 5
-      instructionText: VF shadow
     - transform: {fileID: 427959341}
-      mode: 0
       camOffset: 10
-      instructionText: VF coloured shadow
     - transform: {fileID: 1855111790}
-      mode: 0
       camOffset: 10
-      instructionText: Vertex extruding
     - transform: {fileID: 112179214}
-      mode: 0
       camOffset: 12
-      instructionText: Simple outline
     - transform: {fileID: 219921071}
-      mode: 0
       camOffset: 12
-      instructionText: Simple outline - distance based
     - transform: {fileID: 677769734}
-      mode: 0
       camOffset: 12
-      instructionText: Simple outline - multiple objects
     - transform: {fileID: 761984394}
-      mode: 0
       camOffset: 12
-      instructionText: Advanced outline
     - transform: {fileID: 1774130947}
-      mode: 0
       camOffset: 12
-      instructionText: Advanced outline - multiple objects
     - transform: {fileID: 1542871486}
-      mode: 0
       camOffset: 10
-      instructionText: Silhouette - show inner details
     - transform: {fileID: 1452119940}
-      mode: 0
       camOffset: 10
-      instructionText: Silhouette - hide inner details
     - transform: {fileID: 1791327188}
-      mode: 0
       camOffset: 5
-      instructionText: Glass
     - transform: {fileID: 1355568880}
-      mode: 0
       camOffset: 15
-      instructionText: Wave
     - transform: {fileID: 186702558}
-      mode: 0
       camOffset: 30
-      instructionText: Scrolling texture
     - transform: {fileID: 1604087054}
-      mode: 0
       camOffset: 15
-      instructionText: Scrolling wave
     - transform: {fileID: 173415602}
-      mode: 0
       camOffset: 15
-      instructionText: Wave + scrolling texture
     - transform: {fileID: 1499482877}
-      mode: 0
       camOffset: 10
-      instructionText: Plasma - Lambert
     - transform: {fileID: 789540088}
-      mode: 0
       camOffset: 15
-      instructionText: Plasma - Vertex-Fragment
     - transform: {fileID: 1822893850}
-      mode: 0
       camOffset: 10
-      instructionText: Painter's algorithm
     - transform: {fileID: 1290002634}
-      mode: 0
       camOffset: 10
-      instructionText: Render Queue
     - transform: {fileID: 256846529}
-      mode: 0
       camOffset: 10
-      instructionText: Z-sorting
     - transform: {fileID: 1338086744}
-      mode: 0
       camOffset: 5
-      instructionText: 
     - transform: {fileID: 481790583}
-      mode: 0
       camOffset: 5
-      instructionText: 
   clearOnChange: 1
   mouseWheelZoom: 0
   titleText: {fileID: 2099519702}

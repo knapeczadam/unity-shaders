@@ -150,8 +150,12 @@ namespace UnityStandardAssets.SceneUtils
         public class DemoModelSystem
         {
             public Transform transform;
-            public Mode mode;
             public int camOffset = 15;
+
+            public Mode mode
+            {
+                get { return Mode.Activate; }
+            }
             
             public string instructionText
             {
