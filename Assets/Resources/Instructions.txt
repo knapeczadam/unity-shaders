@@ -97,4 +97,5 @@ Plasma - Vertex-Fragment
 Painter's algorithm
 Render Queue
 Z-sorting
-
+Ignore projector - True
+Ignore projector - False
