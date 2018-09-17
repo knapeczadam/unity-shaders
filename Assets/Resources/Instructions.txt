@@ -1,0 +1,100 @@
+Genesis (Not supported)
+Barebone
+Basic data types
+Properties
+Packed arrays
+Matrices
+Input structure
+Albedo - diffuse color
+Red channel
+Green channel
+Blue channel
+Swizzling
+Smearing
+Masking
+Emission
+Albedo + Emission
+Albedo + Normal
+Texture
+Color + Texture
+WorldRefl
+Texture + WorldRefl
+Texture + pulsating Emission
+Show Normals
+Albedo = Normal
+Albedo = Normal (0 angle weighted)
+Albedo = WorldRefl
+Albedo = WorldRefl (0 angle weighted)
+Albedo = calculated WorldRefl
+Albedo = calculated WorldRefl (0 angle weighted)
+Incident ray (red), surface normal (blue), reflected ray (green)
+Normal
+Albedo + Normal + WorldRefl
+Z-Buffer on
+Z-Buffer off
+Geometry queue
+Dot product
+Rim lighting
+Rim cutoff
+Double rim cutoff
+WorldPos cutoff
+WorldPos cutoff
+Lambert (Albedo, Specular, Glossiness)
+Blinn-Phong (Albedo, Specular, Glossiness)
+Built-in Standard
+Built-in Specular
+Standard PBR
+Standard Specular PBR
+Custom Lambert
+Custom Blinn-Phong
+Toon Ramp with custom light
+Toon Ramp with Lambert
+Alpha channel - Geometry queue
+Alpha channel - AlphaTest queue
+Alpha channel - Transparent queue
+Alpha channel - Transparent queue with proper shadow
+Hologram - without ColorMask
+Hologram - with ColorMask A
+Hologram - with ColorMask RGB
+Blending - default
+Blending - Traditional transparency
+Blending - Traditional transparency - Cull off
+Blending - Premultiplied transparency
+Blending - Additive
+Blending - Soft additive
+Blending - Multiplicative
+Blending - 2x Multiplicative
+Texture blending
+Stencil buffer - (Uncomment fallbacks)
+Advanced stencil buffer - (Uncomment fallbacks)
+Generated Unlit shader
+Barebone Fragment shader
+VF shader - color by world position
+VF shader - color by screen position
+VF material
+VF material + world position
+VF GrabPass
+VF diffuse
+VF shadow casting
+VF shadow receiving
+VF shadow
+VF coloured shadow
+Vertex extruding
+Simple outline
+Simple outline - distance based
+Simple outline - multiple objects
+Advanced outline
+Advanced outline - multiple objects
+Silhouette - show inner details
+Silhouette - hide inner details
+Glass
+Wave
+Scrolling texture
+Scrolling wave
+Wave + scrolling texture
+Plasma - Lambert
+Plasma - Vertex-Fragment
+Painter's algorithm
+Render Queue
+Z-sorting
+

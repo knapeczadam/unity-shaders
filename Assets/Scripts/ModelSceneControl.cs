@@ -25,6 +25,7 @@ namespace UnityStandardAssets.SceneUtils
 
         private List<Transform> m_CurrentModelList = new List<Transform>();
         private static int s_SelectedIndex = 0;
+        private static string[] s_Instructions;
         private Vector3 m_CamOffsetVelocity = Vector3.zero;
         private Vector3 m_LastPos;
         public static DemoModelSystem s_Selected;
@@ -32,6 +33,7 @@ namespace UnityStandardAssets.SceneUtils
 
         private void Awake()
         {
+            LoadInstructions();
             Select(s_SelectedIndex);
 
             previousButton.onClick.AddListener(Previous);
@@ -138,6 +140,11 @@ namespace UnityStandardAssets.SceneUtils
             titleText.text = s_Selected.transform.name;
         }
 
+        private void LoadInstructions()
+        {
+            TextAsset ta = Resources.Load("Instructions") as TextAsset;
+            s_Instructions = ta.text.Split('\n');
+        }
 
         [Serializable]
         public class DemoModelSystem
@@ -145,7 +152,11 @@ namespace UnityStandardAssets.SceneUtils
             public Transform transform;
             public Mode mode;
             public int camOffset = 15;
-            public string instructionText;
+            
+            public string instructionText
+            {
+                get { return s_Instructions[s_SelectedIndex]; }
+            }
         }
 
         [Serializable]
