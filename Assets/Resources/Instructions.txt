@@ -1,101 +1,106 @@
-Genesis (Not supported)
-Barebone
-Basic data types
-Properties
-Packed arrays
-Matrices
-Input structure
-Albedo - diffuse color
-Red channel
-Green channel
-Blue channel
-Swizzling
-Smearing
-Masking
-Emission
-Albedo + Emission
-Albedo + Normal
-Texture
-Color + Texture
-WorldRefl
-Texture + WorldRefl
-Texture + pulsating Emission
-Show Normals
-Albedo = Normal
-Albedo = Normal (0 angle weighted)
-Albedo = WorldRefl
-Albedo = WorldRefl (0 angle weighted)
-Albedo = calculated WorldRefl
-Albedo = calculated WorldRefl (0 angle weighted)
-Incident ray (red), surface normal (blue), reflected ray (green)
-Normal
-Albedo + Normal + WorldRefl
-Z-Buffer on
-Z-Buffer off
-Geometry queue
-Dot product
-Rim lighting
-Rim cutoff
-Double rim cutoff
-WorldPos cutoff
-WorldPos cutoff
-Lambert (Albedo, Specular, Glossiness)
-Blinn-Phong (Albedo, Specular, Glossiness)
-Built-in Standard
-Built-in Specular
-Standard PBR
-Standard Specular PBR
-Custom Lambert
-Custom Blinn-Phong
-Toon Ramp with custom light
-Toon Ramp with Lambert
-Alpha channel - Geometry queue
-Alpha channel - AlphaTest queue
-Alpha channel - Transparent queue
-Alpha channel - Transparent queue with proper shadow
-Hologram - without ColorMask
-Hologram - with ColorMask A
-Hologram - with ColorMask RGB
-Blending - default
-Blending - Traditional transparency
-Blending - Traditional transparency - Cull off
-Blending - Premultiplied transparency
-Blending - Additive
-Blending - Soft additive
-Blending - Multiplicative
-Blending - 2x Multiplicative
-Texture blending
-Stencil buffer - (Uncomment fallbacks)
-Advanced stencil buffer - (Uncomment fallbacks)
-Generated Unlit shader
-Barebone Fragment shader
-VF shader - color by world position
-VF shader - color by screen position
-VF material
-VF material + world position
-VF GrabPass
-VF diffuse
-VF shadow casting
-VF shadow receiving
-VF shadow
-VF coloured shadow
-Vertex extruding
-Simple outline
-Simple outline - distance based
-Simple outline - multiple objects
-Advanced outline
-Advanced outline - multiple objects
-Silhouette - show inner details
-Silhouette - hide inner details
-Glass
-Wave
-Scrolling texture
-Scrolling wave
-Wave + scrolling texture
-Plasma - Lambert
-Plasma - Vertex-Fragment
-Painter's algorithm
-Render Queue
-Z-sorting
-Ignore projector - True
-Ignore projector - False
+Genesis (Not supported)|5
+Barebone|5
+Basic data types|5
+Properties|5
+Packed arrays|5
+Matrices|5
+Input structure|5
+Albedo - diffuse color|5
+Red channel|5
+Green channel|5
+Blue channel|5
+Swizzling|5
+Smearing|5
+Masking|5
+Emission|5
+Albedo + Emission|5
+Albedo + Normal|5
+Texture|5
+Color + Texture|5
+WorldRefl|20
+Texture + WorldRefl|5
+Texture + pulsating Emission|5
+Show Normals|10
+Albedo = Normal|5
+Albedo = Normal (0 angle weighted)|5
+Albedo = WorldRefl|5
+Albedo = WorldRefl (0 angle weighted)|5
+Albedo = calculated WorldRefl|5
+Albedo = calculated WorldRefl (0 angle weighted)|5
+Incident ray (red), surface normal (blue), reflected ray (green)|5
+Normal|20
+Albedo + Normal + WorldRefl|5
+Z-Buffer on|5
+Z-Buffer off|5
+Geometry queue|5
+Dot product|5
+Rim lighting|5
+Rim cutoff|5
+Double rim cutoff|5
+WorldPos cutoff|5
+WorldPos cutoff|20
+Lambert (Albedo, Specular, Glossiness)|5
+Blinn-Phong (Albedo, Specular, Glossiness)|5
+Built-in Standard|10
+Built-in Specular|10
+Standard PBR|5
+Standard Specular PBR|5
+Custom Lambert|5
+Custom Blinn-Phong|5
+Toon Ramp with custom light|5
+Toon Ramp with Lambert|5
+Alpha channel - Geometry queue|10
+Alpha channel - AlphaTest queue|10
+Alpha channel - Transparent queue|10
+Alpha channel - Transparent queue with proper shadow|10
+Hologram - without ColorMask|5
+Hologram - with ColorMask A|5
+Hologram - with ColorMask RGB|5
+Blending - default|10
+Blending - Traditional transparency|10
+Blending - Traditional transparency - Cull off|10
+Blending - Premultiplied transparency|10
+Blending - Additive|10
+Blending - Soft additive|10
+Blending - Multiplicative|10
+Blending - 2x Multiplicative|10
+Texture blending|5
+Stencil buffer - (Uncomment fallbacks)|5
+Advanced stencil buffer - (Uncomment fallbacks)|10
+Generated Unlit shader|5
+Barebone Fragment shader|5
+VF shader - color by world position|10
+VF shader - color by screen position|10
+VF material|20
+VF material + world position|5
+VF GrabPass|10
+VF diffuse|5
+VF shadow casting|5
+VF shadow receiving|5
+VF shadow|5
+VF coloured shadow|5
+Vertex extruding|5
+Simple outline|10
+Simple outline - distance based|10
+Simple outline - multiple objects|5
+Advanced outline|10
+Advanced outline - multiple objects|5
+Silhouette - show inner details|5
+Silhouette - hide inner details|5
+Glass|5
+Wave|10
+Scrolling texture|10
+Scrolling wave|10
+Wave + scrolling texture|10
+Plasma - Lambert|5
+Plasma - Vertex-Fragment|10
+Painter's algorithm|5
+Render Queue|5
+Z-sorting|5
+Ignore projector - True|5
+Ignore projector - False|5
+VF - tiling, offset off|5
+VF - tiling on|5
+VF - offset on - wrap mode: repeat|5
+VF - offset on - wrap mode: clamp|5
+VF - tiling, offset on|5
