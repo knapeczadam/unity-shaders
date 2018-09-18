@@ -108,3 +108,7 @@ Replacement shader - replacementTag is empty|5
 Replacement shader - custom replacementTag|5
 Replacement shader - RenderType replacementTag|5
 Replacement shader - custom replacementTag|5
+Gradient pattern - blending off|5
+Gradient pattern - X-axis|5
+Gradient pattern - Y-axis|5
+Gradient pattern - X-Y axis|5
