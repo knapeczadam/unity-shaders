@@ -104,3 +104,7 @@ VF - tiling on|5
 VF - offset on - wrap mode: repeat|5
 VF - offset on - wrap mode: clamp|5
 VF - tiling, offset on|5
+Replacement shader - replacementTag is empty|5
+Replacement shader - custom replacementTag|5
+Replacement shader - RenderType replacementTag|5
+Replacement shader - custom replacementTag|5

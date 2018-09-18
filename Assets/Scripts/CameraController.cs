@@ -12,6 +12,9 @@ public class CameraController : MonoBehaviour
     
     private float _timeCounter;
     
+    public Shader replacementShader;
+    public string replacementTag;
+
     void Update()
     {
         if (smoothShift)
@@ -19,5 +22,22 @@ public class CameraController : MonoBehaviour
             _timeCounter += Time.deltaTime * speed;
             ModelSceneControl.s_Selected.camOffset = (int) Mathf.PingPong(_timeCounter, maxCamOffset);
         }        
+    }
+
+    private void OnEnable()
+    {
+        if (replacementShader)
+        {
+            Camera.main.SetReplacementShader(replacementShader, replacementTag);
+            
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (replacementShader && Camera.main)
+        {
+            Camera.main.ResetReplacementShader();
+        }
     }
 }
