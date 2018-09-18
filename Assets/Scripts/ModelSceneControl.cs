@@ -161,12 +161,29 @@ namespace UnityStandardAssets.SceneUtils
         [Serializable]
         public class DemoModelSystem
         {
+            private static int defaultCamOffset = 5;
+            private static string defaultInstructionText = "NO DESCRIPTION";
+            
             public Transform transform;
 
             public int camOffset
             {
-                get { return s_CamOffsets[s_SelectedIndex];  }
-                set { s_CamOffsets[s_SelectedIndex] = value; }
+                get
+                {
+                    if (s_SelectedIndex >= s_CamOffsets.Length)
+                    {
+                        return defaultCamOffset;
+                    }
+                    return s_CamOffsets[s_SelectedIndex];
+                }
+                set
+                {
+                    if (s_SelectedIndex >= s_CamOffsets.Length)
+                    {
+                        return;
+                    }
+                    s_CamOffsets[s_SelectedIndex] = value;
+                }
             }
 
             public Mode mode
@@ -176,7 +193,14 @@ namespace UnityStandardAssets.SceneUtils
             
             public string instructionText
             {
-                get { return s_Instructions[s_SelectedIndex]; }
+                get
+                {
+                    if (s_SelectedIndex >= s_Instructions.Length)
+                    {
+                        return defaultInstructionText;
+                    }
+                    return s_Instructions[s_SelectedIndex];
+                }
             }
         }
 
