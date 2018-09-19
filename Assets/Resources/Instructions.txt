@@ -136,3 +136,5 @@ Glitch - Transparency|5
 Glitch - Cutout threshold|5
 Glitch|5
 Random glitch|5
+Sinus|5
+Tangent|5
