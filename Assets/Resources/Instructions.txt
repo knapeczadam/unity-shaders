@@ -138,3 +138,4 @@ Glitch|5
 Random glitch|5
 Sinus|5
 Tangent|5
+Line pattern with custom function|5
