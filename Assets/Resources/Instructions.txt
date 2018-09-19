@@ -112,3 +112,27 @@ Gradient pattern - blending off|5
 Gradient pattern - X-axis|5
 Gradient pattern - Y-axis|5
 Gradient pattern - X-Y axis|5
+Glitch - order matters|5
+Glitch - Add X-axis|5
+Glitch - Subtract X-axis|5
+Glitch - Multiply X-axis|5
+Glitch - Divide X-axis|5
+Glitch - Add Y-axis|5
+Glitch - Subtract Y-axis|5
+Glitch - Multiply Y-axis|5
+Glitch - Divide Y-axis|5
+Glitch - Speed|5
+Glitch - Random speed|5
+Glitch - Add X-Y axis|5
+Glitch - Subtract X-Y axis|5
+Glitch - Multiply X-Y axis|5
+Glitch - Divide X-Y axis|5
+Glitch - Amplitude|5
+Glitch - Random amplitude|5
+Glitch - Distance|5
+Glitch - Amount|5
+Glitch - Texture|5
+Glitch - Transparency|5
+Glitch - Cutout threshold|5
+Glitch|5
+Random glitch|5
