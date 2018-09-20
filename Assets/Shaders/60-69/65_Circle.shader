@@ -1,4 +1,4 @@
-﻿Shader "Custom/60-69/62_Line"
+﻿Shader "Custom/60-69/65_Circle"
 {
     SubShader
     {
@@ -12,9 +12,33 @@
             #pragma vertex vert
             #pragma fragment frag
             
-            float drawLine(float2 uv, float start, float width)
+            float drawCircle1(float2 uv, float2 center, float radius)
             {
-                if (uv.x > start && uv.x < start + width) return 1;
+                if (distance(center, uv) <= radius) 
+                {
+                    return 1;
+                }
+                return 0;
+            }
+            
+            float drawCircle2(float2 uv, float2 center, float radius)
+            {
+                float circle = (pow((uv.x - center.x), 2) + pow((uv.y - center.y), 2)); 
+                float rSq = pow(radius, 2);
+                if (circle <= rSq) 
+                {
+                    return 1;
+                }
+                return 0;
+            }
+            
+            float drawCircle3(float2 uv, float2 center, float radius)
+            {
+                float2 pos = (uv - center);
+                if (length(pos) <= radius) 
+                {
+                    return 1;
+                }
                 return 0;
             }
             
@@ -42,8 +66,8 @@
             fixed4 frag(vertexOutput i) : COLOR
             {
                 fixed4 col;
-                col.rgb = fixed3(0, 1, 0);
-                col.a = drawLine(i.texcoord.xy, abs(_SinTime.y), 0.01);
+                col.rgb = abs(_SinTime);
+                col.a = drawCircle1(i.texcoord.xy, abs(float2(_SinTime.y, _CosTime.z)), abs(_SinTime.y * 0.5) + 0.1);
                 return col;
             }
             ENDCG

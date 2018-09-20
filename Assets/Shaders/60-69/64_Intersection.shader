@@ -21,7 +21,10 @@
             
             float drawLine(float2 uv, float start, float width)
             {
-                if ((uv.x > start && uv.x < start + width) && (uv.y > start && uv.y < start + width)) return 1;
+                if ((uv.x > start && uv.x < start + width) && (uv.y > start && uv.y < start + width))
+                {
+                    return 1;
+                }
                 return 0;
             }
             

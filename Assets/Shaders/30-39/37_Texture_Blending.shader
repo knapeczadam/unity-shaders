@@ -24,6 +24,7 @@
             fixed4 a = tex2D(_MainTex, IN.uv_MainTex);
             fixed4 b = tex2D(_DecalTex, IN.uv_MainTex);
             o.Albedo = a.r > abs(_SinTime.z) ? a : b;
+//            o.Albedo = lerp (a, b, abs(_SinTime.x));
         }
         ENDCG
     }

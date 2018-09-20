@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 28_Built_In_Specular
-  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: 65_Circle
+  m_Shader: {fileID: 4800000, guid: 99bf63d4aa3b95d40a7d08a039be32d7, type: 3}
   m_ShaderKeywords: SWITCH_ORDER _NORMALMAP _SPECGLOSSMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -23,11 +23,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 0c47d4390b5db234dbe536895f43495d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4b8d081e9d114c7f1100f5ab44295342, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
         m_Texture: {fileID: 8900000, guid: 39cc8589db99d7546886df0d60a37688, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalTex:
+        m_Texture: {fileID: 2800000, guid: a7dc626610cc07e4b9fabfd101979ada, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -50,12 +54,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FoamTex:
+        m_Texture: {fileID: 2800000, guid: 27020d0084e70c64bb030fe883b1abd5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b14c8e325b9410d4a9700ebb36b41875, type: 3}
+        m_Texture: {fileID: 2800000, guid: 934452006ea2b3c459b08acee937954a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicTex:
+        m_Texture: {fileID: 2800000, guid: 7d536b9a611ab6a4283eba6a2ec2f3aa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
@@ -68,6 +80,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RampTex:
+        m_Texture: {fileID: 2800000, guid: 313f954b7635cae4aa775e7d478e1292, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -87,25 +103,49 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Amount: 1
+    - _Amp: 0.526
+    - _Amplitude: 5
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _CutoutThresh: 0.2
     - _DetailNormalMapScale: 1
+    - _Distance: 2
+    - _Divisor: 1
     - _DstBlend: 0
+    - _Freq: 0
     - _Gloss: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Height: 692
+    - _Metallic: 1
     - _Mode: 0
+    - _Multiplier: 30
     - _OcclusionStrength: 1
+    - _Outline: 0.1
     - _Parallax: 0.02
     - _Range: 0.2
+    - _RimPower: 0.5
+    - _SComp: 3
+    - _SOp: 0
+    - _SRef: 4
+    - _Scale1: 3.62
+    - _Scale2: 9.13
+    - _Scale3: 2
+    - _Scale4: 2
+    - _ScaleUV: 1
+    - _ScrollX: 1.4
+    - _ScrollY: -3.61
     - _Slider: 50
     - _SmoothnessTextureChannel: 0
     - _Spec: 0.094
     - _SpecularHighlights: 1
+    - _Speed: 5
     - _SrcBlend: 1
+    - _Transparency: 1
     - _UVSec: 0
+    - _Width: 1263
     - _ZWrite: 1
     - _isEmissive: 0
     - _myFloat: 0.5
@@ -113,9 +153,13 @@ Material:
     - _switchOrder: 1
     m_Colors:
     - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _Color: {r: 0, g: 0, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0.14015675, b: 1, a: 1}
     - _NormalColor: {r: 0.7176471, g: 0.03137254, b: 0.485672, a: 1}
-    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0.09511185, b: 1, a: 1}
+    - _RimColor: {r: 0.9719558, g: 0, b: 1, a: 0}
+    - _SpecColor: {r: 0.2554849, g: 0.6603774, b: 0.19001423, a: 1}
+    - _Tint: {r: 0.097222805, g: 0, b: 1, a: 1}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
     - _myColor: {r: 1, g: 1, b: 1, a: 1}
     - _myVector: {r: 0.5, g: 1, b: 1, a: 1}

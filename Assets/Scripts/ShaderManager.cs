@@ -18,8 +18,8 @@ public class ShaderManager : MonoBehaviour
 
         foreach (Material material in renderer.materials)
         {
-            string[] shaderName = material.shader.name.Split(Char.Parse("/"));
-            string path = Path.Combine(Application.dataPath, "Shaders", (shaderName[shaderName.Length - 1] + ".shader"));
+            string[] shaderName = material.shader.name.Split('/');
+            string path = Path.Combine(Application.dataPath, "Shaders", shaderName[1], (shaderName[2] + ".shader"));
             
             if (File.Exists(path))
             {
