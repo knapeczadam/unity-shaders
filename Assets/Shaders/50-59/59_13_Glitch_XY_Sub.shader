@@ -1,9 +1,5 @@
 ﻿Shader "Custom/50-59/59_13_Glitch_XY_Sub"
 {
-    Properties
-    {
-        _Speed ("Speed", Float) = 1
-    }
     SubShader
     {
         Pass
@@ -12,8 +8,6 @@
             #pragma vertex vert
             #pragma fragment frag
             
-            float _Speed;
-
             struct appdata
             {
                 float4 vertex : POSITION;
@@ -28,7 +22,7 @@
             {
                 v2f o;
                 UNITY_INITIALIZE_OUTPUT(v2f, o);
-                v.vertex.x -= sin(_Time.y * _Speed + v.vertex.y);
+                v.vertex.x -= sin(_Time.y + v.vertex.y);
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 return o;
             }

@@ -9,6 +9,7 @@
         _Distance ("Distance", Float) = 1
         _Amount ("Amount", Float) = 1
     }
+    
     SubShader
     {
         Blend SrcAlpha OneMinusSrcAlpha

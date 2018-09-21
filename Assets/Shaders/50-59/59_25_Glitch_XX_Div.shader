@@ -1,4 +1,4 @@
-﻿Shader "Custom/50-59/59_14_Glitch_XY_Mul"
+﻿Shader "Custom/50-59/59_25_Glitch_XX_Div"
 {
     SubShader
     {
@@ -7,7 +7,7 @@
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            
+
             struct appdata
             {
                 float4 vertex : POSITION;
@@ -22,7 +22,7 @@
             {
                 v2f o;
                 UNITY_INITIALIZE_OUTPUT(v2f, o);
-                v.vertex.x *= sin(_Time.y + v.vertex.y);
+                v.vertex.x /= sin(_Time.y + v.vertex.x);
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 return o;
             }

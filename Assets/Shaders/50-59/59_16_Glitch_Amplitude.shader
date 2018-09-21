@@ -5,6 +5,7 @@
         _Speed ("Speed", Float) = 1
         _Amplitude ("Amplitude", Float) = 1
     }
+    
     SubShader
     {
         Pass

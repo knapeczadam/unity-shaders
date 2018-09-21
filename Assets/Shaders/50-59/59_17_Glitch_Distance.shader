@@ -6,6 +6,7 @@
         _Amplitude ("Amplitude", Float) = 1
         _Distance ("Distance", Float) = 1
     }
+    
     SubShader
     {
         Pass
