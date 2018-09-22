@@ -3,42 +3,74 @@ using UnityEngine;
 
 public class ShowNormals : MonoBehaviour
 {
-    [Range(-10, 10)] public float nx;
-
-    [Range(-10, 10)] public float ny;
-
-    [Range(-10, 10)] public float nz;
-
-    //to display length
-    public float normal_length;
+    public bool faceNormal;
+    public float normalLength;
 
     private List<GameObject> lines = new List<GameObject>();
+    private MeshFilter _meshFilter;
 
     void OnEnable()
     {
-        Mesh mesh = GetComponent<MeshFilter>().mesh;
+        _meshFilter = GetComponent<MeshFilter>();
+        
+        if (!_meshFilter)
+        {
+            return;
+        }
+
+        Mesh mesh = _meshFilter.mesh;
 
         Vector3[] vertices = mesh.vertices;
         Vector3[] normals = mesh.normals;
 
-        Vector3 modNormal = new Vector3(normals[0].x * nx, normals[0].y * ny, normals[0].z * nz);
-        normal_length = modNormal.magnitude;
+        Vector3 modNormal = new Vector3(normals[0].x, normals[0].y, normals[0].z);
+        normalLength = modNormal.magnitude;
 
-        for (var i = 0; i < normals.Length; i++)
+        if (faceNormal)
         {
-            Vector3 pos = vertices[i];
-            // lossyScale is the global scale of the object
-            pos.x *= transform.lossyScale.x;
-            pos.y *= transform.lossyScale.y;
-            pos.z *= transform.lossyScale.z;
-            // Need to rotate the vertex before moving it
-            Vector3 posRot = transform.position + transform.rotation * pos;
-            normals[i].x *= nx;
-            normals[i].y *= ny;
-            normals[i].z *= nz;
+            int[] indices = mesh.triangles;
+            for(int i = 0; i < mesh.triangles.Length;)
+            {
+                Vector3 a = vertices[indices[i++]];
+                Vector3 b = vertices[indices[i++]];
+                Vector3 c = vertices[indices[i++]];
+                Vector3 pos = ((a + b + c) / 3);
+                
+                Vector3 side1 = b - a;
+                Vector3 side2 = c - a;
+                
+                Vector3 perp = Vector3.Cross(side1, side2);
+                float perpLength = perp.magnitude;
+                perp /= perpLength;
+                
+                pos.x *= transform.lossyScale.x;
+                pos.y *= transform.lossyScale.y;
+                pos.z *= transform.lossyScale.z;
 
-            GameObject line = DrawingHelper.DrawLine(pos, posRot + transform.rotation * normals[i], Color.red);
-            lines.Add(line);
+                Vector3 start = transform.position + transform.rotation *pos;
+                Vector3 end = start + transform.rotation * perp;
+                
+                GameObject line = DrawingHelper.DrawLine(start, end, Color.red);
+                lines.Add(line);
+            }
+        }
+        else
+        {
+            for (var i = 0; i < normals.Length; i++)
+            {
+                Vector3 pos = vertices[i];
+                Vector3 normal = normals[i];
+                
+                pos.x *= transform.lossyScale.x;
+                pos.y *= transform.lossyScale.y;
+                pos.z *= transform.lossyScale.z;
+                
+                Vector3 start = transform.position + transform.rotation * pos;
+                Vector3 end = start + transform.rotation * normal;
+    
+                GameObject line = DrawingHelper.DrawLine(start, end, Color.red);
+                lines.Add(line);
+            }
         }
     }
 
