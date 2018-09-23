@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: CAR_Body
+  m_Shader: {fileID: 23, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _2DReflection:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: ad8aa54b3e68f2b4a849f0573c070e11, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 8900000, guid: b63e23ffa82a943df9a20c7622ebc0ca, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Decal:
+        m_Texture: {fileID: 2800000, guid: 9bf2bf3d9508847008371528a26ce523, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FresnelRamp:
+        m_Texture: {fileID: 2800000, guid: f019a2a5734a44d11ab4b3c7e46d1064, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LightMap:
+        m_Texture: {fileID: 2800000, guid: 168020b7e713163458a123ebe0fcdf37, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 65f165fbd92e5dc4295307fd351e6eb7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SparkleTex:
+        m_Texture: {fileID: 2800000, guid: 341e9d5ef734744609946d8097d97f95, type: 3}
+        m_Scale: {x: 150, y: 150}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DecalColoring: 0
+    - _HardEdge: 2.4150944
+    - _LightmapDensity: 0.5471698
+    - _ReflectInShadow: 0.18867925
+    - _Shininess: 0.19633396
+    - _Sparkle: 0.1528302
+    - _SparkleDensity: 0.113830194
+    - _SparkleHardness: 67.98704
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 0.8265306, g: 0.008906729, b: 0.0358189, a: 1}
+    - _HighlightColor: {r: 0.5000229, g: 0.5000229, b: 0.5000229, a: 1}
+    - _ReflectColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 0.37254903}
+    - _SparkleColor: {r: 0.7717391, g: 0.73926324, b: 0, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularColor: {r: 0.75001144, g: 0.75001144, b: 0.75001144, a: 1}
+--- !u!1002 &2100001
+EditorExtensionImpl:
+  serializedVersion: 6
