@@ -2,7 +2,7 @@
 
 // Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
 
-Shader "Custom/70-79/75_06_TBN_WN"
+Shader "Custom/70-79/75_06_TBN_WN_2"
 {
     Properties
     {
@@ -60,8 +60,8 @@ Shader "Custom/70-79/75_06_TBN_WN"
                 
                 o.normalTexCoord.xy = v.texcoord.xy * _Normal_ST.xy + _Normal_ST.zw;
                 
-                o.normalWorld = normalize(mul(v.normal, unity_WorldToObject));
-                o.tangentWorld = normalize(mul(v.tangent, unity_ObjectToWorld));
+                o.normalWorld = float4(normalize(mul(normalize(v.normal.xyz), (float3x3) unity_WorldToObject)), v.normal.w);
+                o.tangentWorld = float4(normalize(mul((float3x3) unity_ObjectToWorld, v.tangent.xyz)), v.tangent.w);
                 o.binormalWorld = normalize(cross(o.normalWorld, o.tangentWorld) * v.tangent.w);
                 
                 return o;

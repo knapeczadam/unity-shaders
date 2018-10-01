@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 75_05_TBN
-  m_Shader: {fileID: 4800000, guid: 224e153bc959d5c46b319a7d35dbb55f, type: 3}
+  m_Name: 75_01_WSN_1
+  m_Shader: {fileID: 4800000, guid: 8df54acc51b49cb4589c9b7779d560b0, type: 3}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

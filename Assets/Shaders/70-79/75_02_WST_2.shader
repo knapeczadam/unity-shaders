@@ -1,6 +1,6 @@
-﻿// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
-Shader "Custom/70-79/75_01_WSN"
+Shader "Custom/70-79/75_02_WST_2"
 {
     SubShader
     {
@@ -15,13 +15,13 @@ Shader "Custom/70-79/75_01_WSN"
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 normal : NORMAL;
+                float4 tangent : TANGENT;
             };
             
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float4 normalWorld : TEXCOORD0;
+                float4 tangentWorld : TEXCOORD0;
             };
             
             vertexOuput vert(vertexInput v)
@@ -30,14 +30,14 @@ Shader "Custom/70-79/75_01_WSN"
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.normalWorld = normalize(mul(v.normal, unity_WorldToObject));
+                o.tangentWorld = float4(normalize(mul((float3x3) unity_ObjectToWorld, v.tangent.xyz)), v.tangent.w);
                 
                 return o;
             }
             
             float4 frag(vertexOuput i) : COLOR
             {
-                return i.normalWorld;
+                return i.tangentWorld;
             }
             ENDCG
         }
