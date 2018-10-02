@@ -27,6 +27,7 @@ namespace UnityStandardAssets.SceneUtils
         private static string[] s_GUIDs;
         private static string[] s_Instructions;
         private static int[] s_CamOffsets;
+        private static string[] s_URLs;
         private Vector3 m_CamOffsetVelocity = Vector3.zero;
         private Vector3 m_LastPos;
         public static DemoModelSystem s_Selected;
@@ -82,6 +83,11 @@ namespace UnityStandardAssets.SceneUtils
                 Vector3.forward * -s_Selected.camOffset,
                 ref m_CamOffsetVelocity, 1);
 
+            if (Input.GetKeyUp(KeyCode.L) && s_Selected.Url != null)
+            {
+                System.Diagnostics.Process.Start(s_Selected.Url);
+            }
+            
             if (s_Selected.mode == Mode.Activate)
             {
                 return;
@@ -150,6 +156,7 @@ namespace UnityStandardAssets.SceneUtils
             s_Instructions = new string[lines.Length];
             s_CamOffsets = new int[lines.Length];
             s_GUIDs = new string[lines.Length];
+            s_URLs = new string[lines.Length];
             
             for (var i = 0; i < lines.Length; i++)
             {
@@ -158,6 +165,7 @@ namespace UnityStandardAssets.SceneUtils
                 s_GUIDs[i] = line[0];
                 s_Instructions[i] = line[1];
                 s_CamOffsets[i] = Int32.Parse(line[2]);
+                s_URLs[i] = line.Length == 4 ? line[3] : null;
             }
         }
 
@@ -204,10 +212,7 @@ namespace UnityStandardAssets.SceneUtils
                 }
             }
 
-            public Mode mode
-            {
-                get { return Mode.Activate; }
-            }
+            public Mode mode => Mode.Activate;
             
             public string instructionText
             {
@@ -220,6 +225,8 @@ namespace UnityStandardAssets.SceneUtils
                     return s_Instructions[s_SelectedIndex];
                 }
             }
+
+            public string Url => s_URLs[s_SelectedIndex];
         }
 
         [Serializable]

@@ -222,3 +222,27 @@ BB13ED9F06B74F84B204A46D714090E8|Header|5
 86C11693662B447C842C007E3F51EFD1|Shader variants - multi compile|5
 897FF11839EF485D9D53CA045C15B9AA|Shader variants - feature|5
 64E3A800D0B64A6E9CBE1EC950D98FFF|Custom cginc file|5
+9CCFD3E204DA4E50AC231374B79CD431|Math Operators - Addition|5
+55247BB9753A4D09B336B313F5B4D5BB|Math Operators - Subtraction|5
+7A5DAC3D3F044FF0A9869A408376B48F|Math Operators - Multiplication|5
+9CA54CEDA2394A1EBBEBB07C9E027293|Math Operators - Division|5
+E5BACD22F8814E4AB48EEFD46E7FFD20|Math Operators - One minus|5
+B4FD1D2D2FE84F74BBB12745E86D48E1|Math Operators - Min|5|http://developer.download.nvidia.com/cg/min.html
+AD271C11731F4FB0A4094799CE22319C|Math Operators - Max|5|http://developer.download.nvidia.com/cg/max.html
+E14AE8CBFEAE463EA391AEDDE028DB8B|Math Operators - Power|5|http://developer.download.nvidia.com/cg/pow.html
+85A528F2A8D5439DB2649FEBF34BB6EA|Math Operators - Negate|5
+8F9B1BB399BD4997B9F49B4E34BDE782|Math Operators - Abs|5|http://developer.download.nvidia.com/cg/abs.html
+EDBCDF1A85AA4B15953C5B70B07E3CA0|Math Operators - Floor|5|http://developer.download.nvidia.com/cg/floor.html
+73A9146EABA24FFEBD4AFDDC1B3DBD4C|Math Operators - Round|5|http://developer.download.nvidia.com/cg/round.html
+3EBF19BAAED64FEE8B27BC4A2CDDE6A0|Math Operators - Ceil|5|http://developer.download.nvidia.com/cg/ceil.html
+21810721AB9943DEA952623902D66C23|Math Operators - Trunc|5|http://developer.download.nvidia.com/cg/trunc.html
+4159AA4C3B5A4F6D9781498ACFCBFED8|Math Operators - Exp|5|http://developer.download.nvidia.com/cg/exp.html
+C616A45EBC1E45E5B13EBA29371290A6|Math Operators - Exp2|5|http://developer.download.nvidia.com/cg/exp2.html
+6ADBBC914C9242968257CBD26D86E02F|Math Operators - Rsqrt|5|http://developer.download.nvidia.com/cg/rsqrt.html
+49DED4A11C83427186F772CF72A7B2A8|Math Operators - Sqrt|5|http://developer.download.nvidia.com/cg/sqrt.html
+709BAE7EF2E24753A1C6B99A585CB6D9|Math Operators - Log2|5|http://developer.download.nvidia.com/cg/log2.html
+F7D40A5FC32A445FABE5B04642E4E19B|Math Operators - Log|5|http://developer.download.nvidia.com/cg/log.html
+B20541E99B254924884CC25BBA42304F|Math Operators - Log10|5|http://developer.download.nvidia.com/cg/log10.html
+E5058CF851A749A19D5FFE437BABC8B7|Math Operators - Saturate|5|http://developer.download.nvidia.com/cg/saturate.html
+3CE25DD837A7407DADBC7BE5D0358199|Math Operators - Sign|5|http://developer.download.nvidia.com/cg/sign.html
+057CAD6E14E14867840006899F7A4495|Math Operators - Fract|5|http://developer.download.nvidia.com/cg/frac.html
