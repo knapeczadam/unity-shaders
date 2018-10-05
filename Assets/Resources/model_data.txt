@@ -203,9 +203,9 @@ ECB2B189D75F4769B94CC1AAE9A8C2CA|Normal from color|2
 FDD2BD4CEDA347ACA17D6F2F7825C320|World normal - OK|2
 29F390B46F764FFD814420EF12181864|Diffuse reflection - Vertex|2
 9623A0B241BA44CE8C93F51B0B4C01AF|Diffuse reflection - Fragment|2
-A897CEB5056F4DE68DE1212CABC4765E|Specular reflection - Phong - Vertex|2
+A897CEB5056F4DE68DE1212CABC4765E|Specular reflection - Phong - Vertex|2|http://developer.download.nvidia.com/cg/reflect.html
 66E5A27D6D444F749D4ADE75BA5342CF|Specular reflection - Blinn-Phong - Vertex|2
-65FDE04563324EA0AC1347F55CE8DFE6|Specular reflection - Phong - Frag|2
+65FDE04563324EA0AC1347F55CE8DFE6|Specular reflection - Phong - Frag|2|http://developer.download.nvidia.com/cg/reflect.html
 86920F39B25E45599C4B4568647CED1B|Specular reflection - Blinn-Phong - Frag|2
 9EA4DDB15DDC427B9E31A1A49E91CDE4|Ambient reflection - BP - Vert|2
 4D74DCFEA71346C2A3DCC4CE0F4201F7|Ambient reflection - BP - Frag|2
@@ -252,3 +252,9 @@ B20541E99B254924884CC25BBA42304F|Math Operators - Log10|5|http://developer.downl
 E5058CF851A749A19D5FFE437BABC8B7|Math Operators - Saturate|5|http://developer.download.nvidia.com/cg/saturate.html
 3CE25DD837A7407DADBC7BE5D0358199|Math Operators - Sign|5|http://developer.download.nvidia.com/cg/sign.html
 057CAD6E14E14867840006899F7A4495|Math Operators - Fract|5|http://developer.download.nvidia.com/cg/frac.html
+8F154A9016CA46B79B5599B1EF80570F|Object-space|10
+3533605FEA224A369D27352D1E73138B|World-space|10
+6E089698CC5C4A999FAFB3974797DA3E|Camera/View/Eye-space|10
+2EB3B1543B934A26B1EF4DD9D6ED0C52|Projection-space|10
+9A6BFB9E65014B41802DA44FC21D4D6C|NDC-space|10
+413AD1A4B4F64A26ADFB15391C8963D7|Texture-space|10
