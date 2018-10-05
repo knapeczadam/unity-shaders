@@ -43,7 +43,8 @@
             
             float SpecularPhong(float3 normalDir, float3 lightDir, float3 worldSpaceViewDir, float3 specularColor, float specularFactor, float attenuation, float specularPower)
             {
-                return specularColor * specularFactor * attenuation * pow(saturate(dot((2 * dot(normalDir, lightDir) * normalDir - lightDir), worldSpaceViewDir)), specularPower);
+                float3 reflection = 2 * dot(normalDir, lightDir) * normalDir - lightDir; // reflect(-lightDir, normalDir)
+                return specularColor * specularFactor * attenuation * pow(saturate(dot(reflection, worldSpaceViewDir)), specularPower);
             }
             
             struct vertexInput
