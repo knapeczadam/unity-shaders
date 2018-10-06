@@ -2,7 +2,6 @@
 {
 	Properties
     {
-		_MainTex("Main Texture", 2D) = "white" {}
         _NormalMap ("Normal map", 2D) = "bump" {}
         _Diffuse ("Diffuse %", Range(0, 1)) = 1
         _SpecularMap ("Specular map", 2d) = "white" {}
@@ -21,9 +20,6 @@
             #pragma fragment frag
             
             #include "UnityCG.cginc"
-            
-			sampler2D _MainTex;
-			float4 _MainTex_ST;
             
             sampler2D _NormalMap;
             float4 _NormalMap_ST;
@@ -96,9 +92,10 @@
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.texcoord.xy = v.texcoord.xy;
                 
                 o.normalWorld = float4(normalize(mul(normalize(v.normal.xyz), (float3x3) unity_WorldToObject)), v.normal.w);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 
                 o.normalTexCoord.xy = v.texcoord.xy * _NormalMap_ST.xy + _NormalMap_ST.zw;
                 o.tangentWorld = float4(normalize(mul((float3x3) unity_ObjectToWorld, v.tangent.xyz)), v.tangent.w);
@@ -116,9 +113,9 @@
                 float attenuation = 1;
                 float3 diffuseColor = DiffuseLambert(worldNormalAtPixel, lightDir, lightColor, _Diffuse, attenuation);
                 
-                float4 specularMap = tex2Dlod(_SpecularMap, float4(i.texcoord.xy, 0, 0));
+                float4 specularMap = tex2D(_SpecularMap, i.texcoord.xy);
                 float3 worldSpaceViewDir = normalize(_WorldSpaceCameraPos - i.posWorld);
-                float3 specularColor = SpecularBlinnPhong(i.normalWorld, lightDir, worldSpaceViewDir, specularMap.rgb, _SpecularFactor, attenuation, _SpecularPower);
+                float3 specularColor = SpecularBlinnPhong(worldNormalAtPixel, lightDir, worldSpaceViewDir, specularMap.rgb, _SpecularFactor, attenuation, _SpecularPower);
                 
                 return float4(diffuseColor + specularColor, 1);
             }

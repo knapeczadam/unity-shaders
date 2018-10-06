@@ -2,8 +2,6 @@
 {
     Properties
     {
-		_MainTex("Main Texture", 2D) = "white" {}
-        _NormalMap ("Normal map", 2D) = "bump" {}
         _Diffuse ("Diffuse %", Range(0, 1)) = 1
     }
     
@@ -18,12 +16,6 @@
             #pragma fragment frag
             
             #include "UnityCG.cginc"
-            
-			sampler2D _MainTex;
-			float4 _MainTex_ST;
-            
-            sampler2D _NormalMap;
-            float4 _NormalMap_ST;
             
             float _Diffuse;
             float4 _LightColor0;
@@ -48,7 +40,6 @@
                 float4 normalWorld : TEXCOORD1;
                 float4 tangentWorld : TEXCOORD2;
                 float3 binormalWorld : TEXCOORD3;
-                float4 normalTexCoord : TEXCOORD4;
 				float4 surfaceColor : COLOR0;
             };
             
@@ -58,11 +49,10 @@
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.texcoord.xy = v.texcoord.xy;
                 
                 o.normalWorld = float4(normalize(mul(normalize(v.normal.xyz), (float3x3) unity_WorldToObject)), v.normal.w);
                 
-                o.normalTexCoord.xy = v.texcoord.xy * _NormalMap_ST.xy + _NormalMap_ST.zw;
                 o.tangentWorld = float4(normalize(mul((float3x3) unity_ObjectToWorld, v.tangent.xyz)), v.tangent.w);
                 o.binormalWorld = normalize(cross(o.normalWorld, o.tangentWorld) * v.tangent.w);
                 

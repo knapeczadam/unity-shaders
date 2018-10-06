@@ -2,7 +2,6 @@
 {
     Properties
     {
-		_MainTex("Main Texture", 2D) = "white" {}
         _NormalMap ("Normal map", 2D) = "bump" {}
         _Diffuse ("Diffuse %", Range(0, 1)) = 1
     }
@@ -18,9 +17,6 @@
             #pragma fragment frag
             
             #include "UnityCG.cginc"
-            
-			sampler2D _MainTex;
-			float4 _MainTex_ST;
             
             sampler2D _NormalMap;
             float4 _NormalMap_ST;
@@ -81,7 +77,7 @@
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.texcoord.xy = v.texcoord.xy;
                 
                 o.normalWorld = float4(normalize(mul(normalize(v.normal.xyz), (float3x3) unity_WorldToObject)), v.normal.w);
                 

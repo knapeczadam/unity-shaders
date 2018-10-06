@@ -2,8 +2,6 @@
 {
 	Properties
     {
-		_MainTex("Main Texture", 2D) = "white" {}
-        _NormalMap ("Normal map", 2D) = "bump" {}
         _Diffuse ("Diffuse %", Range(0, 1)) = 1
         _SpecularMap ("Specular map", 2d) = "white" {}
         _SpecularFactor ("Specular %", Range(0, 1)) = 1
@@ -22,12 +20,6 @@
             #pragma fragment frag
             
             #include "UnityCG.cginc"
-            
-			sampler2D _MainTex;
-			float4 _MainTex_ST;
-            
-            sampler2D _NormalMap;
-            float4 _NormalMap_ST;
             
             float _Diffuse;
             float4 _LightColor0;
@@ -66,7 +58,6 @@
                 float4 normalWorld : TEXCOORD2;
                 float4 tangentWorld : TEXCOORD3;
                 float3 binormalWorld : TEXCOORD4;
-                float4 normalTexCoord : TEXCOORD5;
 				float4 surfaceColor : COLOR0;
             };
             
@@ -76,11 +67,11 @@
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.texcoord.xy = v.texcoord.xy;
                 
                 o.normalWorld = float4(normalize(mul(normalize(v.normal.xyz), (float3x3) unity_WorldToObject)), v.normal.w);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 
-                o.normalTexCoord.xy = v.texcoord.xy * _NormalMap_ST.xy + _NormalMap_ST.zw;
                 o.tangentWorld = float4(normalize(mul((float3x3) unity_ObjectToWorld, v.tangent.xyz)), v.tangent.w);
                 o.binormalWorld = normalize(cross(o.normalWorld, o.tangentWorld) * v.tangent.w);
                 
@@ -90,7 +81,6 @@
                 float3 diffuseColor = DiffuseLambert(o.normalWorld, lightDir, lightColor, _Diffuse, attenuation);
                 
                 float4 specularMap = tex2Dlod(_SpecularMap, float4(o.texcoord.xy, 0, 0));
-                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 worldSpaceViewDir = normalize(_WorldSpaceCameraPos - o.posWorld);
                 float3 specularColor = SpecularBlinnPhong(o.normalWorld, lightDir, worldSpaceViewDir, specularMap.rgb, _SpecularFactor, attenuation, _SpecularPower);
                 
