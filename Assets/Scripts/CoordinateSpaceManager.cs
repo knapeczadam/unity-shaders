@@ -106,17 +106,19 @@ public class CoordinateSpaceManager : MonoBehaviour
                     case CoordinateSpace.NormalizedDeviceCoordinateSpace:
                         DestroyCameraLines();
                         DrawNearClippingPlane();
-                        _NDCSpace = _projectionMatrix * _viewMatrix *  _worldSpaceMatrix;
-                        currentSpace.x = _NDCSpace.m03 / _NDCSpace.m33;
-                        currentSpace.y = _NDCSpace.m13 / _NDCSpace.m33;
-                        currentSpace.z = _NDCSpace.m23 / _NDCSpace.m33;
+                        _projectionSpace = _projectionMatrix * _viewMatrix *  _worldSpaceMatrix;
+                        currentSpace.x = _projectionSpace.m03 / _projectionSpace.m33;
+                        currentSpace.y = _projectionSpace.m13 / _projectionSpace.m33;
+                        currentSpace.z = _projectionSpace.m23 / _projectionSpace.m33;
                         break;
                     case CoordinateSpace.TextureSpace:
                         DestroyCameraLines();
                         DrawNearClippingPlane();
-                        _NDCSpace = _projectionMatrix * _viewMatrix *  _worldSpaceMatrix;
-                        currentSpace.x = (_NDCSpace.m03 / _NDCSpace.m33 + 1) * 0.5f;
-                        currentSpace.y = (_NDCSpace.m13 / _NDCSpace.m33 + 1) * 0.5f;
+                        _projectionSpace = _projectionMatrix * _viewMatrix *  _worldSpaceMatrix;
+                        currentSpace.x = (_projectionSpace.m03 / _projectionSpace.m33 + 1) * 0.5f;
+                        currentSpace.y = (_projectionSpace.m13 / _projectionSpace.m33 + 1) * 0.5f;
+                        Debug.Log("The graphics API type and driver version used by the graphics device: " + SystemInfo.graphicsDeviceVersion);
+                        Debug.Log("Graphics device shader capability level: " + SystemInfo.graphicsShaderLevel);
                         break;
                 }
             }
