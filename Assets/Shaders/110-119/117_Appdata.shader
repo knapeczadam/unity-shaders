@@ -10,6 +10,17 @@
             
             //#include "UnityCG.cginc"
             
+            struct vertexInput
+            {
+                // this is a valid empty struct - of course it's meaningless
+                // not required to contain any members - Input struct in surface shader is exception
+            };
+            
+            struct contentIsImportantNotTheStructName
+            {
+                float4 vertex : POSITION;
+            };
+            
             struct appdata_base
             {
                 float4 vertex : POSITION;
@@ -40,14 +51,14 @@
                 float4 pos : SV_POSITION;
             };
             
-            v2f vert(appdata_base v)
+            vertexInput vert(vertexInput v)
             {
-                v2f o;
-                o.pos = UnityObjectToClipPos(v.vertex);
+                vertexInput o;
+                //o.pos = UnityObjectToClipPos(v.vertex);
                 return o;
             }
             
-            fixed4 frag(v2f i) : SV_TARGET
+            fixed4 frag(vertexInput i) : SV_TARGET
             {
                 return fixed4(1, 1, 1, 1);
             }

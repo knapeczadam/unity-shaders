@@ -24,6 +24,16 @@
                 float4 texcoord : TEXCOORD0;
             };
             
+            struct vertexOutput
+            {
+                // this is a valid empty struct - does it make any sense?
+            };
+            
+            struct vertexToFragment
+            {
+                float4 pos : SV_POSITION;
+            };
+            
             struct v2f_img
             {
                 float4 pos : SV_POSITION;
@@ -37,17 +47,17 @@
                 fixed4 spec	 : COLOR1;
             };
             
-            v2f_img vert(appdata v)
+            vertexOutput vert(appdata v)
             {
-                v2f_img o;
-                o.pos = UnityObjectToClipPos(v.vertex);
-                o.uv = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
+                vertexOutput o; // initialization not declaration!
+//                o.pos = UnityObjectToClipPos(v.vertex);
+//                o.uv = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
                 return o;
             }
             
-            fixed4 frag(v2f_img i) : SV_TARGET
+            fixed4 frag(vertexOutput i) : SV_TARGET
             {
-                return tex2D(_MainTex, i.uv);
+                return 1; //tex2D(_MainTex, i.uv);
             }
             ENDCG
         }
