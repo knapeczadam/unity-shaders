@@ -30,7 +30,7 @@ Shader "Custom/70-79/75_02_WST_1"
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.tangentWorld = normalize(mul(v.tangent, unity_ObjectToWorld));
+                o.tangentWorld = normalize(mul(v.tangent, unity_ObjectToWorld)); // v.tangent -> float1x4
                 
                 return o;
             }

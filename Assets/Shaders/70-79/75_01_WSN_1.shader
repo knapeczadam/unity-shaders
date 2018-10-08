@@ -30,7 +30,7 @@ Shader "Custom/70-79/75_01_WSN_1"
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.normalWorld = normalize(mul(normalize(v.normal), unity_WorldToObject));
+                o.normalWorld = normalize(mul(normalize(v.normal), unity_WorldToObject)); // v.normal -> float1x4
                 
                 return o;
             }

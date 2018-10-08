@@ -35,8 +35,8 @@ Shader "Custom/70-79/75_03_WSB_1"
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.normalWorld = normalize(mul(normalize(v.normal), unity_WorldToObject));
-                o.tangentWorld = normalize(mul(v.tangent, unity_ObjectToWorld));
+                o.normalWorld = normalize(mul(normalize(v.normal), unity_WorldToObject)); // v.normal -> float1x4
+                o.tangentWorld = normalize(mul(v.tangent, unity_ObjectToWorld)); // v.tangent -> float1x4
                 o.binormalWorld = float4(normalize(cross(o.normalWorld, o.tangentWorld) * o.tangentWorld.w), 0);
                 
                 return o;
