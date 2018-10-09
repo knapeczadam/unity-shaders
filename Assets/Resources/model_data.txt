@@ -270,3 +270,5 @@ D0ACC3DEA24D40849A41D6B91B695ACA|Shadow mapping|5|https://docs.unity3d.com/Manua
 CA738E430982494D963FBFE2F2518DF6|Appdata versions|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html
 2273D8D2974C43C29BFBF81FD3A3E75C|V2F versions|5|https://wiki.unity3d.com/index.php/Shader_Code
 E70C4F3D07CF44A89D9644330E347932|Semantics|5|https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics
+4F29B42DFC774BC7B9FAA61F220ACD74|BRDF - Anisotropy - Vert|5|https://pdfs.semanticscholar.org/808d/048d4331cf5dac5fd924b50249b7915c6d73.pdf
+3C5A30986301463E8B5E38F5F9AED639|BRDF - Anisotropy - Frag|5|https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
