@@ -23,13 +23,13 @@
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 texcoord : TEXCOORD0;
             };
             
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 texcoord : TEXCOORD0;
             };
             
             vertexOuput vert(vertexInput v)
@@ -38,7 +38,7 @@
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.texcoord.xy = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
                 
                 return o;
             }
@@ -69,13 +69,13 @@
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 texcoord : TEXCOORD0;
             };
             
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 texcoord : TEXCOORD0;
             };
             
             vertexOuput vert(vertexInput v)
@@ -84,7 +84,7 @@
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.texcoord.xy = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
                 
                 return o;
             }
