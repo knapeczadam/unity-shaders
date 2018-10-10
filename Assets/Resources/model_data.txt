@@ -59,11 +59,11 @@ FD7CCBA8A08946269A34B0A6680CFF5E|Alpha channel - Geometry queue|10
 70D8BB41A7F044DD83B8BDA4AE32A42B|Hologram - without ColorMask|5
 6B32E1C4294947838B0F4A5847D4F868|Hologram - with ColorMask A|5
 216F7F1CFA4E46458F79474AF4A6EC1B|Hologram - with ColorMask RGB|5
-6D043AEB1B7842FF8368870C33938841|Blending - default|10
-99F2BA8FDAE24F51A181F2A94BA7F31B|Blending - Traditional transparency|10
-C95C1620FAEE46538393BD9A5D997CE8|Blending - Traditional transparency - Cull off|10
-A56CD621DBBB470F9B61E892262EDA2D|Blending - Premultiplied transparency|10
-96F024D9AD17474EBB48010EED8ED545|Blending - Additive|10
+6D043AEB1B7842FF8368870C33938841|Blending - default|10|https://docs.unity3d.com/Manual/SL-Blend.html
+99F2BA8FDAE24F51A181F2A94BA7F31B|Blending - Traditional transparency|10|https://docs.unity3d.com/ScriptReference/Rendering.BlendMode.html
+C95C1620FAEE46538393BD9A5D997CE8|Blending - Traditional transparency - Cull off|10|https://docs.unity3d.com/ScriptReference/Rendering.BlendOp.html
+A56CD621DBBB470F9B61E892262EDA2D|Blending - Premultiplied transparency|10|https://webdesign.tutsplus.com/tutorials/blending-modes-in-css-color-theory-and-practical-application--cms-25201
+96F024D9AD17474EBB48010EED8ED545|Blending - Additive|10|http://www.pegtop.net/delphi/articles/blendmodes/
 040878F1ADBB45289AFFBB58A7A9F81E|Blending - Soft additive|10
 F28EB2F8A4F5498D8193C89C0B502A77|Blending - Multiplicative|10
 13F3E2C254FD41F3ACF3975D99A2400D|Blending - 2x Multiplicative|10
@@ -273,3 +273,4 @@ E70C4F3D07CF44A89D9644330E347932|Semantics|5|https://docs.microsoft.com/en-us/wi
 4F29B42DFC774BC7B9FAA61F220ACD74|BRDF - Anisotropy - Vert|5|https://pdfs.semanticscholar.org/808d/048d4331cf5dac5fd924b50249b7915c6d73.pdf
 3C5A30986301463E8B5E38F5F9AED639|BRDF - Anisotropy - Frag|5|https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
 4F583046FDF24815B148BBFD668B337A|Clip|5|http://developer.download.nvidia.com/cg/clip.html
+5903E3D82E704916BA727FF83A543CD1|Debug blending|5|https://www.w3.org/TR/compositing-1/
