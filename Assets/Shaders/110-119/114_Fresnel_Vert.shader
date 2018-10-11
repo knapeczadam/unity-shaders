@@ -65,43 +65,36 @@
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 normal : NORMAL;
-                float4 texcoord : TEXCOORD0;
-                float4 tangent : TANGENT;
+                float3 normal : NORMAL;
+                float2 texcoord : TEXCOORD0;
             };
             
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 texcoord : TEXCOORD0;
                 float4 posWorld : TEXCOORD1;
-                float4 normalWorld : TEXCOORD2;
-                float4 tangentWorld : TEXCOORD3;
-                float3 binormalWorld : TEXCOORD4;
+                float3 worldNormal : TEXCOORD2;
                 float4 surfaceColor : COLOR0;
             };
             
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
+                o.texcoord = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
                 
-                o.normalWorld = float4(normalize(mul(normalize(v.normal.xyz), (float3x3) unity_WorldToObject)), v.normal.w);
-                
-                o.tangentWorld = float4(normalize(mul((float3x3) unity_ObjectToWorld, v.tangent.xyz)), v.tangent.w);
-                o.binormalWorld = normalize(cross(o.normalWorld, o.tangentWorld) * v.tangent.w);
+                o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 
                 float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
                 float3 lightColor = _LightColor0.xyz;
                 float attenuation = 1;
-                float3 diffuseColor = DiffuseLambert(o.normalWorld, lightDir, lightColor, _Diffuse, attenuation);
+                float3 diffuseColor = DiffuseLambert(o.worldNormal, lightDir, lightColor, _Diffuse, attenuation);
                 
-                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 worldSpaceViewDir = normalize(_WorldSpaceCameraPos - o.posWorld);
-                float3 specularColor = SpecularBlinnPhong(o.normalWorld, lightDir, worldSpaceViewDir, 1, _SpecularFactor, attenuation, _SpecularPower);
+                float3 specularColor = SpecularBlinnPhong(o.worldNormal, lightDir, worldSpaceViewDir, 1, _SpecularFactor, attenuation, _SpecularPower);
                 
                 float3 ambientColor = _AmbientFactor * UNITY_LIGHTMODEL_AMBIENT;
                 
@@ -109,10 +102,10 @@
                 
                 o.surfaceColor = float4(mainTexCol * diffuseColor + specularColor + ambientColor, 1);
                 
-                float3 worldReflection = reflect(-worldSpaceViewDir, o.normalWorld.xyz);
+                float3 worldReflection = reflect(-worldSpaceViewDir, o.worldNormal);
                 float reflectionColor = IBLRefl(_Cube, _Detail, worldReflection, _ReflectionExposure, _ReflectionFactor);
                         
-                float fresnel = 1 -saturate(dot(worldSpaceViewDir, o.normalWorld.xyz));
+                float fresnel = 1 -saturate(dot(worldSpaceViewDir, o.worldNormal));
                 fresnel = smoothstep(1 - _FresnelWidth, 1, fresnel);
                 o.surfaceColor.rgb = lerp(o.surfaceColor.rgb, o.surfaceColor.rgb * reflectionColor, fresnel);
                 

@@ -1,6 +1,4 @@
-﻿    // Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
-
-Shader "Custom/70-79/75_01_WSN_2"
+﻿Shader "Custom/70-79/75_01_WSN_2"
 {
     SubShader
     {
@@ -15,29 +13,29 @@ Shader "Custom/70-79/75_01_WSN_2"
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 normal : NORMAL;
+                float3 normal : NORMAL;
             };
             
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float4 normalWorld : TEXCOORD0;
+                float3 worldNormal : TEXCOORD0;
             };
             
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.normalWorld = float4(normalize(mul(normalize(v.normal.xyz), (float3x3) unity_WorldToObject)), v.normal.w); // v.normal.xyz -> float1x3
+                o.worldNormal = normalize(mul(v.normal, (float3x3) unity_WorldToObject)); // v.normal -> float1x3
+                //o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 
                 return o;
             }
             
             float4 frag(vertexOuput i) : COLOR
             {
-                return i.normalWorld;
+                return float4(i.worldNormal, 1);
             }
             ENDCG
         }

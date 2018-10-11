@@ -56,41 +56,39 @@
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 normal : NORMAL;
-                float4 texcoord : TEXCOORD0;
+                float3 normal : NORMAL;
                 float4 tangent : TANGENT;
+                float2 texcoord : TEXCOORD0;
             };
             
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float4 texcoord : TEXCOORD0;
-                float4 normalWorld : TEXCOORD1;
-                float4 tangentWorld : TEXCOORD2;
-                float3 binormalWorld : TEXCOORD3;
-                float4 normalTexCoord : TEXCOORD4;
+                float2 texcoord : TEXCOORD0;
+                float3 worldNormal : TEXCOORD1;
+                float3 worldTangent : TEXCOORD2;
+                float3 worldBinormal : TEXCOORD3;
+                float2 normalTexCoord : TEXCOORD4;
             };
             
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy;
+                o.texcoord = v.texcoord;
+                o.normalTexCoord = v.texcoord.xy * _NormalMap_ST.xy + _NormalMap_ST.zw;
                 
-                o.normalWorld = float4(normalize(mul(normalize(v.normal.xyz), (float3x3) unity_WorldToObject)), v.normal.w);
-                
-                o.normalTexCoord.xy = v.texcoord.xy * _NormalMap_ST.xy + _NormalMap_ST.zw;
-                o.tangentWorld = float4(normalize(mul((float3x3) unity_ObjectToWorld, v.tangent.xyz)), v.tangent.w);
-                o.binormalWorld = normalize(cross(o.normalWorld, o.tangentWorld) * v.tangent.w);
+                o.worldNormal = UnityObjectToWorldNormal(v.normal);
+                o.worldTangent = UnityObjectToWorldDir(v.tangent.xyz);
+                o.worldBinormal = normalize(cross(o.worldNormal, o.worldTangent) * v.tangent.w); 
                 
                 return o;
             }
             
             float4 frag(vertexOuput i) : SV_TARGET  
             {
-                float3 worldNormalAtPixel = WorldNormalFromNormalMap(_NormalMap, i.normalTexCoord.xy, i.tangentWorld.xyz, i.binormalWorld.xyz, i.normalWorld.xyz);
+                float3 worldNormalAtPixel = WorldNormalFromNormalMap(_NormalMap, i.normalTexCoord, i.worldTangent, i.worldBinormal, i.worldNormal);
                 
                 float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
                 float3 lightColor = _LightColor0.xyz;

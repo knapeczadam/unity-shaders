@@ -6,7 +6,6 @@
     }
     SubShader
     {
-        //Tags { "Queue" = "Transparent" }
         Cull Front
         
         Pass
