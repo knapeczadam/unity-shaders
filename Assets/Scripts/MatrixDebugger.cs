@@ -13,8 +13,8 @@ public class MatrixDebugger : MonoBehaviour
     [Header("TANGENT")]
     public Matrix4x4 unity_ObjectToWorld;
     public Vector4 tangent;
-    public Vector4 tangent1x4NOK;
-    public Vector4 tangent4x1OK;
+    public Vector3 tangent1x3NOK;
+    public Vector3 tangent3x1OK;
     
     private void OnEnable()
     {
@@ -26,17 +26,21 @@ public class MatrixDebugger : MonoBehaviour
         unity_WorldToObject = skinnedMeshRenderer.worldToLocalMatrix;
         unity_ObjectToWorld = skinnedMeshRenderer.localToWorldMatrix; // gameObject.transform.localToWorldMatrix
         
-        // NORMAL 3x3
+        // NORMAL
         Matrix1x3 n1 = new Matrix1x3(normal);
         normal1x3 = mul(n1, unity_WorldToObject);
+        normal1x3.Normalize();
         Matrix3x1 n2 = new Matrix3x1(normal);
         normal3x1 = mul(unity_ObjectToWorld, n2); // unity_WorldToObject.MultiplyVector(normal);
+        normal3x1.Normalize();
         
-        // TANGENT 4x4
-        Matrix1x4 t3 = new Matrix1x4(tangent);
-        tangent1x4NOK = mul(t3, unity_ObjectToWorld);
-        Matrix4x1 t4 = new Matrix4x1(tangent);
-        tangent4x1OK = mul(unity_ObjectToWorld, t4);
+        // TANGENT
+        Matrix1x3 t1 = new Matrix1x3(tangent);
+        tangent1x3NOK = mul(t1, unity_ObjectToWorld);
+        //tangent1x3NOK.Normalize();
+        Matrix3x1 t2 = new Matrix3x1(tangent);
+        tangent3x1OK = mul(unity_ObjectToWorld, t2);// unity_ObjectToWorld.MultiplyVector(tangent);
+        //tangent3x1OK.Normalize();
 
         Vector3 a = new Vector3(1, 2, 3);
 //        Vector4 a = new Vector4(1, 2, 3, 4);
@@ -283,7 +287,8 @@ public class MatrixDebugger : MonoBehaviour
         
         public static implicit operator Matrix3x3(Matrix4x4 m)
         {
-            return new Matrix3x3(new Vector3(m.m00, m.m03, m.m12), new Vector3(m.m01, m.m10, m.m13), new Vector3(m.m02, m.m11, m.m20));
+            return new Matrix3x3(m.GetColumn(0), m.GetColumn(1), m.GetColumn(2)); // discard projection and translate matrix
+//            return new Matrix3x3(new Vector3(m.m00, m.m03, m.m12), new Vector3(m.m01, m.m10, m.m13), new Vector3(m.m02, m.m11, m.m20)); // mathematical approach
         }
     }
 }
