@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 
-public class MatrixDeugger : MonoBehaviour
+public class MatrixDebugger : MonoBehaviour
 {
     public SkinnedMeshRenderer skinnedMeshRenderer;
     
     [Header("NORMAL")]
     public Matrix4x4 unity_WorldToObject;
     public Vector3 normal;
-    public Vector3 normal1x3; // OK if UNITY_ASSUME_UNIFORM_SCALING is true
-    public Vector3 normal3x1; // OK if UNITY_ASSUME_UNIFORM_SCALING is false
+    public Vector3 normal1x3; // OK if UNITY_ASSUME_UNIFORM_SCALING is false
+    public Vector3 normal3x1; // OK if UNITY_ASSUME_UNIFORM_SCALING is true
     
     [Header("TANGENT")]
     public Matrix4x4 unity_ObjectToWorld;
@@ -51,6 +51,9 @@ public class MatrixDeugger : MonoBehaviour
 //        Debug.Log(mul(a, m));
 //        Debug.Log(mul(b, m));
 //        Debug.Log(mul(m, c));
+        
+//        Matrix4x4 shrink = new Matrix4x4(new Vector4(1, 5, 9, 13), new Vector4(2, 6, 10, 14), new Vector4(3, 7, 11, 15), new Vector4(4, 8, 12, 13));
+//        Debug.Log((Matrix3x3) shrink);
     }
 
     static Vector4 mul(Vector4 v, Matrix4x4 M) // float4 mul(float4 v, float4x4 M); ~ float1x4 mul(float1x4 A, float4x4 B);
@@ -267,7 +270,7 @@ public class MatrixDeugger : MonoBehaviour
         
         public override string ToString()
         {
-            return $"0:{m00}\t1:{m01}\t2:{m02}\t3:{m10}\n4:{m11}\t5:{m12}\t6:{m20}\t7:{m21}\n8:{m22}\n";
+            return $"0:{m00}\t1:{m01}\t2:{m02}\n3:{m10}\t4:{m11}\t5:{m12}\n6:{m20}\t7:{m21}\t8:{m22}\n";
         }
         
         public static Matrix3x3 identity
@@ -280,7 +283,7 @@ public class MatrixDeugger : MonoBehaviour
         
         public static implicit operator Matrix3x3(Matrix4x4 m)
         {
-            return new Matrix3x3(new Vector3(m.m00, m.m01, m.m02), new Vector3(m.m03, m.m10, m.m11), new Vector3(m.m12, m.m13, m.m20));
+            return new Matrix3x3(new Vector3(m.m00, m.m03, m.m12), new Vector3(m.m01, m.m10, m.m13), new Vector3(m.m02, m.m11, m.m20));
         }
     }
 }
