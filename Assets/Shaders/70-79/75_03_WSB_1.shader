@@ -30,7 +30,7 @@
                 vertexOuput o;
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.worldNormal = normalize(mul((float3x3) unity_WorldToObject, v.normal)); // v.normal -> float3x1
+                o.worldNormal = normalize(mul((float3x3) unity_ObjectToWorld, v.normal)); // v.normal -> float3x1
                 o.worldTangent = normalize(mul(v.tangent.xyz, (float3x3) unity_ObjectToWorld)); // v.tangent -> float1x3
                 o.worldBinormal = normalize(cross(o.worldNormal, o.worldTangent) * v.tangent.w);
                 

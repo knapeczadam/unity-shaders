@@ -27,7 +27,8 @@
                 vertexOuput o;
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.worldNormal = normalize(mul((float3x3) unity_WorldToObject, v.normal)); // v.normal -> float3x1
+                // UnityObjectToWorldNormal(v.normal) -> UNITY_ASSUME_UNIFORM_SCALING = true
+                o.worldNormal = normalize(mul((float3x3) unity_ObjectToWorld, v.normal)); // v.normal -> float3x1
                 
                 return o;
             }

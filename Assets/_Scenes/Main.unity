@@ -11856,8 +11856,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0
@@ -36612,8 +36612,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0
@@ -37759,8 +37759,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0
@@ -40376,8 +40376,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0
@@ -76198,8 +76198,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0
@@ -90232,8 +90232,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0
@@ -96295,8 +96295,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0
@@ -99493,8 +99493,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0
@@ -104484,8 +104484,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0
@@ -115949,8 +115949,8 @@ MonoBehaviour:
     e32: 0
     e33: 0
   normal: {x: 0, y: 0, z: 0}
-  normal1x3OK: {x: 0, y: 0, z: 0}
-  normal3x1NOK: {x: 0, y: 0, z: 0}
+  normal1x3: {x: 0, y: 0, z: 0}
+  normal3x1: {x: 0, y: 0, z: 0}
   unity_ObjectToWorld:
     e00: 0
     e01: 0

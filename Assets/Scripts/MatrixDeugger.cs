@@ -7,8 +7,8 @@ public class MatrixDeugger : MonoBehaviour
     [Header("NORMAL")]
     public Matrix4x4 unity_WorldToObject;
     public Vector3 normal;
-    public Vector3 normal1x3OK;
-    public Vector3 normal3x1NOK;
+    public Vector3 normal1x3; // OK if UNITY_ASSUME_UNIFORM_SCALING is true
+    public Vector3 normal3x1; // OK if UNITY_ASSUME_UNIFORM_SCALING is false
     
     [Header("TANGENT")]
     public Matrix4x4 unity_ObjectToWorld;
@@ -24,14 +24,13 @@ public class MatrixDeugger : MonoBehaviour
         tangent = mesh.tangents[Random.Range(0, mesh.tangents.Length - 1)];
         
         unity_WorldToObject = skinnedMeshRenderer.worldToLocalMatrix;
-        unity_ObjectToWorld = skinnedMeshRenderer.localToWorldMatrix;
+        unity_ObjectToWorld = skinnedMeshRenderer.localToWorldMatrix; // gameObject.transform.localToWorldMatrix
         
         // NORMAL 3x3
         Matrix1x3 n1 = new Matrix1x3(normal);
-        normal1x3OK = mul(n1, unity_WorldToObject);
+        normal1x3 = mul(n1, unity_WorldToObject);
         Matrix3x1 n2 = new Matrix3x1(normal);
-        normal3x1NOK = mul(unity_WorldToObject, n2); // unity_WorldToObject.MultiplyVector(normal);
-        
+        normal3x1 = mul(unity_ObjectToWorld, n2); // unity_WorldToObject.MultiplyVector(normal);
         
         // TANGENT 4x4
         Matrix1x4 t3 = new Matrix1x4(tangent);
@@ -281,7 +280,7 @@ public class MatrixDeugger : MonoBehaviour
         
         public static implicit operator Matrix3x3(Matrix4x4 m)
         {
-            return new Matrix3x3(m.GetColumn(0), m.GetColumn(1), m.GetColumn(2));
+            return new Matrix3x3(new Vector3(m.m00, m.m01, m.m02), new Vector3(m.m03, m.m10, m.m11), new Vector3(m.m12, m.m13, m.m20));
         }
     }
 }
