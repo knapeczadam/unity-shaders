@@ -46,8 +46,8 @@
             {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float4 posWorld : TEXCOORD1;
-                float3 normalDir : TEXCOORD2;
+                float4 worldPos : TEXCOORD1;
+                float3 worldNormal : TEXCOORD2;
             };
             
             vertexOutput vert(vertexInput v)
@@ -56,8 +56,8 @@
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
                 o.uv = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
-                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
-                o.normalDir = normalize(mul((float3x3) unity_WorldToObject, v.normal));
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex);
+                o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 
                 return o;
             }
@@ -65,16 +65,16 @@
             float4 frag(vertexOutput i) : SV_TARGET
             {
                 float4 finalColor = fixed4(1, 1, 1, _Color.a);
-                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.posWorld.xyz);
+                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.worldPos.xyz);
                 
-                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.posWorld.xyz;
+                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.worldPos.xyz;
                 float distance = length(vertexToLightSource);
-                float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.w, _WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz));
+                float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.w, _WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.worldPos.xyz));
                 float attenuation = lerp(_WorldSpaceLightPos0.w, 1.0, 1.0 / distance); 
                 
                 float3 ambientLighting = UNITY_LIGHTMODEL_AMBIENT.rgb;
-                float3 diffuseReflection = DiffuseLambert(i.normalDir, lightDirection, _LightColor0, _Diffuse, attenuation);
-                float3 specularReflection = SpecularBlinnPhong(i.normalDir, lightDirection, viewDirection, _SpecColor, _SpecularFactor, attenuation, _SpecularPower);
+                float3 diffuseReflection = DiffuseLambert(i.worldNormal, lightDirection, _LightColor0, _Diffuse, attenuation);
+                float3 specularReflection = SpecularBlinnPhong(i.worldNormal, lightDirection, viewDirection, _SpecColor, _SpecularFactor, attenuation, _SpecularPower);
                 
                 finalColor.rgb = tex2D(_MainTex, i.uv) * _Color.rgb;
                 finalColor.rgb *= ambientLighting + diffuseReflection + specularReflection;
@@ -120,8 +120,8 @@
             {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float4 posWorld : TEXCOORD1;
-                float3 normalDir : TEXCOORD2;
+                float4 worldPos : TEXCOORD1;
+                float3 worldNormal : TEXCOORD2;
             };
             
             vertexOutput vert(vertexInput v)
@@ -130,8 +130,8 @@
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
                 o.uv = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
-                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
-                o.normalDir = normalize(mul((float3x3) unity_WorldToObject, v.normal));
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex);
+                o.worldNormal = o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 
                 return o;
             }
@@ -139,15 +139,15 @@
             float4 frag(vertexOutput i) : SV_TARGET
             {
                 float4 finalColor = fixed4(1, 1, 1, _Color.a);
-                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.posWorld.xyz);
+                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.worldPos.xyz);
                 
-                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.posWorld.xyz;
+                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.worldPos.xyz;
                 float distance = length(vertexToLightSource);
-                float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.w, _WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz));
+                float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.w, _WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.worldPos.xyz));
                 float attenuation = lerp(_WorldSpaceLightPos0.w, 1.0, 1.0 / distance); 
                 
-                float3 diffuseReflection = DiffuseLambert(i.normalDir, lightDirection, _LightColor0, _Diffuse, attenuation);
-                float3 specularReflection = SpecularBlinnPhong(i.normalDir, lightDirection, viewDirection, _SpecColor, _SpecularFactor, attenuation, _SpecularPower);
+                float3 diffuseReflection = DiffuseLambert(i.worldNormal, lightDirection, _LightColor0, _Diffuse, attenuation);
+                float3 specularReflection = SpecularBlinnPhong(i.worldNormal, lightDirection, viewDirection, _SpecColor, _SpecularFactor, attenuation, _SpecularPower);
                 
                 finalColor.rgb = tex2D(_MainTex, i.uv) * _Color.rgb;
                 finalColor.rgb *= diffuseReflection + specularReflection;

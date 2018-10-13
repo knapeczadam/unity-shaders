@@ -73,7 +73,7 @@
             {
                 float4 pos : SV_POSITION;
                 float2 texcoord : TEXCOORD0;
-                float4 posWorld : TEXCOORD1;
+                float4 worldPos : TEXCOORD1;
                 float3 worldNormal : TEXCOORD2;
                 float4 surfaceColor : COLOR0;
             };
@@ -83,7 +83,7 @@
                 vertexOuput o;
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex);
                 
                 o.texcoord = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
                 
@@ -95,7 +95,7 @@
                 float3 diffuseColor = DiffuseLambert(o.worldNormal, lightDir, lightColor, _Diffuse, attenuation);
                 
                 float4 specularMap = tex2Dlod(_SpecularMap, float4(o.texcoord.xy, 0, 0));
-                float3 worldSpaceViewDir = normalize(_WorldSpaceCameraPos - o.posWorld);
+                float3 worldSpaceViewDir = normalize(_WorldSpaceCameraPos - o.worldPos);
                 float3 specularColor = SpecularBlinnPhong(o.worldNormal, lightDir, worldSpaceViewDir, specularMap.rgb, _SpecularFactor, attenuation, _SpecularPower);
                 
                 float3 ambientColor = _AmbientFactor * UNITY_LIGHTMODEL_AMBIENT;

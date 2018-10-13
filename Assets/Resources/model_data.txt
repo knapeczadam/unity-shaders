@@ -102,7 +102,7 @@ DE0FC69607A54F688E8C58D28F988B53|Plasma - Lambert|5
 CEF597141C354B77827DA17F36ED2CC6|Z-sorting|5
 53FC34BEF53B40DB9D43007CBC2624C3|Ignore projector - True|5
 2A343B21EE5F44D784168B57C827607C|Ignore projector - False|5
-D6CD062E12804F11B3653A6558C18B72|VF - tiling, offset off|5
+D6CD062E12804F11B3653A6558C18B72|VF - tiling, offset off|5|https://docs.unity3d.com/Manual/SL-PropertiesInPrograms.html
 6FBF905170C54743B7A03FAA7EA4B775|VF - tiling on|5
 F3D460D7D86442368B87045BE727ED21|VF - offset on - wrap mode: repeat|5
 07A93461F0954169814C6DFD8153B4BA|VF - offset on - wrap mode: clamp|5
@@ -279,3 +279,4 @@ E70C4F3D07CF44A89D9644330E347932|Semantics|5|https://docs.microsoft.com/en-us/wi
 0E10E3F8D26C4690BDD1E0031842D0B1|Fish|5
 14D987D4E6A7432B80EF573E15C7948E|UV checker - Wrap modes|3|https://docs.unity3d.com/ScriptReference/TextureWrapMode.html
 C7CF1C48BD3D4AE5AABC847A9FA0C710|UV checker - Rotation|3|http://developer.download.nvidia.com/cg/radians.html
+49A8AD11134648F283839D3B16FA2496|Color scattering|3

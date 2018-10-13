@@ -124,7 +124,7 @@
             {
                 float4 pos : SV_POSITION;
                 float2 texcoord : TEXCOORD0;
-                float4 posWorld : TEXCOORD1;
+                float4 worldPos : TEXCOORD1;
                 float3 worldNormal : TEXCOORD2;
                 float3 worldTangent : TEXCOORD3;
                 float3 worldBinormal : TEXCOORD4;
@@ -136,7 +136,7 @@
                 vertexOuput o;
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex);
                 
                 o.texcoord = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
                 o.normalTexCoord = v.texcoord.xy * _NormalMap_ST.xy + _NormalMap_ST.zw;
@@ -159,7 +159,7 @@
                 float attenuation = 1;
                 float3 diffuseColor = DiffuseLambert(worldNormalAtPixel, lightDir, lightColor, _Diffuse, attenuation);
                 
-                float3 worldSpaceViewDir = normalize(_WorldSpaceCameraPos - i.posWorld);
+                float3 worldSpaceViewDir = normalize(_WorldSpaceCameraPos - i.worldPos);
                 
                 float4 tangentMap = tex2D(_TangentMap, i.texcoord * _TangentMap_ST.xy + _TangentMap_ST.zw);
                 float3 specularColor = AshikhminShirleyPremoze_BRDF(_AnisoU, _AnisoV, tangentMap.xyz, worldNormalAtPixel, lightDir, worldSpaceViewDir, _ReflectionFactor);

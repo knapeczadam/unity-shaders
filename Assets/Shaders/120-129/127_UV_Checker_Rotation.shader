@@ -25,10 +25,11 @@
             float2 rotate(float degree, float2 coord)
             {
                 float theta = radians(degree);
+                float2 offset = float2(_OffsetX, _OffsetY);
                 
                 float2x2 rotationMatrix = float2x2(cos(theta), -sin(theta),
                                                    sin(theta),  cos(theta));
-                return mul(coord, rotationMatrix);
+                return mul(rotationMatrix, coord - offset) + offset;
             }
             
             float2 rotateWithOffset(float degree, float2 coord)
@@ -67,7 +68,7 @@
             
             fixed4 frag(vertexOuput i) : SV_TARGET
             {
-                return tex2D(_MainTex, rotateWithOffset(_Degree, i.uv));
+                return tex2D(_MainTex, rotate(_Degree, i.uv));
             }
             ENDCG
         }
