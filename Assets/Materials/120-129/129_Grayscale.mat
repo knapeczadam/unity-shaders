@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 129_Grayscale
+  m_Shader: {fileID: 4800000, guid: 4ea70651e4863644587f7af8cde5a0ab, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a9ee40c6e29ec0541a23a31ae67eda72, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AnimFreq: 1
+    - _AnimOffsetX: 0
+    - _AnimOffsetY: 0
+    - _AnimOffsetZ: 1
+    - _AnimPowerX: 0.2
+    - _AnimPowerY: 0
+    - _AnimPowerZ: 0
+    - _AnimSpeed: 5
+    - _Degree: 0
+    - _Offset: 0.01
+    - _OffsetX: 0.498
+    - _OffsetY: 0.491
+    m_Colors: []

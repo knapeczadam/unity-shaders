@@ -280,3 +280,4 @@ E70C4F3D07CF44A89D9644330E347932|Semantics|5|https://docs.microsoft.com/en-us/wi
 14D987D4E6A7432B80EF573E15C7948E|UV checker - Wrap modes|3|https://docs.unity3d.com/ScriptReference/TextureWrapMode.html
 C7CF1C48BD3D4AE5AABC847A9FA0C710|UV checker - Rotation|3|http://developer.download.nvidia.com/cg/radians.html
 49A8AD11134648F283839D3B16FA2496|Color scattering|3
+5C0BFC796656465083F260406CE8DA0E|Grayscale|3|https://en.wikipedia.org/wiki/Grayscale
