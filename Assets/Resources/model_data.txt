@@ -284,3 +284,4 @@ C7CF1C48BD3D4AE5AABC847A9FA0C710|UV checker - Rotation|3|http://developer.downlo
 2E375EB181FE4F68968EBC4A0CDA80B2|Texture weight|3
 E29273BDC227461DADC359CFFBE5E5EF|Texture mask|3
 9BE95E288F3E402381B701D788E5A53C|Texture mask with texture weight|3
+111A86E3DC634C2DAA68FA309C9E59C0|Lambertian reflectance debugger|5|https://en.wikipedia.org/wiki/Lambertian_reflectance 
