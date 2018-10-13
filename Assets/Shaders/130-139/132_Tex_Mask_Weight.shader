@@ -1,9 +1,10 @@
-﻿Shader "Custom/130-139/130_Text_Weight"
+﻿Shader "Custom/130-139/132_Tex_Weight_Mask"
 {
     Properties 
     {
         _Tex1 ("Texture 1", 2D) = "white" {}
         _Tex2 ("Texture 2", 2D) = "white" {}
+        _Mask ("Texture mask", 2D) = "white" {}
         _TexWeight ("Texture weight", Range(0.0, 1.0)) = 0.0
         
     }
@@ -17,6 +18,7 @@
             
             sampler2D _Tex1;
             sampler2D _Tex2;
+            sampler2D _Mask;
             
             fixed _TexWeight;
             
@@ -44,7 +46,10 @@
             {
                 fixed4 t1 = tex2D(_Tex1, i.uv);
                 fixed4 t2 = tex2D(_Tex2, i.uv);
-                fixed4 col = t1 * (1 - _TexWeight) + t2 * _TexWeight;  
+                fixed4 m = tex2D(_Mask, i.uv);
+                fixed w = m + _TexWeight;
+                fixed4 col = t1 * (1 - w) + t2 * w;  
+                //col = lerp(t1, t2, w);
                 return col;
             }
             ENDCG

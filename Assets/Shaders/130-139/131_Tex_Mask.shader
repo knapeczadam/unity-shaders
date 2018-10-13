@@ -1,4 +1,4 @@
-﻿Shader "Custom/130-139/131_Text_Mask"
+﻿Shader "Custom/130-139/131_Tex_Mask"
 {
     Properties 
     {
@@ -18,8 +18,6 @@
             sampler2D _Tex1;
             sampler2D _Tex2;
             sampler2D _Mask;
-            
-            fixed _TexWeight;
             
             struct vertexInput
             {
@@ -48,6 +46,7 @@
                 fixed4 m = tex2D(_Mask, i.uv);
                 fixed w = m;
                 fixed4 col = t1 * (1 - w) + t2 * w;  
+                //col = lerp(t1, t2, w);
                 return col;
             }
             ENDCG
