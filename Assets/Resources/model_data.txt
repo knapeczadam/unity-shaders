@@ -286,3 +286,4 @@ E29273BDC227461DADC359CFFBE5E5EF|Texture mask|3
 9BE95E288F3E402381B701D788E5A53C|Texture mask with texture weight|3
 111A86E3DC634C2DAA68FA309C9E59C0|Lambertian reflectance debugger|5|https://en.wikipedia.org/wiki/Lambertian_reflectance
 A5A66B9AF8274C0AB08BF3430609DFB7|Phong debugger|5|https://en.wikipedia.org/wiki/Phong_reflection_model
+CBE75323C63A4BE896C5B5262EC02CCB|Blinn-Phong debugger|5|https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_shading_model
