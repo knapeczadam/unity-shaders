@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 133_Tex_Clamp
-  m_Shader: {fileID: 4800000, guid: c1e429b2552418a47ba95d9ebff111c7, type: 3}
+  m_Name: 134_ScreenSpace
+  m_Shader: {fileID: 4800000, guid: 45697287937b4b042b44dc313fc8739b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: a9ee40c6e29ec0541a23a31ae67eda72, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mask:

@@ -1,11 +1,8 @@
-﻿Shader "Custom/130-139/133_Tex_Clamp"
+﻿Shader "Custom/130-139/134_ScreenSpace"
 {
     Properties 
     {
-        _Tex1 ("Texture 1", 2D) = "white" {}
-        _Tex2 ("Texture 2", 2D) = "white" {}
-        _Mask ("Texture mask", 2D) = "white" {}
-        _TexWeight ("Texture weight", Range(-1.0, 1.0)) = 0.0
+        _MainTex ("Main texture", 2D) = "white" {}
         
     }
     SubShader
@@ -16,11 +13,7 @@
             #pragma vertex vert
             #pragma fragment frag   
             
-            sampler2D _Tex1;
-            sampler2D _Tex2;
-            sampler2D _Mask;
-            
-            fixed _TexWeight;
+            sampler2D _MainTex;
             
             struct vertexInput
             {
@@ -44,13 +37,7 @@
                 
             fixed4 frag(vertexOuput i) : SV_TARGET
             {
-                fixed4 t1 = tex2D(_Tex1, i.uv);
-                fixed4 t2 = tex2D(_Tex2, i.uv);
-                fixed4 m = tex2D(_Mask, i.uv);
-                fixed w = m + _TexWeight;
-                w = clamp(w, 0, 1);
-                fixed4 col = lerp(t1, t2, w);
-                return col;
+                return tex2D(_MainTex, i.pos.xy / _ScreenParams.x);
             }
             ENDCG
         }
