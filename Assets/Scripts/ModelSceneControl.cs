@@ -178,7 +178,7 @@ namespace UnityStandardAssets.SceneUtils
             for (int i = 0; i < demoModels.items.Length; i++)
             {
                 DemoModelSystem container = new DemoModelSystem();
-                container.transform = models.transform.Find(s_GUIDs[i]);
+                container.transform = models.transform.Find(s_GUIDs[i]); // strict match - no space at the end!
                 container.transform.name = (i + 1).ToString();
                 demoModels.items[i] = container;
             }
