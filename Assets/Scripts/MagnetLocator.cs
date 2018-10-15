@@ -7,6 +7,13 @@ public class MagnetLocator : MonoBehaviour
     
     void Update()
     {
-        mat.SetVector("_MagnetDir", (transform.position - go.position).normalized);
+        if (go)
+        {
+            mat.SetVector("_MagnetDir", (transform.position - go.position).normalized);
+        }
+        else
+        {
+            mat.SetVector("_MagnetPos", transform.position);   
+        }
     }
 }

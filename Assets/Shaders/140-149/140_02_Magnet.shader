@@ -1,25 +1,22 @@
-﻿Shader "Custom/140-149/140_Magnet"
+﻿Shader "Custom/140-149/140_02_Magnet"
 {
     Properties
     {
-        _MainTex ("Main texutre", 2D) = "white" {}
         _Radius ("Radius", Range(0.0, 1.0)) = 1.0
         _Length ("Length", Range(0.01, 0.2)) = 0.01
-        _MagnetDir ("Magnet location", Vector) = (0, 0, 0, 0)
+        _MagnetDir ("Magnet", Vector) = (0, 0, 0, 0)
     }
     
     SubShader
     {
         Pass
         {   
-            Cull Off
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
             
             #include "UnityCG.cginc"
             
-            sampler2D _MainTex;
             fixed _Radius;
             fixed _Length;
             float4 _MagnetDir;
