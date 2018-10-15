@@ -131,7 +131,7 @@
                 o.pos = UnityObjectToClipPos(v.vertex);
                 o.uv = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
                 o.worldPos = mul(unity_ObjectToWorld, v.vertex);
-                o.worldNormal = o.worldNormal = UnityObjectToWorldNormal(v.normal);
+                o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 
                 return o;
             }
