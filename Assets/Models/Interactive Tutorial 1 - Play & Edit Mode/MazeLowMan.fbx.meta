@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: 7e15121f5f042ed46aba81406403f2d2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: LowMan
+    100002: //RootNode
+    100004: LowMan_Head
+    100006: LowMan_Hips
+    100008: LowMan_LeftArm
+    100010: LowMan_LeftFoot
+    100012: LowMan_LeftForeArm
+    100014: LowMan_LeftHand
+    100016: LowMan_LeftHandMiddle1
+    100018: LowMan_LeftHandMiddle2
+    100020: LowMan_LeftHandThumb1
+    100022: LowMan_LeftHandThumb2
+    100024: LowMan_LeftLeg
+    100026: LowMan_LeftShoulder
+    100028: LowMan_LeftToeBase
+    100030: LowMan_LeftUpLeg
+    100032: LowMan_Neck
+    100034: LowMan_Reference
+    100036: LowMan_RightArm
+    100038: LowMan_RightFoot
+    100040: LowMan_RightForeArm
+    100042: LowMan_RightHand
+    100044: LowMan_RightHandMiddle1
+    100046: LowMan_RightHandMiddle2
+    100048: LowMan_RightHandThumb1
+    100050: LowMan_RightHandThumb2
+    100052: LowMan_RightLeg
+    100054: LowMan_RightShoulder
+    100056: LowMan_RightToeBase
+    100058: LowMan_RightUpLeg
+    100060: LowMan_Spine
+    100062: LowMan_Spine1
+    100064: LowMan_Spine2
+    100066: LowManHead
+    100068: LowManHips
+    100070: LowManLeftArm
+    100072: LowManLeftFoot
+    100074: LowManLeftForeArm
+    100076: LowManLeftHand
+    100078: LowManLeftHandMiddle1
+    100080: LowManLeftHandMiddle2
+    100082: LowManLeftHandThumb1
+    100084: LowManLeftLeg
+    100086: LowManLeftShoulder
+    100088: LowManLeftToeBase
+    100090: LowManLeftUpLeg
+    100092: LowManNeck
+    100094: LowManRightArm
+    100096: LowManRightFoot
+    100098: LowManRightForeArm
+    100100: LowManRightHand
+    100102: LowManRightHandMiddle1
+    100104: LowManRightHandMiddle2
+    100106: LowManRightHandThumb1
+    100108: LowManRightLeg
+    100110: LowManRightShoulder
+    100112: LowManRightToeBase
+    100114: LowManRightUpLeg
+    100116: LowManSkeleton
+    100118: LowManSpine
+    100120: LowManSpine1
+    100122: LowManSpine2
+    400000: LowMan
+    400002: //RootNode
+    400004: LowMan_Head
+    400006: LowMan_Hips
+    400008: LowMan_LeftArm
+    400010: LowMan_LeftFoot
+    400012: LowMan_LeftForeArm
+    400014: LowMan_LeftHand
+    400016: LowMan_LeftHandMiddle1
+    400018: LowMan_LeftHandMiddle2
+    400020: LowMan_LeftHandThumb1
+    400022: LowMan_LeftHandThumb2
+    400024: LowMan_LeftLeg
+    400026: LowMan_LeftShoulder
+    400028: LowMan_LeftToeBase
+    400030: LowMan_LeftUpLeg
+    400032: LowMan_Neck
+    400034: LowMan_Reference
+    400036: LowMan_RightArm
+    400038: LowMan_RightFoot
+    400040: LowMan_RightForeArm
+    400042: LowMan_RightHand
+    400044: LowMan_RightHandMiddle1
+    400046: LowMan_RightHandMiddle2
+    400048: LowMan_RightHandThumb1
+    400050: LowMan_RightHandThumb2
+    400052: LowMan_RightLeg
+    400054: LowMan_RightShoulder
+    400056: LowMan_RightToeBase
+    400058: LowMan_RightUpLeg
+    400060: LowMan_Spine
+    400062: LowMan_Spine1
+    400064: LowMan_Spine2
+    400066: LowManHead
+    400068: LowManHips
+    400070: LowManLeftArm
+    400072: LowManLeftFoot
+    400074: LowManLeftForeArm
+    400076: LowManLeftHand
+    400078: LowManLeftHandMiddle1
+    400080: LowManLeftHandMiddle2
+    400082: LowManLeftHandThumb1
+    400084: LowManLeftLeg
+    400086: LowManLeftShoulder
+    400088: LowManLeftToeBase
+    400090: LowManLeftUpLeg
+    400092: LowManNeck
+    400094: LowManRightArm
+    400096: LowManRightFoot
+    400098: LowManRightForeArm
+    400100: LowManRightHand
+    400102: LowManRightHandMiddle1
+    400104: LowManRightHandMiddle2
+    400106: LowManRightHandThumb1
+    400108: LowManRightLeg
+    400110: LowManRightShoulder
+    400112: LowManRightToeBase
+    400114: LowManRightUpLeg
+    400116: LowManSkeleton
+    400118: LowManSpine
+    400120: LowManSpine1
+    400122: LowManSpine2
+    2300000: LowMan
+    3300000: LowMan
+    4300000: LowMan
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: LowMan
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MazeLowMan
+    second: {fileID: 2100000, guid: f657f64ac2e759747a1d41a50a45e39a, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths:
+    - LowManSkeleton/LowManHips/LowManLeftUpLeg
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: ffc1cce828542694b8004c32865149a5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Head
+    100002: Hips
+    100004: Jaw
+    100006: joint1
+    100008: joint12
+    100010: joint2
+    100012: joint3
+    100014: joint6
+    100016: joint7
+    100018: joint8
+    100020: KEY_bone
+    100022: L_Foot
+    100024: L_Leg
+    100026: R_Foot
+    100028: R_Leg
+    100030: //RootNode
+    100032: ZomDuck
+    400000: Head
+    400002: Hips
+    400004: Jaw
+    400006: joint1
+    400008: joint12
+    400010: joint2
+    400012: joint3
+    400014: joint6
+    400016: joint7
+    400018: joint8
+    400020: KEY_bone
+    400022: L_Foot
+    400024: L_Leg
+    400026: R_Foot
+    400028: R_Leg
+    400030: //RootNode
+    400032: ZomDuck
+    2300000: ZomDuck
+    3300000: ZomDuck
+    4300000: ZomDuck
+    7400000: Move
+    7400002: Idle
+    7400004: Death
+    9500000: //RootNode
+    13700000: ZomDuck
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZomDuckMaterial
+    second: {fileID: 2100000, guid: 15aca536fd747c543b35053dcd8e6dc4, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Move
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hips
+        weight: 1
+      - path: Hips/joint1
+        weight: 1
+      - path: Hips/joint1/joint2
+        weight: 1
+      - path: Hips/joint1/joint2/joint3
+        weight: 1
+      - path: Hips/joint7
+        weight: 1
+      - path: Hips/joint7/joint8
+        weight: 1
+      - path: Hips/joint7/joint8/Head
+        weight: 1
+      - path: Hips/joint7/joint8/Head/Jaw
+        weight: 1
+      - path: Hips/joint7/joint8/Head/Jaw/joint6
+        weight: 1
+      - path: Hips/KEY_bone
+        weight: 1
+      - path: Hips/KEY_bone/joint12
+        weight: 1
+      - path: Hips/L_Leg
+        weight: 1
+      - path: Hips/L_Leg/L_Foot
+        weight: 1
+      - path: Hips/R_Leg
+        weight: 1
+      - path: Hips/R_Leg/R_Foot
+        weight: 1
+      - path: ZomDuck
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 36
+      lastFrame: 175
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hips
+        weight: 1
+      - path: Hips/joint1
+        weight: 1
+      - path: Hips/joint1/joint2
+        weight: 1
+      - path: Hips/joint1/joint2/joint3
+        weight: 1
+      - path: Hips/joint7
+        weight: 1
+      - path: Hips/joint7/joint8
+        weight: 1
+      - path: Hips/joint7/joint8/Head
+        weight: 1
+      - path: Hips/joint7/joint8/Head/Jaw
+        weight: 1
+      - path: Hips/joint7/joint8/Head/Jaw/joint6
+        weight: 1
+      - path: Hips/KEY_bone
+        weight: 1
+      - path: Hips/KEY_bone/joint12
+        weight: 1
+      - path: Hips/L_Leg
+        weight: 1
+      - path: Hips/L_Leg/L_Foot
+        weight: 1
+      - path: Hips/R_Leg
+        weight: 1
+      - path: Hips/R_Leg/R_Foot
+        weight: 1
+      - path: ZomDuck
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 180
+      lastFrame: 225
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hips
+        weight: 1
+      - path: Hips/joint1
+        weight: 1
+      - path: Hips/joint1/joint2
+        weight: 1
+      - path: Hips/joint1/joint2/joint3
+        weight: 1
+      - path: Hips/joint7
+        weight: 1
+      - path: Hips/joint7/joint8
+        weight: 1
+      - path: Hips/joint7/joint8/Head
+        weight: 1
+      - path: Hips/joint7/joint8/Head/Jaw
+        weight: 1
+      - path: Hips/joint7/joint8/Head/Jaw/joint6
+        weight: 1
+      - path: Hips/KEY_bone
+        weight: 1
+      - path: Hips/KEY_bone/joint12
+        weight: 1
+      - path: Hips/L_Leg
+        weight: 1
+      - path: Hips/L_Leg/L_Foot
+        weight: 1
+      - path: Hips/R_Leg
+        weight: 1
+      - path: Hips/R_Leg/R_Foot
+        weight: 1
+      - path: ZomDuck
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

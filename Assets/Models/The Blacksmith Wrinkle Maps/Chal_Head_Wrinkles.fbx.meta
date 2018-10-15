@@ -1,0 +1,448 @@
+fileFormatVersion: 2
+guid: 0a77138630e275343a8250ac0c70b2b2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: challenger_beard
+    100004: challenger_eyes_refl
+    100006: challenger_eyes_refl 1
+    100008: challenger_eyes_refl2
+    100010: challenger_geo_grp
+    100012: challenger_hair
+    100014: challenger_Head
+    100016: challenger_head
+    100018: challenger_Helmet
+    100020: challenger_hood
+    100022: challenger_Jaw
+    100024: challenger_LeftEye
+    100026: challenger_LeftHemetFlap
+    100028: challenger_LeftLowerEyelid
+    100030: challenger_LeftUpperEyelid
+    100032: challenger_Neck
+    100034: challenger_Neck1
+    100036: challenger_RightEye
+    100038: challenger_RightHemetFlap
+    100040: challenger_RightLowerEyelid
+    100042: challenger_RightUpperEyelid
+    100044: challenger_teeth
+    100046: challenger_tongue
+    100048: left_beard_jnt01
+    100050: left_beard_jnt02
+    100052: left_beard_jnt03
+    100054: left_beard_jnt04
+    100056: left_beard_jnt05
+    100058: left_beard_jnt06
+    100060: left_beard_jnt07
+    100062: left_beard_jnt08
+    100064: left_beard_jnt09
+    100066: left_beard_jnt10
+    100068: left_beard_jnt11
+    100070: left_beard_jnt12
+    100072: left_beard_jnt13
+    100074: left_eyeBrow_jnt01
+    100076: left_eyeBrow_jnt02
+    100078: left_eyeBrow_jnt03
+    100080: left_eyeBrow_jnt04
+    100082: left_lowerEyelash_jnt01
+    100084: left_lowerEyelash_jnt02
+    100086: left_lowerEyelash_jnt03
+    100088: left_upperEyelash_jnt01
+    100090: left_upperEyelash_jnt02
+    100092: left_upperEyelash_jnt03
+    100094: right_beard_jnt01
+    100096: right_beard_jnt02
+    100098: right_beard_jnt03
+    100100: right_beard_jnt04
+    100102: right_beard_jnt05
+    100104: right_beard_jnt06
+    100106: right_beard_jnt07
+    100108: right_beard_jnt08
+    100110: right_beard_jnt09
+    100112: right_beard_jnt10
+    100114: right_beard_jnt11
+    100116: right_beard_jnt12
+    100118: right_beard_jnt13
+    100120: right_beard_jnt14
+    100122: right_beard_jnt15
+    100124: right_eyeBrow_jnt01
+    100126: right_eyeBrow_jnt02
+    100128: right_eyeBrow_jnt03
+    100130: right_eyeBrow_jnt04
+    100132: right_lowerEyelash_jnt01
+    100134: right_lowerEyelash_jnt02
+    100136: right_lowerEyelash_jnt03
+    100138: right_upperEyelash_jnt01
+    100140: right_upperEyelash_jnt02
+    100142: right_upperEyelash_jnt03
+    400000: //RootNode
+    400002: challenger_beard
+    400004: challenger_eyes_refl
+    400006: challenger_eyes_refl 1
+    400008: challenger_eyes_refl2
+    400010: challenger_geo_grp
+    400012: challenger_hair
+    400014: challenger_Head
+    400016: challenger_head
+    400018: challenger_Helmet
+    400020: challenger_hood
+    400022: challenger_Jaw
+    400024: challenger_LeftEye
+    400026: challenger_LeftHemetFlap
+    400028: challenger_LeftLowerEyelid
+    400030: challenger_LeftUpperEyelid
+    400032: challenger_Neck
+    400034: challenger_Neck1
+    400036: challenger_RightEye
+    400038: challenger_RightHemetFlap
+    400040: challenger_RightLowerEyelid
+    400042: challenger_RightUpperEyelid
+    400044: challenger_teeth
+    400046: challenger_tongue
+    400048: left_beard_jnt01
+    400050: left_beard_jnt02
+    400052: left_beard_jnt03
+    400054: left_beard_jnt04
+    400056: left_beard_jnt05
+    400058: left_beard_jnt06
+    400060: left_beard_jnt07
+    400062: left_beard_jnt08
+    400064: left_beard_jnt09
+    400066: left_beard_jnt10
+    400068: left_beard_jnt11
+    400070: left_beard_jnt12
+    400072: left_beard_jnt13
+    400074: left_eyeBrow_jnt01
+    400076: left_eyeBrow_jnt02
+    400078: left_eyeBrow_jnt03
+    400080: left_eyeBrow_jnt04
+    400082: left_lowerEyelash_jnt01
+    400084: left_lowerEyelash_jnt02
+    400086: left_lowerEyelash_jnt03
+    400088: left_upperEyelash_jnt01
+    400090: left_upperEyelash_jnt02
+    400092: left_upperEyelash_jnt03
+    400094: right_beard_jnt01
+    400096: right_beard_jnt02
+    400098: right_beard_jnt03
+    400100: right_beard_jnt04
+    400102: right_beard_jnt05
+    400104: right_beard_jnt06
+    400106: right_beard_jnt07
+    400108: right_beard_jnt08
+    400110: right_beard_jnt09
+    400112: right_beard_jnt10
+    400114: right_beard_jnt11
+    400116: right_beard_jnt12
+    400118: right_beard_jnt13
+    400120: right_beard_jnt14
+    400122: right_beard_jnt15
+    400124: right_eyeBrow_jnt01
+    400126: right_eyeBrow_jnt02
+    400128: right_eyeBrow_jnt03
+    400130: right_eyeBrow_jnt04
+    400132: right_lowerEyelash_jnt01
+    400134: right_lowerEyelash_jnt02
+    400136: right_lowerEyelash_jnt03
+    400138: right_upperEyelash_jnt01
+    400140: right_upperEyelash_jnt02
+    400142: right_upperEyelash_jnt03
+    2300000: challenger_beard
+    2300002: challenger_eyes_refl
+    2300004: challenger_eyes_refl 1
+    2300006: challenger_eyes_refl2
+    2300008: challenger_hair
+    2300010: challenger_head
+    2300012: challenger_hood
+    2300014: challenger_teeth
+    2300016: challenger_tongue
+    3300000: challenger_beard
+    3300002: challenger_eyes_refl
+    3300004: challenger_eyes_refl 1
+    3300006: challenger_eyes_refl2
+    3300008: challenger_hair
+    3300010: challenger_head
+    3300012: challenger_hood
+    3300014: challenger_teeth
+    3300016: challenger_tongue
+    4300000: challenger_hood
+    4300002: challenger_head
+    4300004: challenger_eyes_refl2
+    4300006: challenger_eyes_refl
+    4300008: challenger_eyes_refl 1
+    4300010: challenger_teeth
+    4300012: challenger_tongue
+    4300014: challenger_beard
+    4300016: challenger_hair
+    7400000: Chal_Facial_Anim
+    9500000: //RootNode
+    13700000: challenger_beard
+    13700002: challenger_eyes_refl
+    13700004: challenger_eyes_refl 1
+    13700006: challenger_eyes_refl2
+    13700008: challenger_hair
+    13700010: challenger_head
+    13700012: challenger_hood
+    13700014: challenger_teeth
+    13700016: challenger_tongue
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 47a01cd5fd97be843a8c7d42d1a2a0a3, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Chal_Facial_Anim
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: challenger_geo_grp
+        weight: 1
+      - path: challenger_geo_grp/challenger_beard
+        weight: 1
+      - path: challenger_geo_grp/challenger_eyes_refl
+        weight: 1
+      - path: challenger_geo_grp/challenger_eyes_refl 1
+        weight: 1
+      - path: challenger_geo_grp/challenger_eyes_refl2
+        weight: 1
+      - path: challenger_geo_grp/challenger_hair
+        weight: 1
+      - path: challenger_geo_grp/challenger_head
+        weight: 1
+      - path: challenger_geo_grp/challenger_hood
+        weight: 1
+      - path: challenger_geo_grp/challenger_teeth
+        weight: 1
+      - path: challenger_geo_grp/challenger_tongue
+        weight: 1
+      - path: challenger_Neck
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Helmet
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Helmet/challenger_LeftHemetFlap
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Helmet/challenger_RightHemetFlap
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt01
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt02
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt03
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt04
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt05
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt06
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt07
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt08
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt09
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt10
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt11
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt12
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/left_beard_jnt13
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt01
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt02
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt03
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt04
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt05
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt06
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt07
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt08
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt09
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt10
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt11
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt12
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt13
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt14
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_Jaw/right_beard_jnt15
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_LeftEye
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_LeftLowerEyelid
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_LeftUpperEyelid
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_RightEye
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_RightLowerEyelid
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/challenger_RightUpperEyelid
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_eyeBrow_jnt01
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_eyeBrow_jnt02
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_eyeBrow_jnt03
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_eyeBrow_jnt04
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_lowerEyelash_jnt01
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_lowerEyelash_jnt02
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_lowerEyelash_jnt03
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_upperEyelash_jnt01
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_upperEyelash_jnt02
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/left_upperEyelash_jnt03
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_eyeBrow_jnt01
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_eyeBrow_jnt02
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_eyeBrow_jnt03
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_eyeBrow_jnt04
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_lowerEyelash_jnt01
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_lowerEyelash_jnt02
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_lowerEyelash_jnt03
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_upperEyelash_jnt01
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_upperEyelash_jnt02
+        weight: 1
+      - path: challenger_Neck/challenger_Neck1/challenger_Head/right_upperEyelash_jnt03
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

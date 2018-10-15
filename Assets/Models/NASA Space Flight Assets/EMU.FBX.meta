@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: ceeb979ebdb05a845a014678686dc372
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: EMU_MeshPart0
+    100004: EMU_MeshPart1
+    100006: EMU_MeshPart2
+    100008: EMU_MeshPart3
+    100010: EMU_MeshPart4
+    100012: EMU_MeshPart5
+    400000: //RootNode
+    400002: EMU_MeshPart0
+    400004: EMU_MeshPart1
+    400006: EMU_MeshPart2
+    400008: EMU_MeshPart3
+    400010: EMU_MeshPart4
+    400012: EMU_MeshPart5
+    2300000: EMU_MeshPart0
+    2300002: EMU_MeshPart1
+    2300004: EMU_MeshPart2
+    2300006: EMU_MeshPart3
+    2300008: EMU_MeshPart4
+    2300010: EMU_MeshPart5
+    2300012: //RootNode
+    3300000: EMU_MeshPart0
+    3300002: EMU_MeshPart1
+    3300004: EMU_MeshPart2
+    3300006: EMU_MeshPart3
+    3300008: EMU_MeshPart4
+    3300010: EMU_MeshPart5
+    3300012: //RootNode
+    4300000: EMU_MeshPart0
+    4300002: EMU_MeshPart1
+    4300004: EMU_MeshPart2
+    4300006: EMU_MeshPart3
+    4300008: EMU_MeshPart4
+    4300010: EMU_MeshPart5
+    4300012: EMU
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_blinn12SG
+    second: {fileID: 2100000, guid: fd08c41600846d24d868e24440945549, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_blinn1SG
+    second: {fileID: 2100000, guid: 48d4816aad2665e4ca1ff46e2874d934, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_blinn2SG
+    second: {fileID: 2100000, guid: 856f464633dfc454185840a2ce5d5530, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_blinn3SG
+    second: {fileID: 2100000, guid: fb26cac06e884f14290a5510b002e6a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_body_lambert2SG
+    second: {fileID: 2100000, guid: 8662f3721dece5c468c93c92ca09a77c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_emusuit4_justbody_blinn3SG
+    second: {fileID: 2100000, guid: e881c4d3ca6e79e42898abe7a9892ae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_emusuit4_justbody_lambert2SG
+    second: {fileID: 2100000, guid: 6111ef97078cde3489ca795ef4abaf7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_emusuit5_blinn1SG
+    second: {fileID: 2100000, guid: ae1d4126aa7b0014e9b59fb4e7e8b7bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_emusuit5_blinn2SG
+    second: {fileID: 2100000, guid: c8304683e8aa4014b95ed9f2eb77cad0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_emusuit5_blinn3SG
+    second: {fileID: 2100000, guid: 7a5762772fc59924dbff2c0b7ad608b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_emusuit5_jetpack2SG
+    second: {fileID: 2100000, guid: 23b6e1042b91f09438b2a756a2b6daad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_emusuit5_lambert2SG
+    second: {fileID: 2100000, guid: e6e219f7b95ba5541a17ce24f6e6484c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_emusuit5_lambert3SG
+    second: {fileID: 2100000, guid: 7bae268870cfd294db692fe1d393fd64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_emusuit5_lambert5SG
+    second: {fileID: 2100000, guid: 7d4711794698d2b4ca94886616dfc99c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_jetpack2SG
+    second: {fileID: 2100000, guid: 1fc2cae5ace94b14898b0be1b3be3780, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_lambert10SG
+    second: {fileID: 2100000, guid: 0fd0cd73f3c323e4bae17bfa14a97f22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_lambert11SG
+    second: {fileID: 2100000, guid: 0dfed793910225e4ea402314ef71f297, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_lambert2SG
+    second: {fileID: 2100000, guid: 97b3082fd1143e54a977a7e425c1c244, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_lambert3SG
+    second: {fileID: 2100000, guid: c09cf7f63b50f9d4f84d6e4827f5bb31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_lambert4SG
+    second: {fileID: 2100000, guid: 5e8fa47c436943f4a95c282c5129a181, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_lambert5SG
+    second: {fileID: 2100000, guid: bb844ee11ac58db4e9e44478625e26b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_lambert7SG
+    second: {fileID: 2100000, guid: 2426594d819a7204cabc479add2b113a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_lambert8SG
+    second: {fileID: 2100000, guid: d9262a80d158ab941b06599d0d51ace0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_emusuit21_lambert9SG
+    second: {fileID: 2100000, guid: 23b6e1042b91f09438b2a756a2b6daad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EMU_initialShadingGroup
+    second: {fileID: 2100000, guid: 96953235029633643b13f09c7d1786b4, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 2
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

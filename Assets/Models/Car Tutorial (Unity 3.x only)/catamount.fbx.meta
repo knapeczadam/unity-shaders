@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: a6143b6c79b85ba458b132eb80b5728a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: Bottom-Interior
+    100004: Car_Glass
+    100006: //RootNode
+    100008: Collider_Bottom
+    100010: Collider_Top
+    100012: DiscBrakeFL
+    100014: DiscBrakeFR
+    100016: DiscBrakeRL
+    100018: DiscBrakeRR
+    100020: WheelFL
+    100022: WheelFL.2
+    100024: WheelFR
+    100026: WheelFR.2
+    100028: WheelRL
+    100030: WheelRL.2
+    100032: WheelRR
+    100034: WheelRR.2
+    400000: Body
+    400002: Bottom-Interior
+    400004: Car_Glass
+    400006: //RootNode
+    400008: Collider_Bottom
+    400010: Collider_Top
+    400012: DiscBrakeFL
+    400014: DiscBrakeFR
+    400016: DiscBrakeRL
+    400018: DiscBrakeRR
+    400020: WheelFL
+    400022: WheelFL.2
+    400024: WheelFR
+    400026: WheelFR.2
+    400028: WheelRL
+    400030: WheelRL.2
+    400032: WheelRR
+    400034: WheelRR.2
+    2300000: Body
+    2300002: Bottom-Interior
+    2300004: Car_Glass
+    2300006: Collider_Bottom
+    2300008: Collider_Top
+    2300010: DiscBrakeFL
+    2300012: DiscBrakeFR
+    2300014: DiscBrakeRL
+    2300016: DiscBrakeRR
+    2300018: WheelFL.2
+    2300020: WheelFR.2
+    2300022: WheelRL.2
+    2300024: WheelRR.2
+    3300000: Body
+    3300002: Bottom-Interior
+    3300004: Car_Glass
+    3300006: Collider_Bottom
+    3300008: Collider_Top
+    3300010: DiscBrakeFL
+    3300012: DiscBrakeFR
+    3300014: DiscBrakeRL
+    3300016: DiscBrakeRR
+    3300018: WheelFL.2
+    3300020: WheelFR.2
+    3300022: WheelRL.2
+    3300024: WheelRR.2
+    4300000: Bottom-Interior
+    4300002: Collider_Bottom
+    4300004: Collider_Top
+    4300006: Body
+    4300008: DiscBrake
+    4300010: Wheel
+    4300012: DiscBrakeRR
+    4300014: WheelRR.2
+    4300016: DiscBrakeFR
+    4300018: WheelFR.2
+    4300020: DiscBrakeFL
+    4300022: WheelFL.2
+    4300024: WheelRL.2
+    4300026: DiscBrakeRL
+    4300028: Car_Glass
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CAR_Body
+    second: {fileID: 2100000, guid: 58aaf7c104be6c94093782c150ffeb4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CAR_Bottom-Interior-Wheel
+    second: {fileID: 2100000, guid: 8002bba379ecee6488818be62968e378, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CAR_Lights
+    second: {fileID: 2100000, guid: b5de01cef7f391448aab11c28bba389a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CAR_Windows
+    second: {fileID: 2100000, guid: e0d5f61ed6548c948afc9b06c90adb49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collider_BottomMat
+    second: {fileID: 2100000, guid: d133a6552c831434b91567d821e17b4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collider_TopMat
+    second: {fileID: 2100000, guid: 1632de1a8988f6d4db961d3a4a869e31, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 3
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 1
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

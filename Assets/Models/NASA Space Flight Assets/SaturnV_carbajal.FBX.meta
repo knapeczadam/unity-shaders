@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 631536232fb3fb640b76791a0e95bff7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group1 gro
+    100002: group1 pCo
+    100004: group10 pC
+    100006: group11 pC
+    100008: group3 gro
+    100010: group6 pCu
+    100012: group7 pCu
+    100014: group8 pCy
+    100016: group9 pCy
+    100018: pCone2 gro
+    100020: pCube1 gr1
+    100022: pCube1 gro
+    100024: pCylinder1
+    100026: pCylinder2
+    100028: pCylinder3
+    100030: pCylinder4
+    100032: pCylinder5
+    100034: polySurfa1
+    100036: polySurfa2
+    100038: polySurfa3
+    100040: polySurfa4
+    100042: polySurfac
+    100044: //RootNode
+    400000: group1 gro
+    400002: group1 pCo
+    400004: group10 pC
+    400006: group11 pC
+    400008: group3 gro
+    400010: group6 pCu
+    400012: group7 pCu
+    400014: group8 pCy
+    400016: group9 pCy
+    400018: pCone2 gro
+    400020: pCube1 gr1
+    400022: pCube1 gro
+    400024: pCylinder1
+    400026: pCylinder2
+    400028: pCylinder3
+    400030: pCylinder4
+    400032: pCylinder5
+    400034: polySurfa1
+    400036: polySurfa2
+    400038: polySurfa3
+    400040: polySurfa4
+    400042: polySurfac
+    400044: //RootNode
+    2300000: group1 gro
+    2300002: group1 pCo
+    2300004: group10 pC
+    2300006: group11 pC
+    2300008: group3 gro
+    2300010: group6 pCu
+    2300012: group7 pCu
+    2300014: group8 pCy
+    2300016: group9 pCy
+    2300018: pCone2 gro
+    2300020: pCube1 gr1
+    2300022: pCube1 gro
+    2300024: pCylinder1
+    2300026: pCylinder2
+    2300028: pCylinder3
+    2300030: pCylinder4
+    2300032: pCylinder5
+    2300034: polySurfa1
+    2300036: polySurfa2
+    2300038: polySurfa3
+    2300040: polySurfa4
+    2300042: polySurfac
+    3300000: group1 gro
+    3300002: group1 pCo
+    3300004: group10 pC
+    3300006: group11 pC
+    3300008: group3 gro
+    3300010: group6 pCu
+    3300012: group7 pCu
+    3300014: group8 pCy
+    3300016: group9 pCy
+    3300018: pCone2 gro
+    3300020: pCube1 gr1
+    3300022: pCube1 gro
+    3300024: pCylinder1
+    3300026: pCylinder2
+    3300028: pCylinder3
+    3300030: pCylinder4
+    3300032: pCylinder5
+    3300034: polySurfa1
+    3300036: polySurfa2
+    3300038: polySurfa3
+    3300040: polySurfa4
+    3300042: polySurfac
+    4300000: group1 gro
+    4300002: group1 pCo
+    4300004: group10 pC
+    4300006: group11 pC
+    4300008: group3 gro
+    4300010: group6 pCu
+    4300012: group7 pCu
+    4300014: group8 pCy
+    4300016: group9 pCy
+    4300018: pCone2 gro
+    4300020: pCube1 gro
+    4300022: pCube1 gr1
+    4300024: pCylinder1
+    4300026: pCylinder2
+    4300028: pCylinder3
+    4300030: pCylinder4
+    4300032: pCylinder5
+    4300034: polySurfac
+    4300036: polySurfa1
+    4300038: polySurfa2
+    4300040: polySurfa3
+    4300042: polySurfa4
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn10SG
+    second: {fileID: 2100000, guid: 78d944a54208fad40b71e6282d4af0e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn11SG
+    second: {fileID: 2100000, guid: d0b81933cf4c82e44971708ad402ac9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn1SG
+    second: {fileID: 2100000, guid: 7250f54c9de1c074e9290541ffdf0d46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn2SG
+    second: {fileID: 2100000, guid: b5b95521dc535584295bddb621174c49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn3SG
+    second: {fileID: 2100000, guid: 51dc6966ef6d1c54dada52717289ccba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn4SG
+    second: {fileID: 2100000, guid: bc3951e53bb257e44abbcaf7ad212945, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn5SG
+    second: {fileID: 2100000, guid: dadc46b167ed08441828f8701a2cc685, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn6SG
+    second: {fileID: 2100000, guid: 6029e917b3a9ba14e90c373d2a9b2a82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn8SG
+    second: {fileID: 2100000, guid: 55342c959969b1b47b09734dfeefbdf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn9SG
+    second: {fileID: 2100000, guid: 6f38efadd06c6ba4da952c6acc84f9e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fin_blinn1SG
+    second: {fileID: 2100000, guid: 0dfddeb1d56b7c24ba142449fcf7ce08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fin_blinn2SG
+    second: {fileID: 2100000, guid: 39854706f13a6684d9588b1ea70af879, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGr
+    second: {fileID: 2100000, guid: 0541346beb6e7d74084fb1deecd7e24f, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
