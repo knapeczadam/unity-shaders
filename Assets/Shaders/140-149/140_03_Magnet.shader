@@ -1,11 +1,10 @@
-﻿Shader "Custom/140-149/140_02_Magnet"
+﻿Shader "Custom/140-149/140_03_Magnet"
 {
     Properties
     {
-        _MainTex ("Main texutre", 2D) = "white" {}
         _Radius ("Radius", Range(0.0, 1.0)) = 1.0
-        _Length ("Length", Range(0.01, 0.5)) = 0.01
-        _MagnetPos ("Magnet position", Vector) = (0, 0, 0, 0)
+        _Length ("Length", Range(0.01, 0.2)) = 0.01
+        _MagnetDir ("Magnet", Vector) = (0, 0, 0, 0)
     }
     
     SubShader
@@ -18,38 +17,40 @@
             
             #include "UnityCG.cginc"
             
-            sampler2D _MainTex;
             fixed _Radius;
             fixed _Length;
-            float4 _MagnetPos;
+            float4 _MagnetDir;
             
             struct vertexInput
             {
                 float4 vertex : POSITION;
                 half2 texcoord : TEXCOORD0;
+                float3 normal : NORMAL;
             };
             
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
                 half2 uv : TEXCOORD0;
+                fixed4 col : COLOR0;
             };
             
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
-                float4 worldPos = mul(unity_ObjectToWorld, v.vertex);
-                float4 distance = _MagnetPos - worldPos;
-                float r = length(distance.xz) / _Radius;
-                worldPos.y += (cos(r) + 1) * distance.y * _Length;
-                o.pos = mul(UNITY_MATRIX_VP, worldPos);
+                float3 worldNormal = UnityObjectToWorldNormal(v.normal);
+                float4 dp = saturate(dot(_MagnetDir, worldNormal));
+                fixed res = dp > 1 - _Radius ? dp : 0;
+                v.vertex.xyz += v.normal * _Length * res;
+                o.col = res;
+                o.pos = UnityObjectToClipPos(v.vertex);
                 o.uv = v.texcoord;
                 return o;
             }
                 
             fixed4 frag(vertexOuput i) : SV_TARGET
             {
-                return tex2D(_MainTex, i.uv);
+                return i.col;
             }
             ENDCG
         }
