@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: ad8aa54b3e68f2b4a849f0573c070e11
+labels:
+- Normalmap
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
