@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 141_02_Toon_Frag
+  m_Name: 141_01_Toon_Frag
   m_Shader: {fileID: 4800000, guid: b7c77f0e03441514eb46a5ff8744304c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

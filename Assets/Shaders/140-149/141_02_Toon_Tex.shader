@@ -1,14 +1,8 @@
-﻿Shader "Custom/140-149/141_02_Toon_Frag"
+﻿Shader "Custom/140-149/141_02_Toon_Tex"
 {
     Properties
     {
-        _ToonAngle1 ("Toon angle 1 - Low", Range(0.0, 1.0)) = 0
-        _ToonAngle2 ("Toon angle 2 - Mid", Range(0.0, 1.0)) = 0
-        _ToonAngle3 ("Toon angle 3 - High", Range(0.0, 1.0)) = 0
-        _ToonColor1 ("Toon color 1 - Low", Color) = (1, 1, 1, 1)
-        _ToonColor2 ("Toon color 2 - Mid", Color) = (1, 1, 1, 1)
-        _ToonColor3 ("Toon color 3 - High", Color) = (1, 1, 1, 1)
-        _Color ("Default color - Highest", Color) = (1, 1, 1, 1)
+        _MainTex("Main texture", 2D) = "white" {}
     }
     
     SubShader
@@ -23,24 +17,13 @@
             
             #include "UnityCG.cginc"
             
-            fixed4 _Color;
-            fixed4 _ToonColor1;
-            fixed4 _ToonColor2;
-            fixed4 _ToonColor3;
-            
-            fixed _ToonAngle1;
-            fixed _ToonAngle2;
-            fixed _ToonAngle3;
+            sampler2D _MainTex;
             
             fixed4 toonShading(float3 N)
             {
                 float3 L = normalize(_WorldSpaceLightPos0.xyz);
-                float angle = saturate(dot(N, L));
-                
-                if (angle < _ToonAngle1) return _ToonColor1;
-                if (angle < _ToonAngle2) return _ToonColor2;
-                if (angle < _ToonAngle3) return _ToonColor3;
-                return _Color;
+                float angle = dot(N, L) * 0.5 + 0.5;
+                return tex2D(_MainTex, angle);
             }
             
             struct vertexInput
