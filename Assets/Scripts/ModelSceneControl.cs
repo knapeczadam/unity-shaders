@@ -85,7 +85,10 @@ namespace UnityStandardAssets.SceneUtils
 
             if (Input.GetKeyUp(KeyCode.L) && s_Selected.Url != null)
             {
-                System.Diagnostics.Process.Start(s_Selected.Url);
+                foreach (string url in s_Selected.Url.Split(','))
+                {
+                    System.Diagnostics.Process.Start(url);
+                }
             }
             
             if (s_Selected.mode == Mode.Activate)
