@@ -18,14 +18,15 @@
             sampler2D _Normal;
             float4 _Normal_ST;
             
-            float3 normalFromColor(float4 col)
+            float3 normalFromColor(float4 col)  // UnpackNormal
             {
                 #if defined(UNITY_NO_DXT5nm)
                     return col.xyz * 2 - 1;
                 #else
+                    col.r *= col.a;
                     float3 normVal;
-                    normVal = float3(col.a * 2 - 1, col.g * 2 - 1, 0.0);
-                    normVal.z = sqrt(1 - dot(normVal, normVal));
+                    normVal = float3(col.r * 2 - 1, col.g * 2 - 1, 0.0);
+                    normVal.z = sqrt(1 - saturate(dot(normVal, normVal)));
                     return normVal;
                 #endif
             }
