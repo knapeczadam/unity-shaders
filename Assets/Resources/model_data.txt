@@ -303,3 +303,4 @@ B7C24E5268224207A39B6516B4C60143|Magnet - without clamp|10
 5736BA72DC9E4079B7B37A277E19FEDA|Toon shading - Frag|5
 5F4BC3D8298F492BAF8BA3CB6DF873CE|Toon shading with texture|5
 2A0398BB9F5F4ED3A86CDBFC71D19A15|MatCap|5|https://wiki.unity3d.com/index.php/MatCap,https://labs.sketchfab.com/experiments/material-showcase/
+D331ACC0A4E24D80985648C875BFD019|DirectX/OpenGL UV test|5
