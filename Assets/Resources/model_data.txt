@@ -281,6 +281,7 @@ E70C4F3D07CF44A89D9644330E347932|Semantics|5|https://docs.microsoft.com/en-us/wi
 C7CF1C48BD3D4AE5AABC847A9FA0C710|UV checker - Rotation|3|http://developer.download.nvidia.com/cg/radians.html
 49A8AD11134648F283839D3B16FA2496|Color scattering|3
 5C0BFC796656465083F260406CE8DA0E|Grayscale|3|https://en.wikipedia.org/wiki/Grayscale
+51D484FF26AB4F3A84312AE7A34AD4DD|Grayscale on camera|3|https://docs.unity3d.com/ScriptReference/Graphics.Blit.html
 2E375EB181FE4F68968EBC4A0CDA80B2|Texture weight|3
 E29273BDC227461DADC359CFFBE5E5EF|Texture mask|3
 9BE95E288F3E402381B701D788E5A53C|Texture mask with texture weight|3
