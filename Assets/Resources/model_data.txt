@@ -262,6 +262,8 @@ E5058CF851A749A19D5FFE437BABC8B7|Math Operators - Saturate|5|http://developer.do
 413AD1A4B4F64A26ADFB15391C8963D7|Texture-space|10|https://aras-p.info/blog/2016/04/08/solving-dx9-half-pixel-offset/
 881B9BAC01604872AD2196493FE10172|Reflection - Vert|2|https://en.wikibooks.org/wiki/Cg_Programming/Unity/Reflecting_Surfaces
 F31D336F63E746DDBEA71834C509A953|Reflection - Frag|2
+0D3292A028BF4248A2DD517582DACB98|Refraction - Vertex|2|http://developer.download.nvidia.com/cg/refract.html
+64499108BE4B45F0ABAA4CC894E72144|Refraction - Frag|2|http://developer.download.nvidia.com/cg/refract.html
 ADE33991F6DD4C92B05796AF670D1914|Fresnel - Vert|20|https://en.wikipedia.org/wiki/Augustin-Jean_Fresnel
 F3685B94E2CE480FB9F608F16FACD04B|Fresnel - Frag|20|https://docs.unity3d.com/Manual/StandardShaderFresnel.html
 D0ACC3DEA24D40849A41D6B91B695ACA|Shadow mapping|5|https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html
@@ -303,4 +305,6 @@ B7C24E5268224207A39B6516B4C60143|Magnet - without clamp|10
 5736BA72DC9E4079B7B37A277E19FEDA|Toon shading - Frag|5
 5F4BC3D8298F492BAF8BA3CB6DF873CE|Toon shading with texture|5
 2A0398BB9F5F4ED3A86CDBFC71D19A15|MatCap|5|https://wiki.unity3d.com/index.php/MatCap,https://labs.sketchfab.com/experiments/material-showcase/
-D331ACC0A4E24D80985648C875BFD019|DirectX/OpenGL UV test|5
+D331ACC0A4E24D80985648C875BFD019|DirectX/OpenGL UV test|5|https://docs.unity3d.com/Manual/SL-BuiltinMacros.html,https://docs.unity3d.com/Manual/CommandLineArguments.html
+84CE76A2F9DD49F1A909D4A3F3CE2ED0|Refraction on flat surface - Incident ray (red), surface normal (blue), refracted ray (green)|5|https://en.wikipedia.org/wiki/Willebrord_Snellius,https://en.wikipedia.org/wiki/Snell%27s_law,https://en.wikipedia.org/wiki/Refractive_index,https://pixelandpoly.com/ior.html
+BC45747983B546CA86C7089431C0CF27|Refraction on sphere - Incident ray (red), surface normal (blue), refracted ray (green)|5
