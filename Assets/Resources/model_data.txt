@@ -292,7 +292,8 @@ A5A66B9AF8274C0AB08BF3430609DFB7|Phong debugger|5|https://en.wikipedia.org/wiki/
 CBE75323C63A4BE896C5B5262EC02CCB|Blinn-Phong debugger|5|https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_shading_model
 7025B912D0014348A49FB3382DFDFCDA|Texture mask clamp|3|http://developer.download.nvidia.com/cg/clamp.html
 CDBD3F5DFFD841CEBCF548C5C76C6A9B|Screen space|5|https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html
-0230F97F540D42479CCC464AA54AD9FB|Terrain|5
+0230F97F540D42479CCC464AA54AD9FB|Terrain - simple|5
+A361B48EE84A4783B9F61E0A630A3FD5|Terrain - advanced|5
 EF5C9FB6C8D24DBE9B5ADA7311B6F5C5|Offset|5|https://docs.unity3d.com/Manual/SL-CullAndDepth.html
 F8B8A67DD02E4D34ACF1E59A35E6F516|Flow|3
 D0C0DC5A881944E3A859F42BD9A1C2C0|Flow with double layer|3
