@@ -309,4 +309,5 @@ B7C24E5268224207A39B6516B4C60143|Magnet - without clamp|10
 D331ACC0A4E24D80985648C875BFD019|DirectX/OpenGL UV test|5|https://docs.unity3d.com/Manual/SL-BuiltinMacros.html,https://docs.unity3d.com/Manual/CommandLineArguments.html
 84CE76A2F9DD49F1A909D4A3F3CE2ED0|Refraction on flat surface - Incident ray (red), surface normal (blue), refracted ray (green)|5|https://en.wikipedia.org/wiki/Willebrord_Snellius,https://en.wikipedia.org/wiki/Snell%27s_law,https://en.wikipedia.org/wiki/Refractive_index,https://pixelandpoly.com/ior.html
 BC45747983B546CA86C7089431C0CF27|Refraction on sphere - Incident ray (red), surface normal (blue), refracted ray (green)|5
-650630AFEAD24659A79B80CE32112DD3|Half-Lambert|2
+650630AFEAD24659A79B80CE32112DD3|Half-Lambert|2|http://www.jordanstevenstechart.com/lighting-models
+71A97C498842480FB10371749AB6EC21|Banded-Lighting|2|http://www.jordanstevenstechart.com/lighting-models

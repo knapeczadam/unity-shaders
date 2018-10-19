@@ -1,26 +1,28 @@
-﻿Shader "Custom/140-149/145_Half_Lambert"
+﻿Shader "Custom/140-149/146_Banded_Lighting"
 {
     Properties
     {
         _MainTex ("Main texture", 2D) = "white" {}
         _NormalMap ("Normal map", 2D) = "bump" {}
-        _DiffuseWrap ("Wrap value", Range(0.5, 1.0)) = 0.5
+        _LightSteps ("Light steps", Range(1.0, 256.0)) = 1.0
     }
 	SubShader
 	{
 	    CGPROGRAM
-	    #pragma surface surf HalfLambert
+	    #pragma surface surf Banded
 	    
 	    sampler2D _MainTex;
 	    sampler2D _NormalMap;
-	    fixed _DiffuseWrap;
+	    fixed _LightSteps;
 	    
-	    fixed4 LightingHalfLambert(SurfaceOutput s, half3 lightDir, half atten)
+	    fixed4 LightingBanded(SurfaceOutput s, half3 lightDir, half atten)
         {
             fixed4 c;
             fixed NdotL = saturate(dot(s.Normal ,lightDir));
-            fixed halfDiff = pow(NdotL * _DiffuseWrap + (1 - _DiffuseWrap), 2);
-            c.rgb = s.Albedo * _LightColor0.rgb * atten * halfDiff;
+            fixed lightBandsMultiplier = _LightSteps / 256;
+            fixed lightBandsAdditive = _LightSteps / 2;
+            fixed bandedNdotL = (floor((NdotL * 256 + lightBandsAdditive) / _LightSteps)) * lightBandsMultiplier;
+            c.rgb = s.Albedo * _LightColor0.rgb * atten * bandedNdotL;
             c.a = s.Alpha;
             return c;
         }
