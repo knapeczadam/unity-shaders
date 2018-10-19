@@ -1,0 +1,8 @@
+digraph G {
+"UnityCG.cginc" -> "UnityShaderVariables.cginc"
+"UnityCG.cginc" -> "UnityShaderUtilities.cginc"  //This file is always included in all unity shaders.
+"UnityCG.cginc" -> "UnityInstancing.cginc"
+
+"UnityShaderVariables.cginc" -> "HLSLSupport.cginc"
+"UnityShaderUtilities.cginc" -> "UnityShaderVariables.cginc"
+}

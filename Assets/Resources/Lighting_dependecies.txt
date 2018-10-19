@@ -1,0 +1,25 @@
+digraph G {
+"Lighting.cginc" -> "UnityLightingCommon.cginc"
+"Lighting.cginc" -> "UnityGBuffer.cginc"
+"Lighting.cginc" -> "UnityGlobalIllumination.cginc"
+
+"UnityGlobalIllumination.cginc" -> "UnityImageBasedLighting.cginc"
+"UnityGlobalIllumination.cginc" -> "UnityStandardUtils.cginc"
+"UnityGlobalIllumination.cginc" -> "UnityShadowLibrary.cginc"
+
+"UnityImageBasedLighting.cginc" -> "UnityCG.cginc"
+"UnityImageBasedLighting.cginc" -> "UnityStandardConfig.cginc"
+"UnityImageBasedLighting.cginc" -> "UnityStandardBRDF.cginc"
+"UnityStandardUtils.cginc" -> "UnityCG.cginc"
+"UnityStandardUtils.cginc" -> "UnityStandardConfig.cginc"
+
+"UnityCG.cginc" -> "UnityShaderVariables.cginc"
+"UnityCG.cginc" -> "UnityShaderUtilities.cginc"  //This file is always included in all unity shaders.
+"UnityCG.cginc" -> "UnityInstancing.cginc"
+"UnityStandardBRDF.cginc" -> "UnityCG.cginc"
+"UnityStandardBRDF.cginc" -> "UnityStandardConfig.cginc"
+"UnityStandardBRDF.cginc" -> "UnityLightingCommon.cginc"
+
+"UnityShaderVariables.cginc" -> "HLSLSupport.cginc"
+"UnityShaderUtilities.cginc" -> "UnityShaderVariables.cginc"
+}
