@@ -1,4 +1,4 @@
-﻿Shader "Custom/140-149/146_Banded_Lighting"
+﻿Shader "Custom/140-149/146_Banded"
 {
     Properties
     {

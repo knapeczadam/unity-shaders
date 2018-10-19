@@ -311,3 +311,4 @@ D331ACC0A4E24D80985648C875BFD019|DirectX/OpenGL UV test|5|https://docs.unity3d.c
 BC45747983B546CA86C7089431C0CF27|Refraction on sphere - Incident ray (red), surface normal (blue), refracted ray (green)|5
 650630AFEAD24659A79B80CE32112DD3|Half-Lambert|2|http://www.jordanstevenstechart.com/lighting-models
 71A97C498842480FB10371749AB6EC21|Banded-Lighting|2|http://www.jordanstevenstechart.com/lighting-models
+65C6F3CCEA80472D9B336E638CC1A3DD|Minnaert Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Marcel_Minnaert,http://www.artisticexperiments.com/cg-shaders/cg-shaders-minnaert
