@@ -19,6 +19,7 @@ public class CameraController : MonoBehaviour
     public static bool s_EnablePostProcessingEffects;
     public Material mat;
     public static Material s_Mat;
+    public DepthTextureMode depthTextureMode;
 
     void Update()
     {
@@ -39,6 +40,7 @@ public class CameraController : MonoBehaviour
         if (enablePostProcessingEffects)
         {
             s_Mat = mat;
+            Camera.main.depthTextureMode = depthTextureMode;
             s_EnablePostProcessingEffects = true;
             RenderTextureController textureController = Camera.main.GetComponent<RenderTextureController>();
             textureController.enabled = true;
@@ -56,6 +58,7 @@ public class CameraController : MonoBehaviour
     
             if (enablePostProcessingEffects)
             {
+                Camera.main.depthTextureMode = DepthTextureMode.None;
                 RenderTextureController textureController = Camera.main.GetComponent<RenderTextureController>();
                 textureController.enabled = false;
             }
