@@ -63666,7 +63666,7 @@ MonoBehaviour:
   replacementShader: {fileID: 0}
   replacementTag: 
   enablePostProcessingEffects: 1
-  mat: {fileID: 2100000, guid: 4be4c75efe998a346aa4d2f6fede1d9b, type: 2}
+  mat: {fileID: 2100000, guid: 04a04695bda9df14295652f6f113aff5, type: 2}
 --- !u!23 &1018863241
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63682,7 +63682,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 4be4c75efe998a346aa4d2f6fede1d9b, type: 2}
+  - {fileID: 2100000, guid: 04a04695bda9df14295652f6f113aff5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
