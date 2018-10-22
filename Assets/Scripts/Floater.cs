@@ -6,6 +6,7 @@ public class Floater : MonoBehaviour
     public Axis axis = Axis.Y;
     public float amplitude = 0.5f;
     public float frequency = 1f;
+    public float speed = 1f;
     
     Vector3 posOffset;
     Vector3 tempPos;
@@ -22,13 +23,13 @@ public class Floater : MonoBehaviour
         switch (axis)
         {
             case Axis.X:
-                tempPos.x += Mathf.Sin (Time.fixedTime * Mathf.PI * frequency) * amplitude;
+                tempPos.x += Mathf.Sin (Time.fixedTime * speed * Mathf.PI * frequency) * amplitude;
                 break;
             case Axis.Y:
-                tempPos.y += Mathf.Sin (Time.fixedTime * Mathf.PI * frequency) * amplitude;
+                tempPos.y += Mathf.Sin (Time.fixedTime * speed * Mathf.PI * frequency) * amplitude;
                 break;
             case Axis.Z:
-                tempPos.z += Mathf.Sin (Time.fixedTime * Mathf.PI * frequency) * amplitude;
+                tempPos.z += Mathf.Sin (Time.fixedTime * speed * Mathf.PI * frequency) * amplitude;
                 break;
         }
         
