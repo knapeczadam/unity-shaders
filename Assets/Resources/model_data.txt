@@ -316,4 +316,7 @@ BC45747983B546CA86C7089431C0CF27|Refraction on sphere - Incident ray (red), surf
 65C6F3CCEA80472D9B336E638CC1A3DD|Minnaert Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Marcel_Minnaert,http://www.artisticexperiments.com/cg-shaders/cg-shaders-minnaert
 D106446BB40E4CF4BB4B2CFFF0768205|Oren-Nayer Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Oren%E2%80%93Nayar_reflectance_model
 208953D84C0643D3A6B0EED9BD642164|Aim|15
-594E7A62F8C74C91B0374126B09FB816|Snow|15
+594E7A62F8C74C91B0374126B09FB816|Snow|15594E7A62F8C74C91B0374126B09FB816|Snow|15
+CFD389A705884F8CBD315897C155AD85|Saturation|5
+CBA23F6FAD6546A9A2C3F4A695C650CE|Brightness|5
+486445ADECC4458D8BEDAB937E7FFC80|Contrast|5
