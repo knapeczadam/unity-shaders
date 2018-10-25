@@ -73,6 +73,7 @@ B7560F988D694CDFAB91632B886BF020|Stencil buffer - (Uncomment fallbacks)|5
 0993F4052D4E401CB087879421DD0D16|Generated Unlit shader|5
 D3DA42107B304DEFBC8656883DEEE391|VF and Fixed shader - Barebone|5|https://forum.unity.com/threads/official-removing-some-fixed-function-shader-functions-for-5-0.250107/
 06F81DEE71674AA795AA53909E7A3E1A|VF and Fixed shader - Color|5
+5EB10FFCCEC143A79CB58CDC8EE42C52|VF and Fixed shader - Texture|5|https://docs.unity3d.com/Manual/SL-SetTexture.html
 AB72AEE4F40846029B2CE66136503B25|VF shader - color by world position|10
 06442771E03B4AE9B2132356F07FF3DC|VF shader - color by screen position|10
 6EB380231DE4442C9BA45F80B8B8F494|VF material|20
