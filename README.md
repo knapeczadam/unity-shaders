@@ -8,4 +8,4 @@
 alt="Unity shaders - Demo project - preview " width="480" height="360" border="10" /></a>
 
 TODO: 
-About, Preview, Assets, Useful links, Unity package, Acknowledgment, Recommendations, etc.   
+About, Preview, Assets, Useful links, Unity package, Acknowledgment, Recommendations, Reordering, Optimization etc.   
