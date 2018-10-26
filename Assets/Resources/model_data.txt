@@ -327,3 +327,4 @@ CBA23F6FAD6546A9A2C3F4A695C650CE|Brightness|5
 9441CEB2E3BA4B9C948A1866ADA56F26|Content and Context|15|https://docs.unity3d.com/Manual/StandardShaderContextAndContent.html
 C8B0BB9B66B24CE8AAE65AC38A1BC3AD|PBR - Rendering Mode|5|https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterAlbedoColor.html
 3565F36A853F4C709EE60F1302FB6C9D|Accessing and modifying the Standard Shader|5|https://docs.unity3d.com/Manual/MaterialsAccessingViaScript.html,https://unity3d.com/get-unity/download/archive,https://docs.unity3d.com/ScriptReference/Material.EnableKeyword.html
+34020102414A45DFA8F1E128E54C8F4D|Surface Shader examples|10|https://docs.unity3d.com/Manual/SL-SurfaceShaderExamples.html
