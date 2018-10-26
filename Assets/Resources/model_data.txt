@@ -325,3 +325,4 @@ CBA23F6FAD6546A9A2C3F4A695C650CE|Brightness|5
 25E7C0E9B2514D59BA03F42BFA0B7DC0|Blending|5|https://www.w3.org/TR/compositing-1/
 8B532B02CA9848ECA44A7ABBCC95924C|Default 2D texture values|5|https://docs.unity3d.com/Manual/SL-Properties.html
 9441CEB2E3BA4B9C948A1866ADA56F26|Content and Context|15|https://docs.unity3d.com/Manual/StandardShaderContextAndContent.html
+C8B0BB9B66B24CE8AAE65AC38A1BC3AD|PBS - Rendering Mode|5|https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterAlbedoColor.html
