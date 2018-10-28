@@ -334,3 +334,4 @@ D008643BD23A43579BA5261805727C75|Normal Shader Family|10|https://docs.unity3d.co
 D9712B46D9334D9494FC83C46F81CEA7|Self-Illuminated Shader Family|10|https://docs.unity3d.com/Manual/shader-SelfIllumFamily.html,https://unity3d.com/get-unity/download/archive
 9DF7B494E7B94FBF9F06F72A1243D9FA|Reflective Shader Family|10|https://docs.unity3d.com/Manual/shader-ReflectiveFamily.html,https://unity3d.com/get-unity/download/archive
 1612F673BCDB401989E64B4E874344D8|Tessellation examples|5|https://docs.unity3d.com/Manual/SL-SurfaceShaderTessellation.html,https://people.eecs.berkeley.edu/~sequin/CS284/PROJ_12/Brandon/Smooth%20GPU%20Tessellation.pdf
+5CD94BBE01394E86A26579C166341A69|Vertex and fragment shader examples|30|https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html,https://docs.unity3d.com/Manual/SL-ShaderSemantics.html,https://unity3d.com/pages/butterfly
