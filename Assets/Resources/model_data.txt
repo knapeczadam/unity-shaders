@@ -328,8 +328,9 @@ CBA23F6FAD6546A9A2C3F4A695C650CE|Brightness|5
 C8B0BB9B66B24CE8AAE65AC38A1BC3AD|PBR - Rendering Mode|5|https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterAlbedoColor.html
 3565F36A853F4C709EE60F1302FB6C9D|Accessing and modifying the Standard Shader|5|https://docs.unity3d.com/Manual/MaterialsAccessingViaScript.html,https://unity3d.com/get-unity/download/archive,https://docs.unity3d.com/ScriptReference/Material.EnableKeyword.html
 34020102414A45DFA8F1E128E54C8F4D|Surface Shader examples|10|https://docs.unity3d.com/Manual/SL-SurfaceShaderExamples.html
-D008643BD23A43579BA5261805727C75|Normal Shader Family|10|https://docs.unity3d.com/Manual/shader-NormalFamily.html
-42BF8B4E1F9A4A0B97B857F3D1E7EA85|Transparent Shader Family|10|https://docs.unity3d.com/Manual/shader-TransparentFamily.html
-20BC949F92064897856123316D5AFCB6|Transparent Cutout Shader Family|10|https://docs.unity3d.com/Manual/shader-TransparentCutoutFamily.html
-D9712B46D9334D9494FC83C46F81CEA7|Self-Illuminated Shader Family|10|https://docs.unity3d.com/Manual/shader-SelfIllumFamily.html
-9DF7B494E7B94FBF9F06F72A1243D9FA|Reflective Shader Family|10|https://docs.unity3d.com/Manual/shader-ReflectiveFamily.html
+D008643BD23A43579BA5261805727C75|Normal Shader Family|10|https://docs.unity3d.com/Manual/shader-NormalFamily.html,https://unity3d.com/get-unity/download/archive
+42BF8B4E1F9A4A0B97B857F3D1E7EA85|Transparent Shader Family|10|https://docs.unity3d.com/Manual/shader-TransparentFamily.html,https://unity3d.com/get-unity/download/archive
+20BC949F92064897856123316D5AFCB6|Transparent Cutout Shader Family|10|https://docs.unity3d.com/Manual/shader-TransparentCutoutFamily.html,https://unity3d.com/get-unity/download/archive
+D9712B46D9334D9494FC83C46F81CEA7|Self-Illuminated Shader Family|10|https://docs.unity3d.com/Manual/shader-SelfIllumFamily.html,https://unity3d.com/get-unity/download/archive
+9DF7B494E7B94FBF9F06F72A1243D9FA|Reflective Shader Family|10|https://docs.unity3d.com/Manual/shader-ReflectiveFamily.html,https://unity3d.com/get-unity/download/archive
+1612F673BCDB401989E64B4E874344D8|Tessellation examples|5|https://docs.unity3d.com/Manual/SL-SurfaceShaderTessellation.html,https://people.eecs.berkeley.edu/~sequin/CS284/PROJ_12/Brandon/Smooth%20GPU%20Tessellation.pdf
