@@ -336,3 +336,4 @@ D9712B46D9334D9494FC83C46F81CEA7|Self-Illuminated Shader Family|10|https://docs.
 1612F673BCDB401989E64B4E874344D8|Tessellation examples|5|https://docs.unity3d.com/Manual/SL-SurfaceShaderTessellation.html,https://people.eecs.berkeley.edu/~sequin/CS284/PROJ_12/Brandon/Smooth%20GPU%20Tessellation.pdf
 5CD94BBE01394E86A26579C166341A69|Vertex and fragment shader examples|30|https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html,https://docs.unity3d.com/Manual/SL-ShaderSemantics.html,https://unity3d.com/pages/butterfly
 0F3956C6081B4AFFAECB8F99AA36E53C|Debug vertex inputs|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html
+9A7552C1F1CC4AB1A400347E4AAAA947|Sampler states|5|https://docs.unity3d.com/Manual/SL-SamplerStates.html
