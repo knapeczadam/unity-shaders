@@ -337,3 +337,8 @@ D9712B46D9334D9494FC83C46F81CEA7|Self-Illuminated Shader Family|10|https://docs.
 5CD94BBE01394E86A26579C166341A69|Vertex and fragment shader examples|30|https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html,https://docs.unity3d.com/Manual/SL-ShaderSemantics.html,https://unity3d.com/pages/butterfly
 0F3956C6081B4AFFAECB8F99AA36E53C|Debug vertex inputs|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html
 9A7552C1F1CC4AB1A400347E4AAAA947|Sampler states|5|https://docs.unity3d.com/Manual/SL-SamplerStates.html
+AE6C7FDC315E4EBB8D844DCEF687E50E|Property attributes and drawers|5|https://docs.unity3d.com/Manual/SL-Properties.html
+A6B624A7ECCE4621A2F286079FC39D11|Custom shader editor|5|https://docs.unity3d.com/Manual/SL-CustomEditor.html,https://docs.unity3d.com/Manual/SL-CustomShaderGUI.html
+369B806CAE0C46BEB2536203AA59AC9A|Custom Material Property Drawer|5|https://docs.unity3d.com/ScriptReference/MaterialPropertyDrawer.html
+25EE6E2CB9BC4C3B9814EFFE765745D2|UsePass|5|https://docs.unity3d.com/Manual/SL-UsePass.html,https://docs.unity3d.com/Manual/SL-Name.html
+C37D44A3AEBC4F10869BCD16E612E975|Texture arrays|5|https://docs.unity3d.com/Manual/SL-TextureArrays.html,https://github.com/DmtDenisov/Texture-Array-Unity
