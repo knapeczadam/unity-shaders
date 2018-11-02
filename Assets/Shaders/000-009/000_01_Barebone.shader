@@ -3,14 +3,15 @@
     SubShader
     {
         CGPROGRAM
-        #pragma surface pickAName Lambert
+        #pragma surface yourSurfaceFunction Lambert exclude_path:deferred exclude_path:prepass noshadow noambient novertexlights nolightmap nodynlightmap nodirlightmap nofog nometa noforwardadd  nolppv  noshadowmask 
         
         struct Input
         {
             int structInputHasNoMembers;
+            float3 worldNormal;
         };
         
-        void pickAName(Input IN, inout SurfaceOutput o)
+        void yourSurfaceFunction(Input IN, inout SurfaceOutput o)
         {
             
         }

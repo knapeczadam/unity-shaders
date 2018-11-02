@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "black" {}
+        _MainTex ("Base (RGB)", 2D) = "white" {}
     }
     
     SubShader
@@ -18,5 +18,4 @@
             SetTexture [_MainTex] { combine texture }
         }
     }
-    Fallback "Diffuse"
 }

@@ -37,7 +37,7 @@
                 return o;
             }
             
-            float3x3 frag(vertexOuput i) : COLOR
+            float3x3 frag(vertexOuput i) : SV_TARGET
             {
                 float3x3 TBN = float3x3(i.worldTangent, i.worldBinormal, i.worldNormal); 
                 

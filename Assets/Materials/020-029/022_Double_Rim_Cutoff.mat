@@ -87,6 +87,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _FirstRim: 0.5
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -95,6 +96,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Range: 0.2
+    - _SecondRim: 0.3
     - _Slider: 50
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

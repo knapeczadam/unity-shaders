@@ -12,7 +12,7 @@
             float3 worldPos;
         };
         
-        void surf (Input IN, inout SurfaceOutput o) 
+        void surf(Input IN, inout SurfaceOutput o) 
         {
             const float PI = UNITY_PI;
             float _Speed = 10 ;
@@ -46,5 +46,4 @@
         }
         ENDCG
     } 
-    Fallback "Diffuse"
 }   

@@ -17,9 +17,9 @@
             float2 uv_MainTex;
         };
         
-        void surf (Input IN, inout SurfaceOutput o) 
+        void surf(Input IN, inout SurfaceOutput o) 
         {
-            o.Albedo = tex2D (_MainTex, IN.uv_MainTex);
+            o.Albedo = tex2D(_MainTex, IN.uv_MainTex);
         }
         ENDCG
         
@@ -65,6 +65,5 @@
 			ENDCG
 		}
     } 
-    Fallback "Diffuse"
 }
 

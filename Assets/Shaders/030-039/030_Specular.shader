@@ -2,9 +2,9 @@
 {
     Properties
     {
-        _Color ("Color", Color) = (1, 1, 1, 1)
-        _MetallicTex ("Metallic (R)", 2D) = "white" {}
-        _SpecColor ("Specular", Color) = (1, 1, 1, 1)
+        _Color ("Main Color", Color) = (1, 1, 1, 1)
+        _SpecGlossMap ("Specular (RGB) and Smoothness (A)", 2D) = "white" {}
+        _Glossiness ("Smoothness", Range(0.0, 1.0)) = 0.5
     }
     
     SubShader 
@@ -13,22 +13,21 @@
         #pragma surface surf StandardSpecular
         
         fixed4 _Color;
-        sampler2D _MetallicTex;
+        sampler2D _SpecGlossMap;
+        half _Glossiness;
         
         struct Input
         {
-            float2 uv_MetallicTex;
+            float2 uv_SpecGlossMap;
         };
         
-        void surf (Input IN, inout SurfaceOutputStandardSpecular o) 
+        void surf(Input IN, inout SurfaceOutputStandardSpecular o) 
         {
-            o.Albedo = _Color;
-            half smoothness = tex2D(_MetallicTex, IN.uv_MetallicTex);
-            smoothness += (saturate(abs(_SinTime.w)) * (0.9 - smoothness - smoothness));
-            o.Smoothness = smoothness;
-            o.Specular = _SpecColor;
+            o.Albedo = _Color.rgb;
+            fixed4 specGlossCol = tex2D(_SpecGlossMap, IN.uv_SpecGlossMap);
+            o.Specular = specGlossCol.rgb;
+            o.Smoothness = specGlossCol.a * _Glossiness;
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }   

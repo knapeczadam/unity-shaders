@@ -50,7 +50,7 @@
                                  
         int2x2 a = int2x2(int2(1, 1), int2(1, 1));                                 
         int2x2 b = int3x3(int3(1, 1, 1), int3(1, 1, 1), int3(1, 1, 1));                                 
-        int4x4 c = int4x4(int4(1, 1, 1, 1), int4(1, 1, 1, 1), int4(1, 1, 1, 1), int4(1, 1, 1, 1));
+        int4x4 c = int4x4(int4(1, 1, 1, 1), int4(1, 1, 1, 1), int4(1, 1, 1, 1), int4(1, 1, 1, 42));
         
         // 2X3, 2X4
         // 3X2, 3X4
@@ -58,18 +58,21 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
+            // _mRC
             int _catch = _m_in4x4._m22;
             
             // chaining
             float4 numbers1 = _m_fl4x4._m00_m11_m22_m33;
+            
+            // index
             float3 pi = _m_fi3x3[1];
+            int theAnswer = c[3][3]; 
         }
         ENDCG
     }
-    Fallback Off
 }

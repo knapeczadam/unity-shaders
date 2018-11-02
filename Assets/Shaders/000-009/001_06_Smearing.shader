@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Range ("Range", Range(0, 1)) = 1.0
+        _Color ("Main Color", Range(0.0, 1.0)) = 1.0
     }
     
     SubShader
@@ -10,18 +10,17 @@
         CGPROGRAM
         #pragma surface surf Lambert
         
-        float _Range;
+        fixed _Color;
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = _Range;        
+            o.Albedo = _Color;        
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

@@ -19,7 +19,7 @@
 
 		void surf(Input IN, inout SurfaceOutputStandard o)
 		{
-            o.Albedo = min(tex2D(_MainTex, IN.uv_MainTex), 0.5); // http://developer.download.nvidia.com/cg/min.html
+            o.Albedo = min(tex2D(_MainTex, IN.uv_MainTex), 0.5);
 		}
 		ENDCG
 	}

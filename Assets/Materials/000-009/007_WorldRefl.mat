@@ -42,8 +42,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _EnvMap:
+        m_Texture: {fileID: 8900000, guid: 04bfe9229de6de8429dbd8c69b781954, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Environment:
-        m_Texture: {fileID: 8900000, guid: 39cc8589db99d7546886df0d60a37688, type: 3}
+        m_Texture: {fileID: 8900000, guid: 04bfe9229de6de8429dbd8c69b781954, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:

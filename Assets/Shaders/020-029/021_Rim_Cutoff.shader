@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Color ("Color", Color) = (1, 1, 1, 1)
+        _Color ("Main Color", Color) = (1, 1, 1, 1)
     }
     
     SubShader 
@@ -17,13 +17,11 @@
             float3 viewDir;
         };
         
-        void surf (Input IN, inout SurfaceOutput o) 
+        void surf(Input IN, inout SurfaceOutput o) 
         {
-            half dotp = dot(normalize(IN.viewDir), o.Normal);
-            half rim = 1 - saturate(dotp);
-            o.Emission = _Color * rim > abs(_SinTime.x) ? rim : 0;   
+            float rim = 1.0 - saturate(dot(IN.viewDir, o.Normal));
+            o.Emission = _Color * (rim > sin(_Time.w) * 0.5 + 0.5 ? rim : 0);   
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

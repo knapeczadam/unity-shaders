@@ -13,7 +13,7 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
@@ -22,5 +22,4 @@
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }   

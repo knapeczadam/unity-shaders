@@ -30,7 +30,7 @@ Shader "Custom/160-169/167_01_Debug_UV"
                 return o;
             }
             
-            half4 frag(v2f i) : SV_Target 
+            half4 frag(v2f i) : SV_TARGET 
             {
                 half4 c = frac(i.uv);
                 if (any(saturate(i.uv) - i.uv))

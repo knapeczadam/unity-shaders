@@ -7,7 +7,7 @@
         
         struct Input
         {
-            float3 worldRefl;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
@@ -16,5 +16,4 @@
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

@@ -2,14 +2,13 @@
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex ("Albedo (RGB) and Transparency (A)", 2D) = "white" {}
+        _Cutoff ("Alpha Cutoff", Range(0.0, 1.0)) = 1.0
     }
     
     SubShader
     {
         Tags { "Queue" = "Transparent" }
-        
-        AlphaTest Greater 0.5
         
         CGPROGRAM
         #pragma surface surf Lambert alphatest:_Cutoff addshadow
@@ -29,5 +28,4 @@
         }
         ENDCG
     }
-    Fallback "Transparent/Cutout/VertexLit"
 }   

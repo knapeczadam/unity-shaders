@@ -2,8 +2,8 @@
 {
     Properties
     {
-        _Color ("Color", Color) = (1, 1, 1, 1)
-        _MainTex ("Texture", 2D) = "white" {}
+        _Color ("Main Color", Color) = (1, 1, 1, 1)
+        _MainTex ("Base (RGB)", 2D) = "white" {}
     }
     
     SubShader
@@ -21,9 +21,8 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = tex2D(_MainTex, IN.uv_MainTex) * _Color;
+            o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb * _Color.rgb;
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

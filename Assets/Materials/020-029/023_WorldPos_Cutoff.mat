@@ -100,6 +100,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _YAxis: 1
     - _ZWrite: 1
     - _isEmissive: 0
     - _myFloat: 0.5

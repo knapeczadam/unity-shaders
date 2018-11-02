@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Color ("Emission Color", Color) = (1, 1, 1, 1)
+        _EmissionColor ("Emission Color", Color) = (1, 1, 1, 1)
     }
     
     SubShader
@@ -10,18 +10,17 @@
         CGPROGRAM
         #pragma surface surf Lambert
         
-        fixed4 _Color;
+        fixed4 _EmissionColor;
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Emission = _Color;        
+            o.Emission = _EmissionColor.rgb;        
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

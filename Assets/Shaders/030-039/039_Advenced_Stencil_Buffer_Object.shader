@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex ("Base (RGB)", 2D) = "white" {}
         _SRef ("Stencil Ref", Int) = 0
         [Enum(UnityEngine.Rendering.CompareFunction)] _SComp ("Stencil Comp", Int) = 0
         [Enum(UnityEngine.Rendering.StencilOp)] _SOp ("Stencil Op", Int) = 0
@@ -22,5 +22,4 @@
             SetTexture [_MainTex] { combine texture }
         }
     }
-    // Fallback "Diffuse"
 }   

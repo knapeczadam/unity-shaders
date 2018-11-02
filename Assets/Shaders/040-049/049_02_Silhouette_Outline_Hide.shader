@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Custom/040-049/049_02_Silhouette_Outline_Hide" 
+﻿Shader "Custom/040-049/049_02_Silhouette_Outline_Hide" 
 {
     CGINCLUDE
     #include "UnityCG.cginc"
@@ -76,5 +74,4 @@ Shader "Custom/040-049/049_02_Silhouette_Outline_Hide"
         ENDCG
 		}
 	}
-    Fallback "Diffuse"
 }

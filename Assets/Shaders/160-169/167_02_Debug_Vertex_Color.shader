@@ -30,7 +30,7 @@ Shader "Custom/160-169/167_02_Debug_Vertex_Color"
                 return o;
             }
             
-            fixed4 frag(v2f i) : SV_Target 
+            fixed4 frag(v2f i) : SV_TARGET 
             { 
                 return i.color; 
             }

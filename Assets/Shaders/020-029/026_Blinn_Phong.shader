@@ -3,9 +3,9 @@
     Properties
     {
         _Color ("Color", Color) = (1, 1, 1, 1)
-        _SpecColor ("Specular color", Color) = (1, 1, 1, 1)
-        _Spec ("Specular", Range(0, 1)) = 0.5
-        _Gloss ("Glossiness", Range(0, 1)) = 0.5
+        _SpecColor ("Specular Color", Color) = (1, 1, 1, 1)
+        [PowerSlider(5.0)] _Shininess ("Shininess", Range (0.01, 1.0)) = 0.01
+        _Gloss ("Glossiness", Range(0.0, 1.0)) = 0.5
     }
     
     SubShader 
@@ -14,21 +14,20 @@
         #pragma surface surf BlinnPhong
         
         fixed4 _Color;
-        half _Spec;
+        half _Shininess;
         fixed _Gloss;
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
-        void surf (Input IN, inout SurfaceOutput o) 
+        void surf(Input IN, inout SurfaceOutput o) 
         {
             o.Albedo = _Color;
-            o.Specular = _Spec;
+            o.Specular = _Shininess;
             o.Gloss = _Gloss;
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }   

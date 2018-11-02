@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _MainTex ("MainTex", 2D) = "white" {}
+        _MainTex ("Base (RGB)", 2D) = "white" {}
         _DecalTex ("Decal", 2D) = "white" {}
     }
     
@@ -23,10 +23,9 @@
         {
             fixed4 a = tex2D(_MainTex, IN.uv_MainTex);
             fixed4 b = tex2D(_DecalTex, IN.uv_MainTex);
-            o.Albedo = a.r > abs(_SinTime.z) ? a : b;
-//            o.Albedo = lerp (a, b, abs(_SinTime.x));
+            o.Albedo = a.r > sin(_Time.y) * 0.5 + 0.5 ? a.rgb : b.rgb;
+//            o.Albedo = lerp(a, b, sin(_Time.y) * 0.5 + 0.5);
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }   

@@ -2,9 +2,8 @@
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
-        _Cube ("Cube map", CUBE) = "black" {}
-        _Range ("Range", Range(0, 1)) = 1.0
+        _MainTex ("Base (RGB)", 2D) = "white" {}
+        _EnvMap ("Environment Map", CUBE) = "" {}
     }
     
     SubShader
@@ -13,8 +12,7 @@
         #pragma surface surf Lambert
         
         sampler2D _MainTex;
-        samplerCUBE _Cube;
-        float _Range;
+        samplerCUBE _EnvMap;
         
         struct Input
         {
@@ -24,10 +22,9 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = tex2D(_MainTex, IN.uv_MainTex) * _Range;
-            o.Emission= texCUBE(_Cube, IN.worldRefl);
+            o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb;
+            o.Emission = texCUBE(_EnvMap, IN.worldRefl).rgb;
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

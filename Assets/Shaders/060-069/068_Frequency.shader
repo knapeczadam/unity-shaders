@@ -58,7 +58,7 @@
                 return 0;
             }
             
-            fixed4 frag(vertexOutput i) : COLOR
+            fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 fixed4 col = 1;
                 col.a = drawSin(i.texcoord);

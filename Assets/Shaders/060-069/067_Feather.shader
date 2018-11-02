@@ -44,7 +44,7 @@
                 return o;
             }
             
-            fixed4 frag(vertexOutput i) : COLOR
+            fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 fixed4 col;
                 col.rgb = abs(_SinTime);

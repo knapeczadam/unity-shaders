@@ -2,7 +2,8 @@
 {
     Properties
     {
-        _Color ("Color", Color) = (1, 1, 1, 1)
+        _Color ("Main Color", Color) = (1, 1, 1, 1)
+        _RimPow ("Rim power", Range(0.01, 10.0)) = 0.01
     }
     
     SubShader 
@@ -11,19 +12,18 @@
         #pragma surface surf Lambert
         
         fixed4 _Color;
+        fixed _RimPow;
         
         struct Input
         {
             float3 viewDir;
         };
         
-        void surf (Input IN, inout SurfaceOutput o) 
+        void surf(Input IN, inout SurfaceOutput o) 
         {
-            half dotp = dot(normalize(IN.viewDir), o.Normal);
-            half rim = 1 - saturate(dotp);
-            o.Emission = _Color  * pow(rim, (1 + (abs(_SinTime.x) * 9)));   
+            float rim = 1.0 - saturate(dot(IN.viewDir, o.Normal));
+            o.Emission = _Color  * pow(rim, _RimPow * (sin(_Time.w) * 0.5 + 0.5));   
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

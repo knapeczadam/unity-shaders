@@ -21,15 +21,14 @@
             v2f vert(appdata v)
             {
                 v2f o;
-                UNITY_INITIALIZE_OUTPUT(v2f, o);
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 v.vertex.x += sin(_Time.y);
                 return o;
             }
             
-            fixed4 frag(v2f i) : SV_Target
+            fixed4 frag(v2f i) : SV_TARGET
             {
-                return fixed4(0, 0, 0, 1);
+                return 0;
             }
             ENDCG
         }

@@ -39,7 +39,7 @@ Shader "Custom/170-179/171_Texture_Arrays"
                 return o;
             }
 
-            half4 frag(v2f i) : SV_Target
+            half4 frag(v2f i) : SV_TARGET
             {
                 return UNITY_SAMPLE_TEX2DARRAY(_MyArr, i.uv);
             }

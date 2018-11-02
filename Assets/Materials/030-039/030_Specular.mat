@@ -75,7 +75,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
-        m_Texture: {fileID: 2800000, guid: 04ebcf76f8471d946a0c79bc029b4141, type: 3}
+        m_Texture: {fileID: 2800000, guid: 082a477a29c51434097a2cba0ae07c87, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture:
@@ -97,7 +97,7 @@ Material:
     - _DstBlend: 0
     - _Gloss: 1
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 1
     - _GlossyReflections: 1
     - _Metallic: 1
     - _Mode: 0
@@ -117,9 +117,9 @@ Material:
     - _switchOrder: 1
     m_Colors:
     - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0, g: 0.20784314, b: 1, a: 1}
+    - _Color: {r: 0, g: 1, b: 0.79538155, a: 1}
     - _EmissionColor: {r: 0, g: 0.14015675, b: 1, a: 1}
     - _NormalColor: {r: 0.7176471, g: 0.03137254, b: 0.485672, a: 1}
-    - _SpecColor: {r: 0.2554849, g: 0.6603774, b: 0.19001423, a: 1}
+    - _SpecColor: {r: 0.4009434, g: 1, b: 0.59734774, a: 1}
     - _myColor: {r: 1, g: 1, b: 1, a: 1}
     - _myVector: {r: 0.5, g: 1, b: 1, a: 1}

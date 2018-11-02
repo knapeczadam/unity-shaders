@@ -107,12 +107,14 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _RampRange: 0.2
     - _Range: 0.2
     - _Slider: 50
     - _SmoothnessTextureChannel: 0
     - _Spec: 0.094
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Test: 0
     - _UVSec: 0
     - _ZWrite: 1
     - _isEmissive: 0

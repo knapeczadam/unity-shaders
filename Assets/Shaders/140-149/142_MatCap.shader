@@ -8,7 +8,7 @@
 	
 	Subshader 
 	{
-		Tags { "RenderType"="Opaque" }
+		Tags { "RenderType" = "Opaque" }
 		
 		Pass 
 		{
@@ -44,7 +44,7 @@
                 return o;
             }
 				
-            float4 frag (v2f i) : COLOR
+            float4 frag (v2f i) : SV_TARGET
             {
                 float3 normal = UnpackNormal(tex2D(_BumpMap, i.uv));
                 

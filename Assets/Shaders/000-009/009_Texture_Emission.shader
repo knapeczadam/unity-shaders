@@ -2,8 +2,8 @@
 {
     Properties
     {
-        _Texture ("Texture", 2D) = "white" {}
-        _Emission ("Emission", 2D) = "black" {}
+        _MainTex ("Base (RGB)", 2D) = "white" {}
+        _IllumTex ("Illumination (RGB)", 2D) = "black" {}
     }
     
     SubShader
@@ -11,20 +11,20 @@
         CGPROGRAM
         #pragma surface surf Lambert
         
-        sampler2D _Texture;
-        sampler2D _Emission;
+        sampler2D _MainTex;
+        sampler2D _IllumTex;
         
         struct Input
         {
-            float2 uv_Texture;
+            float2 uv_MainTex;
+            float2 uv_IllumTex;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = tex2D(_Texture, IN.uv_Texture);
-            o.Emission= tex2D(_Emission, IN.uv_Texture) * _SinTime.w;
+            o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb;
+            o.Emission= tex2D(_IllumTex, IN.uv_IllumTex).rgb * (sin(_Time.w) * 0.5 + 0.5);
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

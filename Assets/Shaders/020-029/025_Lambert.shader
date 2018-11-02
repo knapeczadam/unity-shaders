@@ -2,10 +2,7 @@
 {
     Properties
     {
-        _Color ("Color", Color) = (1, 1, 1, 1)
-        _SpecColor ("Specular color", Color) = (1, 1, 1, 1)
-        _Spec ("Specular", Range(0, 1)) = 0.5
-        _Gloss ("Glossiness", Range(0, 1)) = 0.5
+        _Color ("Main Color", Color) = (1, 1, 1, 1)
     }
     
     SubShader 
@@ -14,21 +11,16 @@
         #pragma surface surf Lambert
         
         fixed4 _Color;
-        half _Spec;
-        fixed _Gloss;
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
-        void surf (Input IN, inout SurfaceOutput o) 
+        void surf(Input IN, inout SurfaceOutput o) 
         {
-            o.Albedo = _Color;
-            o.Specular = _Spec;
-            o.Gloss = _Gloss;
+            o.Albedo = _Color.rgb;
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }   

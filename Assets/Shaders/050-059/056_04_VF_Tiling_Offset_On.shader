@@ -37,7 +37,7 @@
                 return o;
             }
             
-            fixed4 frag(vertexOutput i) : COLOR
+            fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 return tex2D(_MainTex, i.uv);
             }

@@ -9,12 +9,12 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = fixed4(1, 1, 1, 1);
+            o.Albedo = fixed3(1, 1, 1);
         }
         ENDCG
     }
@@ -28,12 +28,12 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = fixed4(0, 1, 1, 1);
+            o.Albedo = fixed3(0, 1, 1);
         }
         ENDCG
     }
@@ -47,12 +47,12 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = fixed4(1, 0, 1, 1);
+            o.Albedo = fixed3(1, 0, 1);
         }
         ENDCG
     }
@@ -66,12 +66,12 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = fixed4(1, 1, 0, 1);
+            o.Albedo = fixed3(1, 1, 0);
         }
         ENDCG
     }
@@ -85,12 +85,12 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = fixed4(0, 0, 0, 1);
+            o.Albedo = fixed3(0, 0, 0);
         }
         ENDCG
     }

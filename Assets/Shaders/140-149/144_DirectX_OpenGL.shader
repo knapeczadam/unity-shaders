@@ -25,7 +25,7 @@
 				return o;
 			}
 
-			fixed4 frag (v2f i) : SV_Target
+			fixed4 frag (v2f i) : SV_TARGET
 			{
                 #if UNITY_UV_STARTS_AT_TOP
                     return fixed4(0, 1, 0, 1);

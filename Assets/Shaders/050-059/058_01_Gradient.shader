@@ -38,14 +38,13 @@
                 return o;
             }
             
-            fixed4 frag(vertexInput i) : COLOR
+            fixed4 frag(vertexInput i) : SV_TARGET
             {
                 fixed4 c;
                 c.rgb = _Color.rgb;
                 c.a = i.texcoord.x;
                 return c;
             }
-            
             ENDCG
         }
     }

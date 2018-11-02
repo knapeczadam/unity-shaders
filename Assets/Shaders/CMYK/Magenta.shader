@@ -13,18 +13,16 @@
             struct v2f
             {
                 float4 pos : SV_POSITION;
-                float4 color : COLOR;
             };
             
             v2f vert(appdata_base v)
             {
                 v2f o;
-                UNITY_INITIALIZE_OUTPUT(v2f, o);
                 o.pos = UnityObjectToClipPos(v.vertex);
                 return o;
             }
             
-            fixed4 frag(v2f i) : COLOR
+            fixed4 frag(v2f i) : SV_TARGET
             {
                 return fixed4(1, 0, 1, 1);
             }

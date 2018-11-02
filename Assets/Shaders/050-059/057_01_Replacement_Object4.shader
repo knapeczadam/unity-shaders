@@ -9,12 +9,12 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = fixed4(0.666, 0.666, 0.666, 1);
+            o.Albedo = fixed3(0.666, 0.666, 0.666);
         }
         ENDCG
     }

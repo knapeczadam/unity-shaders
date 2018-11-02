@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Color ("Albedo Color", Color) = (1, 1, 1, 1)
+        _Color ("Main Color", Color) = (1, 1, 1, 1)
     }
     
     SubShader
@@ -14,7 +14,7 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
@@ -23,5 +23,4 @@
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

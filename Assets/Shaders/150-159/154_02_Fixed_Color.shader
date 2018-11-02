@@ -4,6 +4,7 @@
     {
         _Color ("Color", Color) = (1, 1, 1, 1)
     }
+    
     SubShader
     {
         Pass

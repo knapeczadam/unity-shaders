@@ -1,6 +1,4 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "Custom/040-049/049_01_Silhouette_Outline_Show" 
+﻿Shader "Custom/040-049/049_01_Silhouette_Outline_Show" 
 {
     CGINCLUDE
     #include "UnityCG.cginc"

@@ -9,7 +9,7 @@
     {
         Pass
         {
-            Tags {"LightMode"="ForwardBase"}
+            Tags { "LightMode" = "ForwardBase" }
         
             CGPROGRAM
             #pragma vertex vert
@@ -65,7 +65,7 @@
         }
         Pass
         {
-            Tags {"LightMode"="ShadowCaster"}
+            Tags { "LightMode" = "ShadowCaster" }
 
             CGPROGRAM
             #pragma vertex vert
@@ -86,7 +86,7 @@
                 return o;
             }
 
-            float4 frag(v2f i) : SV_Target
+            float4 frag(v2f i) : SV_TARGET
             {
                 SHADOW_CASTER_FRAGMENT(i)
             }

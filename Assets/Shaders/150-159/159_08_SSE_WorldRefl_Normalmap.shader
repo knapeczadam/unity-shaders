@@ -27,7 +27,7 @@
         
         void surf(Input IN, inout SurfaceOutput o) 
         {
-            o.Albedo = tex2D (_MainTex, IN.uv_MainTex).rgb * 0.5;
+            o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb * 0.5;
             o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
             o.Emission = texCUBE(_Cube, WorldReflectionVector(IN, o.Normal)).rgb;
         }

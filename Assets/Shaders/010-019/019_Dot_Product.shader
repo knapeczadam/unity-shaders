@@ -10,13 +10,12 @@
             float3 viewDir;
         };
         
-        void surf (Input IN, inout SurfaceOutput o) 
+        void surf(Input IN, inout SurfaceOutput o) 
         {
-            half dotp = dot(IN.viewDir, o.Normal);
-            dotp += (saturate(_SinTime.w) * (1 - dotp - dotp));
-            o.Albedo = fixed3(dotp, dotp, dotp) * _SinTime;   
+            float VdotN = saturate(dot(IN.viewDir, o.Normal));
+            VdotN = (sin(_Time.w) * 0.5 + 0.5) * 1.0 - VdotN;
+            o.Albedo = abs(VdotN) * _SinTime;   
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

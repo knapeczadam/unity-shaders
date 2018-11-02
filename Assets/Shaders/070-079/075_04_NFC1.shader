@@ -23,8 +23,9 @@
                 #if defined(UNITY_NO_DXT5nm)
                     return col.xyz * 2 - 1;
                 #else
+                    col.r *= col.a;
                     float3 normVal;
-                    normVal = float3(col.a * 2 - 1, col.g * 2 - 1, 0.0);
+                    normVal = float3(col.r * 2 - 1, col.g * 2 - 1, 0.0);
                     normVal.z = sqrt(1 - (pow(normVal.x, 2) + pow(normVal.y, 2)));
                     return normVal;
                 #endif
@@ -50,7 +51,7 @@
                 return o;
             }
             
-            float4 frag(vertexOuput i) : COLOR
+            float4 frag(vertexOuput i) : SV_TARGET
             {
                 float4 col = tex2D(_Normal, i.normalTexcoord);
                 float4 norm = float4(normalFromColor(col), 0); 

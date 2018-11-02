@@ -48,7 +48,7 @@
                 return o;
             }
             
-            fixed4 frag(vertexOuput i) : SV_Target
+            fixed4 frag(vertexOuput i) : SV_TARGET
             {
                 #if _DEFAULTVALUE_EMPTY
                     return tex2D(_Tex1, i.uv);

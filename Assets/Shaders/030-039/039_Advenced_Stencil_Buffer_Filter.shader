@@ -24,5 +24,4 @@
             }
         }
     }
-    // Fallback "Diffuse"
 }   

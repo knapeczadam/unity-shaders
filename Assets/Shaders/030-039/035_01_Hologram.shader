@@ -1,11 +1,18 @@
 ﻿Shader "Custom/030-039/035_01_Hologram"
 {
+    Properties
+    {
+        _RimPow ("Rim power", Range(0.01, 10.0)) = 0.01
+    }
+    
     SubShader
     {
         Tags { "Queue" = "Transparent" }
         
         CGPROGRAM
         #pragma surface surf Lambert alpha:fade
+        
+        fixed _RimPow;
         
         struct Input
         {
@@ -14,12 +21,11 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
-            rim = pow(rim, 10 * abs(_SinTime.x));
-            o.Emission = _SinTime * rim * 10;
+            float rim = 1.0 - saturate(dot(IN.viewDir, o.Normal));
+            rim = pow(rim, _RimPow * sin(_Time.w) * 0.5 + 0.5);
             o.Alpha = rim;
+            o.Emission = _SinTime * rim;
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

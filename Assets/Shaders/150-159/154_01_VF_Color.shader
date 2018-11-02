@@ -4,6 +4,7 @@
     {
         _Color ("Color", Color) = (1, 1, 1, 1)
     }
+    
     SubShader
     {
         Pass
@@ -14,12 +15,12 @@
             
             fixed4 _Color;
             
-            struct vertexInput // appdata
+            struct vertexInput
             {
                 float4 vertex : POSITION;
             };
             
-            struct vertexOuput // v2f
+            struct vertexOuput
             {
                 float4 pos : SV_POSITION;
             };
@@ -31,7 +32,7 @@
                 return o;
             }
             
-            fixed4 frag(vertexOuput i) : COLOR // SV_Target
+            fixed4 frag(vertexOuput i) : SV_TARGET
             {
                 return _Color;
             }

@@ -2,8 +2,8 @@
 {
     Properties 
     {
-        _Bump ("Bump Texture", 2D) = "bump" {}
-        _Cube ("Cube Map", CUBE) = "white" {}
+        _BumpMap ("Bump Texture", 2D) = "bump" {}
+        _EnvMap ("Environment Map", CUBE) = "" {}
         [Toggle(SWITCH_ORDER)] _switchOrder("Switch order", Float) = 0
     }
     
@@ -13,26 +13,25 @@
         #pragma surface surf Lambert
         #pragma shader_feature SWITCH_ORDER
         
-        sampler2D _Bump;
-        samplerCUBE _Cube;
+        sampler2D _BumpMap;
+        samplerCUBE _EnvMap;
 
         struct Input
         {
-            float2 uv_Bump;
+            float2 uv_BumpMap;
             float3 worldRefl; INTERNAL_DATA
         };
         
-        void surf (Input IN, inout SurfaceOutput o) 
+        void surf(Input IN, inout SurfaceOutput o) 
         {
-            #ifdef SWITCH_ORDER
-                o.Normal = UnpackNormal(tex2D(_Bump, IN.uv_Bump)) * _SinTime.x;
-                o.Albedo = texCUBE (_Cube, WorldReflectionVector (IN, o.Normal));
+            #if SWITCH_ORDER
+                o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap)) * (_SinTime.w * 0.5 + 0.5);
+                o.Albedo = texCUBE(_EnvMap, WorldReflectionVector(IN, o.Normal)).rgb;
             #else
-                o.Albedo = texCUBE (_Cube, WorldReflectionVector (IN, o.Normal));
-                o.Normal = UnpackNormal(tex2D(_Bump, IN.uv_Bump)) * _SinTime.x;
+                o.Albedo = texCUBE(_EnvMap, WorldReflectionVector(IN, o.Normal)).rgb;
+                o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap)) * (_SinTime.w * 0.5 + 0.5);
             #endif
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }

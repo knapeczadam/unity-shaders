@@ -51,7 +51,7 @@
                 return o;
             }
             
-            float4 frag(vertexOuput i) : COLOR
+            float4 frag(vertexOuput i) : SV_TARGET
             {
                 float4 col = tex2D(_Normal, i.normalTexcoord);
                 float4 norm = float4(normalFromColor(col), 0);

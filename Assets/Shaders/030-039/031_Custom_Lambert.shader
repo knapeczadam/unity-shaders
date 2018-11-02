@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Color ("Color", Color) = (1, 1, 1, 1)
+        _Color ("Main Color", Color) = (1, 1, 1, 1)
     }
     
     SubShader
@@ -15,15 +15,17 @@
         half4 LightingBasicLambert(SurfaceOutput s, half3 lightDir, half atten)
         {
             half4 c;
+            
             half NdotL = dot(s.Normal, lightDir);
-            c.rgb = s.Albedo * _LightColor0 * (NdotL * atten);
+            c.rgb = s.Albedo * _LightColor0.rgb * (NdotL * atten);
             c.a = s.Alpha;
+            
             return c;
         }
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
@@ -32,5 +34,4 @@
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }   

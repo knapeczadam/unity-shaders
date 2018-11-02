@@ -57,7 +57,7 @@
                 return o;
             }
             
-            fixed4 frag(vertexOutput i) : COLOR
+            fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 #ifdef RANDOM_COLOR
                     fixed4 col = fixed4(1, 1, 1, 1);

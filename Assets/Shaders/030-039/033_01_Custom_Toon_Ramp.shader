@@ -16,7 +16,7 @@
         {
             float4 c;
             
-            c.rgb = s.Albedo * _LightColor0;
+            c.rgb = s.Albedo * _LightColor0.rgb;
             c.a = s.Alpha;
             
             return c;
@@ -29,12 +29,9 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            float diff = dot (o.Normal, IN.viewDir);
-            float h = diff - 0.1;
-            float2 rh = h;
-            o.Albedo = tex2D(_RampTex, rh);
+            float NdotV = dot(o.Normal, IN.viewDir);
+            o.Albedo = tex2D(_RampTex, float2(NdotV, NdotV)).rgb;
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }   

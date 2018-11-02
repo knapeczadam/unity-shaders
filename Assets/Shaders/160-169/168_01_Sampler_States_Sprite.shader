@@ -104,7 +104,7 @@ Shader "Custom/160-169/168_01_Sampler_States_Sprite"
                 return color;
             }
             
-            fixed4 SpriteFrag(v2f IN) : SV_Target
+            fixed4 SpriteFrag(v2f IN) : SV_TARGET
             {
                 fixed4 c = SampleSpriteTexture(IN.texcoord) * IN.color;
                 c.rgb *= c.a;

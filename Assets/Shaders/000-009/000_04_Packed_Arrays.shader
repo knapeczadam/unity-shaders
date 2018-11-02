@@ -26,27 +26,28 @@
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
             fixed4 color1 = _fi4.rgba;
-            fixed4 color2 = _fi4.xyzw;
+            fixed4 vector1 = _fi4.xyzw;
             
-            fixed4 color3;
-            color3.r = 1;
-            color3.y = 0.5;
-            color3.b = 0.5;
-            color3.w = 1;
+            fixed4 something;
+            something.r = 1;
+            something.y = 0.5;
+            something.b = 0.5;
+            something.w = 1;
             
-            fixed4 copy;
-            copy.r = color3.x;
-            copy.g = color3.y;
-            copy.b = color3.z;
-            copy.a = color3.w;
+            fixed4 copy1;
+            copy1.r = something.x;
+            copy1.g = something.y;
+            copy1.b = something.z;
+            copy1.a = something.w;
+            
+            fixed4 copy2 = something;
         }
         ENDCG
     }
-    Fallback Off
 }

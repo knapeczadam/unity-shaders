@@ -32,7 +32,7 @@
                 return o;
             }
             
-            float4 frag(vertexOuput i) : COLOR
+            float4 frag(vertexOuput i) : SV_TARGET
             {
                 return float4(i.worldTangent, 1);
             }

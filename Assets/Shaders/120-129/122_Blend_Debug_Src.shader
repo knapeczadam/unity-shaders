@@ -9,7 +9,7 @@
     }
     SubShader
     {
-        Tags { "Queue"="Transparent" "RenderType"="Transparent" "IgnoreProjector"="True" }
+        Tags { "Queue" = "Transparent" "RenderType" = "Transparent" "IgnoreProjector" = "True" }
         
         BlendOp [_Op]
         Blend [_SrcFactor] [_DstFactor]

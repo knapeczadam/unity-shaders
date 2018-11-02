@@ -42,14 +42,13 @@
             v2f vert(appdata v)
             {
                 v2f o;
-                UNITY_INITIALIZE_OUTPUT(v2f, o);
                 v.vertex.x += sin(_Time.y * _Speed + v.vertex.y * _Amplitude) * _Distance * _Amount;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 return o;
             }
             
-            fixed4 frag(v2f i) : SV_Target
+            fixed4 frag(v2f i) : SV_TARGET
             {
                 fixed4 col = tex2D(_MainTex, i.uv);
                 return col;

@@ -3,6 +3,7 @@
     Properties
     {
         _RampTex ("Ramp texture", 2D) = "white" {}
+        _RampRange ("Ramp range", Range(0.0, 1.0)) = 0.0
     }
     
     SubShader
@@ -11,6 +12,7 @@
         #pragma surface surf Lambert
         
         sampler2D _RampTex;
+        fixed _RampRange;
         
         struct Input
         {
@@ -19,12 +21,9 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            float diff = dot (o.Normal, IN.viewDir);
-            float h = diff - 0.1;
-            float2 rh = h;
-            o.Albedo = tex2D(_RampTex, rh);
+            float NdotV = dot(o.Normal, IN.viewDir) - _RampRange;
+            o.Albedo = tex2D(_RampTex, float2(NdotV, NdotV));
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }   

@@ -1,17 +1,15 @@
-﻿// Upgrade NOTE: replaced 'samplerRECT' with 'sampler2D'
-
-Shader "Custom/000-009/000_03_Properties"
+﻿Shader "Custom/000-009/000_03_Properties"
 {   
     Properties
     {
-        _Int ("Integer", Int) = 1
+        _Int ("Int", Int) = 1
         _Float ("Float", Float) = 1.0
-        _Vector4 ("Vector4", Vector) = (1, 1, 1, 1)
+        _Vector4 ("Vector", Vector) = (1, 1, 1, 1)
         _Color ("Color", Color) = (1, 1, 1, 1)
         _Range ("Range", Range(0.0, 1.0)) = 0.5
-        _2DTex ("2D texture", 2D) = "white" {}
-        _3DTex ("3D texture", 3D) = "black" {}
-        _CubeTex ("Cube texture", CUBE) = "gray" {}
+        _2D ("2D", 2D) = "white" {}
+        _3D ("3D", 3D) = "" {}
+        _Cube ("Cube", CUBE) = "" {}
     }
     
     SubShader
@@ -21,24 +19,23 @@ Shader "Custom/000-009/000_03_Properties"
         
         int _Int;
         float _Float;
-        float4 _Vector4;
+        float4 _Vector;
         fixed4 _Color;
         float _Range;
-        sampler1D _1DTex;
-        sampler2D _2DTex;
-        sampler2D_float _2DTex_float;
-        sampler2D_half _2DTex_half;
-        sampler3D _3DTex;
-        sampler3D_float _3DTex_float;
-        sampler3D_half _3DTex_half;
-        samplerCUBE _CubeTex;
-        samplerCUBE_float _CubeTex_float;
-        samplerCUBE_half _CubeTex_half;
-        // samplerRECT -> sampler2D
+        sampler1D _1D;
+        sampler2D _2D;
+        sampler2D_float _2D_float;
+        sampler2D_half _2D_half;
+        sampler3D _3D;
+        sampler3D_float _3D_float;
+        sampler3D_half _3D_half;
+        samplerCUBE _Cube;
+        samplerCUBE_float _Cube_float;
+        samplerCUBE_half _Cube_half;
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
@@ -47,5 +44,4 @@ Shader "Custom/000-009/000_03_Properties"
         }
         ENDCG
     }
-    Fallback Off
 }

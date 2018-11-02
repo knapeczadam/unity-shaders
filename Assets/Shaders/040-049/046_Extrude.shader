@@ -2,61 +2,32 @@
 {
     Properties
     {
-        _Color ("Color", Color) = (1, 1, 1, 1)
+        _Color ("Main Color", Color) = (1, 1, 1, 1)
+        _Extrusion ("Extrusion amount", Range(0.0, 1.0)) = 0.0
     }
+    
     SubShader
     {
         CGPROGRAM
-        #pragma surface surf Lambert vertex:vert addshadow
+        #pragma surface surf Lambert vertex:vert
         
         fixed4 _Color;
+        fixed _Extrusion;
+        
+        void vert(inout appdata_full v)
+        {
+            v.vertex.xyz += v.normal * _Extrusion * abs(_SinTime.w);
+        }
         
         struct Input
         {
-            float2 uv_MainTex;
+            fixed _;
         };
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = _Color;
-        }
-        
-        void vert(inout appdata_full v)
-        {
-            v.vertex.xyz += v.normal * abs(_SinTime.w) * 0.1;
+            o.Albedo = _Color.rgb;
         }
         ENDCG
-        
-//        Pass
-//        {
-//            Tags { "LightMode" = "ShadowCaster" }
-//            
-//            CGPROGRAM
-//            #pragma vertex vert
-//            #pragma fragment frag
-//            #pragma multi_compile_shadowcaster
-//            
-//            #include "UnityCG.cginc"
-//            
-//            struct v2f
-//            {
-//                V2F_SHADOW_CASTER;
-//            };
-//            
-//            v2f vert(appdata_full v)
-//            {
-//                v2f o;
-//                v.vertex.xyz += v.normal * abs(_SinTime.w) * 0.1;
-//                TRANSFER_SHADOW_CASTER_NORMALOFFSET(o)
-//                return o;
-//            }
-//            
-//            fixed4 frag(v2f i) : SV_TARGET
-//            {
-//                SHADOW_CASTER_FRAGMENT(i)
-//            }
-//            ENDCG
-//        }
     }
-    Fallback "Diffuse"
 }   

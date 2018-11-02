@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex ("Albedo (RGB) and Transparency (A)", 2D) = "white" {}
     }
     
     SubShader
@@ -27,5 +27,4 @@
         }
         ENDCG
     }
-    Fallback "Diffuse"
 }   

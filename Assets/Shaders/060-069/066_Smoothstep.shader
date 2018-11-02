@@ -33,7 +33,7 @@
                 return o;
             }
             
-            fixed4 frag(vertexOutput i) : COLOR
+            fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 fixed4 col;
                 col.r = smoothstep(_CosTime.x, -_CosTime.x, i.texcoord.x * i.texcoord.y);

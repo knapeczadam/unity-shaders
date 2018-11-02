@@ -16,24 +16,20 @@
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float4 color : COLOR;
+                float4 vertex : TEXCOORD0;
             };
             
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.color.r = v.vertex.x;
-                o.color.g = v.vertex.y;
-                o.color.b = v.vertex.z;
+                o.vertex = v.vertex;
                 return o;
             }
             
-            fixed4 frag(vertexOuput i) : COLOR
+            fixed4 frag(vertexOuput i) : SV_TARGET
             {   
-                fixed4 c = i.color; 
-                return c;
+                return i.vertex; 
             }
             ENDCG
         }
