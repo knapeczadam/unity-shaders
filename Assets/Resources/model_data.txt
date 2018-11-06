@@ -344,3 +344,4 @@ A6B624A7ECCE4621A2F286079FC39D11|Custom shader editor|5|https://docs.unity3d.com
 369B806CAE0C46BEB2536203AA59AC9A|Custom Material Property Drawer|5|https://docs.unity3d.com/ScriptReference/MaterialPropertyDrawer.html
 25EE6E2CB9BC4C3B9814EFFE765745D2|UsePass|5|https://docs.unity3d.com/Manual/SL-UsePass.html,https://docs.unity3d.com/Manual/SL-Name.html
 C37D44A3AEBC4F10869BCD16E612E975|Texture arrays|5|https://docs.unity3d.com/Manual/SL-TextureArrays.html,https://github.com/DmtDenisov/Texture-Array-Unity
+48055EB41ABC49AE9AB71A2BA67DC431|Shader Graph Example Library|15|https://github.com/UnityTechnologies/ShaderGraph_ExampleLibrary

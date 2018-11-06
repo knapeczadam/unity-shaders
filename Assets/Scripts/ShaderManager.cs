@@ -8,7 +8,6 @@ public class ShaderManager : MonoBehaviour
 {
 
     public Material material;
-    public bool setScreenSize;
     public List<NamedColor> colors = new List<NamedColor>();
     public List<NamedVector> vectors = new List<NamedVector>();
     public List<NamedFloat> floats = new List<NamedFloat>();
@@ -37,11 +36,6 @@ public class ShaderManager : MonoBehaviour
     {
         if (material)
         {
-            if (setScreenSize)
-            {
-                SetScreenSize();
-            }
-            
             if (colors.Count > 0)
             {
                 foreach (NamedColor namedColor in colors)
@@ -74,12 +68,6 @@ public class ShaderManager : MonoBehaviour
                 }
             }
         }
-    }
-
-    public void SetScreenSize()
-    {
-        material.SetInt("_Width", Screen.width);
-        material.SetInt("_Height", Screen.height);
     }
 
     [Serializable]
