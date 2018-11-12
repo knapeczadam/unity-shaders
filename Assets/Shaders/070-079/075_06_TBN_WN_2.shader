@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Normal ("Normal", 2D) = "bump" {}
+        _BumpMap ("Normal Map", 2D) = "bump" {}
     }
     
     SubShader
@@ -15,8 +15,8 @@
             
             #include "UnityCG.cginc"
             
-            sampler2D _Normal;
-            float4 _Normal_ST;
+            sampler2D _BumpMap;
+            float4 _BumpMap_ST;
             
             struct vertexInput
             {
@@ -29,10 +29,10 @@
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float3 worldNormal : TEXCOORD0;
-                float3 worldTangent : TEXCOORD1;
-                float3 worldBinormal : TEXCOORD2;
-                float2 normalTexCoord : TEXCOORD3;
+                float2 uv : TEXCOORD0;
+                float3 worldNormal : TEXCOORD1;
+                float3 worldTangent : TEXCOORD2;
+                float3 worldBinormal : TEXCOORD3;
             };
             
             float3 normalFromColor(float4 col)
@@ -50,19 +50,17 @@
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
-                
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.normalTexCoord = v.texcoord.xy * _Normal_ST.xy + _Normal_ST.zw;
+                o.uv = v.texcoord * _BumpMap_ST.xy + _BumpMap_ST.zw;
                 o.worldNormal = normalize(mul(v.normal, (float3x3) unity_WorldToObject)); // v.normal -> float1x3
                 o.worldTangent = normalize(mul((float3x3) unity_ObjectToWorld, v.tangent.xyz)); // v.tangent -> float3x1
-                o.worldBinormal =  normalize(cross(o.worldNormal, o.worldTangent) * v.tangent.w);
-                
+                o.worldBinormal =  cross(o.worldNormal, o.worldTangent) * v.tangent.w * unity_WorldTransformParams.w;
                 return o;
             }
             
-            float4 frag(vertexOuput i) : SV_TARGET
+            fixed4 frag(vertexOuput i) : SV_TARGET
             {
-                float4 col = tex2D(_Normal, i.normalTexCoord);
+                float4 col = tex2D(_BumpMap, i.uv);
                 
                 float3 norm = normalFromColor(col);
                 

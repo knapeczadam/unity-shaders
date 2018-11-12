@@ -85,7 +85,7 @@
                 return o;
             }
 
-            float4 frag(v2f i) : SV_TARGET
+            fixed4 frag(v2f i) : SV_TARGET
             {
                 SHADOW_CASTER_FRAGMENT(i)
             }

@@ -54,7 +54,7 @@
             {
                 float4 pos : SV_POSITION;
                 float2 texcoord : TEXCOORD0;
-                float4 worldPos : TEXCOORD1;
+                float3 worldPos : TEXCOORD1;
                 float3 worldNormal : TEXCOORD2;
                 float4 surfaceColor : COLOR0;
             };
@@ -65,7 +65,7 @@
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.worldPos = mul(unity_ObjectToWorld, v.vertex);
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
                 
                 o.texcoord = v.texcoord;
                 
@@ -73,7 +73,7 @@
                 
                 
                 float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
-                float3 lightColor = _LightColor0.xyz;
+                float3 lightColor = _LightColor0.rgb;
                 float attenuation = 1;
                 float3 diffuseColor = DiffuseLambert(o.worldNormal, lightDir, lightColor, _Diffuse, attenuation);
                 
@@ -88,7 +88,7 @@
                 return o;
             }
             
-            float4 frag(vertexOuput i) : SV_TARGET
+            fixed4 frag(vertexOuput i) : SV_TARGET
             {
                 return i.surfaceColor;
             }

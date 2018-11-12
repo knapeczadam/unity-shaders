@@ -46,7 +46,7 @@
             {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float4 worldPos : TEXCOORD1;
+                float3 worldPos : TEXCOORD1;
                 float3 worldNormal : TEXCOORD2;
             };
             
@@ -56,20 +56,20 @@
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
                 o.uv = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
-                o.worldPos = mul(unity_ObjectToWorld, v.vertex);
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
                 o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 
                 return o;
             }
             
-            float4 frag(vertexOutput i) : SV_TARGET
+            fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 float4 finalColor = fixed4(1, 1, 1, _Color.a);
-                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.worldPos.xyz);
+                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.worldPos);
                 
-                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.worldPos.xyz;
+                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.worldPos;
                 float distance = length(vertexToLightSource);
-                float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.w, _WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.worldPos.xyz));
+                float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.w, _WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.worldPos));
                 float attenuation = lerp(_WorldSpaceLightPos0.w, 1.0, 1.0 / distance); 
                 
                 float3 ambientLighting = UNITY_LIGHTMODEL_AMBIENT.rgb;
@@ -120,7 +120,7 @@
             {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float4 worldPos : TEXCOORD1;
+                float3 worldPos : TEXCOORD1;
                 float3 worldNormal : TEXCOORD2;
             };
             
@@ -136,14 +136,14 @@
                 return o;
             }
             
-            float4 frag(vertexOutput i) : SV_TARGET
+            fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 float4 finalColor = fixed4(1, 1, 1, _Color.a);
-                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.worldPos.xyz);
+                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.worldPos);
                 
-                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.worldPos.xyz;
+                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.worldPos;
                 float distance = length(vertexToLightSource);
-                float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.w, _WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.worldPos.xyz));
+                float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.w, _WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.worldPos));
                 float attenuation = lerp(_WorldSpaceLightPos0.w, 1.0, 1.0 / distance); 
                 
                 float3 diffuseReflection = DiffuseLambert(i.worldNormal, lightDirection, _LightColor0, _Diffuse, attenuation);

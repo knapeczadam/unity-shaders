@@ -40,7 +40,7 @@
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.texcoord;
                 half3 worldNormal = UnityObjectToWorldNormal(v.normal);
-                half nl = saturate(dot(worldNormal, _WorldSpaceLightPos0));
+                half nl = saturate(dot(worldNormal, _WorldSpaceLightPos0.xyz));
                 o.diff = nl * _LightColor0;
                 return o;
             }

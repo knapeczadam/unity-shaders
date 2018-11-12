@@ -46,14 +46,14 @@
                 o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 
                 float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
-                float3 lightColor = _LightColor0.xyz;
+                float3 lightColor = _LightColor0.rgb;
                 float attenuation = 1;
                 o.surfaceColor = float4(DiffuseLambert(o.worldNormal, lightDir, lightColor, _Diffuse, attenuation), 1);
                 
                 return o;
             }
             
-            float4 frag(vertexOuput i) : SV_TARGET
+            fixed4 frag(vertexOuput i) : SV_TARGET
             {
                 return i.surfaceColor;
             }

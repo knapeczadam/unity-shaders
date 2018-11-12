@@ -10,7 +10,7 @@
             
             #include "UnityCG.cginc"
             
-            void example()
+            float4 doNothing(float4 vertex)
             {
                 float4x4 identityMatrix = float4x4
                 (
@@ -19,6 +19,8 @@
                     0, 0, 1, 0,
                     0, 0, 0, 1
                 );
+                
+                return mul(identityMatrix, vertex);
             }
             
             struct v2f
@@ -26,10 +28,10 @@
                 float4 pos : SV_POSITION;
             };
             
-            v2f vert(appdata_full v)
+            v2f vert(appdata_base v)
             {
                 v2f o;
-                o.pos = UnityObjectToClipPos(v.vertex);
+                o.pos = UnityObjectToClipPos(doNothing(v.vertex));
                 return o;
             }
             

@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 140_01_Magnet
-  m_Shader: {fileID: 4800000, guid: 289f5ff00016dad4f83663f2a6be876c, type: 3}
+  m_Name: 140_02_Magnet
+  m_Shader: {fileID: 4800000, guid: 2b8b7905e14fc7343b7c82d14cd4a077, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -84,5 +84,5 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MagnetDir: {r: -0.8586731, g: 0.4082483, b: 0.30986097, a: 0}
     - _MagnetLoc: {r: -1.2898542, g: 2.973, b: -0.70185435, a: 0}
-    - _MagnetPos: {r: -1.3406043, g: 2, b: 1.7896312, a: 0}
+    - _MagnetPos: {r: 0.78306407, g: 2, b: 2.0944715, a: 0}
     - myLocator: {r: 3.4, g: 1.785, b: 0.975, a: 0}

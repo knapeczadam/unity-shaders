@@ -62,6 +62,7 @@ Material:
     - _Amplitude: 0.09
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _DegreeY: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
     - _Frequency: 0.5

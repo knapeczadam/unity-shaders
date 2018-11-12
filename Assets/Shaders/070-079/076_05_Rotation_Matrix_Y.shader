@@ -1,5 +1,10 @@
 ﻿Shader "Custom/070-079/076_05_Rotation_Matrix_Y"
 {
+    Properties
+    {
+        _DegreeY ("Y-axis rotation in degree", Range(0.0, 360.0)) = 0.0
+    }
+    
     SubShader
     {
         Pass 
@@ -10,11 +15,12 @@
             
             #include "UnityCG.cginc"
             
-            void example()
+            float _DegreeY;
+            
+            float4 rotateY(float4 vertex)
             {
-                float x, y, z;
-                
-                float theta;
+                float theta = radians(_DegreeY);
+                theta = radians(_Time.x * 360.0);
                 
                 float4x4 rotationMatrixY = float4x4
                 (
@@ -23,6 +29,8 @@
                    -sin(theta), 0, cos(theta), 0,
                              0, 0,          0, 1
                 );
+                
+                return mul(rotationMatrixY, vertex);
             }
             
             struct v2f
@@ -30,10 +38,10 @@
                 float4 pos : SV_POSITION;
             };
             
-            v2f vert(appdata_full v)
+            v2f vert(appdata_base v)
             {
                 v2f o;
-                o.pos = UnityObjectToClipPos(v.vertex);
+                o.pos = UnityObjectToClipPos(rotateY(v.vertex));
                 return o;
             }
             

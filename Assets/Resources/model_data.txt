@@ -79,7 +79,6 @@ D3DA42107B304DEFBC8656883DEEE391|VF and Fixed shader - Barebone|5|https://forum.
 AB72AEE4F40846029B2CE66136503B25|VF shader - color by world position|10
 06442771E03B4AE9B2132356F07FF3DC|VF shader - color by screen position|10
 462D73F86115409AA218095971A320AA|VF GrabPass|10|https://docs.unity3d.com/Manual/SL-GrabPass.html
-4568D6FA268B4FC9ADB5A8752944830D|VF diffuse|5
 DEF8F6E07467447BAB2727368154D6A3|VF shadow casting|5
 42055431CBEA49FAAA2EDB77AC5D65B6|VF shadow receiving|5
 92A5009E00EA4E96A31F1514EBF151A3|VF shadow|5
@@ -197,7 +196,7 @@ E962175839104094BD4E434249380185|World space normal - !UNITY_ASSUME_UNIFORM_SCAL
 F788EC437FAD42BFA2AEBEADCDDF7BEF|World space tangent - NOK|2
 20590CAF8FCD49258217DA4F4D48194C|World space tangent - OK|2
 BEA43FF502E54B719C6E3FEA055750D4|World space binormal - NOK|2
-6518C75E8F0546DABCB2979B223FB526|World space binormal - OK|2
+6518C75E8F0546DABCB2979B223FB526|World space binormal - OK|2|https://forum.unity.com/threads/what-is-tangent-w-how-to-know-whether-its-1-or-1-tangent-w-vs-unity_worldtransformparams-w.468395/
 ECB2B189D75F4769B94CC1AAE9A8C2CA|Normal from color|2
 0C64D983BA0A4D3FA76041CCE40E7569|Normal from color - improved|2
 1E9C38F40E74425D9633C235D319D377|Tangent-Binormal-Normal (TBN) matrix - NOK|2
@@ -214,12 +213,12 @@ A897CEB5056F4DE68DE1212CABC4765E|Specular reflection - Phong - Vertex|2|http://d
 4D74DCFEA71346C2A3DCC4CE0F4201F7|Ambient reflection -  Frag|2
 570D6E35A1D24BBAB9F8367FFB75B400|Basic Lighting Model - Vert|2|http://developer.download.nvidia.com/CgTutorial/cg_tutorial_chapter05.html
 13BA3A5AEFEF42739513435250788AA2|Basic Lighting Model - Frag|2|http://developer.download.nvidia.com/CgTutorial/cg_tutorial_chapter05.html
-AAF4879A9E0C49ADB9A80D36AE200E2C|Identity matrix|5
-76C3C9C05D9D45F78A4FFBF0E980BC13|Translation matrix|5
-2D2616C52EAF4BA2924C2386C90BD0C0|Scale matrix|5
-F949AEC77F474FDCA63653C3AAC3058E|Rotation matrix - X-axis|5
-505FE113C1C14554892D5EC34C62C143|Rotation matrix - Y-axis|5
-93D720789180445F8365D15BDBE87629|Rotation matrix - Z-axis|5
+AAF4879A9E0C49ADB9A80D36AE200E2C|Identity matrix|20
+76C3C9C05D9D45F78A4FFBF0E980BC13|Translation matrix|20
+2D2616C52EAF4BA2924C2386C90BD0C0|Scale matrix|20
+F949AEC77F474FDCA63653C3AAC3058E|Rotation matrix - X-axis|20|https://en.wikipedia.org/wiki/Rotation_matrix
+505FE113C1C14554892D5EC34C62C143|Rotation matrix - Y-axis|20|https://en.wikipedia.org/wiki/Rotation_matrix
+93D720789180445F8365D15BDBE87629|Rotation matrix - Z-axis|20|https://en.wikipedia.org/wiki/Rotation_matrix
 20B94BCBAED44EE49F4E4CDA81F37656|Outline - scale matrix|5
 1A4F8A5F870A42F2AEFFAC302A0E2A4C|Simple toggle|5
 ABCB3F6D93CF4E65A73851F98AED2141|Advanced toggle|5
@@ -272,7 +271,7 @@ F3685B94E2CE480FB9F608F16FACD04B|Fresnel - Frag|20|https://docs.unity3d.com/Manu
 D0ACC3DEA24D40849A41D6B91B695ACA|Shadow mapping|5|https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html
 96E3FFA3A31D4EDCBDFBC29D5858BB78|Additional light - basic|5|https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html
 08DD99C31AAA46CAB84CA51924B04C22|Additional light - advanced|5|https://en.wikibooks.org/wiki/Cg_Programming/Unity/Multiple_Lights
-CA738E430982494D963FBFE2F2518DF6|Appdata versions|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html
+CA738E430982494D963FBFE2F2518DF6|Appdata versions|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html,https://answers.unity.com/questions/53213/why-are-texcoords-uvs-stored-in-float4.html
 2273D8D2974C43C29BFBF81FD3A3E75C|V2F versions|5|https://wiki.unity3d.com/index.php/Shader_Code
 E70C4F3D07CF44A89D9644330E347932|Semantics|5|https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics,https://docs.unity3d.com/Manual/SL-ShaderSemantics.html
 4F29B42DFC774BC7B9FAA61F220ACD74|BRDF - Anisotropy - Vert|5|https://pdfs.semanticscholar.org/808d/048d4331cf5dac5fd924b50249b7915c6d73.pdf

@@ -1,5 +1,12 @@
 ﻿Shader "Custom/070-079/076_02_Translation_Matrix"
 {
+    Properties
+    {
+        _X ("X-Axis translation", Float) = 0.0
+        _Y ("Y-Axis translation", Float) = 0.0
+        _Z ("Z-Axis translation", Float) = 0.0
+    }
+    
     SubShader
     {
         Pass 
@@ -10,17 +17,23 @@
             
             #include "UnityCG.cginc"
             
-            void example()
+            float _X, _Y, _Z;
+            
+            float4 translate(float4 vertex)
             {
-                float x, y, z;
+                _X = _SinTime.x;
+                _Y = _SinTime.y;
+                _Z = _SinTime.z;
                 
                 float4x4 translationMatrix = float4x4
                 (
-                    1, 0, 0, x,
-                    0, 1, 0, y,
-                    0, 0, 1, z,
-                    0, 0, 0, 1
+                    1, 0, 0, _X,
+                    0, 1, 0, _Y,
+                    0, 0, 1, _Z,
+                    0, 0, 0,  1
                 );
+                
+                return mul(translationMatrix, vertex);
             }
             
             struct v2f
@@ -28,10 +41,10 @@
                 float4 pos : SV_POSITION;
             };
             
-            v2f vert(appdata_full v)
+            v2f vert(appdata_base v)
             {
                 v2f o;
-                o.pos = UnityObjectToClipPos(v.vertex);
+                o.pos = UnityObjectToClipPos(translate(v.vertex));
                 return o;
             }
             

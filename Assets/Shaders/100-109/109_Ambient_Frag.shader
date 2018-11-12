@@ -82,7 +82,7 @@
             {
                 float4 pos : SV_POSITION;
                 float2 texcoord : TEXCOORD0;
-                float4 worldPos : TEXCOORD1;
+                float3 worldPos : TEXCOORD1;
                 float3 worldNormal : TEXCOORD2;
                 float3 worldTangent : TEXCOORD3;
                 float3 worldBinormal : TEXCOORD4;
@@ -95,7 +95,7 @@
                 UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.worldPos = mul(unity_ObjectToWorld, v.vertex);
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
                 
                 o.texcoord = v.texcoord;
                 o.normalTexCoord = v.texcoord.xy * _NormalMap_ST.xy + _NormalMap_ST.zw;
@@ -107,12 +107,12 @@
                 return o;
             }
             
-            float4 frag(vertexOuput i) : SV_TARGET  
+            fixed4 frag(vertexOuput i) : SV_TARGET  
             {
                 float3 worldNormalAtPixel = WorldNormalFromNormalMap(_NormalMap, i.normalTexCoord, i.worldTangent, i.worldBinormal, i.worldNormal);
                 
                 float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
-                float3 lightColor = _LightColor0.xyz;
+                float3 lightColor = _LightColor0.rgb;
                 float attenuation = 1;
                 float3 diffuseColor = DiffuseLambert(worldNormalAtPixel, lightDir, lightColor, _Diffuse, attenuation);
                 

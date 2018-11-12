@@ -26,7 +26,7 @@
 		{
 			float2 uv_Tex1 = IN.uv_texcoord * _Tex1_ST.xy + _Tex1_ST.zw;
 			float2 uv_Tex2 = IN.uv_texcoord * _Tex2_ST.xy + _Tex2_ST.zw;
-			o.Albedo = tex2D(_Tex1, uv_Tex1) + tex2D( _Tex2, uv_Tex2);
+			o.Albedo = tex2D(_Tex1, uv_Tex1).rgb + tex2D( _Tex2, uv_Tex2).rgb;
 		}
 		ENDCG
 	}

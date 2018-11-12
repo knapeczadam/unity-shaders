@@ -25,16 +25,14 @@
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
-                
                 o.pos = UnityObjectToClipPos(v.vertex);
                 o.worldTangent = normalize(mul(v.tangent.xyz, (float3x3) unity_ObjectToWorld)); // v.tangent -> float1x3
-                
                 return o;
             }
             
-            float4 frag(vertexOuput i) : SV_TARGET
+            fixed4 frag(vertexOuput i) : SV_TARGET
             {
-                return float4(i.worldTangent, 1);
+                return fixed4(i.worldTangent * 0.5 + 0.5, 1);
             }
             ENDCG
         }

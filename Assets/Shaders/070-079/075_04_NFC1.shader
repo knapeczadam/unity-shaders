@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Normal ("Normal", 2D) = "bump" {}
+        _BumpMap ("Normal Map", 2D) = "bump" {}
     }
     
     SubShader
@@ -15,17 +15,18 @@
             
             #include "UnityCG.cginc"
             
-            sampler2D _Normal;
-            float4 _Normal_ST;
+            sampler2D _BumpMap;
+            float4 _BumpMap_ST;
             
-            float3 normalFromColor(float4 col)
+            fixed3 normalFromColor(fixed4 col)
             {
                 #if defined(UNITY_NO_DXT5nm)
                     return col.xyz * 2 - 1;
                 #else
                     col.r *= col.a;
-                    float3 normVal;
-                    normVal = float3(col.r * 2 - 1, col.g * 2 - 1, 0.0);
+                    fixed3 normVal;
+                    normVal.x = col.r * 2 - 1;
+                    normVal.y = col.g * 2 - 1;
                     normVal.z = sqrt(1 - (pow(normVal.x, 2) + pow(normVal.y, 2)));
                     return normVal;
                 #endif
@@ -40,22 +41,21 @@
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float2 normalTexcoord : TEXCOORD0;
+                float2 uv : TEXCOORD0;
             };
             
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.normalTexcoord = v.texcoord.xy * _Normal_ST.xy + _Normal_ST.zw; 
+                o.uv = v.texcoord * _BumpMap_ST.xy + _BumpMap_ST.zw; 
                 return o;
             }
             
-            float4 frag(vertexOuput i) : SV_TARGET
+            fixed4 frag(vertexOuput i) : SV_TARGET
             {
-                float4 col = tex2D(_Normal, i.normalTexcoord);
-                float4 norm = float4(normalFromColor(col), 0); 
-                return norm;
+                fixed4 col = tex2D(_BumpMap, i.uv);
+                return fixed4(normalFromColor(col), 1);
             }
             ENDCG
         }
