@@ -4,10 +4,10 @@
     {
         _MainTex ("Albedo Texture", 2D) = "white" {}
         _Transparency ("Transparency", Range(0.0, 1.0)) = 1.0
-        _Speed ("Speed", Float) = 1
-        _Amplitude ("Amplitude", Float) = 1
-        _Distance ("Distance", Float) = 1
-        _Amount ("Amount", Float) = 1
+        _Speed ("Speed", Float) = 1.0
+        _Amplitude ("Amplitude", Float) = 1.0
+        _Distance ("Distance", Float) = 1.0
+        _Amount ("Amount", Float) = 1.0
     }
     
     SubShader
@@ -35,12 +35,12 @@
             struct appdata
             {
                 float4 vertex : POSITION;
-                float2 uv : TEXCOORD0;
+                float2 texcoord : TEXCOORD0;
             };
 
             struct v2f
             {
-                float4 vertex : SV_POSITION;
+                float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
             };
             
@@ -48,8 +48,8 @@
             {
                 v2f o;
                 v.vertex.x += sin(_Time.y * _Speed + v.vertex.y * _Amplitude) * _Distance * _Amount;
-                o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                o.pos = UnityObjectToClipPos(v.vertex);
+                o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
                 return o;
             }
             

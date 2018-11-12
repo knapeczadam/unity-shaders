@@ -12,11 +12,11 @@
         
         sampler2D _RampTex;
         
-        float4 LightingToonRamp(SurfaceOutput s, fixed3 lightDir, fixed atten)
+        fixed4 LightingToonRamp(SurfaceOutput s, fixed3 lightDir, fixed atten)
         {
-            float4 c;
+            fixed4 c;
             
-            c.rgb = s.Albedo * _LightColor0.rgb;
+            c.rgb = s.Albedo * _LightColor0.rgb * atten;
             c.a = s.Alpha;
             
             return c;

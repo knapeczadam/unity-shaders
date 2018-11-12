@@ -1,4 +1,5 @@
 digraph G {
+// Lighting.cginc - standard surface shader lighting models; automatically included when you’re writing surface shaders.
 "Lighting.cginc" -> "UnityLightingCommon.cginc"
 "Lighting.cginc" -> "UnityGBuffer.cginc"
 "Lighting.cginc" -> "UnityGlobalIllumination.cginc"

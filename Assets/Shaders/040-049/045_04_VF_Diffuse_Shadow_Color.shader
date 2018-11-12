@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex ("Base (RGB)", 2D) = "white" {}
     }
     
     SubShader
@@ -19,7 +19,8 @@
             #include "UnityLightingCommon.cginc"
             #include "Lighting.cginc" 
             #include "AutoLight.cginc"
-
+            
+            sampler2D _MainTex;
             
             struct appdata 
             {
@@ -48,8 +49,6 @@
 
                 return o;
             }
-            
-            sampler2D _MainTex;
 
             fixed4 frag (v2f i) : SV_Target
             {

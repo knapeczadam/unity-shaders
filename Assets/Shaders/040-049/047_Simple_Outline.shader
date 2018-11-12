@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex ("Base (RGB)", 2D) = "white" {}
         [Toggle(CALCULATE_DISTANCE)] _CalcDist("Calculate distance (vertex <-> camera)", Float) = 0
     }
     
@@ -38,7 +38,7 @@
         
         ENDCG
         
-        ZWrite ON 
+        ZWrite On
         
         CGPROGRAM
         #pragma surface surf Lambert
@@ -52,7 +52,7 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = tex2D(_MainTex, IN.uv_MainTex);
+            o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb;
         }
         ENDCG
     }

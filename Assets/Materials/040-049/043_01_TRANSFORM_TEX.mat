@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 043_02_VF_Material_World
+  m_Name: 043_01_TRANSFORM_TEX
   m_Shader: {fileID: 4800000, guid: b888687cc643a2346a93c2dad7cd92a4, type: 3}
   m_ShaderKeywords: SWITCH_ORDER _NORMALMAP _SPECGLOSSMAP
   m_LightmapFlags: 4
@@ -56,8 +56,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: cfe130fbb72f5f742adbc0ce71f9936e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 0.87, y: 1.35}
+        m_Offset: {x: 0.1, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}

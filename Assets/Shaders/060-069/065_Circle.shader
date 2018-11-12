@@ -45,21 +45,20 @@
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 texcoord : TEXCOORD0;
             };
             
             struct vertexOutput
             {
                 float4 pos : SV_POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 uv : TEXCOORD0;
             };
             
             vertexOutput vert(vertexInput v)
             {
                 vertexOutput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOutput, o);
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy;
+                o.uv = v.texcoord;
                 return o;
             }
             
@@ -67,7 +66,7 @@
             {
                 fixed4 col;
                 col.rgb = abs(_SinTime);
-                col.a = drawCircle1(i.texcoord.xy, abs(float2(_SinTime.y, _CosTime.z)), abs(_SinTime.y * 0.5) + 0.1);
+                col.a = drawCircle1(i.uv, abs(float2(_SinTime.y, _CosTime.z)), abs(_SinTime.y * 0.5) + 0.1);
                 return col;
             }
             ENDCG

@@ -1,4 +1,4 @@
-﻿Shader "Custom/020-029/031_Custom_Lambert"
+﻿Shader "Custom/030-039/031_Custom_Lambert"
 {
     Properties
     {
@@ -12,9 +12,9 @@
         
         fixed4 _Color;
         
-        half4 LightingBasicLambert(SurfaceOutput s, half3 lightDir, half atten)
+        fixed4 LightingBasicLambert(SurfaceOutput s, half3 lightDir, half atten)
         {
-            half4 c;
+            fixed4 c;
             
             half NdotL = dot(s.Normal, lightDir);
             c.rgb = s.Albedo * _LightColor0.rgb * (NdotL * atten);
@@ -30,7 +30,7 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = _Color;
+            o.Albedo = _Color.rgb;
         }
         ENDCG
     }

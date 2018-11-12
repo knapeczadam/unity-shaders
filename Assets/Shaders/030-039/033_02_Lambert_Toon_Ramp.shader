@@ -22,7 +22,7 @@
         void surf(Input IN, inout SurfaceOutput o)
         {
             float NdotV = dot(o.Normal, IN.viewDir) - _RampRange;
-            o.Albedo = tex2D(_RampTex, float2(NdotV, NdotV));
+            o.Albedo = tex2D(_RampTex, float2(NdotV, NdotV)).rgb;
         }
         ENDCG
     }

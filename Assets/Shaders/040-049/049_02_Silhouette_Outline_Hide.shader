@@ -12,7 +12,7 @@
     struct v2f 
     {
 	    float4 pos : POSITION;
-	    float4 color : COLOR;
+	    fixed4 color : COLOR;
     };
  
     float4 _OutlineColor;
@@ -67,7 +67,7 @@
         #pragma vertex vert
         #pragma fragment frag
  
-        half4 frag(v2f i) :COLOR 
+        fixed4 frag(v2f i) : SV_TARGET 
         {
 	        return i.color;
         }

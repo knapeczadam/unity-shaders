@@ -9,7 +9,7 @@
     {
         Tags { "Queue" = "Transparent" }
         
-        GrabPass {}
+        GrabPass {  }
         
         Pass
         {
@@ -17,11 +17,8 @@
             #pragma vertex vert
             #pragma fragment frag
             
-            #include "UnityCG.cginc"
-            
             sampler2D _MainTex;
             sampler2D _GrabTexture;
-            float4 _MainTex_ST;
             
             struct appdata
             {
@@ -39,15 +36,13 @@
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
+                o.uv = v.texcoord;
                 return o;
             }
             
             fixed4 frag(v2f i) : SV_TARGET
             {
-                fixed4 c;
-                c = tex2D(_GrabTexture, i.uv);
-                return c;
+                return tex2D(_GrabTexture, i.uv);
             }
             ENDCG
         }

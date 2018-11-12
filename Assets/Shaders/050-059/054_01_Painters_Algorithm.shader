@@ -23,7 +23,7 @@
 	    
 	    void surf(Input IN, inout SurfaceOutput o)
 	    {
-	        o.Albedo = _Color;
+	        o.Albedo = _Color.rgb;
 	    }
 	    ENDCG
 	}

@@ -41,7 +41,7 @@
 
 		void vert(inout appdata v, out Input o) 
 		{
-		    UNITY_INITIALIZE_OUTPUT(Input,o);
+		    UNITY_INITIALIZE_OUTPUT(Input, o);
 		    float t = _Time * _Speed;
 		    
 		    //float waveHeight = sin(t + v.vertex.x * _Freq) * _Amp;

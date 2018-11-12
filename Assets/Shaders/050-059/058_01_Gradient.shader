@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Color ("Color", Color) = (1, 1, 1, 1)
+        _Color ("Main Color", Color) = (1, 1, 1, 1)
     }
     
     SubShader
@@ -20,29 +20,28 @@
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 texcoord : TEXCOORD0;
             };
             
             struct vertexOutput
             {
                 float4 pos : SV_POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 uv : TEXCOORD0;
             };
             
             vertexOutput vert(vertexInput v)
             {
                 vertexOutput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOutput, o);
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy;
+                o.uv = v.texcoord;
                 return o;
             }
             
-            fixed4 frag(vertexInput i) : SV_TARGET
+            fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 fixed4 c;
                 c.rgb = _Color.rgb;
-                c.a = i.texcoord.x;
+                c.a = i.uv.x;
                 return c;
             }
             ENDCG

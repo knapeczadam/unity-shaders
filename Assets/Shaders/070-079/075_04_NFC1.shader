@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Normal("Normal", 2D) = "bump" {}
+        _Normal ("Normal", 2D) = "bump" {}
     }
     
     SubShader

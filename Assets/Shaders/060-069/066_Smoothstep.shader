@@ -15,31 +15,30 @@
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 texcoord : TEXCOORD0;
             };
             
             struct vertexOutput
             {
                 float4 pos : SV_POSITION;
-                float4 texcoord : TEXCOORD0;
+                float2 uv : TEXCOORD0;
             };
             
             vertexOutput vert(vertexInput v)
             {
                 vertexOutput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOutput, o);
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord.xy;
+                o.uv = v.texcoord;
                 return o;
             }
             
             fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 fixed4 col;
-                col.r = smoothstep(_CosTime.x, -_CosTime.x, i.texcoord.x * i.texcoord.y);
-                col.g = smoothstep(_CosTime.y, -_CosTime.y, i.texcoord.x * i.texcoord.y);
-                col.b = smoothstep(_CosTime.z, -_CosTime.z, i.texcoord.x * i.texcoord.y);
-                col.a = smoothstep(_CosTime.w, -_CosTime.w, i.texcoord.x * i.texcoord.y);
+                col.r = smoothstep(_CosTime.x, -_CosTime.x, i.uv.x * i.uv.y);
+                col.g = smoothstep(_CosTime.y, -_CosTime.y, i.uv.x * i.uv.y);
+                col.b = smoothstep(_CosTime.z, -_CosTime.z, i.uv.x * i.uv.y);
+                col.a = smoothstep(_CosTime.w, -_CosTime.w, i.uv.x * i.uv.y);
                 col.rgb *= abs(_SinTime);
                 return col;
             }

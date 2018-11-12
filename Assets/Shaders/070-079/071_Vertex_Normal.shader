@@ -24,20 +24,17 @@
             struct vertexInput
             {
                 float4 vertex : POSITION;
-                float4 texcoord : TEXCOORD0;
                 float4 normal : NORMAL;
             };
             
             struct vertexOutput
             {
                 float4 pos : SV_POSITION;
-                float2 texcoord : TEXCOORD0;
             };
             
             vertexOutput vert(vertexInput v)
             {
                 vertexOutput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOutput, o);
                 v.vertex += sin(v.normal + (_Time.y * _Speed) * _Frequency) * (_Amplitude * v.normal);
                 o.pos = UnityObjectToClipPos(v.vertex);
                 return o;
@@ -45,8 +42,7 @@
             
             fixed4 frag(vertexOutput i) : SV_TARGET
             {
-                fixed4 col = _SinTime;
-                return col;
+                return _SinTime;
             }
             ENDCG
         }

@@ -44,7 +44,7 @@
             struct vertexOutput
             {
                 float4 pos : SV_POSITION;
-                float2 texcoord : TEXCOORD0;
+                float2 uv : TEXCOORD0;
             };
             
             vertexOutput vert(vertexInput v)
@@ -53,7 +53,7 @@
                 UNITY_INITIALIZE_OUTPUT(vertexOutput, o);
                 v.vertex.z += sin(v.texcoord.x + (_Offset + _Time.y * _Speed) * _Frequency) * (_Amplitude * v.texcoord.x);
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
+                o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
                 return o;
             }
             
@@ -63,7 +63,7 @@
                     fixed4 col = fixed4(1, 1, 1, 1);
                     col.rgb = _SinTime.xyz / _Offset;
                 #else
-                    fixed4 col = tex2D(_MainTex, i.texcoord);
+                    fixed4 col = tex2D(_MainTex, i.uv);
                 #endif
                 return col;
             }

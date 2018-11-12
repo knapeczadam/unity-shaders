@@ -1,8 +1,8 @@
-﻿Shader "Custom/040-049/043_01_VF_Material"
+﻿Shader "Custom/040-049/043_02_Inside_Offset"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex ("Base (RGB)", 2D) = "white" {}
     }
     
     SubShader
@@ -13,10 +13,7 @@
             #pragma vertex vert
             #pragma fragment frag
             
-            #include "UnityCG.cginc"
-            
             sampler2D _MainTex;
-            float4 _MainTex_ST;
             
             struct appdata
             {
@@ -34,16 +31,14 @@
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
-                float offset = sin(_Time.y) * 0.5 + 0.5;
-                o.uv.x = o.uv.x * offset;
-                o.uv.y = o.uv.y * offset;
+                o.uv = v.texcoord;
                 return o;
             }
             
             fixed4 frag(v2f i) : SV_TARGET
             {
-                return tex2D(_MainTex, i.uv);
+                float offset = sin(_Time.y) * 0.5 + 0.5;
+                return tex2D(_MainTex, i.uv + offset);
             }
             ENDCG
         }

@@ -1,9 +1,10 @@
-﻿Shader "Custom/040-049/043_02_VF_Material_World"
+﻿Shader "Custom/040-049/043_01_TRANSFORM_TEX"
 {
     Properties
 	{
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 	}
+	
 	SubShader
 	{
 		Pass
@@ -13,6 +14,9 @@
 			#pragma fragment frag
 			
 			#include "UnityCG.cginc"
+			
+			sampler2D _MainTex;
+			float4 _MainTex_ST;
 
 			struct appdata
 			{
@@ -26,9 +30,6 @@
 				float2 uv : TEXCOORD0;
 			};
 
-			sampler2D _MainTex;
-			float4 _MainTex_ST;
-			
 			v2f vert (appdata v)
 			{
 				v2f o;
@@ -39,9 +40,7 @@
 			
 			fixed4 frag (v2f i) : SV_TARGET
 			{
-				fixed4 col = tex2D(_MainTex, i.uv);
-				col.rg *= i.uv.xy;
-				return col;
+				return tex2D(_MainTex, i.uv);
 			}
 			ENDCG
 		}

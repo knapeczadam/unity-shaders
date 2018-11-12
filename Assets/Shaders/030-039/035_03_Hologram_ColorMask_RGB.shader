@@ -26,7 +26,7 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            half rim = 1.0 - saturate(dot(IN.viewDir, o.Normal));
+            float rim = 1.0 - saturate(dot(IN.viewDir, o.Normal));
             rim = pow(rim, _RimPow * sin(_Time.w) * 0.5 + 0.5);
             o.Alpha = rim;
             o.Emission = _SinTime * rim;

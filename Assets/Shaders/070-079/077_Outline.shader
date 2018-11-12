@@ -49,13 +49,11 @@
             struct v2f
             {
                 float4 pos : SV_POSITION;
-                float4 texcoord : TEXCOORD0;
             };
             
             v2f vert(appdata_full v)
             {
                 v2f o;
-                UNITY_INITIALIZE_OUTPUT(v2f, o);
                 o.pos = UnityObjectToClipPos(outline(v.vertex));
                 return o;
             }
@@ -81,21 +79,20 @@
             struct v2f
             {
                 float4 pos : SV_POSITION;
-                float4 texcoord : TEXCOORD0;   
+                float2 uv : TEXCOORD0;   
             };
             
             v2f vert(appdata_full v)
             {
                 v2f o;
-                UNITY_INITIALIZE_OUTPUT(v2f, o);
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.texcoord.xy = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
+                o.uv = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
                 return o;
             }
             
             fixed4 frag(v2f i) : SV_TARGET
             {
-                return tex2D(_MainTex, i.texcoord);;
+                return tex2D(_MainTex, i.uv);
             }
             ENDCG
         }
