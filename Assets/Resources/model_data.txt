@@ -206,8 +206,8 @@ FDD2BD4CEDA347ACA17D6F2F7825C320|World normal - OK|2
 29F390B46F764FFD814420EF12181864|Diffuse reflection - Vertex|2
 9623A0B241BA44CE8C93F51B0B4C01AF|Diffuse reflection - Fragment|2
 A897CEB5056F4DE68DE1212CABC4765E|Specular reflection - Phong - Vertex|2|http://developer.download.nvidia.com/cg/reflect.html
-66E5A27D6D444F749D4ADE75BA5342CF|Specular reflection - Blinn-Phong - Vertex|2
 65FDE04563324EA0AC1347F55CE8DFE6|Specular reflection - Phong - Frag|2|http://developer.download.nvidia.com/cg/reflect.html
+66E5A27D6D444F749D4ADE75BA5342CF|Specular reflection - Blinn-Phong - Vertex|2
 86920F39B25E45599C4B4568647CED1B|Specular reflection - Blinn-Phong - Frag|2
 9EA4DDB15DDC427B9E31A1A49E91CDE4|Ambient reflection - Vert|2
 4D74DCFEA71346C2A3DCC4CE0F4201F7|Ambient reflection -  Frag|2

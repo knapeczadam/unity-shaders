@@ -2,7 +2,7 @@
 {
     Properties
     {
-        [KeywordEnum(Good, Bad, Ugly)] _The ("The", Float) = 0
+        [KeywordEnum(Good, Bad, Ugly)] _The ("The", Float) = 0.0
     }
     
     SubShader

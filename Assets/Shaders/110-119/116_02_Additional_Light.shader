@@ -46,8 +46,8 @@
             {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float3 worldPos : TEXCOORD1;
-                float3 worldNormal : TEXCOORD2;
+                float3 worldPos : TEXCOORD2;
+                float3 worldNormal : TEXCOORD3;
             };
             
             vertexOutput vert(vertexInput v)
@@ -65,9 +65,9 @@
             fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 float4 finalColor = fixed4(1, 1, 1, _Color.a);
-                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.worldPos);
+                float3 viewDirection = normalize(_WorldSpaceCameraPos - i.worldPos); // UnityWorldSpaceViewDir
                 
-                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.worldPos;
+                float3 vertexToLightSource = _WorldSpaceLightPos0.xyz - i.worldPos; // UnityWorldSpaceLightDir ?
                 float distance = length(vertexToLightSource);
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.w, _WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.worldPos));
                 float attenuation = lerp(_WorldSpaceLightPos0.w, 1.0, 1.0 / distance); 
@@ -120,8 +120,8 @@
             {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float3 worldPos : TEXCOORD1;
-                float3 worldNormal : TEXCOORD2;
+                float3 worldPos : TEXCOORD2;
+                float3 worldNormal : TEXCOORD3;
             };
             
             vertexOutput vert(vertexInput v)

@@ -33,7 +33,7 @@
             {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float4 vertPos : TEXCOORD1;
+                float4 vertPos : TEXCOORD2;
             };
             
             vertexOuput vert(vertexInput v)

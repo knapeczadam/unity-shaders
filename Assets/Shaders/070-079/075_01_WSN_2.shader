@@ -19,7 +19,7 @@
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float3 worldNormal : TEXCOORD0;
+                float3 worldNormal : TEXCOORD2;
             };
             
             vertexOuput vert(vertexInput v)

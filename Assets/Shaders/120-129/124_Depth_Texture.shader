@@ -34,7 +34,7 @@
             {
                 float4 pos : SV_POSITION;
                 float2 texcoord : TEXCOORD0;
-                fixed depth : TEXCOORD1;
+                fixed depth : TEXCOORD2;
             };
             
             vertexOuput vert(vertexInput v)

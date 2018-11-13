@@ -2,11 +2,11 @@
 {
 	Properties
     {
-        _NormalMap ("Normal map", 2D) = "bump" {}
-        _Diffuse ("Diffuse %", Range(0, 1)) = 1
-        _SpecularMap ("Specular map", 2d) = "white" {}
-        _SpecularFactor ("Specular %", Range(0, 1)) = 1
-        _SpecularPower ("Specular power", Float) = 100
+        _BumpMap ("Normal Map", 2D) = "bump" {}
+        _SpecularMap ("Specular Map", 2D) = "white" {}
+        _DiffuseFactor ("Diffuse %", Range(0.0, 1.0)) = 1.0
+        _SpecularFactor ("Specular %", Range(0.0, 1.0)) = 1.0
+        _SpecularPower ("Specular power", Range(0.01, 128.0)) = 100.0
     }
     
     SubShader
@@ -21,50 +21,33 @@
             
             #include "UnityCG.cginc"
             
-            sampler2D _NormalMap;
-            float4 _NormalMap_ST;
+            sampler2D _BumpMap;
             
-            float _Diffuse;
-            float4 _LightColor0;
+            float _DiffuseFactor;
+            fixed4 _LightColor0;
             
             sampler2D _SpecularMap;
-            float4 _SpecularMap_ST;
             float _SpecularFactor;
             float _SpecularPower;
             
-            float3 normalFromColor (float4 colorVal)
+            float3 WorldNormalFromNormalMap(sampler2D normalMap, float2 uv, float3 worldTangent, float3 worldBinormal, float3 worldNormal)
             {
-	            #if defined(UNITY_NO_DXT5nm)
-		            return colorVal.xyz * 2 - 1;
-	            #else
-                    float3 normalVal;
-                    normalVal = float3 (colorVal.a * 2.0 - 1.0,
-                                colorVal.g * 2.0 - 1.0,
-                                0.0);
-                    normalVal.z = sqrt(1.0 - dot(normalVal, normalVal));
-                    return normalVal;
-	            #endif
+		        fixed3 normal = UnpackNormal(tex2D(normalMap, uv));
+		        float3x3 TBN = float3x3(worldTangent, worldBinormal, worldNormal);
+		        return normalize(mul(normal, TBN));	
             }
             
-            float3 WorldNormalFromNormalMap(sampler2D normalMap, float2 normalTexCoord, float3 tangentWorld, float3 binormalWorld, float3 normalWorld)
+            fixed3 DiffuseLambert(float3 normal, float3 lightDir, half atten, fixed3 lightColor, float diffuseFactor)
             {
-		        float4 colorAtPixel = tex2D(normalMap, normalTexCoord);
-		
-		        float3 normalAtPixel = normalFromColor(colorAtPixel);
-		
-		        float3x3 TBNWorld = float3x3(tangentWorld, binormalWorld, normalWorld);
-		        return normalize(mul(normalAtPixel, TBNWorld));	
+                fixed diff = saturate(dot(normal, lightDir));
+                return lightColor * (diff * atten) * diffuseFactor;
             }
             
-            float3 DiffuseLambert(float3 normalVal, float3 lightDir, float3 lightColor, float diffuseFactor, float attenuation)
+            fixed3 SpecularBlinnPhong(float3 normal, float3 lightDir, float3 viewDir, half atten, fixed3 specularColor, float specularPower, float specularFactor)
             {
-                return lightColor * diffuseFactor * attenuation * saturate(dot(normalVal, lightDir));
-            }
-            
-            float SpecularBlinnPhong(float3 normalDir, float3 lightDir, float3 worldSpaceViewDir, float3 specularColor, float specularFactor, float attenuation, float specularPower)
-            {
-                float3 halfwayDir = normalize(lightDir + worldSpaceViewDir);
-                return specularColor * specularFactor * attenuation * pow(saturate(dot(normalDir, halfwayDir)), specularPower);
+                float3 halfwayDir = normalize(lightDir + viewDir);
+                float spec = pow(saturate(dot(normal, halfwayDir)), specularPower);
+                return specularColor * (spec * atten) * specularFactor;
             }
             
             struct vertexInput
@@ -78,45 +61,46 @@
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float2 texcoord : TEXCOORD0;
-                float3 worldPos : TEXCOORD1;
-                float3 worldNormal : TEXCOORD2;
-                float3 worldTangent : TEXCOORD3;
-                float3 worldBinormal : TEXCOORD4;
-                float2 normalTexCoord : TEXCOORD5;
+                float2 uv : TEXCOORD0;
+                float3 worldPos : TEXCOORD2;
+                float3 worldNormal : TEXCOORD3;
+                float3 worldTangent : TEXCOORD4;
+                float3 worldBinormal : TEXCOORD5;
             };
             
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
-                o.texcoord = v.texcoord;
-                o.normalTexCoord = v.texcoord.xy * _NormalMap_ST.xy + _NormalMap_ST.zw;
+                o.uv = v.texcoord;
                 
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
                 o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 o.worldTangent = UnityObjectToWorldDir(v.tangent.xyz);
-                o.worldBinormal = normalize(cross(o.worldNormal, o.worldTangent) * v.tangent.w); 
+                fixed tangentSign = v.tangent.w * unity_WorldTransformParams.w;
+                o.worldBinormal = cross(o.worldNormal, o.worldTangent) * tangentSign;
                 
                 return o;
             }
             
             fixed4 frag(vertexOuput i) : SV_TARGET  
             {
-                float3 worldNormalAtPixel = WorldNormalFromNormalMap(_NormalMap, i.normalTexCoord, i.worldTangent, i.worldBinormal, i.worldNormal);
+                float3 worldNormalAtPixel = WorldNormalFromNormalMap(_BumpMap, i.uv, i.worldTangent, i.worldBinormal, i.worldNormal);
                 
-                float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
-                float3 lightColor = _LightColor0.rgb;
-                float attenuation = 1;
-                float3 diffuseColor = DiffuseLambert(worldNormalAtPixel, lightDir, lightColor, _Diffuse, attenuation);
+                half attenuation = 1;
                 
-                float4 specularMap = tex2D(_SpecularMap, i.texcoord);
-                float3 worldSpaceViewDir = normalize(_WorldSpaceCameraPos - i.worldPos);
-                float3 specularColor = SpecularBlinnPhong(worldNormalAtPixel, lightDir, worldSpaceViewDir, specularMap.rgb, _SpecularFactor, attenuation, _SpecularPower);
+                float3 lightDir = _WorldSpaceLightPos0.xyz;
+                fixed3 lightColor = _LightColor0.rgb;
+                fixed3 diffuseColor = DiffuseLambert(worldNormalAtPixel, lightDir, attenuation, lightColor, _DiffuseFactor);
                 
-                return float4(diffuseColor + specularColor, 1);
+                fixed4 specularMap = tex2D(_SpecularMap, i.uv);
+                float3 worldSpaceViewDir = normalize(UnityWorldSpaceViewDir(i.worldPos));
+                fixed3 specularColor = SpecularBlinnPhong(worldNormalAtPixel, lightDir, worldSpaceViewDir, attenuation, specularMap.rgb, _SpecularPower, _SpecularFactor);
+                
+                fixed3 surfaceColor = diffuseColor + specularColor;
+                
+                return fixed4(surfaceColor, 1);
             }
             ENDCG
         }

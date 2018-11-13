@@ -2,10 +2,10 @@
 {
 	Properties
     {
-        _Diffuse ("Diffuse %", Range(0, 1)) = 1
-        _SpecularMap ("Specular map", 2d) = "white" {}
-        _SpecularFactor ("Specular %", Range(0, 1)) = 1
-        _SpecularPower ("Specular power", Float) = 100
+        _SpecularMap ("Specular Map", 2D) = "white" {}
+        _DiffuseFactor ("Diffuse %", Range(0.0, 1.0)) = 1.0
+        _SpecularFactor ("Specular %", Range(0.0, 1.0)) = 1.0
+        _SpecularPower ("Specular power", Range(0.01, 128.0)) = 100.0
     }
     
     SubShader
@@ -20,23 +20,24 @@
             
             #include "UnityCG.cginc"
             
-            float _Diffuse;
-            float4 _LightColor0;
+            float _DiffuseFactor;
+            fixed4 _LightColor0;
             
             sampler2D _SpecularMap;
-            float4 _SpecularMap_ST;
             float _SpecularFactor;
             float _SpecularPower;
             
-            float3 DiffuseLambert(float3 normalVal, float3 lightDir, float3 lightColor, float diffuseFactor, float attenuation)
+            fixed3 DiffuseLambert(float3 normal, float3 lightDir, half atten, fixed3 lightColor, float diffuseFactor)
             {
-                return lightColor * diffuseFactor * attenuation * saturate(dot(normalVal, lightDir));
+                fixed diff = saturate(dot(normal, lightDir));
+                return lightColor * (diff * atten) * diffuseFactor;
             }
             
-            float SpecularPhong(float3 normalDir, float3 lightDir, float3 worldSpaceViewDir, float3 specularColor, float specularFactor, float attenuation, float specularPower)
+            fixed3 SpecularPhong(float3 normal, float3 lightDir, float3 viewDir, half atten, fixed3 specularColor, float specularPower, float specularFactor)
             {
-                float3 reflection = 2 * dot(normalDir, lightDir) * normalDir - lightDir; // reflect(-lightDir, normalDir)
-                return specularColor * specularFactor * attenuation * pow(saturate(dot(reflection, worldSpaceViewDir)), specularPower);
+                float3 reflection = 2.0 * dot(normal, lightDir) * normal - lightDir; // reflect(-lightDir, normalDir)
+                float spec = pow(saturate(dot(reflection, viewDir)), specularPower);
+                return specularColor * (spec * atten) * specularFactor;
             }
             
             struct vertexInput
@@ -49,40 +50,40 @@
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float2 texcoord : TEXCOORD0;
-                float3 worldPos : TEXCOORD1;
-                float3 worldNormal : TEXCOORD2;
-                float4 surfaceColor : COLOR0;
+                float2 uv : TEXCOORD0;
+                float3 worldPos : TEXCOORD2;
+                float3 worldNormal : TEXCOORD3;
+                fixed3 surfaceColor : COLOR0;
             };
             
             vertexOuput vert(vertexInput v)
             {
                 vertexOuput o;
-                UNITY_INITIALIZE_OUTPUT(vertexOuput, o);
                 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
-                o.texcoord = v.texcoord;
+                o.uv = v.texcoord;
                 
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
                 o.worldNormal = UnityObjectToWorldNormal(v.normal);
                 
-                float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
-                float3 lightColor = _LightColor0.rgb;
-                float attenuation = 1;
-                float3 diffuseColor = DiffuseLambert(o.worldNormal, lightDir, lightColor, _Diffuse, attenuation);
+                half attenuation = 1;
                 
-                float4 specularMap = tex2Dlod(_SpecularMap, float4(o.texcoord.xy, 0, 0));
-                float3 worldSpaceViewDir = normalize(_WorldSpaceCameraPos - o.worldPos);
-                float3 specularColor = SpecularPhong(o.worldNormal, lightDir, worldSpaceViewDir, specularMap.rgb, _SpecularFactor, attenuation, _SpecularPower);
+                float3 lightDir = _WorldSpaceLightPos0.xyz;
+                fixed3 lightColor = _LightColor0.rgb;
+                fixed3 diffuseColor = DiffuseLambert(o.worldNormal, lightDir, attenuation, lightColor, _DiffuseFactor);
                 
-                o.surfaceColor = float4(diffuseColor + specularColor, 1);
+                fixed4 specularMap = tex2Dlod(_SpecularMap, float4(o.uv, 0, 0));
+                float3 worldSpaceViewDir = normalize(UnityWorldSpaceViewDir(o.worldPos));
+                fixed3 specularColor = SpecularPhong(o.worldNormal, lightDir, worldSpaceViewDir, attenuation, specularMap.rgb, _SpecularPower, _SpecularFactor);
+                
+                o.surfaceColor = diffuseColor + specularColor;
                 
                 return o;
             }
             
             fixed4 frag(vertexOuput i) : SV_TARGET
             {
-                return i.surfaceColor;
+                return fixed4(i.surfaceColor, 1);
             }
             ENDCG
         }

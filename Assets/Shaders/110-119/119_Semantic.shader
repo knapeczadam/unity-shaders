@@ -29,7 +29,7 @@
                 
                 // the following members are interpolators/varyings
                 float2 uv : TEXCOORD0;
-                float4 I_am_a_member_with_custom_semantic : TEXCOORD1;
+                float4 I_am_a_member_with_custom_semantic : TEXCOORD2;
                 fixed4 a_custom_semantic_here : COLOR2; // COLORN semantics on vertex outputs and fragment inputs are for low-precision, 0–1 range data (like simple color values).
             };
             

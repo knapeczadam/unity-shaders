@@ -35,8 +35,8 @@
 		    float4 vertex: POSITION;
 		    float3 normal: NORMAL;
 		    float4 texcoord: TEXCOORD0;
-		    float4 texcoord1: TEXCOORD1;
-		    float4 texcoord2: TEXCOORD2;
+		    float4 texcoord1: TEXCOORD2;
+		    float4 texcoord2: TEXCOORD3;
         };
 
 		void vert(inout appdata v, out Input o) 

@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex ("Base (RGB)", 2D) = "white" {}
         _Outline ("Outline", Range(0.01, 1.0)) = 0.01
     }
     
@@ -51,7 +51,7 @@
                 float4 pos : SV_POSITION;
             };
             
-            v2f vert(appdata_full v)
+            v2f vert(appdata_base v)
             {
                 v2f o;
                 o.pos = UnityObjectToClipPos(outline(v.vertex));
@@ -82,7 +82,7 @@
                 float2 uv : TEXCOORD0;   
             };
             
-            v2f vert(appdata_full v)
+            v2f vert(appdata_base v)
             {
                 v2f o;
                 o.pos = UnityObjectToClipPos(v.vertex);

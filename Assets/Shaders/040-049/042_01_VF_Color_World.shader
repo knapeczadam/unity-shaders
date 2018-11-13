@@ -16,7 +16,7 @@
             struct vertexOuput
             {
                 float4 pos : SV_POSITION;
-                float4 vertex : TEXCOORD0;
+                float4 vertex : TEXCOORD2;
             };
             
             vertexOuput vert(vertexInput v)

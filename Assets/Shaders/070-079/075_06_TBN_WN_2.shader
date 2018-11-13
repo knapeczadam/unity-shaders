@@ -30,22 +30,10 @@
             {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                float3 worldNormal : TEXCOORD1;
-                float3 worldTangent : TEXCOORD2;
-                float3 worldBinormal : TEXCOORD3;
+                float3 worldNormal : TEXCOORD2;
+                float3 worldTangent : TEXCOORD3;
+                float3 worldBinormal : TEXCOORD4;
             };
-            
-            float3 normalFromColor(float4 col)
-            {
-                #if defined(UNITY_NO_DXT5nm)
-                    return col.xyz * 2 - 1;
-                #else
-                    float3 normVal;
-                    normVal = float3(col.a * 2 - 1, col.g * 2 - 1, 0.0);
-                    normVal.z = sqrt(1 - dot(normVal, normVal));
-                    return normVal;
-                #endif
-            }
             
             vertexOuput vert(vertexInput v)
             {
@@ -54,20 +42,30 @@
                 o.uv = v.texcoord * _BumpMap_ST.xy + _BumpMap_ST.zw;
                 o.worldNormal = normalize(mul(v.normal, (float3x3) unity_WorldToObject)); // v.normal -> float1x3
                 o.worldTangent = normalize(mul((float3x3) unity_ObjectToWorld, v.tangent.xyz)); // v.tangent -> float3x1
-                o.worldBinormal =  cross(o.worldNormal, o.worldTangent) * v.tangent.w * unity_WorldTransformParams.w;
+                fixed tangentSign = v.tangent.w * unity_WorldTransformParams.w;
+                o.worldBinormal =  cross(o.worldNormal, o.worldTangent) * tangentSign;
                 return o;
             }
             
             fixed4 frag(vertexOuput i) : SV_TARGET
             {
-                float4 col = tex2D(_BumpMap, i.uv);
-                
-                float3 norm = normalFromColor(col);
-                
+                fixed3 normal = UnpackNormal(tex2D(_BumpMap, i.uv));
                 float3x3 TBN = float3x3(i.worldTangent, i.worldBinormal, i.worldNormal);
-                float4 worldNorm = float4(normalize(mul(norm, TBN)), 1);
+                float3 worldNormal = normalize(mul(normal, TBN));
                 
-                return worldNorm;
+                // ALTERNATIVE CALCULATION
+                /*
+                fixed3 _unity_tbn_0 = fixed3(i.worldTangent.x, i.worldBinormal.x, i.worldNormal.x);
+                fixed3 _unity_tbn_1 = fixed3(i.worldTangent.y, i.worldBinormal.y, i.worldNormal.y);
+                fixed3 _unity_tbn_2 = fixed3(i.worldTangent.z, i.worldBinormal.z, i.worldNormal.z);
+                fixed3 worldN;
+                worldN.x = dot(_unity_tbn_0, normal);
+                worldN.y = dot(_unity_tbn_1, normal);
+                worldN.z = dot(_unity_tbn_2, normal);
+                worldN = normalize(worldN);
+                */
+                
+                return fixed4(worldNormal * 0.5 + 0.5, 1);
             }
             ENDCG
         }

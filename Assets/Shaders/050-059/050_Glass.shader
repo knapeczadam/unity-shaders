@@ -35,10 +35,10 @@
             
             struct v2f
             {
-                float2 uv : TEXCOORD0;
-                float4 uvgrab : TEXCOORD1;
-                float2 uvbump : TEXCOORD2;
                 float4 vertex : SV_POSITION;
+                float2 uv : TEXCOORD0;
+                float4 uvgrab : TEXCOORD2;
+                float2 uvbump : TEXCOORD3;
             };
             
             v2f vert(appdata v)

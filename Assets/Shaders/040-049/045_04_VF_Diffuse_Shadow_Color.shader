@@ -31,9 +31,9 @@
 
             struct v2f
             {
+                float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
                 fixed4 diff : COLOR0; 
-                float4 pos : SV_POSITION;
                 SHADOW_COORDS(1)
             };
 

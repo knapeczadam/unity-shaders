@@ -27,8 +27,8 @@
             { 
                 float4 pos : SV_POSITION;
                 float2	uv : TEXCOORD0;
-                float3	TtoV0 : TEXCOORD1;
-                float3	TtoV1 : TEXCOORD2;
+                float3	TtoV0 : TEXCOORD2;
+                float3	TtoV1 : TEXCOORD3;
             };
 				
 				

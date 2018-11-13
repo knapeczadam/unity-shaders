@@ -29,9 +29,9 @@
             
             struct v2f
             {
+                float4 vertex : SV_POSITION;
                 float2 uv : TEXCOORD0;
                 fixed4 diff : COLOR0;
-                float4 vertex : SV_POSITION;
             };
             
             v2f vert(appdata v)
