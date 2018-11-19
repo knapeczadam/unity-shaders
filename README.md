@@ -21,22 +21,24 @@ My Shader study path was the following:
 * <a href="https://www.udemy.com/unity-shader/">Unity Shader 入門 (廣東話)</a>
 * Besides the above: <a href="https://docs.unity3d.com/Manual/SL-Reference.html">Unity Shader documentation</a>, <a href="https://forum.unity.com/">Unity Forum</a>, <a href="https://www.youtube.com/results?search_query=unity+shader">YouTube tutorials</a> and of course: tons of <a href="http://lmgtfy.com/?q=unity+shader">Google</a>
 
-### Suggestions
-* Start following <a href="https://github.com/keijiro">Keijiro Takahashi</a> on GitHub. He works at Unity Technologies Japan as a Shader demigod.
-* Buy <a href="https://assetstore.unity.com/packages/tools/visual-scripting/amplify-shader-editor-68570">Amplify Shader Editor</a> for practice purposes
 
 ### Useful links
+* <a href="https://www.alanzucconi.com/">Alan Zucconi</a>
+* <a href="https://assetstore.unity.com/packages/tools/visual-scripting/amplify-shader-editor-68570">Amplify Shader Editor</a>
 * <a href="http://cg.iit.bme.hu/portal/">BME - Számítógépes Grafika Csoport</a> [hu]
 * <a href="http://cg.elte.hu/">ELTE - Számítógépes Grafika Labor</a> [hu]
 * <a href="http://nyelvek.inf.elte.hu/leirasok/Cg/">ELTE - Prognyelvek portál</a> [hu]
+* <a href="https://catlikecoding.com/">Catlike Coding</a>
+* <a href="https://github.com/keijiro">Keijiro Takahashi</a>
 * <a href="https://eu.udacity.com/course/interactive-3d-graphics--cs291">Interactive 3D Graphics</a>
 * <a href="https://assetstore.unity.com/packages/vfx/shaders/lux-physically-based-shader-framework-16000">Lux – Physically Based Shader Framework</a>
+* <a href="https://www.youtube.com/channel/UCEklP9iLcpExB8vp_fWQseg">Makin' Stuff Look Good</a>
 * <a href="https://github.com/FreyaHolmer/ShaderForge">ShaderForge</a>
 
 ### (My) What's next? (question)
 - [ ] <a href="https://www.reddit.com/r/unrealengine/comments/6l7yj2/question_can_i_use_unity_shaders_in_unreal/">Transfer</a> Unity Shader knwoledge to Unreal
 - [ ] Study more
-- [ ] Practise
+- [ ] Practise more
 
 ### Asset referencies
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/3d-game-kit-115747">3D Game Kit</a>
@@ -71,6 +73,7 @@ My Shader study path was the following:
 * <a href="https://assetstore.unity.com/packages/3d/props/exterior/vintage-phone-booth-2607">Vintage Phone Booth</a>
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/vr-samples-51519">VR Samples</a>
 * <a href="https://assetstore.unity.com/packages/vfx/particles/environment/water-fx-pack-19248">Water FX Pack</a>
+* <a href="http://wiki.polycount.com/wiki/File:Uvrefmap_checkeredmap.jpg">wiki.polycount.com</a>
 * <a href="https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader">wiki.unity3d.com</a>
 * <a href="https://commons.wikimedia.org/wiki/File:Boys_playing_Leapfrog.jpg">Wikipedia</a>
 * <a href="https://unity3d.com/learn/tutorials/topics/graphics/session-introduction">Writing Your First Shader In Unity</a>

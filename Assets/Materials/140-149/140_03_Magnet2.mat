@@ -82,6 +82,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MagnetDir: {r: 0.22756508, g: -0.40824828, b: 0.8840517, a: 0}
+    - _MagnetDir: {r: -0.1084175, g: -0.4082483, b: 0.90641, a: 0}
     - _MagnetLoc: {r: -1.2898542, g: 2.973, b: -0.70185435, a: 0}
     - myLocator: {r: 3.4, g: 1.785, b: 0.975, a: 0}
