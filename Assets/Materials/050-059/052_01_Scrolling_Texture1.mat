@@ -121,7 +121,7 @@ Material:
     - _SOp: 0
     - _SRef: 4
     - _ScaleUV: 1
-    - _ScrollX: 50
+    - _ScrollX: 5
     - _ScrollY: 0
     - _Slider: 50
     - _SmoothnessTextureChannel: 0

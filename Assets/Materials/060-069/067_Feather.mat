@@ -125,6 +125,7 @@ Material:
     - _OcclusionStrength: 1
     - _Outline: 0.1
     - _Parallax: 0.02
+    - _Radius: 0.5
     - _Range: 0.2
     - _RimPower: 0.5
     - _SComp: 3
@@ -153,6 +154,7 @@ Material:
     - _switchOrder: 1
     m_Colors:
     - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Center: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0.14015675, b: 1, a: 1}
     - _NormalColor: {r: 0.7176471, g: 0.03137254, b: 0.485672, a: 1}

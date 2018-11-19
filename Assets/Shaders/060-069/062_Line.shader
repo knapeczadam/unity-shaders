@@ -1,5 +1,10 @@
 ﻿Shader "Custom/060-069/062_Line"
 {
+    Properties
+    {
+        _Width ("Width", Float) = 1.0
+    }
+    
     SubShader
     {
         Tags { "Queue" = "Transparent" "RenderType" = "Transparent" }
@@ -12,7 +17,9 @@
             #pragma vertex vert
             #pragma fragment frag
             
-            inline float drawLine(float2 uv, float start, float width)
+            float _Width;
+            
+            float drawLine(float2 uv, float start, float width)
             {
                 if (uv.x > start && uv.x < start + width)
                 {
@@ -45,7 +52,7 @@
             {
                 fixed4 col;
                 col.rgb = fixed3(0, 1, 0);
-                col.a = drawLine(i.uv, abs(_SinTime.y), 0.01);
+                col.a = drawLine(i.uv, abs(_SinTime.y), _Width);
                 return col;
             }
             ENDCG

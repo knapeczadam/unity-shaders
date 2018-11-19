@@ -1,5 +1,11 @@
 ﻿Shader "Custom/060-069/067_Feather"
 {
+    Properties
+    {
+        _Center ("Center (X, Y)", Vector) = (0.5, 0.5, 0, 0)
+        _Radius ("Radius", Float) = 1.0
+    }
+    
     SubShader
     {
         Tags { "Queue" = "Transparent" "RenderType" = "Transparent" }
@@ -11,6 +17,9 @@
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            
+            float4 _Center;
+            float _Radius;
             
             float drawCircle(float2 uv, float2 center, float radius)
             {
@@ -46,8 +55,8 @@
             fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 fixed4 col;
-                col.rgb = abs(_SinTime);
-                col.a = drawCircle(i.uv, float2(0.5, 0.5), 0.5);
+                col.rgb = abs(_SinTime).rgb;
+                col.a = drawCircle(i.uv, _Center.xy, _Radius);
                 return col;
             }
             ENDCG

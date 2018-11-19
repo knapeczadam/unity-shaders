@@ -105,7 +105,7 @@ Material:
     m_Floats:
     - _Amount: 1
     - _Amp: 0.526
-    - _Amplitude: 5
+    - _Amplitude: 2
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _CutoutThresh: 0.2

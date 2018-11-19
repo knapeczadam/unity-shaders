@@ -107,7 +107,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Height: 570
+    - _Height: 399
     - _Metallic: 1
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -123,7 +123,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Width: 766
+    - _Width: 698
     - _ZWrite: 1
     - _isEmissive: 0
     - _myFloat: 0.5

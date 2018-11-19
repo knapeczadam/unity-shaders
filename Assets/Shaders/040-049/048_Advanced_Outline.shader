@@ -42,7 +42,7 @@
 			struct v2f 
 			{
 				float4 pos : SV_POSITION;
-				fixed4 color : COLOR;
+				fixed4 color : COLOR0;
 			};
 			
 			v2f vert(appdata v) 
@@ -50,7 +50,7 @@
 				v2f o;
 				o.pos = UnityObjectToClipPos(v.vertex);
 
-				float3 norm   = normalize(mul ((float3x3) UNITY_MATRIX_IT_MV, v.normal));
+				float3 norm = normalize(mul((float3x3) UNITY_MATRIX_IT_MV, v.normal));
 				float2 offset = TransformViewToProjection(norm.xy);
 
 				o.pos.xy += offset * o.pos.z * abs(sin(_Time.w)) * 0.4;
@@ -58,7 +58,7 @@
 				return o;
 			}
 
-			fixed4 frag(v2f i) : SV_Target
+			fixed4 frag(v2f i) : SV_TARGET
 			{
 				return i.color;
 			}

@@ -3,6 +3,8 @@
     Properties
     {
         _MainTex ("Base (RGB)", 2D) = "white" {}
+        _ShadowColor ("Shadow Color", Color) = (1, 1, 1, 1)
+        _ShadowIntensity ("Shadow intensity", Range(0.0, 1.0)) = 1.0
     }
     
     SubShader
@@ -21,6 +23,8 @@
             #include "AutoLight.cginc"
             
             sampler2D _MainTex;
+            fixed4 _ShadowColor;
+            float _ShadowIntensity;
             
             struct appdata 
             {
@@ -33,7 +37,7 @@
             {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
-                fixed4 diff : COLOR0; 
+                fixed3 diff : COLOR0; 
                 SHADOW_COORDS(1)
             };
 
@@ -42,26 +46,25 @@
                 v2f o;
                 o.pos = UnityObjectToClipPos(v.vertex);
                 o.uv = v.texcoord;
-                half3 worldNormal = UnityObjectToWorldNormal(v.normal);
-                half nl = max(0, dot(worldNormal, _WorldSpaceLightPos0.xyz));
-                o.diff = nl * _LightColor0;
+                float3 worldNormal = UnityObjectToWorldNormal(v.normal);
+                float NdotL = saturate(dot(worldNormal, _WorldSpaceLightPos0.xyz));
+                o.diff = _LightColor0.rgb * NdotL;
                 TRANSFER_SHADOW(o)
 
                 return o;
             }
 
-            fixed4 frag (v2f i) : SV_Target
+            fixed4 frag (v2f i) : SV_TARGET
             {
                  fixed4 col = tex2D(_MainTex, i.uv);
                  fixed shadow = SHADOW_ATTENUATION(i);
-                 fixed3 red = fixed3(1, 0, 0);
-                 fixed shadowIntensity = 0.8;
-                 fixed lerpWeight = min(shadowIntensity, 1 - shadow);
-                 col.rgb = i.diff * lerp(col.rgb, red, lerpWeight);
+                 fixed lerpWeight = min(_ShadowIntensity, 1.0 - shadow);
+                 col.rgb = i.diff * lerp(col.rgb, _ShadowColor.rgb, lerpWeight);
                  return col;
              }
             ENDCG
         }
+        
         Pass
         {
             Tags { "LightMode" = "ShadowCaster" }
@@ -69,7 +72,6 @@
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #pragma multi_compile_shadowcaster
             
             #include "UnityCG.cginc"
             
@@ -78,7 +80,7 @@
                 V2F_SHADOW_CASTER;
             };
 
-            v2f vert(appdata_full v)
+            v2f vert(appdata_base v)
             {
                 v2f o;
                 TRANSFER_SHADOW_CASTER_NORMALOFFSET(o)

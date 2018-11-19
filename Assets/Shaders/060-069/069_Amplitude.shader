@@ -48,8 +48,8 @@
             int drawSin(float2 uv)
             {   
                 const float PI = UNITY_PI;
-                float y = sin((uv.x + (_Time.y * _Speed))  * PI - (PI * 0.5)) * _Amplitude + 0.5;
-                float x = cos((uv.y + (_Time.y * _Speed))  * PI - (PI * 0.5)) * _Amplitude + 0.5;
+                float y = sin((uv.x + (_Time.y * _Speed)) * PI - (PI * 0.5)) * _Amplitude + 0.5;
+                float x = cos((uv.y + (_Time.y * _Speed)) * PI - (PI * 0.5)) * _Amplitude + 0.5;
                 if ((y - _Thickness < uv.y && uv.y < y + _Thickness)) 
                 {
                     return 1;

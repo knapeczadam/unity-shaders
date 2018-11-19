@@ -2,7 +2,8 @@
 {
     Properties
     {
-        _Divisor ("Divisor", Int) = 1
+        _Width ("Width", Float) = 1.0
+        _Speed ("Speed", Range(0.01, 1.0)) = 1.0
     }
     
     SubShader
@@ -17,7 +18,8 @@
             #pragma vertex vert
             #pragma fragment frag
             
-            int _Divisor;
+            float _Width;
+            float _Speed;
             
             float drawLine(float2 uv, float start, float width)
             {
@@ -51,8 +53,8 @@
             fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 fixed4 col;
-                col.rgb = abs(_SinTime) / _Divisor;
-                col.a = drawLine(i.uv, abs(sin(_Time.y / _Divisor)), 0.2);
+                col.rgb = abs(_SinTime) / _Speed;
+                col.a = drawLine(i.uv, abs(sin(_Time.y * _Speed)), _Width);
                 return col;
             }
             ENDCG

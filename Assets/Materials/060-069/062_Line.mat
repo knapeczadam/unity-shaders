@@ -144,7 +144,7 @@ Material:
     - _SrcBlend: 1
     - _Transparency: 1
     - _UVSec: 0
-    - _Width: 1263
+    - _Width: 0.01
     - _ZWrite: 1
     - _isEmissive: 0
     - _myFloat: 0.5

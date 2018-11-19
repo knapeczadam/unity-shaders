@@ -60,7 +60,7 @@
             fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 #ifdef RANDOM_COLOR
-                    fixed4 col = fixed4(1, 1, 1, 1);
+                    fixed4 col = 1;
                     col.rgb = _SinTime.xyz / _Offset;
                 #else
                     fixed4 col = tex2D(_MainTex, i.uv);

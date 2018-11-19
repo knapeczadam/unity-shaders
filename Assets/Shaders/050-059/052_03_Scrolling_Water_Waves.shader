@@ -4,11 +4,8 @@
     {
 		_MainTex ("Water", 2D) = "white" {}
 		_FoamTex ("Foam", 2D) = "white" {}
-		_ScrollX ("Scroll X", Range(-5, 5)) = 1
-		_ScrollY ("Scroll Y", Range(-5, 5)) = 1
-		_Freq ("Frequency", Range(0, 5)) = 1
-      	_Speed ("Speed", Range(0, 100)) = 1
-      	_Amp ("Amplitude", Range(0, 1)) = 1
+		_ScrollX ("Scroll X", Range(-1.0, 1.0)) = 0.0
+        _ScrollY ("Scroll Y", Range(-1.0, 1.0)) = 0.0
 	}
 	
 	SubShader 
@@ -20,50 +17,27 @@
 		sampler2D _FoamTex;
 		float _ScrollX;
 		float _ScrollY;
-		float _Freq;
-      	float _Speed;
-      	float _Amp;
 
 		struct Input 
 		{
 			float2 uv_MainTex;
-			float3 vertColor;
 		};
 
-		struct appdata 
+		void vert(inout appdata_full v) 
 		{
-		    float4 vertex: POSITION;
-		    float3 normal: NORMAL;
-		    float4 texcoord: TEXCOORD0;
-		    float4 texcoord1: TEXCOORD2;
-		    float4 texcoord2: TEXCOORD3;
-        };
-
-		void vert(inout appdata v, out Input o) 
-		{
-		    UNITY_INITIALIZE_OUTPUT(Input, o);
-		    float t = _Time * _Speed;
-		    
-		    //float waveHeight = sin(t + v.vertex.x * _Freq) * _Amp;
-		    float waveHeight = sin(t + v.vertex.x * _Freq) * _Amp + sin(t * 2 + v.vertex.x * _Freq * 2) * _Amp;
-		    float waveHeightZ = sin(t + v.vertex.z * _Freq) * _Amp + sin(t * 2 + v.vertex.z * _Freq * 2) * _Amp;
-		    
-		    //v.vertex.y = v.vertex.y + waveHeight;
-		    v.vertex.y = v.vertex.y + waveHeight + waveHeightZ;
-		    
-		    v.normal = normalize(float3(v.normal.x + waveHeight, v.normal.y, v.normal.z));
-		    
-		    //o.vertColor = 1;
-		    //o.vertColor = waveHeight + 2;
+		    float3 p = v.vertex.xyz;
+            p.y = sin(p.x + _Time.y);
+			v.vertex.xyz = p;
         }
 
 		void surf(Input IN, inout SurfaceOutput o) 
 		{
-			_ScrollX *= _Time.x;// * _Speed;
-			_ScrollY *= _Time.y;// * _Speed;
-			float3 water = tex2D(_MainTex, IN.uv_MainTex + float2(_ScrollX, _ScrollY));
-			float3 foam = tex2D(_FoamTex, IN.uv_MainTex + float2(_ScrollX / 2.0, _ScrollY / 2.0));
-			o.Albedo = (water + foam) / 2.0;
+			_ScrollX *= _Time.y;
+			_ScrollY *= _Time.y;
+			float2 scroll = float2(_ScrollX, _ScrollY);
+			fixed4 water = tex2D(_MainTex, IN.uv_MainTex + scroll / 2.0);
+			fixed4 foam = tex2D(_FoamTex, IN.uv_MainTex + scroll);
+			o.Albedo = (water.rgb + foam.rgb) / 2.0;
 		}
 		ENDCG
 	}

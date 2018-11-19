@@ -71,7 +71,7 @@ F28EB2F8A4F5498D8193C89C0B502A77|Blending - Multiplicative|10
 13F3E2C254FD41F3ACF3975D99A2400D|Blending - 2x Multiplicative|10
 C0725F40DA3848299DC20A2AF89BBA31|Texture blending|5
 B7560F988D694CDFAB91632B886BF020|Stencil buffer|5
-27A52386FCEF49AC9C40475A0954EE23|Advanced stencil buffer|10
+27A52386FCEF49AC9C40475A0954EE23|Advanced stencil buffer|10|https://forum.unity.com/threads/unity-4-2-stencils-for-portal-rendering.191890/
 0993F4052D4E401CB087879421DD0D16|Generated Unlit shader|5
 D3DA42107B304DEFBC8656883DEEE391|VF and Fixed shader - Barebone|5|https://forum.unity.com/threads/official-removing-some-fixed-function-shader-functions-for-5-0.250107/
 06F81DEE71674AA795AA53909E7A3E1A|VF and Fixed shader - Color|5
@@ -79,25 +79,21 @@ D3DA42107B304DEFBC8656883DEEE391|VF and Fixed shader - Barebone|5|https://forum.
 AB72AEE4F40846029B2CE66136503B25|VF shader - color by world position|10
 06442771E03B4AE9B2132356F07FF3DC|VF shader - color by screen position|10
 462D73F86115409AA218095971A320AA|VF GrabPass|10|https://docs.unity3d.com/Manual/SL-GrabPass.html
-DEF8F6E07467447BAB2727368154D6A3|VF shadow casting|5
-42055431CBEA49FAAA2EDB77AC5D65B6|VF shadow receiving|5
-92A5009E00EA4E96A31F1514EBF151A3|VF shadow|5
+DEF8F6E07467447BAB2727368154D6A3|VF simplest shadow|5|https://catlikecoding.com/unity/tutorials/rendering/part-7/
+92A5009E00EA4E96A31F1514EBF151A3|VF shadow macros|5|https://docs.unity3d.com/540/Documentation/Manual/SL-VertexFragmentShaderExamples.html
 66923CB69B754AA3893BB8AA8C0FE698|VF coloured shadow|5
 33F07B0BB60342FDBAF13179B3E8AD00|Vertex extruding|5
 0FCF3AD5F3144662A5F3CA0068739E32|Simple outline|10
+13C351207C45441499DAF4EE0C61EA8C|Advanced outline|10|https://answers.unity.com/questions/922579/shader-outline-scale-problem-since-u5.html
 EE6DA64FD81D4DB38839A43FDDE36762|Simple outline - distance based|10
 4468E3281B304A95B46A4CB7022476D6|Simple outline - multiple objects|5
-13C351207C45441499DAF4EE0C61EA8C|Advanced outline|10
 7CAC5EA7B3A744168C68EBB49BA37059|Advanced outline - multiple objects|5
-C89B7569919C4BEDA17E600F49F177F8|Silhouette - show inner details|5
-55E58BE9E0584B0FAF1508F5061E367A|Silhouette - hide inner details|5
 763E269E13A948E495D1B5648D818FCE|Glass|5
-20AD9FED01914DD484119E6B9C4F3537|Wave|10
+20AD9FED01914DD484119E6B9C4F3537|Simplest wave|10|https://catlikecoding.com/unity/tutorials/flow/waves/
 BAE9250327B14F11B7AC14A22712C98D|Scrolling texture|10|https://en.wikipedia.org/wiki/Eadweard_Muybridge
 449F11CF96E94453B2FCAA3A1D8C3AF0|Scrolling wave|10
 2FF042F64116434D9FD940AF6ED065FB|Wave + scrolling texture|10
-DE0FC69607A54F688E8C58D28F988B53|Plasma - Lambert|5
-5188A4A39D8845ECB7E83DBBACD9BF32|Plasma - Vertex-Fragment|10
+DE0FC69607A54F688E8C58D28F988B53|Plasma|5|https://www.bidouille.org/prog/plasma
 748916672D434665B1FC8FF9D3861911|Painter's algorithm|5
 6DBCF46E30CA478F81F9EDB592ACE3A1|Render Queue|5
 CEF597141C354B77827DA17F36ED2CC6|Z-sorting|5

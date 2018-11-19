@@ -117,6 +117,7 @@ Material:
     - _SComp: 3
     - _SOp: 0
     - _SRef: 4
+    - _ShadowIntensity: 1
     - _Slider: 50
     - _SmoothnessTextureChannel: 0
     - _Spec: 0.094
@@ -135,6 +136,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0.14015675, b: 1, a: 1}
     - _NormalColor: {r: 0.7176471, g: 0.03137254, b: 0.485672, a: 1}
     - _RimColor: {r: 0.9719558, g: 0, b: 1, a: 0}
+    - _ShadowColor: {r: 1, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2554849, g: 0.6603774, b: 0.19001423, a: 1}
     - _myColor: {r: 1, g: 1, b: 1, a: 1}
     - _myVector: {r: 0.5, g: 1, b: 1, a: 1}

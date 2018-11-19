@@ -66,7 +66,7 @@
             {
                 fixed4 col;
                 col.rgb = abs(_SinTime);
-                col.a = drawCircle1(i.uv, abs(float2(_SinTime.y, _CosTime.z)), abs(_SinTime.y * 0.5) + 0.1);
+                col.a = drawCircle1(i.uv, abs(float2(_SinTime.y, _CosTime.z)), sin(_Time.y) * 0.5 + 0.5);
                 return col;
             }
             ENDCG

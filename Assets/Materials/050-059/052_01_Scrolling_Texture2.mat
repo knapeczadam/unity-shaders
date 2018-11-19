@@ -57,7 +57,7 @@ Material:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: ba0adc4bddb5aa6459657ade85e27e90, type: 3}
         m_Scale: {x: 0.1, y: 0.5}
-        m_Offset: {x: 0, y: 0.49}
+        m_Offset: {x: 0, y: 0.5}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -121,7 +121,7 @@ Material:
     - _SOp: 0
     - _SRef: 4
     - _ScaleUV: 1
-    - _ScrollX: 50
+    - _ScrollX: 5
     - _ScrollY: 0
     - _Slider: 50
     - _SmoothnessTextureChannel: 0

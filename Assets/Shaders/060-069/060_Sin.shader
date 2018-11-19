@@ -2,7 +2,7 @@
 {
     Properties
     {
-        _Multiplier ("Multiplier", Int) = 1
+        _Frequency ("Frequency", Float) = 1.0
     }
     
     SubShader
@@ -17,7 +17,7 @@
             #pragma vertex vert
             #pragma fragment frag
             
-            int _Multiplier;
+            float _Frequency;
             
             struct vertexInput
             {
@@ -42,8 +42,8 @@
             fixed4 frag(vertexOutput i) : SV_TARGET
             {
                 fixed4 col;
-                col.rgb = fixed3(1, 0, 0);
-                col.a = sin(i.uv.x * _Multiplier);
+                col.rgb = _SinTime.rgb;
+                col.a = sin(i.uv.x * _Frequency);
                 return col;
             }
             ENDCG

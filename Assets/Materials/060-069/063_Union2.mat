@@ -111,7 +111,7 @@ Material:
     - _CutoutThresh: 0.2
     - _DetailNormalMapScale: 1
     - _Distance: 2
-    - _Divisor: 4
+    - _Divisor: 2
     - _DstBlend: 0
     - _Freq: 0
     - _Gloss: 1
@@ -141,11 +141,11 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _Spec: 0.094
     - _SpecularHighlights: 1
-    - _Speed: 5
+    - _Speed: 0.5
     - _SrcBlend: 1
     - _Transparency: 1
     - _UVSec: 0
-    - _Width: 1263
+    - _Width: 0.2
     - _ZWrite: 1
     - _isEmissive: 0
     - _myFloat: 0.5
