@@ -16,6 +16,8 @@
                 // not required to contain any members - Input struct in surface shader is exception
             };
             
+            struct appdata {};
+            
             struct contentIsImportantNotTheStructName
             {
                 float4 vertex : POSITION;
@@ -46,21 +48,15 @@
                 float4 color : COLOR;
             };
             
-            struct v2f
-            {
-                float4 pos : SV_POSITION;
-            };
-            
             vertexInput vert(vertexInput v)
             {
                 vertexInput o;
-                //o.pos = UnityObjectToClipPos(v.vertex);
                 return o;
             }
             
-            fixed4 frag(vertexInput i) : SV_TARGET
+            fixed4 frag() : SV_TARGET
             {
-                return fixed4(1, 1, 1, 1);
+                return 0;
             }
             ENDCG
         }

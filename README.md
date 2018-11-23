@@ -1,18 +1,30 @@
 # Unity-Shaders
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=yFSE7bM7LkE" target="_blank"><img src="http://img.youtube.com/vi/yFSE7bM7LkE/0.jpg" alt="Unity shaders - Demo project - preview " width="480" height="360" border="10"/></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=HO-tCvjG1ig" target="_blank"><img src="http://img.youtube.com/vi/HO-tCvjG1ig/0.jpg" alt="Unity shaders - Demo project - preview " width="480" height="360" border="10"/></a>
 
 ## About
 A one scene based Unity project (like an SPA) that provides various shader examples.
 
 ### Notes
 * Unity: <b>2018.2.15f1</b>
-* Shotcuts: **L** for opening actual link(s) if provided in your default web browser, **ESC** for opening listed shader(s) in your default script editor
+* Abbreviations: 
+    * **D** (Debug)
+    * **DS** (Debug Surface)
+    * **F** (Fragment)
+    * **FF** (Fixed Function)
+    * **S** (Surface)
+    * **SL** (ShaderLab)
+    * **V** (Vertex)
+    * **VF** (Vertex-Fragment), 
+* Shortcuts: 
+    * **Left/Right arrow** - previous/next model
+    * **L** - open actual link(s) in your default web browser (if provided) 
+    * **ESC** - open listed shader(s) in your default script editor
 * GUID generation by <a href="https://www.guidgenerator.com">Online GUID Generator</a>
-* Dependency trees located in Resources folder can be visualized using <a href="http://www.webgraphviz.com/">WebGraphviz</a>
+* Dependency trees - located in Resources folder - can be visualized by using <a href="http://www.webgraphviz.com/">WebGraphviz</a>
 
 
-### Zero to Hero <sup>*I'd rather say: to Intermediate*</sup>
+### Zero to Hero <sup>*(~to Intermediate)*</sup>
 My Shader study path was the following:
 * <a href="https://www.udemy.com/unity-shaders/">Shader Development from Scratch for Unity with Cg</a>
 * <a href="https://shaderdev.com/">Shader Development using Unity</a>
@@ -34,11 +46,7 @@ My Shader study path was the following:
 * <a href="https://assetstore.unity.com/packages/vfx/shaders/lux-physically-based-shader-framework-16000">Lux – Physically Based Shader Framework</a>
 * <a href="https://www.youtube.com/channel/UCEklP9iLcpExB8vp_fWQseg">Makin' Stuff Look Good</a>
 * <a href="https://github.com/FreyaHolmer/ShaderForge">ShaderForge</a>
-
-### (My) What's next? (question)
-- [ ] <a href="https://www.reddit.com/r/unrealengine/comments/6l7yj2/question_can_i_use_unity_shaders_in_unreal/">Transfer</a> Unity Shader knwoledge to Unreal
-- [ ] Study more
-- [ ] Practise more
+* <a href="https://assetstore.unity.com/packages/tools/visual-scripting/shadero-sprite-2d-shader-editor-97406">Shadero Sprite - 2D Shader Editor</a>
 
 ### Asset referencies
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/3d-game-kit-115747">3D Game Kit</a>
@@ -56,6 +64,7 @@ My Shader study path was the following:
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/shader-calibration-scene-25422">Shader Calibration Scene</a>
 * <a href="https://github.com/UnityTechnologies/ShaderGraph_ExampleLibrary">Shader Graph Example Library</a>
 * <a href="https://labs.sketchfab.com/experiments/material-showcase/">Sketchfab</a>
+* <a href="https://assetstore.unity.com/packages/3d/characters/robots/space-robot-kyle-4696">Space Robot Kyle</a>
 * <a href="https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351">Standard Assets</a>
 * <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford University</a>
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/survival-shooter-tutorial-40756">Survival Shooter Tutorial</a>

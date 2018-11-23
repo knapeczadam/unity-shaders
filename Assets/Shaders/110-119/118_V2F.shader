@@ -1,10 +1,5 @@
 ﻿Shader "Custom/110-119/118_V2F"
 {
-    Properties
-    {
-        _MainTex ("Main texture", 2D) = "white" {}
-    }
-    
     SubShader
     {
         Pass
@@ -18,16 +13,12 @@
             sampler2D _MainTex;
             float4 _MainTex_ST;
             
-            struct appdata
-            {
-                float4 vertex : POSITION;
-                float4 texcoord : TEXCOORD0;
-            };
-            
             struct vertexOutput
             {
                 // this is a valid empty struct - does it make any sense?
             };
+            
+            struct v2f {};
             
             struct vertexToFragment
             {
@@ -47,17 +38,15 @@
                 fixed4 spec	 : COLOR1;
             };
             
-            vertexOutput vert(appdata v)
+            vertexOutput vert(float vertex : POSITION)
             {
                 vertexOutput o; // initialization not declaration!
-//                o.pos = UnityObjectToClipPos(v.vertex);
-//                o.uv = v.texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
                 return o;
             }
             
             fixed4 frag(vertexOutput i) : SV_TARGET
             {
-                return 1; //tex2D(_MainTex, i.uv);
+                return 1;
             }
             ENDCG
         }

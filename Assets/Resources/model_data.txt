@@ -3,165 +3,267 @@ B8EFE405139E47749B3767396C27C0D6|Basic data types|5|https://docs.unity3d.com/Man
 1BB10C5ADF114F86B0979A0AD1FE64AF|Properties|5|https://docs.unity3d.com/Manual/SL-Properties.html
 74AB02F598A04785B6E77F7B6804C52C|Packed arrays|5|https://docs.unity3d.com/Manual/SL-DataTypesAndPrecision.html
 966DFE50A62649E0BBC423C82F47AA37|Matrices|5|https://docs.unity3d.com/Manual/SL-DataTypesAndPrecision.html
-38321CE3E28E4492AFB469AB6AA6C61A|Surface - Input structure|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
-679D377815394D408F11DD2252F7FEB5|Surface - Barebone|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
+38321CE3E28E4492AFB469AB6AA6C61A|S - Input structure|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
+679D377815394D408F11DD2252F7FEB5|S - Barebone|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
 935A639B313A4125B3BD5764FDBDBE69|Red channel|5
 69B6686366EC4C6797AD06ACE806F405|Green channel|5
 A70EAA5703BC4B86BEF8C5D07C9F27F9|Blue channel|5
 71E6DF5F0A3F4A089E3F696EAD4FA197|Swizzling|5
 F3F0DCD5543F4C7386EBB002B43E4C87|Smearing|5
 6DD58BFC85EE446189C320D6EAF40F36|Masking|5
-D5259DFF5E9D482999EAD34EFB1A6AA8|Surface - Albedo|5
-AE3798020138400D929467A72021E632|Surface - Normal|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
-29CA729711E5484DB0A3652D1D05BF5F|Surface - Emission|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
-244B62AF9A87426991B6D8BA1871DF6A|Surface - Alpha|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
-F6089DF04028434F8C562252396258A1|Surface - Specular|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
-32723ACE68F34E5192BD3016BD7CDF75|Surface - Gloss|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
-735F1409DED94A3E9369744CEDE2CA22|Albedo, Emission|5
-D8DF9F06322A45509B16354135F450D7|Texture|5|http://developer.download.nvidia.com/cg/tex2D.html
-4EF72D7162C5482FAF62F86A91A4CDAA|Colorized texture|5|http://developer.download.nvidia.com/cg/tex2D.html
-F54D5846F2CB4D2395B60F1016BC990C|WorldRefl|20|http://developer.download.nvidia.com/cg/texCUBE.html
-84F8AFFF74774EA195A95696F9069570|Texture, worldRefl|20
-3D774BC878C247DDA61897409D2EDD3D|Texture, pulsating Emission|5
-27FFD7AACB0645B193860E6C575D52FB|Vertex normals|10
-E080B76AC4354FAFA9B803CD3757C337|Face normals|10
-8F12AA69C1FB46B8A6DB6AF986C39952|Tangent normals|10
-63F14DCAAB94456281D1F6ED24483063|Binormals|10
-C97C083623F04318B6DD6B839288BACB|Albedo = Color|5
-3D7586D210604266B78FAA0E99E8F872|Albedo = Normal|5
-C0373242EF1D4D5FA69F342AA8945833|Albedo = worldNormal|5
-2E12B3627005448884A333EA8DE47426|Albedo = screenPos|5
-0F74708DA8BD47299D5BE23BCCA00D33|Albedo = viewDir|5
-51C87BA4E76B40A2855C4B7DB0547F71|Albedo = worldPos|5
-4B77A68BAB5A4EF48E308709DEF517AA|Albedo = WorldRefl (unnormalized viewDir)|5
-EA5A39B6D8B94406BCE0F53FF5042FFE|Albedo = calculated WorldRefl (normalized viewDir)|5|http://developer.download.nvidia.com/cg/reflect.html
-4C9F8C3253D7492EBC7BD3D083F66D38|Albedo = WorldRefl (0 angle weighted)|5
-6F027363EDD64A5CA342ECE982BC59EE|Incident ray (red), surface normal (blue), reflected ray (green)|5
-DE96A7530D984A2AB08C15E62E761309|Albedo + Normal + WorldRefl|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
-2860D212D79940FB926AE010ABBED50F|Dot product|5
-70A45E791AAA418EADA4E4922CC68585|Rim lighting|5
-C6FF2031A3D14763AD83173D6F404015|Rim cutoff|5
-7923966057B4417BB153DEDD2C76DBE2|Double rim cutoff|5
-045F92F008FD43188D88B9E6977F51EA|WorldPos cutoff|5
-BAA687C440AD480C9D446FA65E5411E4|WorldPos cutoff|20|http://developer.download.nvidia.com/cg/frac.html
-8AB4C19A73014076BCAB11EEDA1D74B5|Surface - Lambert|5
-6A4B65B65B8646B38D8919F018334CD6|Surface - Blinn-Phong|5
-B84BA965D93845EC9557231CDEB7876A|Built-in Standard|10|https://docs.unity3d.com/Manual/StandardShaderMaterialCharts.html,https://docs.unity3d.com/Manual/StandardShaderMetallicVsSpecular.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterMetallic.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterSmoothness.html
-5346C7EB2D3744949E85FE768F44876B|Built-in Specular|10|https://docs.unity3d.com/Manual/StandardShaderMaterialCharts.html,https://docs.unity3d.com/Manual/StandardShaderMetallicVsSpecular.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterSpecular.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterSmoothness.html
-68EAAAD9122F4CC48E6D63B43E033D5A|Standard PBR|5
-A348996F924B4A9E88A539068177AD54|Standard Specular PBR|5
-0C3803F936C94115ABABE86E6E36947B|Custom Lambert|5
-D4F451B4705C40D6AAB94931E410BCA1|Custom Blinn-Phong|5
-9467AF70A24D4BB0BA9AC30EC2E2A9ED|Toon Ramp with custom light|5
-25C2B03A79C946A0AC0485DE8117D092|Toon Ramp with Lambert|5
-FD7CCBA8A08946269A34B0A6680CFF5E|Alpha channel - Geometry queue|10
-7568151ECDF04947B0A5349759514D3F|Alpha channel - AlphaTest queue|10
-949E102D8CB24AA2BCF67751096E2E35|Alpha channel - Transparent queue|10
-5259B7DE9DA44703AC09D0C65981B83A|Alpha channel - Transparent queue with proper shadow|10
-70D8BB41A7F044DD83B8BDA4AE32A42B|Hologram - without ColorMask|5
-6B32E1C4294947838B0F4A5847D4F868|Hologram - with ColorMask A|5
-216F7F1CFA4E46458F79474AF4A6EC1B|Hologram - with ColorMask RGB|5
-6D043AEB1B7842FF8368870C33938841|Blending - default|10|https://docs.unity3d.com/Manual/SL-Blend.html
-99F2BA8FDAE24F51A181F2A94BA7F31B|Blending - Traditional transparency|10|https://docs.unity3d.com/ScriptReference/Rendering.BlendMode.html
-C95C1620FAEE46538393BD9A5D997CE8|Blending - Traditional transparency - Cull off|10|https://docs.unity3d.com/ScriptReference/Rendering.BlendOp.html
-A56CD621DBBB470F9B61E892262EDA2D|Blending - Premultiplied transparency|10|https://webdesign.tutsplus.com/tutorials/blending-modes-in-css-color-theory-and-practical-application--cms-25201
-96F024D9AD17474EBB48010EED8ED545|Blending - Additive|10|http://www.pegtop.net/delphi/articles/blendmodes/
-040878F1ADBB45289AFFBB58A7A9F81E|Blending - Soft additive|10
-F28EB2F8A4F5498D8193C89C0B502A77|Blending - Multiplicative|10
-13F3E2C254FD41F3ACF3975D99A2400D|Blending - 2x Multiplicative|10
-C0725F40DA3848299DC20A2AF89BBA31|Texture blending|5
-B7560F988D694CDFAB91632B886BF020|Stencil buffer|5
-27A52386FCEF49AC9C40475A0954EE23|Advanced stencil buffer|10|https://forum.unity.com/threads/unity-4-2-stencils-for-portal-rendering.191890/
-0993F4052D4E401CB087879421DD0D16|Generated Unlit shader|5
-D3DA42107B304DEFBC8656883DEEE391|VF and Fixed shader - Barebone|5|https://forum.unity.com/threads/official-removing-some-fixed-function-shader-functions-for-5-0.250107/
-06F81DEE71674AA795AA53909E7A3E1A|VF and Fixed shader - Color|5
-5EB10FFCCEC143A79CB58CDC8EE42C52|VF and Fixed shader - Texture|5|https://docs.unity3d.com/Manual/SL-SetTexture.html
-AB72AEE4F40846029B2CE66136503B25|VF shader - color by world position|10
-06442771E03B4AE9B2132356F07FF3DC|VF shader - color by screen position|10
-462D73F86115409AA218095971A320AA|VF GrabPass|10|https://docs.unity3d.com/Manual/SL-GrabPass.html
-DEF8F6E07467447BAB2727368154D6A3|VF simplest shadow|5|https://catlikecoding.com/unity/tutorials/rendering/part-7/
-92A5009E00EA4E96A31F1514EBF151A3|VF shadow macros|5|https://docs.unity3d.com/540/Documentation/Manual/SL-VertexFragmentShaderExamples.html
-66923CB69B754AA3893BB8AA8C0FE698|VF coloured shadow|5
-33F07B0BB60342FDBAF13179B3E8AD00|Vertex extruding|5
-0FCF3AD5F3144662A5F3CA0068739E32|Simple outline|10
-13C351207C45441499DAF4EE0C61EA8C|Advanced outline|10|https://answers.unity.com/questions/922579/shader-outline-scale-problem-since-u5.html
-EE6DA64FD81D4DB38839A43FDDE36762|Simple outline - distance based|10
-4468E3281B304A95B46A4CB7022476D6|Simple outline - multiple objects|5
-7CAC5EA7B3A744168C68EBB49BA37059|Advanced outline - multiple objects|5
-763E269E13A948E495D1B5648D818FCE|Glass|5
-20AD9FED01914DD484119E6B9C4F3537|Simplest wave|10|https://catlikecoding.com/unity/tutorials/flow/waves/
-BAE9250327B14F11B7AC14A22712C98D|Scrolling texture|10|https://en.wikipedia.org/wiki/Eadweard_Muybridge
-449F11CF96E94453B2FCAA3A1D8C3AF0|Scrolling wave|10
-2FF042F64116434D9FD940AF6ED065FB|Wave + scrolling texture|10
-DE0FC69607A54F688E8C58D28F988B53|Plasma|5|https://www.bidouille.org/prog/plasma
+D5259DFF5E9D482999EAD34EFB1A6AA8|S - Albedo|5
+AE3798020138400D929467A72021E632|S - Normal|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
+29CA729711E5484DB0A3652D1D05BF5F|S - Emission|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
+244B62AF9A87426991B6D8BA1871DF6A|S - Alpha|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
+F6089DF04028434F8C562252396258A1|S - Specular|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
+32723ACE68F34E5192BD3016BD7CDF75|S - Gloss|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
+D8DF9F06322A45509B16354135F450D7|S - Texture|5|http://developer.download.nvidia.com/cg/tex2D.html
+4EF72D7162C5482FAF62F86A91A4CDAA|S - Colorized texture|5|http://developer.download.nvidia.com/cg/tex2D.html
+735F1409DED94A3E9369744CEDE2CA22|S - Albedo with emission|5
+3D774BC878C247DDA61897409D2EDD3D|S - Texture with pulsating emission|5
+F54D5846F2CB4D2395B60F1016BC990C|S - WorldRefl|20|http://developer.download.nvidia.com/cg/texCUBE.html
+84F8AFFF74774EA195A95696F9069570|S - Texture with worldRefl as Emission|20
+C97C083623F04318B6DD6B839288BACB|DS - Albedo = Color|5
+3D7586D210604266B78FAA0E99E8F872|DS - Albedo = Normal|5
+C0373242EF1D4D5FA69F342AA8945833|DS - Albedo = worldNormal|5
+2E12B3627005448884A333EA8DE47426|DS - Albedo = screenPos|5
+0F74708DA8BD47299D5BE23BCCA00D33|DS - Albedo = viewDir|5
+51C87BA4E76B40A2855C4B7DB0547F71|DS - Albedo = worldPos|5
+4B77A68BAB5A4EF48E308709DEF517AA|DS - Albedo = WorldRefl (unnormalized viewDir)|5
+EA5A39B6D8B94406BCE0F53FF5042FFE|DS - Albedo = calculated WorldRefl (normalized viewDir)|5|http://developer.download.nvidia.com/cg/reflect.html
+4C9F8C3253D7492EBC7BD3D083F66D38|DS - Albedo = WorldRefl (0 angle weighted)|5
+DE96A7530D984A2AB08C15E62E761309|S - Albedo + Normal + WorldRefl|5|https://docs.unity3d.com/Manual/SL-SurfaceShaders.html
+2860D212D79940FB926AE010ABBED50F|S - Dot product|5
+70A45E791AAA418EADA4E4922CC68585|S - Rim lighting|5
+C6FF2031A3D14763AD83173D6F404015|S - Rim cutoff|5
+7923966057B4417BB153DEDD2C76DBE2|S - Double rim cutoff|5
+045F92F008FD43188D88B9E6977F51EA|S - WorldPos cutoff|5
+BAA687C440AD480C9D446FA65E5411E4|S - WorldPos cutoff|20|http://developer.download.nvidia.com/cg/frac.html
+8AB4C19A73014076BCAB11EEDA1D74B5|S - Lambert|5
+0C3803F936C94115ABABE86E6E36947B|S - Custom Lambert|5
+650630AFEAD24659A79B80CE32112DD3|S - Half-Lambert|3|http://www.jordanstevenstechart.com/lighting-models,https://developer.valvesoftware.com/wiki/Half_Lambert
+6A4B65B65B8646B38D8919F018334CD6|S - Blinn-Phong|5
+D4F451B4705C40D6AAB94931E410BCA1|S - Custom Blinn-Phong|5
+71A97C498842480FB10371749AB6EC21|S - Banded-Lighting|3|http://www.jordanstevenstechart.com/lighting-models
+65C6F3CCEA80472D9B336E638CC1A3DD|S - Minnaert Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Marcel_Minnaert,http://www.artisticexperiments.com/cg-shaders/cg-shaders-minnaert
+D106446BB40E4CF4BB4B2CFFF0768205|S - Oren-Nayer Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Oren%E2%80%93Nayar_reflectance_model
+9467AF70A24D4BB0BA9AC30EC2E2A9ED|S - Toon Ramp with custom light|5
+25C2B03A79C946A0AC0485DE8117D092|S - Toon Ramp with Lambert|5
+FD7CCBA8A08946269A34B0A6680CFF5E|S - Alpha channel: Geometry queue|10
+7568151ECDF04947B0A5349759514D3F|S - Alpha channel: AlphaTest queue|10
+949E102D8CB24AA2BCF67751096E2E35|S - Alpha channel: Transparent queue|10
+5259B7DE9DA44703AC09D0C65981B83A|S - Alpha channel: Transparent queue with proper shadow|10
+70D8BB41A7F044DD83B8BDA4AE32A42B|S - Hologram without ColorMask|5
+6B32E1C4294947838B0F4A5847D4F868|S - Hologram with ColorMask A|5
+216F7F1CFA4E46458F79474AF4A6EC1B|S - Hologram with ColorMask RGB|5
+33F07B0BB60342FDBAF13179B3E8AD00|S - Vertex extruding|5
+0FCF3AD5F3144662A5F3CA0068739E32|S - Simple outline|10
+13C351207C45441499DAF4EE0C61EA8C|S - Advanced outline|10|https://answers.unity.com/questions/922579/shader-outline-scale-problem-since-u5.html
+EE6DA64FD81D4DB38839A43FDDE36762|S - Distance based Simple outline|10
+4468E3281B304A95B46A4CB7022476D6|S - Simple outline with multiple objects|5
+7CAC5EA7B3A744168C68EBB49BA37059|S - Advanced outline with multiple objects|5
+20AD9FED01914DD484119E6B9C4F3537|S - Simplest wave|10|https://catlikecoding.com/unity/tutorials/flow/waves/
+BAE9250327B14F11B7AC14A22712C98D|S - Scrolling texture|10|https://en.wikipedia.org/wiki/Eadweard_Muybridge
+449F11CF96E94453B2FCAA3A1D8C3AF0|S - Scrolling wave|10
+2FF042F64116434D9FD940AF6ED065FB|S - Wave with scrolling texture|10
+6D043AEB1B7842FF8368870C33938841|FF - Blending: default|10|https://docs.unity3d.com/Manual/SL-Blend.html
+99F2BA8FDAE24F51A181F2A94BA7F31B|FF - Blending: Traditional transparency|10|https://docs.unity3d.com/ScriptReference/Rendering.BlendMode.html
+C95C1620FAEE46538393BD9A5D997CE8|FF - Blending: Traditional transparency (Cull off)|10|https://docs.unity3d.com/ScriptReference/Rendering.BlendOp.html
+A56CD621DBBB470F9B61E892262EDA2D|FF - Blending: Premultiplied transparency|10|https://webdesign.tutsplus.com/tutorials/blending-modes-in-css-color-theory-and-practical-application--cms-25201
+96F024D9AD17474EBB48010EED8ED545|FF - Blending: Additive|10|http://www.pegtop.net/delphi/articles/blendmodes/
+040878F1ADBB45289AFFBB58A7A9F81E|FF - Blending: Soft additive|10
+F28EB2F8A4F5498D8193C89C0B502A77|FF - Blending: Multiplicative|10
+13F3E2C254FD41F3ACF3975D99A2400D|FF - Blending: 2x Multiplicative|10
+CFD389A705884F8CBD315897C155AD85|VF - Saturation|5
+CBA23F6FAD6546A9A2C3F4A695C650CE|VF - Brightness|5
+486445ADECC4458D8BEDAB937E7FFC80|VF - Contrast|5
+25E7C0E9B2514D59BA03F42BFA0B7DC0|VF - Blending|5|https://www.w3.org/TR/compositing-1/
+5903E3D82E704916BA727FF83A543CD1|D - Blending|5|https://www.w3.org/TR/compositing-1/
+C0725F40DA3848299DC20A2AF89BBA31|S - Texture blending|5
+B7560F988D694CDFAB91632B886BF020|S - Stencil buffer|5
+27A52386FCEF49AC9C40475A0954EE23|SL - Advanced stencil buffer|10|https://forum.unity.com/threads/unity-4-2-stencils-for-portal-rendering.191890/
+CA738E430982494D963FBFE2F2518DF6|VF - Appdata versions|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html,https://answers.unity.com/questions/53213/why-are-texcoords-uvs-stored-in-float4.html
+2273D8D2974C43C29BFBF81FD3A3E75C|VF - V2F versions|5|https://wiki.unity3d.com/index.php/Shader_Code
+E70C4F3D07CF44A89D9644330E347932|VF - Semantics|5|https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics,https://docs.unity3d.com/Manual/SL-ShaderSemantics.html
+0993F4052D4E401CB087879421DD0D16|VF - Generated Unlit shader|5
+D3DA42107B304DEFBC8656883DEEE391|FF, VF - Barebone|5|https://forum.unity.com/threads/official-removing-some-fixed-function-shader-functions-for-5-0.250107/
+06F81DEE71674AA795AA53909E7A3E1A|FF, VF - Color|5
+5EB10FFCCEC143A79CB58CDC8EE42C52|FF, VF - Texture|5|https://docs.unity3d.com/Manual/SL-SetTexture.html
+D331ACC0A4E24D80985648C875BFD019|D - DirectX/OpenGL UV test|5|https://docs.unity3d.com/Manual/SL-BuiltinMacros.html,https://docs.unity3d.com/Manual/CommandLineArguments.html
+D6CD062E12804F11B3653A6558C18B72|VF - Tiling, offset: off|5|https://docs.unity3d.com/Manual/SL-PropertiesInPrograms.html
+6FBF905170C54743B7A03FAA7EA4B775|VF - Tiling: on|5
+F3D460D7D86442368B87045BE727ED21|VF - Offset: on, wrap mode: repeat|5
+07A93461F0954169814C6DFD8153B4BA|VF - Offset: on, wrap mode: clamp|5
+6EB380231DE4442C9BA45F80B8B8F494|VF - Custom offset|20
+F15D93F8BF9941D1A0FAA0CF2616E206|VF - Tiling, offset on|5
+2AC9ABB17B204ED496F791607574F15E|VF - TRANSFORM_TEX macro|5
+9A7552C1F1CC4AB1A400347E4AAAA947|VF - Sampler states|5|https://docs.unity3d.com/Manual/SL-SamplerStates.html
+14D987D4E6A7432B80EF573E15C7948E|VF - UV checker: Wrap modes|3|https://docs.unity3d.com/ScriptReference/TextureWrapMode.html
+C7CF1C48BD3D4AE5AABC847A9FA0C710|VF - UV checker: Rotation|3|http://developer.download.nvidia.com/cg/radians.html
+AB72AEE4F40846029B2CE66136503B25|VF - Color by world position|10
+06442771E03B4AE9B2132356F07FF3DC|VF - Color by screen position|10
+DEF8F6E07467447BAB2727368154D6A3|VF - Simplest shadow|5|https://catlikecoding.com/unity/tutorials/rendering/part-7/
+92A5009E00EA4E96A31F1514EBF151A3|VF - Shadow macros|5|https://docs.unity3d.com/540/Documentation/Manual/SL-VertexFragmentShaderExamples.html
+66923CB69B754AA3893BB8AA8C0FE698|VF - Coloured shadow|5
+D0ACC3DEA24D40849A41D6B91B695ACA|VF - Shadow mapping|5|https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html
+96E3FFA3A31D4EDCBDFBC29D5858BB78|VF - Additional light: basic|5|https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html
+08DD99C31AAA46CAB84CA51924B04C22|VF - Additional light: advanced|5|https://en.wikibooks.org/wiki/Cg_Programming/Unity/Multiple_Lights
+462D73F86115409AA218095971A320AA|VF - GrabPass|10|https://docs.unity3d.com/Manual/SL-GrabPass.html
+763E269E13A948E495D1B5648D818FCE|VF - Glass|5
+DE0FC69607A54F688E8C58D28F988B53|VF - Plasma|5|https://www.bidouille.org/prog/plasma
+687E10D7301440CAA4C85A94B6F436B1|VF - Gradient pattern: blending off|5
+63B6390FDF7B40C4949C1B499AEFF3AD|VF - Gradient pattern: X-axis|5
+426132732FFC4D929505186116C79C3D|VF - Gradient pattern: Y-axis|5
+CE718E6319C34B539A79D9BAA10F8D01|VF - Gradient pattern: X-Y axis|5
+C52E94D2C75640B2A755322F76F59457|VF - Glitch: order matters|5
+78785BA8896A40FA8B1CB944EF30EBE1|VF - Glitch: X + sin|5
+3B0CE71380A24A1A8E10CA275FCDEF8F|VF - Glitch: Y + sin|5
+1F41AF3D953249A99FAD421BA416F355|VF - Glitch: X - sin|5
+9FB594071B33488D9C2AE195A69997E5|VF - Glitch: Y - sin|5
+F8A425F863304781A45609583A5F4A65|VF - Glitch: X * sin|5
+B1F148CB522343058674385EA203F0CA|VF - Glitch: Y * sin|5
+9A3C3FFE16B14200A55A6D1FF368CD02|VF - Glitch: X / sin|5
+D118001B2BF5436F982A7EFBE98C14D9|VF - Glitch: Y / sin|5
+1DEB29944F7649468EDE5F70E72FFFDC|VF - Glitch: X + sin(Y)|5
+9C879457C64E49AAB49AB7F12EFF2833|VF - Glitch: Y + sin(X)|5
+B75B47AAD83B4D10B8191C70479382A6|VF - Glitch: X - sin(Y)|5
+BB6F4D6CEC934D02A1A43EDED1FF9857|VF - Glitch: Y - sin(X)|5
+C650B00216134BE8ADC31445C3398100|VF - Glitch: X * sin(Y)|5
+6649C0D81657419A90D0F34DAA676009|VF - Glitch: Y * sin(X)|5
+17A58CAAF4D845D194B81EC4434A0A20|VF - Glitch: X / sin(Y)|5
+F005EA74D6354F2B9E94DDF98AA41940|VF - Glitch: Y / sin(X)|5
+1C5B1753FF1342CE9A2BD923F9C5A818|VF - Glitch: X + sin(X)|5
+6CE7E356DB924181AFA980629C81E155|VF - Glitch: Y + sin(Y)|5
+F019D2E9FD1846F385927FC69DF10DC8|VF - Glitch: X - sin(X)|5
+02D8EB9556B7431888581A95BCFAF4EC|VF - Glitch: Y - sin(Y)|5
+4EDAABF03E17476291B99EF6FCDEE138|VF - Glitch: X * sin(X)|5
+FA5ED7F3F89445D3BFD5F04CCFB31090|VF - Glitch: Y * sin(Y)|5
+2490E8B5448342F3A6C7D98084D0B001|VF - Glitch: X / sin(X)|5
+D805A64B62B64C4F8F37D49288315A10|VF - Glitch: Y / sin(Y)|5
+A73E4A551ED044319EE4E5AFFB0BBC54|VF - Glitch: Speed (Frequency)|5
+E474EB5808194472991735A47C59F931|VF - Glitch: Random speed|5
+D8ACE4CD33264255987529C43A173AAE|VF - Glitch: Amplitude|5
+CC1A2D90AA3546D3B3A45384462B329B|VF - Glitch: Random amplitude|5
+86048035420C4F9688C4D2CBFC006FC4|VF - Glitch: Distance|5
+0C819AE3B32C40A0A5CA974BB73B8948|VF - Glitch: Amount|5
+68CAD9123D7A41D19C79F0637C9A5820|VF - Glitch: Texture|5
+C202DFA7FB7140268DD93C25157EFF24|VF - Glitch: Transparency|5
+4F3E64EA59E749DDA529057AAECB3002|VF - Glitch: Cutout threshold|5
+EED121CC6B9F40EB93D42034F9F1E180|VF - Glitch|5
+39356198ABC645C0BE44792C9394DB4D|VF - Random glitch|5
+DE87E15141824E2F873E542105DA571E|VF - Sinus|5
+08AAEE8C50DD4ABBB9ABEE05DA328EC2|VF - Tangent|5
+054245536D1D47EA9CBAB52486B54AF0|VF - Line pattern with custom function|10|https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-syntax
+D214A97EDB3D485792B7689DE03AD1E3|VF - Union|10
+906C39B37DEE4E56B57B0DC0F17EFC39|VF - Intersection|10
+4F9A56BEF71341A59499D9C50BA005B9|VF - Circle|10
+09AB1A69D4884C8D8BD09D93890472C8|VF - Smoothstep|10|https://en.wikipedia.org/wiki/Bokeh
+485E3090EA8F4A7FBDA112E6F23DFBFB|VF - Feathering|10
+3E186E2376F0453D8E287A2A1969DF4D|VF - Frequency|5
+8D9D74E815CB4E339B261DA3E2162E54|VF - Amplitude|5
+F9CF0C4711EF4D25ADB16AE5FD9A91D4|VF - Vertex normal|5
+6895640CBE624B85926462EA16785E0A|VF - Flag|15
+0E10E3F8D26C4690BDD1E0031842D0B1|VF - Fish|5
+4F583046FDF24815B148BBFD668B337A|VF - Clip|5|http://developer.download.nvidia.com/cg/clip.html
+171ABBA4628942ACA3B55AD015E4447C|VF - Depth fog|5
+539292B658924D2798A6AA8BA1D775D1|VF - Depth texture|5
+600CB39803FD4B0E826220D437BEEA7C|VF - Camera depth|5|https://docs.unity3d.com/Manual/SL-DepthTextures.html
+49A8AD11134648F283839D3B16FA2496|VF - Color scattering|3
+5C0BFC796656465083F260406CE8DA0E|VF - Grayscale|2|https://en.wikipedia.org/wiki/Grayscale
+51D484FF26AB4F3A84312AE7A34AD4DD|VF - Grayscale on camera|10|https://docs.unity3d.com/ScriptReference/Graphics.Blit.html
+2E375EB181FE4F68968EBC4A0CDA80B2|VF - Texture weight|3
+E29273BDC227461DADC359CFFBE5E5EF|VF - Texture mask|3
+9BE95E288F3E402381B701D788E5A53C|VF - Texture mask with texture weight|3
+7025B912D0014348A49FB3382DFDFCDA|VF - Texture mask clamp|3|http://developer.download.nvidia.com/cg/clamp.html
+CDBD3F5DFFD841CEBCF548C5C76C6A9B|VF - Screen space|5|https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html
+0230F97F540D42479CCC464AA54AD9FB|VF - Simple terrain |5
+A361B48EE84A4783B9F61E0A630A3FD5|VF - Advanced terrain|5
+F8B8A67DD02E4D34ACF1E59A35E6F516|VF - Flow|3
+D0C0DC5A881944E3A859F42BD9A1C2C0|VF - Flow with double layer|3
+1DF5B3B027FA4ED6B9C1D6E9463DCC9D|VF - Twist|5
+1B49FCE8C655421F88130C134FFD9650|VF - Extrude normal extrusion|5
+D97FA136B88C4DF3ABC5645FC8F733E8|VF - Magnet with clamp|10
+B7C24E5268224207A39B6516B4C60143|VF - Magnet without clamp|10
+9DA0785E26E645A69F9C6978C5A734C8|VF - Magnet 3|5
+28127747BB4C4116A99F0238FFD30307|VF - Toon shading (V)|5
+5736BA72DC9E4079B7B37A277E19FEDA|VF - Toon shading (F)|5
+5F4BC3D8298F492BAF8BA3CB6DF873CE|VF - Toon shading with texture|5
+208953D84C0643D3A6B0EED9BD642164|VF - Aim|15
+594E7A62F8C74C91B0374126B09FB816|VF - Snow|15
+2A0398BB9F5F4ED3A86CDBFC71D19A15|VF - MatCap|5|https://wiki.unity3d.com/index.php/MatCap,https://labs.sketchfab.com/experiments/material-showcase/
+0F3956C6081B4AFFAECB8F99AA36E53C|D - Vertex inputs|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+27FFD7AACB0645B193860E6C575D52FB|D - Vertex normals|10
+E080B76AC4354FAFA9B803CD3757C337|D - Face normals|10
+8F12AA69C1FB46B8A6DB6AF986C39952|D - Tangent normals|10
+63F14DCAAB94456281D1F6ED24483063|D - Binormals|10
+C6D0C363CA1E4A8FBBA09F72781375D4|VF - World space normal - UNITY_ASSUME_UNIFORM_SCALING|2
+E962175839104094BD4E434249380185|VF - World space normal - !UNITY_ASSUME_UNIFORM_SCALING|2
+F788EC437FAD42BFA2AEBEADCDDF7BEF|VF - World space tangent - NOK|2
+20590CAF8FCD49258217DA4F4D48194C|VF - World space tangent - OK|2
+BEA43FF502E54B719C6E3FEA055750D4|VF - World space binormal - NOK|2
+6518C75E8F0546DABCB2979B223FB526|VF - World space binormal - OK|2|https://forum.unity.com/threads/what-is-tangent-w-how-to-know-whether-its-1-or-1-tangent-w-vs-unity_worldtransformparams-w.468395/
+ECB2B189D75F4769B94CC1AAE9A8C2CA|VF - Normal from color|2
+0C64D983BA0A4D3FA76041CCE40E7569|VF - Normal from color - improved|2
+1E9C38F40E74425D9633C235D319D377|VF - Tangent-Binormal-Normal (TBN) matrix - NOK|2
+753ED58734E64AB0ABAEF4F42A69AD6F|VF - Tangent-Binormal-Normal (TBN) matrix - OK|2
+5007F3C448AE4602B0601EF9B08495CE|VF - World normal - NOK|2
+FDD2BD4CEDA347ACA17D6F2F7825C320|VF - World normal - OK|2
+29F390B46F764FFD814420EF12181864|VF - Diffuse reflection (V)|2
+9623A0B241BA44CE8C93F51B0B4C01AF|VF - Diffuse reflection (F)|2
+111A86E3DC634C2DAA68FA309C9E59C0|D - Lambertian reflectance|5|https://en.wikipedia.org/wiki/Lambertian_reflectance
+A897CEB5056F4DE68DE1212CABC4765E|VF - Specular reflection: Phong (V)|2|http://developer.download.nvidia.com/cg/reflect.html
+65FDE04563324EA0AC1347F55CE8DFE6|VF - Specular reflection: Phong (V)|2|http://developer.download.nvidia.com/cg/reflect.html
+A5A66B9AF8274C0AB08BF3430609DFB7|D - Phong|5|https://en.wikipedia.org/wiki/Phong_reflection_model
+66E5A27D6D444F749D4ADE75BA5342CF|VF - Specular reflection: Blinn-Phong (V)|2
+86920F39B25E45599C4B4568647CED1B|VF - Specular reflection: Blinn-Phong (F)|2
+CBE75323C63A4BE896C5B5262EC02CCB|D - Blinn-Phong|5|https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_shading_model
+9EA4DDB15DDC427B9E31A1A49E91CDE4|VF - Ambient reflection (V)|2
+4D74DCFEA71346C2A3DCC4CE0F4201F7|VF - Ambient reflection (F)|2
+570D6E35A1D24BBAB9F8367FFB75B400|VF - Basic Lighting Model (V)|2|http://developer.download.nvidia.com/CgTutorial/cg_tutorial_chapter05.html
+13BA3A5AEFEF42739513435250788AA2|VF - Basic Lighting Model (F)|2|http://developer.download.nvidia.com/CgTutorial/cg_tutorial_chapter05.html
+881B9BAC01604872AD2196493FE10172|VF - Reflection (V)|2|https://en.wikibooks.org/wiki/Cg_Programming/Unity/Reflecting_Surfaces
+F31D336F63E746DDBEA71834C509A953|VF - Reflection (F)|2
+6F027363EDD64A5CA342ECE982BC59EE|D - Incident ray (red), surface normal (blue), reflected ray (green)|5
+0D3292A028BF4248A2DD517582DACB98|VF - Refraction (V)|2|http://developer.download.nvidia.com/cg/refract.html
+64499108BE4B45F0ABAA4CC894E72144|VF - Refraction (F)|2|http://developer.download.nvidia.com/cg/refract.html
+84CE76A2F9DD49F1A909D4A3F3CE2ED0|D - Refraction on flat surface - Incident ray (red), surface normal (blue), refracted ray (green)|5|https://en.wikipedia.org/wiki/Willebrord_Snellius,https://en.wikipedia.org/wiki/Snell%27s_law,https://en.wikipedia.org/wiki/Refractive_index,https://pixelandpoly.com/ior.html
+BC45747983B546CA86C7089431C0CF27|D - Refraction on sphere - Incident ray (red), surface normal (blue), refracted ray (green)|5
+ADE33991F6DD4C92B05796AF670D1914|VF - Fresnel (V)|20|https://en.wikipedia.org/wiki/Augustin-Jean_Fresnel
+F3685B94E2CE480FB9F608F16FACD04B|VF - Fresnel (F)|20|https://docs.unity3d.com/Manual/StandardShaderFresnel.html
+4F29B42DFC774BC7B9FAA61F220ACD74|VF - BRDF: Anisotropy (V)|5|https://pdfs.semanticscholar.org/808d/048d4331cf5dac5fd924b50249b7915c6d73.pdf
+3C5A30986301463E8B5E38F5F9AED639|VF - BRDF: Anisotropy (F)|5|https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
+391FD2288E964DEB9181EDAA24CBB00B|S - Anisotropy|5|https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
+AAF4879A9E0C49ADB9A80D36AE200E2C|Identity matrix|20
+76C3C9C05D9D45F78A4FFBF0E980BC13|Translation matrix|20
+2D2616C52EAF4BA2924C2386C90BD0C0|Scale matrix|20
+20B94BCBAED44EE49F4E4CDA81F37656|VF - Outline with scale matrix|5
+F949AEC77F474FDCA63653C3AAC3058E|Rotation matrix: X-axis|20|https://en.wikipedia.org/wiki/Rotation_matrix
+505FE113C1C14554892D5EC34C62C143|Rotation matrix: Y-axis|20|https://en.wikipedia.org/wiki/Rotation_matrix
+93D720789180445F8365D15BDBE87629|Rotation matrix: Z-axis|20|https://en.wikipedia.org/wiki/Rotation_matrix
+8F154A9016CA46B79B5599B1EF80570F|Object-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
+3533605FEA224A369D27352D1E73138B|World-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
+6E089698CC5C4A999FAFB3974797DA3E|Camera/View/Eye-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
+2EB3B1543B934A26B1EF4DD9D6ED0C52|Projection-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
+9A6BFB9E65014B41802DA44FC21D4D6C|NDC-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
+413AD1A4B4F64A26ADFB15391C8963D7|Texture-space|10|https://aras-p.info/blog/2016/04/08/solving-dx9-half-pixel-offset/
 748916672D434665B1FC8FF9D3861911|Painter's algorithm|5
 6DBCF46E30CA478F81F9EDB592ACE3A1|Render Queue|5
 CEF597141C354B77827DA17F36ED2CC6|Z-sorting|5
-53FC34BEF53B40DB9D43007CBC2624C3|Ignore projector - True|5
-2A343B21EE5F44D784168B57C827607C|Ignore projector - False|5
-D6CD062E12804F11B3653A6558C18B72|VF - tiling, offset off|5|https://docs.unity3d.com/Manual/SL-PropertiesInPrograms.html
-6FBF905170C54743B7A03FAA7EA4B775|VF - tiling on|5
-F3D460D7D86442368B87045BE727ED21|VF - offset on - wrap mode: repeat|5
-07A93461F0954169814C6DFD8153B4BA|VF - offset on - wrap mode: clamp|5
-6EB380231DE4442C9BA45F80B8B8F494|VF - custom offset|20
-F15D93F8BF9941D1A0FAA0CF2616E206|VF - tiling, offset on|5
-2AC9ABB17B204ED496F791607574F15E|VF - TRANSFORM_TEX macro|5
-AF43C4B41D04474AB3CC39E2EFDEFC97|Replacement shader - replacementTag is empty|5
-942A4CCFDB844B79910EAE43729607A1|Replacement shader - custom replacementTag|5
-9129DCBF43724553BE193A39B9A634B7|Replacement shader - RenderType replacementTag|5
-1A775A0BE6A04644BFC8CC0C4F7DC8D3|Replacement shader - custom replacementTag|5
-687E10D7301440CAA4C85A94B6F436B1|Gradient pattern - blending off|5
-63B6390FDF7B40C4949C1B499AEFF3AD|Gradient pattern - X-axis|5
-426132732FFC4D929505186116C79C3D|Gradient pattern - Y-axis|5
-CE718E6319C34B539A79D9BAA10F8D01|Gradient pattern - X-Y axis|5
-C52E94D2C75640B2A755322F76F59457|Glitch: order matters|5
-78785BA8896A40FA8B1CB944EF30EBE1|Glitch: X + sin|5
-3B0CE71380A24A1A8E10CA275FCDEF8F|Glitch: Y + sin|5
-1F41AF3D953249A99FAD421BA416F355|Glitch: X - sin|5
-9FB594071B33488D9C2AE195A69997E5|Glitch: Y - sin|5
-F8A425F863304781A45609583A5F4A65|Glitch: X * sin|5
-B1F148CB522343058674385EA203F0CA|Glitch: Y * sin|5
-9A3C3FFE16B14200A55A6D1FF368CD02|Glitch: X / sin|5
-D118001B2BF5436F982A7EFBE98C14D9|Glitch: Y / sin|5
-1DEB29944F7649468EDE5F70E72FFFDC|Glitch: X + sin(Y)|5
-9C879457C64E49AAB49AB7F12EFF2833|Glitch: Y + sin(X)|5
-B75B47AAD83B4D10B8191C70479382A6|Glitch: X - sin(Y)|5
-BB6F4D6CEC934D02A1A43EDED1FF9857|Glitch: Y - sin(X)|5
-C650B00216134BE8ADC31445C3398100|Glitch: X * sin(Y)|5
-6649C0D81657419A90D0F34DAA676009|Glitch: Y * sin(X)|5
-17A58CAAF4D845D194B81EC4434A0A20|Glitch: X / sin(Y)|5
-F005EA74D6354F2B9E94DDF98AA41940|Glitch: Y / sin(X)|5
-1C5B1753FF1342CE9A2BD923F9C5A818|Glitch: X + sin(X)|5
-6CE7E356DB924181AFA980629C81E155|Glitch: Y + sin(Y)|5
-F019D2E9FD1846F385927FC69DF10DC8|Glitch: X - sin(X)|5
-02D8EB9556B7431888581A95BCFAF4EC|Glitch: Y - sin(Y)|5
-4EDAABF03E17476291B99EF6FCDEE138|Glitch: X * sin(X)|5
-FA5ED7F3F89445D3BFD5F04CCFB31090|Glitch: Y * sin(Y)|5
-2490E8B5448342F3A6C7D98084D0B001|Glitch: X / sin(X)|5
-D805A64B62B64C4F8F37D49288315A10|Glitch: Y / sin(Y)|5
-A73E4A551ED044319EE4E5AFFB0BBC54|Glitch: Speed (Frequency)|5
-E474EB5808194472991735A47C59F931|Glitch: Random speed|5
-D8ACE4CD33264255987529C43A173AAE|Glitch: Amplitude|5
-CC1A2D90AA3546D3B3A45384462B329B|Glitch: Random amplitude|5
-86048035420C4F9688C4D2CBFC006FC4|Glitch: Distance|5
-0C819AE3B32C40A0A5CA974BB73B8948|Glitch: Amount|5
-68CAD9123D7A41D19C79F0637C9A5820|Glitch: Texture|5
-C202DFA7FB7140268DD93C25157EFF24|Glitch: Transparency|5
-4F3E64EA59E749DDA529057AAECB3002|Glitch: Cutout threshold|5
-EED121CC6B9F40EB93D42034F9F1E180|Glitch|5
-39356198ABC645C0BE44792C9394DB4D|Random glitch|5
-DE87E15141824E2F873E542105DA571E|Sinus|5
-08AAEE8C50DD4ABBB9ABEE05DA328EC2|Tangent|5
-054245536D1D47EA9CBAB52486B54AF0|Line pattern with custom function|10|https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-syntax
-D214A97EDB3D485792B7689DE03AD1E3|Union|10
-906C39B37DEE4E56B57B0DC0F17EFC39|Intersection|10
-4F9A56BEF71341A59499D9C50BA005B9|Circle|10
-09AB1A69D4884C8D8BD09D93890472C8|Smoothstep|10|https://en.wikipedia.org/wiki/Bokeh
-485E3090EA8F4A7FBDA112E6F23DFBFB|Feathering|10
-3E186E2376F0453D8E287A2A1969DF4D|Frequency|5
-8D9D74E815CB4E339B261DA3E2162E54|Amplitude|5
-6895640CBE624B85926462EA16785E0A|Flag|15
-F9CF0C4711EF4D25ADB16AE5FD9A91D4|Vertex normal|5
+B267E4853ACA48F688414F08C98045E8|Z-fighting/Stitching|5
+EF5C9FB6C8D24DBE9B5ADA7311B6F5C5|Offset|5|https://docs.unity3d.com/Manual/SL-CullAndDepth.html,https://docs.unity3d.com/Manual/SL-Pass.html
+6023A915C45F4FECA29A19527FBCB05A|Z-test: Z-depth of the pixel/fragment <= Z-buffer (default)|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+C514088F91224DEDB3D616D9C419B21F|Z-test: Z-depth of the pixel/fragment < Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+3F53FF18BE8D4B5D8877607F22E794AE|Z-test: Z-depth of the pixel/fragment >= Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+97CA22D395F349D1A590FE752625DD79|Z-test: Z-depth of the pixel/fragment > Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+9BA92A3739174501AF4DC9019609F2FE|Z-test: Z-depth of the pixel/fragment = Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+3664F76AF9774293828C0E3CC7C6D4A1|Z-test: Z-depth of the pixel/fragment != Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+99E326913F004BA5AAD68D5B9FDEF859|Z-test: Always|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+53FC34BEF53B40DB9D43007CBC2624C3|Ignore projector: True|5
+2A343B21EE5F44D784168B57C827607C|Ignore projector: False|5
+AF43C4B41D04474AB3CC39E2EFDEFC97|Replacement shader: replacementTag is empty|5
+942A4CCFDB844B79910EAE43729607A1|Replacement shader: custom replacementTag|5
+9129DCBF43724553BE193A39B9A634B7|Replacement shader: RenderType replacementTag|5
+1A775A0BE6A04644BFC8CC0C4F7DC8D3|Replacement shader: custom replacementTag|5
 25696635619E41B09FDDBFAE2F691F09|ColorMask R|5|https://docs.unity3d.com/Manual/SL-Pass.html
 6B4EEB9A58D446CEA01F7EC73FEB50D2|ColorMask G|5|https://docs.unity3d.com/Manual/SL-Pass.html
 F1B4F64DBF2040CCAB842AE0BED100F5|ColorMask B|5|https://docs.unity3d.com/Manual/SL-Pass.html
@@ -174,153 +276,56 @@ B907A6DA096D471088E4EF6A419FD87A|ColorMask RGB|5|https://docs.unity3d.com/Manual
 8F8A2C4DF69E41318DA6EFD3430BB614|ColorMask RGBA (default mode)|5|https://docs.unity3d.com/Manual/SL-Pass.html
 A78D6009E0954C1B9B4D566E49A9BDA2|Batching: Saved by batching: 72 ((4 * 18 materials - 1) + 1)|15
 C47B2327C6374C47BC89C00EB5051C3D|Batching: Saved by batching: 71 (4 * 18 materials - 1)|15
-3A9F9FE74473456DB06E47390247C4E6|Culling - back (default)|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-E285CB5B69084136999277906C9056F1|Culling - front|20|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-090B92A95F8146F1A73485852B5574BB|Culling - off|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-B267E4853ACA48F688414F08C98045E8|Z-fighting/Stitching|5
-6023A915C45F4FECA29A19527FBCB05A|Z-test - Z-depth of the pixel/fragment <= Z-buffer (default)|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-C514088F91224DEDB3D616D9C419B21F|Z-test - Z-depth of the pixel/fragment < Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-3F53FF18BE8D4B5D8877607F22E794AE|Z-test - Z-depth of the pixel/fragment >= Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-97CA22D395F349D1A590FE752625DD79|Z-test - Z-depth of the pixel/fragment > Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-9BA92A3739174501AF4DC9019609F2FE|Z-test - Z-depth of the pixel/fragment = Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-3664F76AF9774293828C0E3CC7C6D4A1|Z-test - Z-depth of the pixel/fragment != Z-buffer|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-99E326913F004BA5AAD68D5B9FDEF859|Z-test - Always|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-28FF40F045A548A2BAB930F2D79940A3|Opaque|5
-29DED62661A1417C9279CA00A90AD24F|Transparent|5
-C6D0C363CA1E4A8FBBA09F72781375D4|World space normal - UNITY_ASSUME_UNIFORM_SCALING|2
-E962175839104094BD4E434249380185|World space normal - !UNITY_ASSUME_UNIFORM_SCALING|2
-F788EC437FAD42BFA2AEBEADCDDF7BEF|World space tangent - NOK|2
-20590CAF8FCD49258217DA4F4D48194C|World space tangent - OK|2
-BEA43FF502E54B719C6E3FEA055750D4|World space binormal - NOK|2
-6518C75E8F0546DABCB2979B223FB526|World space binormal - OK|2|https://forum.unity.com/threads/what-is-tangent-w-how-to-know-whether-its-1-or-1-tangent-w-vs-unity_worldtransformparams-w.468395/
-ECB2B189D75F4769B94CC1AAE9A8C2CA|Normal from color|2
-0C64D983BA0A4D3FA76041CCE40E7569|Normal from color - improved|2
-1E9C38F40E74425D9633C235D319D377|Tangent-Binormal-Normal (TBN) matrix - NOK|2
-753ED58734E64AB0ABAEF4F42A69AD6F|Tangent-Binormal-Normal (TBN) matrix - OK|2
-5007F3C448AE4602B0601EF9B08495CE|World normal - NOK|2
-FDD2BD4CEDA347ACA17D6F2F7825C320|World normal - OK|2
-29F390B46F764FFD814420EF12181864|Diffuse reflection - Vertex|2
-9623A0B241BA44CE8C93F51B0B4C01AF|Diffuse reflection - Fragment|2
-A897CEB5056F4DE68DE1212CABC4765E|Specular reflection - Phong - Vertex|2|http://developer.download.nvidia.com/cg/reflect.html
-65FDE04563324EA0AC1347F55CE8DFE6|Specular reflection - Phong - Frag|2|http://developer.download.nvidia.com/cg/reflect.html
-66E5A27D6D444F749D4ADE75BA5342CF|Specular reflection - Blinn-Phong - Vertex|2
-86920F39B25E45599C4B4568647CED1B|Specular reflection - Blinn-Phong - Frag|2
-9EA4DDB15DDC427B9E31A1A49E91CDE4|Ambient reflection - Vert|2
-4D74DCFEA71346C2A3DCC4CE0F4201F7|Ambient reflection -  Frag|2
-570D6E35A1D24BBAB9F8367FFB75B400|Basic Lighting Model - Vert|2|http://developer.download.nvidia.com/CgTutorial/cg_tutorial_chapter05.html
-13BA3A5AEFEF42739513435250788AA2|Basic Lighting Model - Frag|2|http://developer.download.nvidia.com/CgTutorial/cg_tutorial_chapter05.html
-AAF4879A9E0C49ADB9A80D36AE200E2C|Identity matrix|20
-76C3C9C05D9D45F78A4FFBF0E980BC13|Translation matrix|20
-2D2616C52EAF4BA2924C2386C90BD0C0|Scale matrix|20
-F949AEC77F474FDCA63653C3AAC3058E|Rotation matrix - X-axis|20|https://en.wikipedia.org/wiki/Rotation_matrix
-505FE113C1C14554892D5EC34C62C143|Rotation matrix - Y-axis|20|https://en.wikipedia.org/wiki/Rotation_matrix
-93D720789180445F8365D15BDBE87629|Rotation matrix - Z-axis|20|https://en.wikipedia.org/wiki/Rotation_matrix
-20B94BCBAED44EE49F4E4CDA81F37656|Outline - scale matrix|5
-1A4F8A5F870A42F2AEFFAC302A0E2A4C|Simple toggle|5
-ABCB3F6D93CF4E65A73851F98AED2141|Advanced toggle|5
-FF6A8D14B97545B8BD46A20756BC357C|Built-in enum|5
-58F634AFF48D45109E47A951AC2B4BC0|Custom enum|5
-6A22AF7932864BFC8EB3FD3934076B2E|KeywordEnum|5
-F06977033BE349919B0C6D56665D841E|PowerSlider|5
-45FA6DD25E9844AEA6C84DDAC19C73CE|IntRange|5
-3AC1530F6F504B85AE1D0DC60521C311|Space|5
-BB13ED9F06B74F84B204A46D714090E8|Header|5
-86C11693662B447C842C007E3F51EFD1|Shader variants - multi compile|5
-897FF11839EF485D9D53CA045C15B9AA|Shader variants - feature|5
+3A9F9FE74473456DB06E47390247C4E6|Culling: Back (default)|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+E285CB5B69084136999277906C9056F1|Culling: Front|20|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+090B92A95F8146F1A73485852B5574BB|Culling: Off|5|https://docs.unity3d.com/Manual/SL-Pass.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
+1A4F8A5F870A42F2AEFFAC302A0E2A4C|UI: Simple toggle|5
+ABCB3F6D93CF4E65A73851F98AED2141|UI: Advanced toggle|5
+FF6A8D14B97545B8BD46A20756BC357C|UI: Built-in enum|5
+58F634AFF48D45109E47A951AC2B4BC0|UI: Custom enum|5
+6A22AF7932864BFC8EB3FD3934076B2E|UI: KeywordEnum|5
+F06977033BE349919B0C6D56665D841E|UI: PowerSlider|5
+45FA6DD25E9844AEA6C84DDAC19C73CE|UI: IntRange|5
+3AC1530F6F504B85AE1D0DC60521C311|UI: Space|5
+BB13ED9F06B74F84B204A46D714090E8|UI: Header|5
+A6B624A7ECCE4621A2F286079FC39D11|UI: Custom shader editor|5|https://docs.unity3d.com/Manual/SL-CustomEditor.html,https://docs.unity3d.com/Manual/SL-CustomShaderGUI.html
+369B806CAE0C46BEB2536203AA59AC9A|UI: Custom Material Property Drawer|5|https://docs.unity3d.com/ScriptReference/MaterialPropertyDrawer.html
+AE6C7FDC315E4EBB8D844DCEF687E50E|UI: Property attributes and drawers|5|https://docs.unity3d.com/Manual/SL-Properties.html
+897FF11839EF485D9D53CA045C15B9AA|Shader variants: feature|5
+86C11693662B447C842C007E3F51EFD1|Shader variants: multi compile|5
 64E3A800D0B64A6E9CBE1EC950D98FFF|Custom cginc file|5
-9CCFD3E204DA4E50AC231374B79CD431|Math Operators - Addition|5
-55247BB9753A4D09B336B313F5B4D5BB|Math Operators - Subtraction|5
-7A5DAC3D3F044FF0A9869A408376B48F|Math Operators - Multiplication|5
-9CA54CEDA2394A1EBBEBB07C9E027293|Math Operators - Division|5
-E5BACD22F8814E4AB48EEFD46E7FFD20|Math Operators - One minus|5
-B4FD1D2D2FE84F74BBB12745E86D48E1|Math Operators - Min|5|http://developer.download.nvidia.com/cg/min.html
-AD271C11731F4FB0A4094799CE22319C|Math Operators - Max|5|http://developer.download.nvidia.com/cg/max.html
-E14AE8CBFEAE463EA391AEDDE028DB8B|Math Operators - Power|5|http://developer.download.nvidia.com/cg/pow.html
-85A528F2A8D5439DB2649FEBF34BB6EA|Math Operators - Negate|5
-8F9B1BB399BD4997B9F49B4E34BDE782|Math Operators - Abs|5|http://developer.download.nvidia.com/cg/abs.html
-EDBCDF1A85AA4B15953C5B70B07E3CA0|Math Operators - Floor|5|http://developer.download.nvidia.com/cg/floor.html
-73A9146EABA24FFEBD4AFDDC1B3DBD4C|Math Operators - Round|5|http://developer.download.nvidia.com/cg/round.html
-3EBF19BAAED64FEE8B27BC4A2CDDE6A0|Math Operators - Ceil|5|http://developer.download.nvidia.com/cg/ceil.html
-21810721AB9943DEA952623902D66C23|Math Operators - Trunc|5|http://developer.download.nvidia.com/cg/trunc.html
-4159AA4C3B5A4F6D9781498ACFCBFED8|Math Operators - Exp|5|http://developer.download.nvidia.com/cg/exp.html
-C616A45EBC1E45E5B13EBA29371290A6|Math Operators - Exp2|5|http://developer.download.nvidia.com/cg/exp2.html
-6ADBBC914C9242968257CBD26D86E02F|Math Operators - Rsqrt|5|http://developer.download.nvidia.com/cg/rsqrt.html
-49DED4A11C83427186F772CF72A7B2A8|Math Operators - Sqrt|5|http://developer.download.nvidia.com/cg/sqrt.html
-709BAE7EF2E24753A1C6B99A585CB6D9|Math Operators - Log2|5|http://developer.download.nvidia.com/cg/log2.html
-F7D40A5FC32A445FABE5B04642E4E19B|Math Operators - Log|5|http://developer.download.nvidia.com/cg/log.html
-B20541E99B254924884CC25BBA42304F|Math Operators - Log10|5|http://developer.download.nvidia.com/cg/log10.html
-E5058CF851A749A19D5FFE437BABC8B7|Math Operators - Saturate|5|http://developer.download.nvidia.com/cg/saturate.html
-3CE25DD837A7407DADBC7BE5D0358199|Math Operators - Sign|5|http://developer.download.nvidia.com/cg/sign.html
-057CAD6E14E14867840006899F7A4495|Math Operators - Fract|5|http://developer.download.nvidia.com/cg/frac.html
-8F154A9016CA46B79B5599B1EF80570F|Object-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
-3533605FEA224A369D27352D1E73138B|World-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
-6E089698CC5C4A999FAFB3974797DA3E|Camera/View/Eye-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
-2EB3B1543B934A26B1EF4DD9D6ED0C52|Projection-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
-9A6BFB9E65014B41802DA44FC21D4D6C|NDC-space|10|https://learnopengl.com/Getting-started/Coordinate-Systems
-413AD1A4B4F64A26ADFB15391C8963D7|Texture-space|10|https://aras-p.info/blog/2016/04/08/solving-dx9-half-pixel-offset/
-881B9BAC01604872AD2196493FE10172|Reflection - Vert|2|https://en.wikibooks.org/wiki/Cg_Programming/Unity/Reflecting_Surfaces
-F31D336F63E746DDBEA71834C509A953|Reflection - Frag|2
-0D3292A028BF4248A2DD517582DACB98|Refraction - Vertex|2|http://developer.download.nvidia.com/cg/refract.html
-64499108BE4B45F0ABAA4CC894E72144|Refraction - Frag|2|http://developer.download.nvidia.com/cg/refract.html
-ADE33991F6DD4C92B05796AF670D1914|Fresnel - Vert|20|https://en.wikipedia.org/wiki/Augustin-Jean_Fresnel
-F3685B94E2CE480FB9F608F16FACD04B|Fresnel - Frag|20|https://docs.unity3d.com/Manual/StandardShaderFresnel.html
-D0ACC3DEA24D40849A41D6B91B695ACA|Shadow mapping|5|https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html
-96E3FFA3A31D4EDCBDFBC29D5858BB78|Additional light - basic|5|https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html
-08DD99C31AAA46CAB84CA51924B04C22|Additional light - advanced|5|https://en.wikibooks.org/wiki/Cg_Programming/Unity/Multiple_Lights
-CA738E430982494D963FBFE2F2518DF6|Appdata versions|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html,https://answers.unity.com/questions/53213/why-are-texcoords-uvs-stored-in-float4.html
-2273D8D2974C43C29BFBF81FD3A3E75C|V2F versions|5|https://wiki.unity3d.com/index.php/Shader_Code
-E70C4F3D07CF44A89D9644330E347932|Semantics|5|https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics,https://docs.unity3d.com/Manual/SL-ShaderSemantics.html
-4F29B42DFC774BC7B9FAA61F220ACD74|BRDF - Anisotropy - Vert|5|https://pdfs.semanticscholar.org/808d/048d4331cf5dac5fd924b50249b7915c6d73.pdf
-3C5A30986301463E8B5E38F5F9AED639|BRDF - Anisotropy - Frag|5|https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
-391FD2288E964DEB9181EDAA24CBB00B|Anisotropy - Surface|5|https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
-4F583046FDF24815B148BBFD668B337A|Clip|5|http://developer.download.nvidia.com/cg/clip.html
-5903E3D82E704916BA727FF83A543CD1|Debug blending|5|https://www.w3.org/TR/compositing-1/
-171ABBA4628942ACA3B55AD015E4447C|Depth fog|5
-539292B658924D2798A6AA8BA1D775D1|Depth texture|5
-600CB39803FD4B0E826220D437BEEA7C|Camera depth|5|https://docs.unity3d.com/Manual/SL-DepthTextures.html
-0E10E3F8D26C4690BDD1E0031842D0B1|Fish|5
-14D987D4E6A7432B80EF573E15C7948E|UV checker - Wrap modes|3|https://docs.unity3d.com/ScriptReference/TextureWrapMode.html
-C7CF1C48BD3D4AE5AABC847A9FA0C710|UV checker - Rotation|3|http://developer.download.nvidia.com/cg/radians.html
-49A8AD11134648F283839D3B16FA2496|Color scattering|3
-5C0BFC796656465083F260406CE8DA0E|Grayscale|3|https://en.wikipedia.org/wiki/Grayscale
-51D484FF26AB4F3A84312AE7A34AD4DD|Grayscale on camera|3|https://docs.unity3d.com/ScriptReference/Graphics.Blit.html
-2E375EB181FE4F68968EBC4A0CDA80B2|Texture weight|3
-E29273BDC227461DADC359CFFBE5E5EF|Texture mask|3
-9BE95E288F3E402381B701D788E5A53C|Texture mask with texture weight|3
-111A86E3DC634C2DAA68FA309C9E59C0|Lambertian reflectance debugger|5|https://en.wikipedia.org/wiki/Lambertian_reflectance
-A5A66B9AF8274C0AB08BF3430609DFB7|Phong debugger|5|https://en.wikipedia.org/wiki/Phong_reflection_model
-CBE75323C63A4BE896C5B5262EC02CCB|Blinn-Phong debugger|5|https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_shading_model
-7025B912D0014348A49FB3382DFDFCDA|Texture mask clamp|3|http://developer.download.nvidia.com/cg/clamp.html
-CDBD3F5DFFD841CEBCF548C5C76C6A9B|Screen space|5|https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html
-0230F97F540D42479CCC464AA54AD9FB|Terrain - simple|5
-A361B48EE84A4783B9F61E0A630A3FD5|Terrain - advanced|5
-EF5C9FB6C8D24DBE9B5ADA7311B6F5C5|Offset|5|https://docs.unity3d.com/Manual/SL-CullAndDepth.html,https://docs.unity3d.com/Manual/SL-Pass.html
-F8B8A67DD02E4D34ACF1E59A35E6F516|Flow|3
-D0C0DC5A881944E3A859F42BD9A1C2C0|Flow with double layer|3
-1DF5B3B027FA4ED6B9C1D6E9463DCC9D|Twist|5
-1B49FCE8C655421F88130C134FFD9650|Extrude normal extrusion|5
-D97FA136B88C4DF3ABC5645FC8F733E8|Magnet - with clamp|10
-B7C24E5268224207A39B6516B4C60143|Magnet - without clamp|10
-9DA0785E26E645A69F9C6978C5A734C8|Magnet 3|5
-28127747BB4C4116A99F0238FFD30307|Toon shading - Vert|5
-5736BA72DC9E4079B7B37A277E19FEDA|Toon shading - Frag|5
-5F4BC3D8298F492BAF8BA3CB6DF873CE|Toon shading with texture|5
-2A0398BB9F5F4ED3A86CDBFC71D19A15|MatCap|5|https://wiki.unity3d.com/index.php/MatCap,https://labs.sketchfab.com/experiments/material-showcase/
-D331ACC0A4E24D80985648C875BFD019|DirectX/OpenGL UV test|5|https://docs.unity3d.com/Manual/SL-BuiltinMacros.html,https://docs.unity3d.com/Manual/CommandLineArguments.html
-84CE76A2F9DD49F1A909D4A3F3CE2ED0|Refraction on flat surface - Incident ray (red), surface normal (blue), refracted ray (green)|5|https://en.wikipedia.org/wiki/Willebrord_Snellius,https://en.wikipedia.org/wiki/Snell%27s_law,https://en.wikipedia.org/wiki/Refractive_index,https://pixelandpoly.com/ior.html
-BC45747983B546CA86C7089431C0CF27|Refraction on sphere - Incident ray (red), surface normal (blue), refracted ray (green)|5
-650630AFEAD24659A79B80CE32112DD3|Half-Lambert|2|http://www.jordanstevenstechart.com/lighting-models,https://developer.valvesoftware.com/wiki/Half_Lambert
-71A97C498842480FB10371749AB6EC21|Banded-Lighting|2|http://www.jordanstevenstechart.com/lighting-models
-65C6F3CCEA80472D9B336E638CC1A3DD|Minnaert Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Marcel_Minnaert,http://www.artisticexperiments.com/cg-shaders/cg-shaders-minnaert
-D106446BB40E4CF4BB4B2CFFF0768205|Oren-Nayer Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Oren%E2%80%93Nayar_reflectance_model
-208953D84C0643D3A6B0EED9BD642164|Aim|15
-594E7A62F8C74C91B0374126B09FB816|Snow|15
-CFD389A705884F8CBD315897C155AD85|Saturation|5
-CBA23F6FAD6546A9A2C3F4A695C650CE|Brightness|5
-486445ADECC4458D8BEDAB937E7FFC80|Contrast|5
-25E7C0E9B2514D59BA03F42BFA0B7DC0|Blending|5|https://www.w3.org/TR/compositing-1/
-8B532B02CA9848ECA44A7ABBCC95924C|Default 2D texture values|5|https://docs.unity3d.com/Manual/SL-Properties.html
+9CCFD3E204DA4E50AC231374B79CD431|Math Operators: Addition|5
+55247BB9753A4D09B336B313F5B4D5BB|Math Operators: Subtraction|5
+7A5DAC3D3F044FF0A9869A408376B48F|Math Operators: Multiplication|5
+9CA54CEDA2394A1EBBEBB07C9E027293|Math Operators: Division|5
+E5BACD22F8814E4AB48EEFD46E7FFD20|Math Operators: One minus|5
+B4FD1D2D2FE84F74BBB12745E86D48E1|Math Operators: Min|5|http://developer.download.nvidia.com/cg/min.html
+AD271C11731F4FB0A4094799CE22319C|Math Operators: Max|5|http://developer.download.nvidia.com/cg/max.html
+E14AE8CBFEAE463EA391AEDDE028DB8B|Math Operators: Power|5|http://developer.download.nvidia.com/cg/pow.html
+85A528F2A8D5439DB2649FEBF34BB6EA|Math Operators: Negate|5
+8F9B1BB399BD4997B9F49B4E34BDE782|Math Operators: Abs|5|http://developer.download.nvidia.com/cg/abs.html
+EDBCDF1A85AA4B15953C5B70B07E3CA0|Math Operators: Floor|5|http://developer.download.nvidia.com/cg/floor.html
+73A9146EABA24FFEBD4AFDDC1B3DBD4C|Math Operators: Round|5|http://developer.download.nvidia.com/cg/round.html
+3EBF19BAAED64FEE8B27BC4A2CDDE6A0|Math Operators: Ceil|5|http://developer.download.nvidia.com/cg/ceil.html
+21810721AB9943DEA952623902D66C23|Math Operators: Trunc|5|http://developer.download.nvidia.com/cg/trunc.html
+4159AA4C3B5A4F6D9781498ACFCBFED8|Math Operators: Exp|5|http://developer.download.nvidia.com/cg/exp.html
+C616A45EBC1E45E5B13EBA29371290A6|Math Operators: Exp2|5|http://developer.download.nvidia.com/cg/exp2.html
+6ADBBC914C9242968257CBD26D86E02F|Math Operators: Rsqrt|5|http://developer.download.nvidia.com/cg/rsqrt.html
+49DED4A11C83427186F772CF72A7B2A8|Math Operators: Sqrt|5|http://developer.download.nvidia.com/cg/sqrt.html
+709BAE7EF2E24753A1C6B99A585CB6D9|Math Operators: Log2|5|http://developer.download.nvidia.com/cg/log2.html
+F7D40A5FC32A445FABE5B04642E4E19B|Math Operators: Log|5|http://developer.download.nvidia.com/cg/log.html
+B20541E99B254924884CC25BBA42304F|Math Operators: Log10|5|http://developer.download.nvidia.com/cg/log10.html
+E5058CF851A749A19D5FFE437BABC8B7|Math Operators: Saturate|5|http://developer.download.nvidia.com/cg/saturate.html
+3CE25DD837A7407DADBC7BE5D0358199|Math Operators: Sign|5|http://developer.download.nvidia.com/cg/sign.html
+057CAD6E14E14867840006899F7A4495|Math Operators: Fract|5|http://developer.download.nvidia.com/cg/frac.html
+8B532B02CA9848ECA44A7ABBCC95924C|D - Default 2D texture values|5|https://docs.unity3d.com/Manual/SL-Properties.html
 9441CEB2E3BA4B9C948A1866ADA56F26|Content and Context|15|https://docs.unity3d.com/Manual/StandardShaderContextAndContent.html
+28FF40F045A548A2BAB930F2D79940A3|Opaque|5|https://www.youtube.com/watch?v=Y4ndvBWeLS0
+29DED62661A1417C9279CA00A90AD24F|Transparent|5|https://www.youtube.com/watch?v=VwRLIt6jgdM
+B84BA965D93845EC9557231CDEB7876A|Built-in Standard|10|https://docs.unity3d.com/Manual/StandardShaderMaterialCharts.html,https://docs.unity3d.com/Manual/StandardShaderMetallicVsSpecular.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterMetallic.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterSmoothness.html
+5346C7EB2D3744949E85FE768F44876B|Built-in Specular|10|https://docs.unity3d.com/Manual/StandardShaderMaterialCharts.html,https://docs.unity3d.com/Manual/StandardShaderMetallicVsSpecular.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterSpecular.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterSmoothness.html
+68EAAAD9122F4CC48E6D63B43E033D5A|Standard PBR|5
+A348996F924B4A9E88A539068177AD54|Standard Specular PBR|5
 C8B0BB9B66B24CE8AAE65AC38A1BC3AD|PBR - Rendering Mode|5|https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html,https://docs.unity3d.com/Manual/StandardShaderMaterialParameterAlbedoColor.html
 3565F36A853F4C709EE60F1302FB6C9D|Accessing and modifying the Standard Shader|5|https://docs.unity3d.com/Manual/MaterialsAccessingViaScript.html,https://unity3d.com/get-unity/download/archive,https://docs.unity3d.com/ScriptReference/Material.EnableKeyword.html
 34020102414A45DFA8F1E128E54C8F4D|Surface Shader examples|10|https://docs.unity3d.com/Manual/SL-SurfaceShaderExamples.html
@@ -331,11 +336,6 @@ D9712B46D9334D9494FC83C46F81CEA7|Self-Illuminated Shader Family|10|https://docs.
 9DF7B494E7B94FBF9F06F72A1243D9FA|Reflective Shader Family|10|https://docs.unity3d.com/Manual/shader-ReflectiveFamily.html,https://unity3d.com/get-unity/download/archive
 1612F673BCDB401989E64B4E874344D8|Tessellation examples|5|https://docs.unity3d.com/Manual/SL-SurfaceShaderTessellation.html,https://people.eecs.berkeley.edu/~sequin/CS284/PROJ_12/Brandon/Smooth%20GPU%20Tessellation.pdf
 5CD94BBE01394E86A26579C166341A69|Vertex and fragment shader examples|30|https://docs.unity3d.com/Manual/SL-VertexFragmentShaderExamples.html,https://docs.unity3d.com/Manual/SL-ShaderSemantics.html,https://unity3d.com/pages/butterfly
-0F3956C6081B4AFFAECB8F99AA36E53C|Debug vertex inputs|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
-9A7552C1F1CC4AB1A400347E4AAAA947|Sampler states|5|https://docs.unity3d.com/Manual/SL-SamplerStates.html
-AE6C7FDC315E4EBB8D844DCEF687E50E|Property attributes and drawers|5|https://docs.unity3d.com/Manual/SL-Properties.html
-A6B624A7ECCE4621A2F286079FC39D11|Custom shader editor|5|https://docs.unity3d.com/Manual/SL-CustomEditor.html,https://docs.unity3d.com/Manual/SL-CustomShaderGUI.html
-369B806CAE0C46BEB2536203AA59AC9A|Custom Material Property Drawer|5|https://docs.unity3d.com/ScriptReference/MaterialPropertyDrawer.html
-25EE6E2CB9BC4C3B9814EFFE765745D2|UsePass|5|https://docs.unity3d.com/Manual/SL-UsePass.html,https://docs.unity3d.com/Manual/SL-Name.html
+25EE6E2CB9BC4C3B9814EFFE765745D2|SL - UsePass|5|https://docs.unity3d.com/Manual/SL-UsePass.html,https://docs.unity3d.com/Manual/SL-Name.html
 C37D44A3AEBC4F10869BCD16E612E975|Texture arrays|5|https://docs.unity3d.com/Manual/SL-TextureArrays.html,https://github.com/DmtDenisov/Texture-Array-Unity
 48055EB41ABC49AE9AB71A2BA67DC431|Shader Graph Example Library|15|https://github.com/UnityTechnologies/ShaderGraph_ExampleLibrary
