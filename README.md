@@ -3,10 +3,10 @@
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=HO-tCvjG1ig" target="_blank"><img src="http://img.youtube.com/vi/HO-tCvjG1ig/0.jpg" alt="Unity shaders - Demo project - preview " width="480" height="360" border="10"/></a>
 
 ## About
-A one scene based Unity project (like an SPA) that provides various shader examples.
+A one scene based Unity project that provides various shader examples.
 
 ### Notes
-* Unity: <b>2018.2.15f1</b>
+* Unity: <b>2018.3.0f1</b>
 * Abbreviations: 
     * **D** (Debug)
     * **DS** (Debug Surface)

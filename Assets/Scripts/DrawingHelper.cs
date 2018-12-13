@@ -3,13 +3,21 @@ using UnityEngine.Rendering;
 
 public static class DrawingHelper 
 {
+    private static readonly Shader LrMatShader;
+
+    static DrawingHelper()
+    {
+        LrMatShader = Shader.Find("Particles/Alpha Blended Premultiply");
+        if (!LrMatShader) LrMatShader = Shader.Find("Legacy Shaders/Particles/Alpha Blended Premultiply");
+    }
+    
     public static GameObject DrawLine(Vector3 start, Vector3 end, Color color, float width = 0.01f, bool destroy = false, float delay = 0)
     {
         GameObject line = new GameObject();
         line.transform.position = start;
         line.AddComponent<LineRenderer>();
         LineRenderer lr = line.GetComponent<LineRenderer>();
-        lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
+        lr.material = new Material(LrMatShader);
         lr.startColor = color;
         lr.endColor = color;
         lr.startWidth = width;
