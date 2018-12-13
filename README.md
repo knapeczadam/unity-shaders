@@ -6,7 +6,7 @@
 A one scene based Unity project that provides various shader examples.
 
 ### Notes
-* Unity: <b>2018.3.0f1</b>
+* Unity: <b>2018.3.0f2</b>
 * Abbreviations: 
     * **D** (Debug)
     * **DS** (Debug Surface)
