@@ -45,7 +45,7 @@ BAA687C440AD480C9D446FA65E5411E4|S - WorldPos cutoff|20|http://developer.downloa
 6A4B65B65B8646B38D8919F018334CD6|S - Blinn-Phong|5
 D4F451B4705C40D6AAB94931E410BCA1|S - Custom Blinn-Phong|5
 71A97C498842480FB10371749AB6EC21|S - Banded-Lighting|3|http://www.jordanstevenstechart.com/lighting-models
-65C6F3CCEA80472D9B336E638CC1A3DD|S - Minnaert Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Marcel_Minnaert,http://www.artisticexperiments.com/cg-shaders/cg-shaders-minnaert
+65C6F3CCEA80472D9B336E638CC1A3DD|S - Minnaert Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Marcel_Minnaert,https://www.artisticexperiments.net/cg-shaders/cg-shaders-minnaert
 D106446BB40E4CF4BB4B2CFFF0768205|S - Oren-Nayer Lighting|5|http://www.jordanstevenstechart.com/lighting-models,https://en.wikipedia.org/wiki/Oren%E2%80%93Nayar_reflectance_model
 9467AF70A24D4BB0BA9AC30EC2E2A9ED|S - Toon Ramp with custom light|5
 25C2B03A79C946A0AC0485DE8117D092|S - Toon Ramp with Lambert|5
@@ -83,7 +83,7 @@ C0725F40DA3848299DC20A2AF89BBA31|S - Texture blending|5
 B7560F988D694CDFAB91632B886BF020|S - Stencil buffer|5
 27A52386FCEF49AC9C40475A0954EE23|SL - Advanced stencil buffer|10|https://forum.unity.com/threads/unity-4-2-stencils-for-portal-rendering.191890/
 CA738E430982494D963FBFE2F2518DF6|VF - Appdata versions|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html,https://answers.unity.com/questions/53213/why-are-texcoords-uvs-stored-in-float4.html
-2273D8D2974C43C29BFBF81FD3A3E75C|VF - V2F versions|5|https://wiki.unity3d.com/index.php/Shader_Code
+2273D8D2974C43C29BFBF81FD3A3E75C|VF - V2F versions|5|http://web.archive.org/web/20210301020909/https://wiki.unity3d.com/index.php/Shader_Code
 E70C4F3D07CF44A89D9644330E347932|VF - Semantics|5|https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics,https://docs.unity3d.com/Manual/SL-ShaderSemantics.html
 0993F4052D4E401CB087879421DD0D16|VF - Generated Unlit shader|5
 D3DA42107B304DEFBC8656883DEEE391|FF, VF - Barebone|5|https://forum.unity.com/threads/official-removing-some-fixed-function-shader-functions-for-5-0.250107/
@@ -190,7 +190,7 @@ B7C24E5268224207A39B6516B4C60143|VF - Magnet without clamp|10
 5F4BC3D8298F492BAF8BA3CB6DF873CE|VF - Toon shading with texture|5
 208953D84C0643D3A6B0EED9BD642164|VF - Aim|15
 594E7A62F8C74C91B0374126B09FB816|VF - Snow|15
-2A0398BB9F5F4ED3A86CDBFC71D19A15|VF - MatCap|5|https://wiki.unity3d.com/index.php/MatCap,https://labs.sketchfab.com/experiments/material-showcase/
+2A0398BB9F5F4ED3A86CDBFC71D19A15|VF - MatCap|5|https://web.archive.org/web/20200917073129/https://wiki.unity3d.com/index.php/MatCap,https://labs.sketchfab.com/experiments/material-showcase/
 0F3956C6081B4AFFAECB8F99AA36E53C|D - Vertex inputs|5|https://docs.unity3d.com/Manual/SL-VertexProgramInputs.html,https://docs.unity3d.com/Manual/SL-CullAndDepth.html
 27FFD7AACB0645B193860E6C575D52FB|D - Vertex normals|10
 E080B76AC4354FAFA9B803CD3757C337|D - Face normals|10
@@ -231,8 +231,8 @@ BC45747983B546CA86C7089431C0CF27|D - Refraction on sphere - Incident ray (red), 
 ADE33991F6DD4C92B05796AF670D1914|VF - Fresnel (V)|20|https://en.wikipedia.org/wiki/Augustin-Jean_Fresnel
 F3685B94E2CE480FB9F608F16FACD04B|VF - Fresnel (F)|20|https://docs.unity3d.com/Manual/StandardShaderFresnel.html
 4F29B42DFC774BC7B9FAA61F220ACD74|VF - BRDF: Anisotropy (V)|5|https://pdfs.semanticscholar.org/808d/048d4331cf5dac5fd924b50249b7915c6d73.pdf
-3C5A30986301463E8B5E38F5F9AED639|VF - BRDF: Anisotropy (F)|5|https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
-391FD2288E964DEB9181EDAA24CBB00B|S - Anisotropy|5|https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
+3C5A30986301463E8B5E38F5F9AED639|VF - BRDF: Anisotropy (F)|5|https://web.archive.org/web/20200917032623/https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
+391FD2288E964DEB9181EDAA24CBB00B|S - Anisotropy|5|https://web.archive.org/web/20200917032623/https://wiki.unity3d.com/index.php/Anisotropic_Highlight_Shader
 AAF4879A9E0C49ADB9A80D36AE200E2C|Identity matrix|20
 76C3C9C05D9D45F78A4FFBF0E980BC13|Translation matrix|20
 2D2616C52EAF4BA2924C2386C90BD0C0|Scale matrix|20
