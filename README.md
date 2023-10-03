@@ -3,10 +3,10 @@
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=HO-tCvjG1ig" target="_blank"><img src="http://img.youtube.com/vi/HO-tCvjG1ig/0.jpg" alt="Unity shaders - Demo project - preview " width="480" height="360" border="10"/></a>
 
 ## About
-A one scene based Unity project that provides various shader examples.
+A Unity project showcasing various shader examples in a single scene.
 
 ### Notes
-* Unity: <b>2018.3.0f2</b>
+* Unity: <b>2022.3.10f1</b>
 * Abbreviations: 
     * **D** (Debug)
     * **DS** (Debug Surface)
@@ -17,9 +17,9 @@ A one scene based Unity project that provides various shader examples.
     * **V** (Vertex)
     * **VF** (Vertex-Fragment), 
 * Shortcuts: 
-    * **Left/Right arrow** - previous/next model
-    * **L** - open actual link(s) in your default web browser (if provided) 
-    * **ESC** - open listed shader(s) in your default script editor
+    * **A/D** or **Left/Right arrows** - previous/next model
+    * **W/L** - open link(s) in your default web browser (If there are additional resources available, you will see an asterisk (*) next to the number.) 
+    * **S/O** - open shader(s) in your default script editor
 * GUID generation by <a href="https://www.guidgenerator.com">Online GUID Generator</a>
 * Dependency trees - located in Resources folder - can be visualized by using <a href="http://www.webgraphviz.com/">WebGraphviz</a>
 
@@ -31,7 +31,7 @@ My Shader study path was the following:
 * <a href="https://www.youtube.com/playlist?list=PLV4HCa5XqFT02gZOZ_Jb_A66wqDhZMCkN">Noob to Pro Series - Shader Writing in Unity 4.0 - Beginner</a>
 * <a href="https://www.packtpub.com/game-development/unity-2018-shaders-and-effects-cookbook-third-edition">Unity 2018 Shaders and Effects Cookbook - Third Edition</a>
 * <a href="https://www.udemy.com/unity-shader/">Unity Shader 入門 (廣東話)</a>
-* Besides the above: <a href="https://docs.unity3d.com/Manual/SL-Reference.html">Unity Shader documentation</a>, <a href="https://forum.unity.com/">Unity Forum</a>, <a href="https://www.youtube.com/results?search_query=unity+shader">YouTube tutorials</a> and of course: tons of <a href="http://lmgtfy.com/?q=unity+shader">Google</a>
+* Besides the above: <a href="https://docs.unity3d.com/Manual/SL-Reference.html">Unity Shader documentation</a>, <a href="https://forum.unity.com/">Unity Forum</a>, <a href="https://www.youtube.com/results?search_query=unity+shader">YouTube tutorials</a> and of course: tons of <a href="https://www.google.com/search?q=unity+shader">Google</a>
 
 
 ### Useful links
@@ -46,15 +46,15 @@ My Shader study path was the following:
 * <a href="https://assetstore.unity.com/packages/vfx/shaders/lux-physically-based-shader-framework-16000">Lux – Physically Based Shader Framework</a>
 * <a href="https://www.youtube.com/channel/UCEklP9iLcpExB8vp_fWQseg">Makin' Stuff Look Good</a>
 * <a href="https://github.com/FreyaHolmer/ShaderForge">ShaderForge</a>
-* <a href="https://assetstore.unity.com/packages/tools/visual-scripting/shadero-sprite-2d-shader-editor-97406">Shadero Sprite - 2D Shader Editor</a>
+* <a href="https://assetstore.unity.com/packages/tools/visual-scripting/shadero-sprite-2d-shader-editor-97406">~~Shadero Sprite - 2D Shader Editor~~</a>
 
 ### Asset referencies
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/3d-game-kit-115747">3D Game Kit</a>
-* <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/adam-character-pack-adam-guard-lu-74842">~~Adam Character Pack: Adam, Guard, Lu~~</a>
+* <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/adam-character-pack-adam-guard-lu-74842">Adam Character Pack: Adam, Guard, Lu</a>
 * <a href="https://assetstore.unity.com/packages/templates/packs/adam-ep2-ep3-character-pack-115793">~~ADAM EP2/EP3 - Character Pack~~</a>
 * <a href="https://www.blender.org/">Blender</a>
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/book-of-the-dead-environment-121175">Book Of The Dead: Environment</a>
-* <a href="https://github.com/OldUnityDemos/Bootcamp">~~Bootcam~~p</a>
+* <a href="https://github.com/terraKote/Unity-Bootcamp">Bootcamp</a>
 * <a href="https://www.cs.cmu.edu/~kmcrane/Projects/ModelRepository/">California Institute of Technology</a>
 * <a href="https://assetstore.unity.com/packages/templates/tutorials/car-tutorial-unity-3-x-only-10">~~Car Tutorial (Unity 3.x only)~~</a>
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/endless-runner-sample-game-87901">Endless Runner - Sample Game</a>
@@ -65,7 +65,7 @@ My Shader study path was the following:
 * <a href="https://github.com/UnityTechnologies/ShaderGraph_ExampleLibrary">Shader Graph Example Library</a>
 * <a href="https://labs.sketchfab.com/experiments/material-showcase/">Sketchfab</a>
 * <a href="https://assetstore.unity.com/packages/3d/characters/robots/space-robot-kyle-4696">Space Robot Kyle</a>
-* <a href="https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351">Standard Assets</a>
+* <a href="https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351">~~Standard Assets~~</a>
 * <a href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford University</a>
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/survival-shooter-tutorial-40756">~~Survival Shooter Tutorial~~</a>
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/tanks-tutorial-46209">Tanks! Tutorial</a>
@@ -77,7 +77,7 @@ My Shader study path was the following:
 * <a href="https://assetstore.unity.com/packages/essentials/beta-projects/unity-hdri-pack-72511">Unity HDRI Pack</a>
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-particle-pack-127325">Unity Particle Pack</a>
 * <a href="https://graphics.cs.utah.edu/courses/cs6620/fall2013/prj05/teapot.obj">University of Utah</a>
-* <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/vehicle-tools-83660">Vehicles Tools</a>
+* <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/vehicle-tools-83660">~~Vehicles Tools~~</a>
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/viking-village-29140">Viking Village</a>
 * <a href="https://assetstore.unity.com/packages/3d/props/exterior/vintage-phone-booth-2607">~~Vintage Phone Booth~~</a>
 * <a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/vr-samples-51519">~~VR Samples~~</a>
