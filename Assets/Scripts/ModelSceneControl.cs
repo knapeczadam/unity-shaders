@@ -83,7 +83,7 @@ namespace UnityStandardAssets.SceneUtils
                 Vector3.forward * -s_Selected.camOffset,
                 ref m_CamOffsetVelocity, 1);
 
-            if (Input.GetKeyUp(KeyCode.L) && s_Selected.Url != null)
+            if ((Input.GetKeyUp(KeyCode.L) || Input.GetKeyUp(KeyCode.W)) && s_Selected.Url != null)
             {
                 foreach (string url in s_Selected.Url.Split(','))
                 {
@@ -99,10 +99,10 @@ namespace UnityStandardAssets.SceneUtils
 
         void KeyboardInput()
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                 Previous();
 
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                 Next();
         }
 
